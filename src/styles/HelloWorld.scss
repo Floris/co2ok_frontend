@@ -1,0 +1,10 @@
+// HelloWorld.scss
+
+$color: black;
+
+.helloWorld {
+    align-self: center;
+    .msg{
+        color:$color;
+    }
+}

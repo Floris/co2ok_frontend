@@ -5,6 +5,12 @@
 ## Build Setup
 
 ``` bash
+# clone repository
+git clone https://github.com/Floris/co2ok_frontend.git
+
+# move to folder
+cd co2ok_frontend
+
 # install dependencies
 npm install
 
