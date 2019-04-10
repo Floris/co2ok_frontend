@@ -1,10 +1,16 @@
 // HelloWorld.scss
 
-$color: black;
+$color: white;
 
 .helloWorld {
     align-self: center;
-    .msg{
-        color:$color;
+
+    .msg {
+        color: $color;
+    }
+
+    .img_lang {
+        width: 50px;
+        height: 40px;
     }
 }
