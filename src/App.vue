@@ -1,6 +1,8 @@
 <template>
   <div id="app">
-    <HelloWorld/>
+    // nav
+    <HelloWorld/> //pages
+    // footer
   </div>
 </template>
 
