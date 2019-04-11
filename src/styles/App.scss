@@ -3,16 +3,55 @@
 @import "_vars.scss";
 
 #app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+  font-family: "Avenir", Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  height: 100vh;
-  margin:0;
+  min-height: 100vh;
+  margin: 0;
   padding: 0;
-  background: $background; 
-  display: flex;
-  justify-content: center;
-    align-items: center;
+  background: $background;
+}
+
+h1 {
+  margin: 0;
+  font-size: $header;
+  color: #fff;
+}
+
+h2 {
+  margin: 0;
+  font-size: $sub_header;
+  color: #fff;
+}
+
+p {
+  font-size: $normal_fs;
+  color: #fff;
+}
+
+.button {
+  color: #fff;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+  width: 233px;
+  display: inline-block;
+  font-size: 14px;
+  outline: 0;
+  height: 50px;
+  vertical-align: top;
+  white-space: nowrap;
+
+  border-radius: 3px;
+  border-style: solid;
+  border-width: 1px;
+
+  box-sizing: border-box;
+  //   -webkit-font-smoothing: antialiased;
+}
+
+.white {
+  background: #eee;
+  border-color: #eee;
+  color: $mid_blue;
 }
