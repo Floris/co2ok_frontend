@@ -1,0 +1,27 @@
+@import "_vars.scss";
+
+.footer {
+  //   width: 100%;
+  background: #eee;
+  min-height: 500px;
+  padding: 1em;
+
+  .content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    // align-content: center;
+  }
+
+  p {
+    color: $mid_blue;
+    margin: 0;
+    font-size: 15px;
+  }
+
+  .section2 {
+    display: flex;
+    margin: 1em;
+    flex-direction: column;
+  }
+}

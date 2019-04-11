@@ -15,20 +15,33 @@
 h1 {
   margin: 0;
   font-size: $header;
-  color: #fff;
+  color: $mid_blue;
 }
 
 h2 {
   margin: 0;
   font-size: $sub_header;
-  color: #fff;
+  color: $mid_blue;
+}
+
+h3 {
+  margin: 0;
+  color: $mid_blue;
 }
 
 p {
   font-size: $normal_fs;
-  color: #fff;
+  color: $mid_blue;
 }
 
+// general content styling
+.content {
+  max-width: $content_max_width;
+  height: 100%;
+  margin: 0 auto;
+}
+
+//general button styling
 .button {
   color: #fff;
   font-size: 14px;
@@ -48,6 +61,10 @@ p {
 
   box-sizing: border-box;
   //   -webkit-font-smoothing: antialiased;
+}
+
+.button:hover {
+  background: #fff;
 }
 
 .white {
