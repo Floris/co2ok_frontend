@@ -1,16 +1,15 @@
 @import "_vars.scss";
 
 .footer {
-  //   width: 100%;
   background: #eee;
-  min-height: 500px;
   padding: 1em;
 
   .content {
     display: flex;
+    height: 100%;
     flex-direction: row;
     justify-content: space-between;
-    // align-content: center;
+    align-content: space-around;
   }
 
   p {
@@ -23,5 +22,11 @@
     display: flex;
     margin: 1em;
     flex-direction: column;
+  }
+
+  .section3 {
+    display: flex;
+    margin: 1em;
+    flex-direction: row;
   }
 }

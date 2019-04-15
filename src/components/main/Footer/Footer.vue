@@ -1,7 +1,6 @@
 <template>
   <div class="footer">
-   <router-link to="/bar">andere page testen</router-link>
-    <div class='content'>
+    <div class="content">
       <div class="section2">
         <p>Lange Viestraat 2, Utrecht</p>
         <p>The Netherlands</p>
@@ -9,8 +8,11 @@
         <p>info@co2ok.eco</p>
       </div>
       <div class="section2">
-        <p>© 2018 CO₂OK. </p>
+        <p>© 2018 CO₂OK.</p>
         <p>Kvk: 69752753</p>
+      </div>
+      <div class="section3">
+        <p>Social media</p>
       </div>
     </div>
   </div>
@@ -18,19 +20,16 @@
 
 <script>
 export default {
-  name: 'Footer',
-  data () {
+  name: "Footer",
+  data() {
     return {
-        testdata:null
-    }
+      testdata: null
+    };
   },
-  mounted: function (){
-  }, // end mounted
+  mounted: function() {}, // end mounted
 
-  methods: {
-
-  }
-}
+  methods: {}
+};
 </script>
 
 // import style here

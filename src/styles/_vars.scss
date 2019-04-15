@@ -1,14 +1,20 @@
 // Global styling variables
 
 // font stuff
+$small_fs: 12px;
 $normal_fs: 16px;
-$medium_fs: 20px;
+$medium_fs: 24px;
 $large_fs: 50px;
-$sub_header: 36px;
+
 $header: 40px;
+$header_small: 20px;
+$sub_header: 36px;
 
 // colors
 $background: #fff;
+$white: #fcfcfc;
+$grey: #eaeaea;
+$grey2: #f8f8f8;
 
 $green: #2ecc71;
 $dark_green: #45641d;
@@ -19,3 +25,5 @@ $primary_color: $green;
 
 // content
 $content_max_width: 1300px;
+
+$border_radius: 3px;

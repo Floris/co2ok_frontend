@@ -10,6 +10,8 @@ const HtmlWebpackPlugin = require('html-webpack-plugin')
 const FriendlyErrorsPlugin = require('friendly-errors-webpack-plugin')
 const portfinder = require('portfinder')
 
+const BrowserSyncPlugin = require('browser-sync-webpack-plugin') // added by floris
+
 const HOST = process.env.HOST
 const PORT = process.env.PORT && Number(process.env.PORT)
 
@@ -67,7 +69,16 @@ const devWebpackConfig = merge(baseWebpackConfig, {
       from: path.resolve(__dirname, '../static'),
       to: config.dev.assetsSubDirectory,
       ignore: ['.*']
-    }])
+    }]),
+    new BrowserSyncPlugin({
+      // browse to http://localhost:3000/ during development,
+      // ./public directory is being served
+      host: 'localhost',
+      port: 3000,
+      server: {
+        baseDir: ['dist']
+      }
+    }) // added by floris
   ]
 })
 
