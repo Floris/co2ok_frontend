@@ -1,12 +1,15 @@
 <template>
   <div class="home">
-    <!-- <button v-on:click="changeLang('nl')">
-      <img class="img_lang" src="../../../assets/nl_flag.png">
-    </button>
-    <button v-on:click="changeLang('en')">
-      <img class="img_lang" src="../../../assets/en_flag.png">
-    </button>-->
+    <div class="language_selectors">
+      <button v-on:click="changeLang('nl')">
+        <img class="img_lang" src="../../../assets/nl_flag.png">
+      </button>
+      <button v-on:click="changeLang('en')">
+        <img class="img_lang" src="../../../assets/en_flag.png">
+      </button>
+    </div>
     <div class="jumbotron1">
+      <div class="img-background-color"></div>
       <div class="jumbo_content">
         <div class="text_block">
           <h1>{{title}}</h1>
@@ -60,10 +63,42 @@
         <div class="block"></div>
         <div class="block"></div>
         <div class="block"></div>
-        <div class="block"></div>
       </div>
     </div>
     <Faq></Faq>
+    <div class="partners">
+      <div class="normal">
+        <img src="../../../assets/partners/atmosfair.png">
+        <img src="../../../assets/partners/starters4communities.png">
+        <img src="../../../assets/partners/FairClimateFund.svg">
+        <img src="../../../assets/partners/SBB.png">
+      </div>
+
+      <div class="carousel">
+        <carousel
+          :autoplay="true"
+          :centerMode="true"
+          :loop="true"
+          :per-page="1"
+          :navigate-to="someLocalProperty"
+          :mouse-drag="false"
+          :perPage="1"
+        >
+          <slide>
+            <img src="../../../assets/partners/atmosfair.png">
+          </slide>
+          <slide>
+            <img src="../../../assets/partners/starters4communities.png">
+          </slide>
+          <slide>
+            <img src="../../../assets/partners/SBB.png">
+          </slide>
+          <slide>
+            <img src="../../../assets/partners/FairClimateFund.svg">
+          </slide>
+        </carousel>
+      </div>
+    </div>
     <Footer></Footer>
   </div>
 </template>
@@ -73,6 +108,8 @@ import lang from "./../../../lang/lang_home.json";
 import { getCookie, setCookie } from "./../../../../functions/cookies";
 import Faq from "./Faq";
 import Footer from "./../../main/Footer/Footer";
+
+import { Carousel, Slide } from "vue-carousel";
 
 export default {
   name: "Home",
@@ -151,7 +188,9 @@ export default {
   // Load Components
   components: {
     Faq: Faq,
-    Footer: Footer
+    Footer: Footer,
+    Carousel: Carousel,
+    Slide: Slide
   }
 };
 </script>

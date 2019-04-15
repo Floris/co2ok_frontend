@@ -14,13 +14,13 @@
 
 h1 {
   margin: 0;
-  font-size: $header;
+  font-size: $header1;
   color: $mid_blue;
 }
 
 h2 {
   margin: 0;
-  font-size: $sub_header;
+  font-size: $header2;
   color: $mid_blue;
 }
 
@@ -71,4 +71,20 @@ p {
   background: #eee;
   border-color: #eee;
   color: $mid_blue;
+}
+
+.language_selectors {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+*:focus {
+  outline: none;
+}
+
+textarea:focus,
+input:focus {
+  outline: none;
 }
