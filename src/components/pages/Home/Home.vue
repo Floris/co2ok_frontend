@@ -70,8 +70,8 @@
       <div class="normal">
         <img src="../../../assets/partners/atmosfair.png">
         <img src="../../../assets/partners/starters4communities.png">
-        <img src="../../../assets/partners/FairClimateFund.svg">
         <img src="../../../assets/partners/SBB.png">
+        <img src="../../../assets/partners/FairClimateFund.svg">
       </div>
 
       <div class="carousel">

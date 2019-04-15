@@ -72,7 +72,7 @@
       top: -60px;
       background: #fff;
       position: absolute;
-      width: $content_max_width - 100px;
+      width: $content_max_width;
       text-align: center;
       height: 360px;
       box-shadow: 0 8px 6px -6px rgba(0, 0, 0, 0.36);
@@ -124,7 +124,6 @@
   // fourth section
   .companies {
     min-height: 500px;
-    // background: $mid_blue;
     background: $grey;
     margin: 0 auto;
     display: flex;
@@ -180,6 +179,7 @@
       width: 100%;
       text-align: left;
       display: block;
+      color: $mid_blue;
     }
 
     .q {
@@ -187,10 +187,12 @@
       cursor: pointer;
       font-weight: bold;
       padding: 10px;
+      color: $mid_blue;
     }
 
     .a {
       padding: 10px;
+      color: $mid_blue;
       // display: none;
     }
 
@@ -231,13 +233,30 @@
       width: 100%;
       display: flex;
       flex-direction: row;
-      justify-content: space-around;
+      justify-content: space-between;
       align-content: center;
     }
 
     .carousel {
       width: 100%;
       display: none;
+    }
+
+    button {
+      background: rgba(0, 0, 0, 0) !important;
+      color: rgba(0, 0, 0, 0) !important;
+
+      // border-bottom: 2px solid #000;
+      margin: 3px;
+      border-radius: 0;
+    }
+
+    .VueCarousel-dot {
+      border-bottom: 2px solid #ccc;
+    }
+
+    .VueCarousel-dot--active {
+      border-bottom: 2px solid #000;
     }
   }
 
@@ -249,11 +268,20 @@
   // media queries
 
   @media only screen and (max-width: $content_max_width) {
+    $grid_width: 90%;
+
+    .content {
+      width: $grid_width !important;
+    }
+
+    .jumbo_content {
+      width: $grid_width !important;
+    }
 
     .ourMission {
       .block {
-        width: 100%;
-        box-shadow: none;
+        width: $grid_width;
+        // box-shadow: none;
         border: 0;
         border-radius: 0;
       }
@@ -262,7 +290,7 @@
     .howItWorks {
       .img_collection {
         // flex-direction: column;
-        width: 100%;
+        width: $grid_width;
       }
     }
 
@@ -279,6 +307,10 @@
       .content {
         width: 90% !important;
       }
+    }
+
+    .partners {
+      max-width: $grid_width;
     }
   }
 
@@ -297,6 +329,15 @@
 
     h2 {
       font-size: $header2_mobile !important;
+    }
+
+    .ourMission {
+      .block {
+        width: 100%;
+        box-shadow: none;
+        border: 0;
+        border-radius: 0;
+      }
     }
 
     .partners {
