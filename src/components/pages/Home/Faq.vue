@@ -4,7 +4,7 @@
     <div class="content">
       <div class="qa_block">
         <div
-          v-on:click="show1 = !show1"
+          v-on:click="show(1)"
           class="q"
         >Waarom vraagt CO₂ok Ninja om toestemming voor “Lees en verander alle data van websites die je bezoekt”?</div>
         <transition name="fade">
@@ -17,7 +17,7 @@
 
       <div class="qa_block">
         <div
-          v-on:click="show2 = !show2"
+          v-on:click="show(2)"
           class="q"
         >Worden mijn aankopen of internet activiteiten opgeslagen door CO₂ok Ninja?</div>
         <transition name="fade">
@@ -29,7 +29,7 @@
       </div>
 
       <div class="qa_block">
-        <div v-on:click="show3 = !show3" class="q">Met welke winkels werkt CO₂ok Ninja samen?</div>
+        <div v-on:click="show(3)" class="q">Met welke winkels werkt CO₂ok Ninja samen?</div>
         <transition name="fade">
           <div
             v-if="show3"
@@ -40,7 +40,7 @@
 
       <div class="qa_block">
         <div
-          v-on:click="show4 = !show4"
+          v-on:click="show(4)"
           class="q"
         >Wat hebben bedrijven er aan om in de partnerlijst van CO₂ok Ninja te zitten?</div>
         <transition name="fade">
@@ -54,7 +54,7 @@
 
       <div class="qa_block">
         <div
-          v-on:click="show5 = !show5"
+          v-on:click="show(5)"
           class="q"
         >Welk percentage van mijn aankoop word gebruikt om CO₂-uitstoot te compenseren?</div>
         <transition name="fade">
@@ -67,7 +67,7 @@
 
       <div class="qa_block">
         <div
-          v-on:click="show6 = !show6"
+          v-on:click="show(6)"
           class="q"
         >Ik shop alleen op Amazon en gebruik ook al Amazon Smile programma, is er een andere reden om CO₂ok Ninja te installeren?</div>
         <transition name="fade">
@@ -80,7 +80,7 @@
 
       <div class="qa_block">
         <div
-          v-on:click="show7 = !show7"
+          v-on:click="show(7)"
           class="q"
         >Hoe kan ik er zeker van zijn dat het geld word gebruikt om CO₂ uitstoot te verminderen?</div>
         <transition name="fade">
@@ -92,7 +92,7 @@
       </div>
 
       <div class="qa_block">
-        <div v-on:click="show8 = !show8" class="q">Kost het mij iets om co2ok Ninja te gebruiken?</div>
+        <div v-on:click="show(8)" class="q">Kost het mij iets om co2ok Ninja te gebruiken?</div>
         <transition name="fade">
           <div
             v-if="show8"
@@ -103,7 +103,7 @@
 
       <div class="qa_block">
         <div
-          v-on:click="show9 = !show9"
+          v-on:click="show(9)"
           class="q"
         >Ik koop bij geen enkel bedrijf waar jullie programma op kan, is er een andere reden om het toch te installeren?</div>
         <transition name="fade">
@@ -115,7 +115,7 @@
       </div>
 
       <div class="qa_block">
-        <div v-on:click="show10 = !show10" class="q">Hoe werkt CO₂ok Ninja?</div>
+        <div v-on:click="show(10)" class="q">Hoe werkt CO₂ok Ninja?</div>
         <transition name="fade">
           <div
             v-if="show10"
@@ -125,7 +125,7 @@
       </div>
 
       <div class="qa_block">
-        <div v-on:click="show11 = !show11" class="q">Credits aan Altruisto</div>
+        <div v-on:click="show(11)" class="q">Credits aan Altruisto</div>
         <transition name="fade">
           <div
             v-if="show11"
@@ -142,6 +142,7 @@ export default {
   name: "Faq",
   data() {
     return {
+      prevNumber: null,
       show1: false,
       show2: false,
       show3: false,
@@ -154,6 +155,65 @@ export default {
       show10: false,
       show11: false
     };
+  },
+  methods: {
+    show(number) {
+      // reset
+      this.show1 = false;
+      this.show2 = false;
+      this.show3 = false;
+      this.show4 = false;
+      this.show5 = false;
+      this.show6 = false;
+      this.show7 = false;
+      this.show8 = false;
+      this.show9 = false;
+      this.show10 = false;
+      this.show11 = false;
+
+      if (number === this.prevNumber) {
+        // only close
+        return;
+      }
+
+      switch (number) {
+        case 1:
+          this.show1 = true;
+          break;
+        case 2:
+          this.show2 = true;
+          break;
+        case 3:
+          this.show3 = true;
+          break;
+        case 4:
+          this.show4 = true;
+          break;
+        case 5:
+          this.show5 = true;
+          break;
+        case 6:
+          this.show6 = true;
+          break;
+        case 7:
+          this.show7 = true;
+          break;
+        case 8:
+          this.show8 = true;
+          break;
+        case 9:
+          this.show9 = true;
+          break;
+        case 10:
+          this.show10 = true;
+          break;
+        case 11:
+          this.show11 = true;
+          break;
+      }
+
+      this.prevNumber = number;
+    }
   }
 };
 </script>
