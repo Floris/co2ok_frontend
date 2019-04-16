@@ -173,6 +173,7 @@ export default {
 
       if (number === this.prevNumber) {
         // only close
+        this.prevNumber = null;
         return;
       }
 
