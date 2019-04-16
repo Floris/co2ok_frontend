@@ -13,17 +13,27 @@
     width: 100%;
     // background: $primary_color;
     background-image: url('./../assets/clouds-fog-forest.jpg');
+
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
+
+    img {
+      position: absolute;
+      transform: rotate(10deg);
+      left: 20px;
+      bottom: -170px;
+      user-select: none;
+      z-index: 1;
+      max-width: 55%;
+    }
 
     .img-background-color {
       position: absolute;
       height: 100%;
       width: 100%;
       background: rgba(46, 204, 112, 0.735);
-      // z-index: 1000;
     }
 
     h1 {
@@ -57,6 +67,7 @@
   .ourMission {
     position: relative;
     height: 0;
+    z-index: 5;
     // display: none; //
 
     .block {
@@ -90,6 +101,8 @@
 
   // third section
   .howItWorks {
+    position: relative;
+    z-index: 1;
     min-height: 500px;
     margin: 0 auto;
     display: flex;
@@ -146,11 +159,18 @@
     }
 
     .block {
-      margin: 20px;
+      margin: 10px;
       width: 200px;
       height: 200px;
       // background: #fff;
-      background: $mid_blue;
+      // background: $mid_blue;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+
+      img {
+        width: 100%;
+      }
     }
   }
 
@@ -315,6 +335,23 @@
   }
 
   @media only screen and (max-width: 900px) {
+    .jumbotron1 {
+      // .jumbo_content {
+      //   // flex-direction: column;
+      //   // justify-content: flex-start;
+      // }
+
+      img {
+        display: none;
+        // left: 0;
+        // right: 0;
+        // margin: 0 auto;
+        // bottom: -180px;
+        // width: 80% !important;
+        // max-width: 100%;
+      }
+    }
+
     .howItWorks {
       .img_collection {
         flex-direction: column;
