@@ -35,6 +35,11 @@ p {
   color: $mid_blue;
 }
 
+a {
+  text-decoration: none;
+  font-weight: bold;
+}
+
 // general content styling
 .content {
   max-width: $content_max_width;

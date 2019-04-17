@@ -10,7 +10,7 @@
       </button>
     </div>-->
     <div class="jumbotron1">
-      <img src="../../../assets/wereldbol.png">
+      <img src="../../../assets/boom2.svg">
       <!-- <div class="img-background-color"></div> -->
       <div class="jumbo_content">
         <div class="text_block">
