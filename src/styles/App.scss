@@ -42,16 +42,18 @@ p {
 }
 
 //general button styling
+
 .button {
-  color: #fff;
+  width: 233px;
+  height: 50px;
+  // color: #fff;
+  color: $mid_blue;
   font-size: 14px;
   font-weight: bold;
   cursor: pointer;
-  width: 233px;
   display: inline-block;
   font-size: 14px;
   outline: 0;
-  height: 50px;
   vertical-align: top;
   white-space: nowrap;
 
@@ -63,14 +65,27 @@ p {
   //   -webkit-font-smoothing: antialiased;
 }
 
-.button:hover {
-  background: #fff;
+
+.green {
+  background: $green;
+  border-color: $green;
+  color: #fff;
+}
+
+.green:hover {
+  background: rgba(0, 184, 148, 1.0);
+  border-color: rgba(0, 184, 148, 1.0);
 }
 
 .white {
-  background: #eee;
-  border-color: #eee;
+  background: $grey2;
+  border-color: $grey2;
   color: $mid_blue;
+}
+
+.white:hover {
+  background: $grey;
+  border-color: $grey;
 }
 
 .language_selectors {

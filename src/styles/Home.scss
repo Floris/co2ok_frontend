@@ -12,7 +12,7 @@
     height: 650px;
     width: 100%;
     // background: $primary_color;
-    background-image: url('./../assets/clouds-fog-forest.jpg');
+    // background-image: url('./../assets/clouds-fog-forest.jpg');
 
     display: flex;
     flex-direction: row;
@@ -22,27 +22,30 @@
     img {
       position: absolute;
       transform: rotate(10deg);
-      left: 20px;
+      left: 30px;
       bottom: -170px;
       user-select: none;
       z-index: 1;
-      max-width: 55%;
+      max-width: 50%;
     }
 
     .img-background-color {
       position: absolute;
       height: 100%;
       width: 100%;
-      background: rgba(46, 204, 112, 0.735);
+      background: rgba(116, 185, 255, 0.735);
+      // background: #fff;
+      // background: rgba(46, 204, 112, 0.735);
     }
 
     h1 {
-      font-size: $large_fs;
-      color: #fff;
+      font-size: #292a2a;
+      color: #000;
     }
 
     p {
-      color: #fff;
+      color: #000;
+      font-weight: 500;
     }
 
     .jumbo_content {
@@ -58,7 +61,11 @@
     }
 
     .text_block {
-      margin: 1em;
+      // background: #fff;
+      // border-radius: $border_radius;
+      padding: 1em;
+
+      // margin: 1em;
       max-width: 586px;
     }
   }

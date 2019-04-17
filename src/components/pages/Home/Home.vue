@@ -19,7 +19,7 @@
             target="_blank"
             href="https://chrome.google.com/webstore/detail/co2okninja/omlkdocjhkgbllabpihhdggplladfipe"
           >
-            <button class="button white">{{button_header1}}</button>
+            <button class="button green">{{button_header1}}</button>
           </a>
         </div>
       </div>
@@ -185,7 +185,6 @@ export default {
   mounted: function() {
     this.checkCookies();
   }, // end mounted
-
   methods: {
     checkCookies() {
       console.log("%ccheck cookies -  " + document.cookie, "color:red;");
@@ -202,7 +201,7 @@ export default {
       if (userLang.includes("en")) {
         this.title = lang.en_home.title;
         this.title2 = lang.en_home.title2;
-        setCookie("userLang", "en", 14);
+        setCookie("userLang", "en", 200);
       }
     }, // end checkCookies
 
@@ -258,7 +257,7 @@ export default {
         this.faq.s5_q11 = lang.en_home.s5_q11;
         this.faq.s5_a11 = lang.en_home.s5_a1;
 
-        setCookie("userLang", "en", 14);
+        setCookie("userLang", "en", 200);
         return;
       }
 
@@ -310,7 +309,7 @@ export default {
       this.faq.s5_q11 = lang.nl_home.s5_q11;
       this.faq.s5_a11 = lang.nl_home.s5_a1;
 
-      setCookie("userLang", "nl", 14);
+      setCookie("userLang", "nl", 200);
     } // end changeLang
   },
   // Load Components
