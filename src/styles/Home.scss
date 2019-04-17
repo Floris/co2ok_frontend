@@ -11,6 +11,8 @@
     position: relative;
     height: 650px;
     width: 100%;
+    background: rgba(116, 185, 255, 1);
+    z-index: 1;
     // background: $primary_color;
     // background-image: url('./../assets/clouds-fog-forest.jpg');
 
@@ -25,7 +27,7 @@
       left: 30px;
       bottom: -170px;
       user-select: none;
-      z-index: 1;
+      z-index: -1;
       max-width: 50%;
     }
 
@@ -33,7 +35,7 @@
       position: absolute;
       height: 100%;
       width: 100%;
-      background: rgba(116, 185, 255, 0.735);
+      // background: rgba(116, 185, 255, 0.735);
       // background: #fff;
       // background: rgba(46, 204, 112, 0.735);
     }

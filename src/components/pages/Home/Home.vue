@@ -10,7 +10,7 @@
     </div>
     <div class="jumbotron1">
       <img src="../../../assets/wereldbol.png">
-      <div class="img-background-color"></div>
+      <!-- <div class="img-background-color"></div> -->
       <div class="jumbo_content">
         <div class="text_block">
           <h1>{{title}}</h1>
