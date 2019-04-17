@@ -1,5 +1,6 @@
 <template>
   <div class="home">
+    <Navigation/>
     <div class="language_selectors">
       <button v-on:click="changeLang('nl')">
         <img class="img_lang" src="../../../assets/nl_flag.png">
@@ -125,6 +126,7 @@ import lang from "./../../../lang/lang_home.json";
 import { getCookie, setCookie } from "./../../../../functions/cookies";
 import Faq from "./Faq";
 import Footer from "./../../main/Footer/Footer";
+import Navigation from './../../main/Navigation';
 
 import { Carousel, Slide } from "vue-carousel";
 
@@ -317,7 +319,8 @@ export default {
     Faq: Faq,
     Footer: Footer,
     Carousel: Carousel,
-    Slide: Slide
+    Slide: Slide,
+    Navigation: Navigation
   }
 };
 </script>
