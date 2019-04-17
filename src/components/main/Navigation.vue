@@ -13,7 +13,6 @@
             :to="`${routes.page}`"
           >{{routes.text}}</router-link>
         </div>
-        <!-- TODO: change nav-items-mobile name to nav-mobile -->
         <div class="nav-items-mobile">
           <input type="checkbox">
           <!-- Span for hamburger icon -->
@@ -61,7 +60,7 @@ export default {
     //gets called when you scroll
     handleScroll(event) {
       console.log("handlescroll", window.pageYOffset);
-      if (window.pageYOffset > 250) {
+      if (window.pageYOffset > 800 && screen.width > 600) {
         console.log("navbar true");
         this.isActive = true;
       } else {
