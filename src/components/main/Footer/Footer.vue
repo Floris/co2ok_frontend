@@ -11,8 +11,14 @@
         <p>© 2018 CO₂OK.</p>
         <p>Kvk: 69752753</p>
       </div>
-      <div class="section3">
+      <div class="section2">
         <p>Social media</p>
+        <router-link
+          class="spacing"
+          v-for="routes in links"
+          v-bind:key="routes.id"
+          :to="privacyStatement"
+        >Privacy Statement</router-link>
       </div>
     </div>
   </div>

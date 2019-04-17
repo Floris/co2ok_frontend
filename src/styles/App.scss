@@ -4,6 +4,7 @@
 
 #app {
   font-family: "Avenir", Helvetica, Arial, sans-serif;
+  // font-family: Comic Sans MS, Comic Sans, cursive;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   min-height: 100vh;
@@ -38,6 +39,7 @@ p {
 a {
   text-decoration: none;
   font-weight: bold;
+  color: $mid_blue;
 }
 
 // general content styling
