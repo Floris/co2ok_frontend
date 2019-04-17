@@ -1,14 +1,14 @@
 <template>
   <div class="home">
     <Navigation/>
-    <div class="language_selectors">
+    <!-- <div class="language_selectors">
       <button v-on:click="changeLang('nl')">
         <img class="img_lang" src="../../../assets/nl_flag.png">
       </button>
       <button v-on:click="changeLang('en')">
         <img class="img_lang" src="../../../assets/en_flag.png">
       </button>
-    </div>
+    </div>-->
     <div class="jumbotron1">
       <img src="../../../assets/wereldbol.png">
       <div class="img-background-color"></div>
@@ -126,7 +126,7 @@ import lang from "./../../../lang/lang_home.json";
 import { getCookie, setCookie } from "./../../../../functions/cookies";
 import Faq from "./Faq";
 import Footer from "./../../main/Footer/Footer";
-import Navigation from './../../main/Navigation';
+import Navigation from "./../../main/Navigation";
 
 import { Carousel, Slide } from "vue-carousel";
 
