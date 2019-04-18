@@ -54,13 +54,13 @@ export default {
         },
         {
           id: 1,
-          text: "Team",
-          page: "/team"
+          text: "CO₂compensatie",
+          page: "/"
         },
         {
           id: 2,
-          text: "CO₂ compensatie",
-          page: "/"
+          text: "About",
+          page: "/about"
         },
         {
           id: 3,
