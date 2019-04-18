@@ -12,13 +12,40 @@
     display: none;
   }
 
+  .spacing-desktop {
+    margin: 0 4px;
+    border: 1px solid #fff;
+    border-radius: $border_radius;
+    background: #fff;
+    color: $mid_blue;
+    padding: 10px;
+  }
+
+  .spacing-desktop:hover {
+    background: #eee;
+  }
+
+
+  .spacing-desktop:nth-last-child(1) {
+    border: 1px solid $green;
+    border-radius: $border_radius;
+    background: $green;
+    color: #fff;
+    padding: 10px;
+  }
+
+  .spacing-desktop:nth-last-child(1):hover {
+    background: rgba(0, 184, 148, 1.0);
+    border-color: rgba(0, 184, 148, 1.0);
+  }
+
   .navbar {
     position: absolute;
     width: 100%;
     z-index: 500000;
     max-height: 0;
     color: black;
-    border-bottom: 2px solid $green;
+    border-bottom: 3px solid $green;
 
     .content {
       padding: 1em;
@@ -55,6 +82,18 @@
     // max-width: 80% !important;
     left: 0 !important;
     right: 0 !important;
+  }
+
+  .showLogo {
+    display: block !important;
+  }
+
+  #hiddenLogo {
+    display: none;
+  }
+
+  .hideLogo {
+    display: none;
   }
 
 }

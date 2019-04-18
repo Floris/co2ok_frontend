@@ -3,11 +3,18 @@
     <nav class="navbar" v-bind:class="{showBar : isActive}">
       <div class="content">
         <div class="co2ok-logo">
-          <img src="../../assets/logo_co2ok_groot.png">
+          <a href="/">
+            <img src="../../assets/co2ok_white.svg" v-bind:class="{hideLogo : isActive}">
+            <img
+              src="../../assets/co2ok_logo.png"
+              id="hiddenLogo"
+              v-bind:class="{showLogo : isActive}"
+            >
+          </a>
         </div>
         <div class="nav-items">
           <router-link
-            class="spacing"
+            class="spacing-desktop"
             v-for="routes in links"
             v-bind:key="routes.id"
             :to="`${routes.page}`"
@@ -42,13 +49,28 @@ export default {
       links: [
         {
           id: 0,
-          text: "Ninja",
-          page: "/Home"
+          text: "Business",
+          page: "/business"
         },
         {
           id: 1,
+          text: "Team",
+          page: "/team"
+        },
+        {
+          id: 2,
+          text: "CO₂ compensatie",
+          page: "/"
+        },
+        {
+          id: 3,
           text: "Login",
           page: "/Login"
+        },
+        {
+          id: 4,
+          text: "Download Ninja",
+          page: "/download"
         }
       ],
 

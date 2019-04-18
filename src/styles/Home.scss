@@ -75,6 +75,7 @@
 
   // second section
   .ourMission {
+    font-family: Avenir, cursive;
     position: relative;
     height: 0;
     z-index: 5;
@@ -93,9 +94,9 @@
       top: -60px;
       background: #fff;
       position: absolute;
-      width: $content_max_width;
+      width: $content_max_width - 300px;
       text-align: center;
-      height: 360px;
+      height: 300px;
       box-shadow: 0 8px 6px -6px rgba(0, 0, 0, 0.36);
     }
 
@@ -119,7 +120,7 @@
     flex-direction: column;
     justify-content: center;
     text-align: center;
-    padding: 360px 0px 60px;
+    padding: 300px 0px 60px;
     background: $grey2;
 
     .img_collection {
