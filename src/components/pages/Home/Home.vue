@@ -139,7 +139,7 @@ import lang from "./../../../lang/lang_home.json";
 import { getCookie, setCookie } from "./../../../../functions/cookies";
 import Faq from "./Faq";
 import Footer from "./../../main/Footer/Footer";
-import Navigation from "./../../main/Navigation";
+import Navigation from "./../../main/Navigation/Navigation";
 
 import { Carousel, Slide } from "vue-carousel";
 

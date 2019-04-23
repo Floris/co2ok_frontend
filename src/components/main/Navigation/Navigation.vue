@@ -4,9 +4,9 @@
       <div class="content">
         <div class="co2ok-logo">
           <a href="/">
-            <img src="../../assets/co2ok_white.svg" v-bind:class="{hideLogo : isActive}">
+            <img src="../../../assets/co2ok_white.svg" v-bind:class="{hideLogo : isActive}">
             <img
-              src="../../assets/co2ok_logo.png"
+              src="../../../assets/co2ok_logo.png"
               id="hiddenLogo"
               v-bind:class="{showLogo : isActive}"
             >
@@ -109,4 +109,4 @@ export default {
 };
 </script>
 
-<style lang="scss" src="../../styles/Navigation.scss"></style>
+<style lang="scss" src="./../../../styles/Navigation.scss"></style>

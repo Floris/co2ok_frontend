@@ -40,3 +40,4 @@ export default {
 
 // import style here
 <style lang="scss" src="./../../../styles/Footer.scss"></style>
+
