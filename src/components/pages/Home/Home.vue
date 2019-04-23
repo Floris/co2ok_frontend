@@ -10,9 +10,10 @@
       </button>
     </div>-->
     <div class="jumbotron1">
-      <img src="../../../assets/boom2.svg">
+      <!-- <img src="../../../assets/boom2.svg"> -->
       <!-- <div class="img-background-color"></div> -->
       <div class="jumbo_content">
+        <img src="../../../assets/boom2.svg">
         <div class="text_block">
           <h1>{{title}}</h1>
           <p>{{title2}}</p>
@@ -20,19 +21,20 @@
             target="_blank"
             href="https://chrome.google.com/webstore/detail/co2okninja/omlkdocjhkgbllabpihhdggplladfipe"
           >
-            <button class="button green">{{button_header1}}</button>
+            <button class="button white">{{button_header1}}</button>
           </a>
         </div>
       </div>
     </div>
-    <div class="ourMission">
+    <!-- <div class="ourMission">
       <div class="block">
+        <div class="quotes">"</div>
         <div class="text">
           <h2>{{s2_title}}</h2>
           <p>{{s2_p1}}</p>
         </div>
       </div>
-    </div>
+    </div>-->
     <div class="howItWorks">
       <h2>{{s3_title}}</h2>
       <div class="img_collection">
@@ -83,7 +85,18 @@
         </div>
       </div>
     </div>
-    <Faq :faq="faq"></Faq>
+    <div class="projects">
+      <div class="content">
+        <h2>{{s6_title}}</h2>
+        <div class="img_cover">
+          <img src="../../../assets/project1.jpg">
+          <img src="../../../assets/project2.jpg">
+          <img src="../../../assets/project3.jpg">
+        </div>
+        <p>{{s6_p1}}</p>
+      </div>
+    </div>
+    <!-- <Faq :faq="faq"></Faq> -->
     <div class="partners">
       <div class="normal">
         <img src="../../../assets/partners/atmosfair.png">
@@ -156,6 +169,10 @@ export default {
       // section4
       s4_title: lang.nl_home.s4_title,
       s4_p1: lang.nl_home.s4_p1,
+
+      // section 6
+      s6_title: lang.nl_home.s6_title,
+      s6_p1: lang.nl_home.s6_p1,
 
       // section 5
       faq: {
@@ -235,6 +252,10 @@ export default {
         this.s4_title = lang.en_home.s4_title;
         this.s4_p1 = lang.en_home.s4_p1;
 
+        // section 6
+        this.s6_title = lang.en_home.s6_title;
+        this.s6_p1 = lang.en_home.s6_p1;
+
         // section 5
         this.faq.s5_q1 = lang.en_home.s5_q1;
         this.faq.s5_a1 = lang.en_home.s5_a1;
@@ -286,6 +307,10 @@ export default {
       //section4
       this.s4_title = lang.nl_home.s4_title;
       this.s4_p1 = lang.nl_home.s4_p1;
+
+      // section 6
+      this.s6_title = lang.nl_home.s6_title;
+      this.s6_p1 = lang.nl_home.s6_p1;
 
       // section 5
       this.faq.s5_q1 = lang.nl_home.s5_q1;

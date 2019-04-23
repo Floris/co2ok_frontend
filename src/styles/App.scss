@@ -4,7 +4,6 @@
 
 #app {
   font-family: "Avenir", Helvetica, Arial, sans-serif;
-  // font-family: Comic Sans MS, Comic Sans, cursive;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   min-height: 100vh;
@@ -52,15 +51,14 @@ a {
 //general button styling
 
 .button {
-  width: 233px;
+  width: 250px;
   height: 50px;
   // color: #fff;
   color: $mid_blue;
-  font-size: 14px;
+  font-size: 16px;
   font-weight: bold;
   cursor: pointer;
   display: inline-block;
-  font-size: 14px;
   outline: 0;
   vertical-align: top;
   white-space: nowrap;
@@ -96,11 +94,23 @@ a {
   border-color: $grey;
 }
 
+.orange {
+  background: #ffaf40;
+  border-color: #ffaf40;
+  color: #fff;
+}
+
+.orange:hover {
+  background: #ff9f1a;
+  border-color: #ff9f1a;
+}
+
+
 .language_selectors {
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 10;
+  z-index: 10000;
 }
 
 *:focus {
@@ -110,4 +120,8 @@ a {
 textarea:focus,
 input:focus {
   outline: none;
+}
+
+.hidden {
+  display: none;
 }

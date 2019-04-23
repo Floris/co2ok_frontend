@@ -15,11 +15,22 @@
         <div class="nav-items">
           <router-link
             class="spacing-desktop"
+            v-bind:class="{showItems : isActive}"
             v-for="routes in links"
             v-bind:key="routes.id"
             :to="`${routes.page}`"
           >{{routes.text}}</router-link>
+          <a
+            href="https://chrome.google.com/webstore/detail/co2okninja/omlkdocjhkgbllabpihhdggplladfipe"
+            target="_blank"
+          >
+            <button
+              v-bind:class="{showButton : isActive}"
+              class="button green hidden"
+            >Download Ninja</button>
+          </a>
         </div>
+
         <div class="nav-items-mobile">
           <input type="checkbox">
           <!-- Span for hamburger icon -->
@@ -55,7 +66,7 @@ export default {
         {
           id: 1,
           text: "CO₂compensatie",
-          page: "/"
+          page: "/co2compensatie"
         },
         {
           id: 2,
@@ -66,11 +77,6 @@ export default {
           id: 3,
           text: "Login",
           page: "/Login"
-        },
-        {
-          id: 4,
-          text: "Download Ninja",
-          page: "/download"
         }
       ],
 

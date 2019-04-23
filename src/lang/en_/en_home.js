@@ -18,6 +18,8 @@ module.exports = {
   //section4
   s4_title: "Companies",
   s4_p1: "Choose from 22.000+ international webshops",
+  s6_title: "CO₂-compensation projects",
+  s6_p1: "Needs translated text...",
   //section5
   s5_q1: "Why installing the Ninja App requires permission to “Read and change all data on websites you visit”?",
   s5_a1: "For the Ninja App to work properly it needs to have access to the information about the website you are visiting to know if you’re on one of our partners’ sites. In short, the Ninja App downloads the list of partner shops, then works in the background, comparing the website you’re viewing against the downloaded list, and if there is a match, it shows our CO₂ok button. The information about visited websites does not leave your computer, so your privacy is protected. The Ninja App has an open code available at Github so anyone can view and audit it to make sure it is safe to use.",

@@ -14,31 +14,33 @@
 
   .spacing-desktop {
     margin: 0 4px;
-    border: 1px solid #fff;
-    border-radius: $border_radius;
-    background: #fff;
-    color: $mid_blue;
-    padding: 10px;
-  }
-
-  .spacing-desktop:hover {
-    background: #eee;
-    margin: 0 4px;
-  }
-
-
-  .spacing-desktop:nth-last-child(1) {
-    border: 1px solid $green;
-    border-radius: $border_radius;
-    background: $green;
+    // border: 1px solid $green;
+    // border-radius: $border_radius;
+    // background: $green;
     color: #fff;
     padding: 10px;
   }
 
-  .spacing-desktop:nth-last-child(1):hover {
-    background: rgba(0, 184, 148, 1.0);
-    border-color: rgba(0, 184, 148, 1.0);
+  .spacing-desktop:hover {
+    // background: #eee;
+    margin: 0 4px;
   }
+
+
+  // .spacing-desktop:nth-last-child(1) {
+  //   border: 1px solid #fff200;
+  //   border-radius: $border_radius;
+  //   background: #fff200;
+  //   color: #000;
+  //   padding: 10px;
+  // }
+
+  // .spacing-desktop:nth-last-child(1):hover {
+  //   // background: rgba(0, 184, 148, 1.0);
+  //   // border-color: rgba(0, 184, 148, 1.0);
+  //   background: $green;
+  //   border-color: $green;
+  // }
 
   .navbar {
     position: absolute;
@@ -89,6 +91,18 @@
     display: block !important;
   }
 
+  .showButton {
+    display: inline-block !important;
+    margin: 0;
+    vertical-align: 0;
+    height: 44px;
+    width: 150px;
+  }
+
+  .showItems {
+    color: $mid_blue;
+  }
+
   #hiddenLogo {
     display: none;
   }
@@ -107,13 +121,18 @@
   }
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 700px) {
   .navigation {
     .navbar {
       position: fixed;
       background: white;
       max-height: 200px;
     }
+
+    // remove last (download button) from mobile nav
+    // .spacing:nth-last-child(1) {
+    //   display: none;
+    // }
 
     .nav-items-mobile {
       display: block;
@@ -187,7 +206,7 @@
         padding-top: 125px;
         right: -100px;
         z-index: 10;
-        background: white;
+        background: #fff;
         -webkit-font-smoothing: antialiased;
 
         transform-origin: 0% 0%;
