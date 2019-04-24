@@ -19,7 +19,7 @@
 
   .section1 {
     display: flex;
-    margin: 1em;
+    margin: 1em 0;
     flex-direction: row;
     justify-content: flex-start;
 
@@ -44,7 +44,7 @@
 
   .section2 {
     display: flex;
-    margin: 1em;
+    margin: 1em 0;
     padding: 0 10px;
     flex-direction: column;
     align-content: center;
