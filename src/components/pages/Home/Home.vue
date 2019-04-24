@@ -146,55 +146,55 @@ export default {
       // language
       lang: "nl",
       // text
-      title: lang.nl_home.title,
-      title2: lang.nl_home.title2,
-      button_header1: lang.nl_home.button_header1,
+      title: lang.nl.title,
+      title2: lang.nl.title2,
+      button_header1: lang.nl.button_header1,
 
       //section2
-      s2_title: lang.nl_home.s2_title,
-      s2_p1: lang.nl_home.s2_p1,
+      s2_title: lang.nl.s2_title,
+      s2_p1: lang.nl.s2_p1,
 
       // section3
-      s3_title: lang.nl_home.s3_title,
-      s3_img_title1: lang.nl_home.s3_img_title1,
-      s3_img_p1: lang.nl_home.s3_img_p1,
-      s3_img_title2: lang.nl_home.s3_img_title2,
-      s3_img_p2: lang.nl_home.s3_img_p2,
-      s3_img_title3: lang.nl_home.s3_img_title3,
-      s3_img_p3: lang.nl_home.s3_img_p3,
+      s3_title: lang.nl.s3_title,
+      s3_img_title1: lang.nl.s3_img_title1,
+      s3_img_p1: lang.nl.s3_img_p1,
+      s3_img_title2: lang.nl.s3_img_title2,
+      s3_img_p2: lang.nl.s3_img_p2,
+      s3_img_title3: lang.nl.s3_img_title3,
+      s3_img_p3: lang.nl.s3_img_p3,
 
       // section4
-      s4_title: lang.nl_home.s4_title,
-      s4_p1: lang.nl_home.s4_p1,
+      s4_title: lang.nl.s4_title,
+      s4_p1: lang.nl.s4_p1,
 
       // section 6
-      s6_title: lang.nl_home.s6_title,
-      s6_p1: lang.nl_home.s6_p1,
+      s6_title: lang.nl.s6_title,
+      s6_p1: lang.nl.s6_p1,
 
       // section 5
       faq: {
-        s5_q1: lang.nl_home.s5_q1,
-        s5_a1: lang.nl_home.s5_a1,
-        s5_q2: lang.nl_home.s5_q2,
-        s5_a2: lang.nl_home.s5_a2,
-        s5_q3: lang.nl_home.s5_q3,
-        s5_a3: lang.nl_home.s5_a3,
-        s5_q4: lang.nl_home.s5_q4,
-        s5_a4: lang.nl_home.s5_a4,
-        s5_q5: lang.nl_home.s5_q5,
-        s5_a5: lang.nl_home.s5_a5,
-        s5_q6: lang.nl_home.s5_q6,
-        s5_a6: lang.nl_home.s5_a6,
-        s5_q7: lang.nl_home.s5_q7,
-        s5_a7: lang.nl_home.s5_a7,
-        s5_q8: lang.nl_home.s5_q8,
-        s5_a8: lang.nl_home.s5_a8,
-        s5_q9: lang.nl_home.s5_q9,
-        s5_a9: lang.nl_home.s5_a9,
-        s5_q10: lang.nl_home.s5_q10,
-        s5_a10: lang.nl_home.s5_a10,
-        s5_q11: lang.nl_home.s5_q11,
-        s5_a11: lang.nl_home.s5_a11
+        s5_q1: lang.nl.s5_q1,
+        s5_a1: lang.nl.s5_a1,
+        s5_q2: lang.nl.s5_q2,
+        s5_a2: lang.nl.s5_a2,
+        s5_q3: lang.nl.s5_q3,
+        s5_a3: lang.nl.s5_a3,
+        s5_q4: lang.nl.s5_q4,
+        s5_a4: lang.nl.s5_a4,
+        s5_q5: lang.nl.s5_q5,
+        s5_a5: lang.nl.s5_a5,
+        s5_q6: lang.nl.s5_q6,
+        s5_a6: lang.nl.s5_a6,
+        s5_q7: lang.nl.s5_q7,
+        s5_a7: lang.nl.s5_a7,
+        s5_q8: lang.nl.s5_q8,
+        s5_a8: lang.nl.s5_a8,
+        s5_q9: lang.nl.s5_q9,
+        s5_a9: lang.nl.s5_a9,
+        s5_q10: lang.nl.s5_q10,
+        s5_a10: lang.nl.s5_a10,
+        s5_q11: lang.nl.s5_q11,
+        s5_a11: lang.nl.s5_a11
       }
     };
   },
@@ -214,137 +214,74 @@ export default {
         // checks if userLang cookie exists
         console.log("cookie exists ", getCookie("userLang"));
         this.changeLang(getCookie("userLang"));
-        this.lang = getCookie("userLang");
         return;
       }
 
       var userLang = navigator.language || navigator.userLanguage;
 
       if (userLang.includes("en")) {
-        this.title = lang.en_home.title;
-        this.title2 = lang.en_home.title2;
-        setCookie("userLang", "en", 200);
-        this.lang = "en";
+        this.changeLang("en");
+        return;
       }
     }, // end checkCookies
 
     changeLang: function(language) {
       console.log("execute changeLang");
 
-      // english
-      if (language.includes("en")) {
-        console.log("change language to ENG");
-        //section1
-        this.title = lang.en_home.title;
-        this.title2 = lang.en_home.title2;
-        this.button_header1 = lang.en_home.button_header1;
+      console.log("change language to " + language);
 
-        //section2
-        this.s2_title = lang.en_home.s2_title;
-        this.s2_p1 = lang.en_home.s2_p1;
-
-        //section3
-        this.s3_title = lang.en_home.s3_title;
-        this.s3_img_title1 = lang.en_home.s3_img_title1;
-        this.s3_img_p1 = lang.en_home.s3_img_p1;
-        this.s3_img_title2 = lang.en_home.s3_img_title2;
-        this.s3_img_p2 = lang.en_home.s3_img_p2;
-        this.s3_img_title3 = lang.en_home.s3_img_title3;
-        this.s3_img_p3 = lang.en_home.s3_img_p3;
-
-        //section4
-        this.s4_title = lang.en_home.s4_title;
-        this.s4_p1 = lang.en_home.s4_p1;
-
-        // section 6
-        this.s6_title = lang.en_home.s6_title;
-        this.s6_p1 = lang.en_home.s6_p1;
-
-        // section 5
-        this.faq.s5_q1 = lang.en_home.s5_q1;
-        this.faq.s5_a1 = lang.en_home.s5_a1;
-        this.faq.s5_q2 = lang.en_home.s5_q2;
-        this.faq.s5_a2 = lang.en_home.s5_a2;
-        this.faq.s5_q3 = lang.en_home.s5_q3;
-        this.faq.s5_a3 = lang.en_home.s5_a3;
-        this.faq.s5_q4 = lang.en_home.s5_q4;
-        this.faq.s5_a4 = lang.en_home.s5_a4;
-        this.faq.s5_q5 = lang.en_home.s5_q5;
-        this.faq.s5_a5 = lang.en_home.s5_a5;
-        this.faq.s5_q6 = lang.en_home.s5_q6;
-        this.faq.s5_a6 = lang.en_home.s5_a6;
-        this.faq.s5_q7 = lang.en_home.s5_q7;
-        this.faq.s5_a7 = lang.en_home.s5_a7;
-        this.faq.s5_q8 = lang.en_home.s5_q8;
-        this.faq.s5_a8 = lang.en_home.s5_a8;
-        this.faq.s5_q9 = lang.en_home.s5_q9;
-        this.faq.s5_a9 = lang.en_home.s5_a9;
-        this.faq.s5_q10 = lang.en_home.s5_q10;
-        this.faq.s5_a10 = lang.en_home.s5_a10;
-        this.faq.s5_q11 = lang.en_home.s5_q11;
-        this.faq.s5_a11 = lang.en_home.s5_a1;
-
-        setCookie("userLang", "en", 200);
-
-        this.lang = "en";
-
-        return;
-      }
-
-      // Dutch
-      console.log("change language to NL");
       //section1
-      this.title = lang.nl_home.title;
-      this.title2 = lang.nl_home.title2;
-      this.button_header1 = lang.nl_home.button_header1;
+      this.title = lang[language].title;
+      this.title2 = lang[language].title2;
+      this.button_header1 = lang[language].button_header1;
 
       //section2
-      this.s2_title = lang.nl_home.s2_title;
-      this.s2_p1 = lang.nl_home.s2_p1;
+      this.s2_title = lang[language].s2_title;
+      this.s2_p1 = lang[language].s2_p1;
 
       //section3
-      this.s3_title = lang.nl_home.s3_title;
-      this.s3_img_title1 = lang.nl_home.s3_img_title1;
-      this.s3_img_p1 = lang.nl_home.s3_img_p1;
-      this.s3_img_title2 = lang.nl_home.s3_img_title2;
-      this.s3_img_p2 = lang.nl_home.s3_img_p2;
-      this.s3_img_title3 = lang.nl_home.s3_img_title3;
-      this.s3_img_p3 = lang.nl_home.s3_img_p3;
+      this.s3_title = lang[language].s3_title;
+      this.s3_img_title1 = lang[language].s3_img_title1;
+      this.s3_img_p1 = lang[language].s3_img_p1;
+      this.s3_img_title2 = lang[language].s3_img_title2;
+      this.s3_img_p2 = lang[language].s3_img_p2;
+      this.s3_img_title3 = lang[language].s3_img_title3;
+      this.s3_img_p3 = lang[language].s3_img_p3;
 
       //section4
-      this.s4_title = lang.nl_home.s4_title;
-      this.s4_p1 = lang.nl_home.s4_p1;
+      this.s4_title = lang[language].s4_title;
+      this.s4_p1 = lang[language].s4_p1;
 
       // section 6
-      this.s6_title = lang.nl_home.s6_title;
-      this.s6_p1 = lang.nl_home.s6_p1;
+      this.s6_title = lang[language].s6_title;
+      this.s6_p1 = lang[language].s6_p1;
 
       // section 5
-      this.faq.s5_q1 = lang.nl_home.s5_q1;
-      this.faq.s5_a1 = lang.nl_home.s5_a1;
-      this.faq.s5_q2 = lang.nl_home.s5_q2;
-      this.faq.s5_a2 = lang.nl_home.s5_a2;
-      this.faq.s5_q3 = lang.nl_home.s5_q3;
-      this.faq.s5_a3 = lang.nl_home.s5_a3;
-      this.faq.s5_q4 = lang.nl_home.s5_q4;
-      this.faq.s5_a4 = lang.nl_home.s5_a4;
-      this.faq.s5_q5 = lang.nl_home.s5_q5;
-      this.faq.s5_a5 = lang.nl_home.s5_a5;
-      this.faq.s5_q6 = lang.nl_home.s5_q6;
-      this.faq.s5_a6 = lang.nl_home.s5_a6;
-      this.faq.s5_q7 = lang.nl_home.s5_q7;
-      this.faq.s5_a7 = lang.nl_home.s5_a7;
-      this.faq.s5_q8 = lang.nl_home.s5_q8;
-      this.faq.s5_a8 = lang.nl_home.s5_a8;
-      this.faq.s5_q9 = lang.nl_home.s5_q9;
-      this.faq.s5_a9 = lang.nl_home.s5_a9;
-      this.faq.s5_q10 = lang.nl_home.s5_q10;
-      this.faq.s5_a10 = lang.nl_home.s5_a10;
-      this.faq.s5_q11 = lang.nl_home.s5_q11;
-      this.faq.s5_a11 = lang.nl_home.s5_a1;
+      this.faq.s5_q1 = lang[language].s5_q1;
+      this.faq.s5_a1 = lang[language].s5_a1;
+      this.faq.s5_q2 = lang[language].s5_q2;
+      this.faq.s5_a2 = lang[language].s5_a2;
+      this.faq.s5_q3 = lang[language].s5_q3;
+      this.faq.s5_a3 = lang[language].s5_a3;
+      this.faq.s5_q4 = lang[language].s5_q4;
+      this.faq.s5_a4 = lang[language].s5_a4;
+      this.faq.s5_q5 = lang[language].s5_q5;
+      this.faq.s5_a5 = lang[language].s5_a5;
+      this.faq.s5_q6 = lang[language].s5_q6;
+      this.faq.s5_a6 = lang[language].s5_a6;
+      this.faq.s5_q7 = lang[language].s5_q7;
+      this.faq.s5_a7 = lang[language].s5_a7;
+      this.faq.s5_q8 = lang[language].s5_q8;
+      this.faq.s5_a8 = lang[language].s5_a8;
+      this.faq.s5_q9 = lang[language].s5_q9;
+      this.faq.s5_a9 = lang[language].s5_a9;
+      this.faq.s5_q10 = lang[language].s5_q10;
+      this.faq.s5_a10 = lang[language].s5_a10;
+      this.faq.s5_q11 = lang[language].s5_q11;
+      this.faq.s5_a11 = lang[language].s5_a1;
 
-      setCookie("userLang", "nl", 200);
-      this.lang = "nl";
+      setCookie("userLang", language, 200);
+      this.lang = language;
     } // end changeLang
   },
   // Load Components

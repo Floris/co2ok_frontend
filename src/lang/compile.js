@@ -13,30 +13,33 @@ var home_language_kit = "src/lang/lang_home.json";
 // exmaple homepage language object
 // add more language objects later
 var home_language_kit_object = {
-    nl_home: nl_home,
-    en_home: en_home
+  nl: nl_home,
+  en: en_home
 };
 
 // create New Home Language Kit
 createLanguageKit(home_language_kit, home_language_kit_object);
 
 function createLanguageKit(fileName, output) {
-    console.log('create HomeLanguageKit');
-    // console.log('create HomeLanguageKit', output); //debug
+  console.log('create HomeLanguageKit');
+  // console.log('create HomeLanguageKit', output); //debug
 
-    // try to remove old file
-    try {
-        fs.unlink(fileName, function () {
-            console.log('reset file');
-        });
-    } catch (error) { console.log('error with reset file', error); }
+  // try to remove old file
+  try {
+    fs.unlink(fileName, function () {
+      console.log('reset file');
+    });
+  } catch (error) {
+    console.log('error with reset file', error);
+  }
 
-    // try to create new file with new language object
-    try {
-        fs.appendFile(fileName, JSON.stringify(output), function (err) {
-            if (err) throw err;
-            console.log('HomeLanguageKit saved!');
-        });
-    } catch (error) { console.log('error creating file', error); }
+  // try to create new file with new language object
+  try {
+    fs.appendFile(fileName, JSON.stringify(output), function (err) {
+      if (err) throw err;
+      console.log('HomeLanguageKit saved!');
+    });
+  } catch (error) {
+    console.log('error creating file', error);
+  }
 }
-
