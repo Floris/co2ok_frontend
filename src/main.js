@@ -7,6 +7,28 @@ import {
 } from './routes';
 import App from './App'
 
+// import {
+//   library
+// } from '@fortawesome/fontawesome-svg-core'
+
+// import {
+//   faCoffee
+// } from '@fortawesome/free-solid-svg-icons'
+
+// import {
+//   faFacebook,
+//   faJs
+// } from '@fortawesome/free-brands-svg-icons'
+
+// import {
+//   FontAwesomeIcon
+// } from '@fortawesome/vue-fontawesome'
+
+// library.add(faCoffee, faFacebook, faJs);
+
+
+// Vue.component('font-awesome-icon', FontAwesomeIcon);
+
 Vue.config.productionTip = false;
 
 Vue.use(VueRouter);

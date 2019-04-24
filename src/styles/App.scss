@@ -41,11 +41,21 @@ a {
   color: $mid_blue;
 }
 
-// general content styling
+// general content/ layout styling
 .content {
   max-width: $content_max_width;
   height: 100%;
   margin: 0 auto;
+}
+
+.group {
+  display: flex;
+  flex-direction: row;
+}
+
+.group-item {
+  display: flex;
+  flex-direction: row;
 }
 
 //general button styling
@@ -60,7 +70,8 @@ a {
   cursor: pointer;
   display: inline-block;
   outline: 0;
-  vertical-align: top;
+  // vertical-align: top;
+  vertical-align: middle;
   white-space: nowrap;
 
   border-radius: $border_radius;
@@ -103,6 +114,14 @@ a {
 .orange:hover {
   background: #ff9f1a;
   border-color: #ff9f1a;
+}
+
+// end button styling
+
+
+//icon styling
+.fab {
+  font-size: 24px;
 }
 
 

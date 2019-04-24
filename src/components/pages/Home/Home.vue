@@ -1,14 +1,6 @@
 <template>
   <div class="home">
-    <Navigation/>
-    <!-- <div class="language_selectors">
-      <button v-on:click="changeLang('nl')">
-        <img class="img_lang" src="../../../assets/nl_flag.png">
-      </button>
-      <button v-on:click="changeLang('en')">
-        <img class="img_lang" src="../../../assets/en_flag.png">
-      </button>
-    </div>-->
+    <Navigation :lang="lang" @changeLangNav="changeLang"/>
     <div class="jumbotron1">
       <!-- <img src="../../../assets/boom2.svg"> -->
       <!-- <div class="img-background-color"></div> -->
@@ -94,6 +86,9 @@
           <img src="../../../assets/project3.jpg">
         </div>
         <p>{{s6_p1}}</p>
+        <router-link to="/projecten">
+          <button class="button green">Bekijk Projecten</button>
+        </router-link>
       </div>
     </div>
     <!-- <Faq :faq="faq"></Faq> -->
@@ -148,6 +143,8 @@ export default {
   data() {
     return {
       show: false,
+      // language
+      lang: "nl",
       // text
       title: lang.nl_home.title,
       title2: lang.nl_home.title2,
@@ -203,6 +200,11 @@ export default {
   },
   mounted: function() {
     this.checkCookies();
+
+    // The .$on function gets the languege emit function from the navigation
+    this.$on("changeLangNav", lang => {
+      this.changeLang(lang);
+    });
   }, // end mounted
   methods: {
     checkCookies() {
@@ -210,8 +212,9 @@ export default {
 
       if (getCookie("userLang")) {
         // checks if userLang cookie exists
-        console.log("cookie exists");
+        console.log("cookie exists ", getCookie("userLang"));
         this.changeLang(getCookie("userLang"));
+        this.lang = getCookie("userLang");
         return;
       }
 
@@ -221,6 +224,7 @@ export default {
         this.title = lang.en_home.title;
         this.title2 = lang.en_home.title2;
         setCookie("userLang", "en", 200);
+        this.lang = "en";
       }
     }, // end checkCookies
 
@@ -281,6 +285,9 @@ export default {
         this.faq.s5_a11 = lang.en_home.s5_a1;
 
         setCookie("userLang", "en", 200);
+
+        this.lang = "en";
+
         return;
       }
 
@@ -337,6 +344,7 @@ export default {
       this.faq.s5_a11 = lang.nl_home.s5_a1;
 
       setCookie("userLang", "nl", 200);
+      this.lang = "nl";
     } // end changeLang
   },
   // Load Components

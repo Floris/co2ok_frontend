@@ -4,10 +4,14 @@
       <div class="content">
         <div class="co2ok-logo">
           <a href="/">
-            <img src="../../../assets/co2ok_white.svg" v-bind:class="{hideLogo : isActive}">
             <img
-              src="../../../assets/co2ok_logo.png"
+              id="logo1"
+              src="../../../assets/co2ok_white.svg"
+              v-bind:class="{hideLogo : isActive}"
+            >
+            <img
               id="hiddenLogo"
+              src="../../../assets/co2ok_logo.png"
               v-bind:class="{showLogo : isActive}"
             >
           </a>
@@ -20,6 +24,18 @@
             v-bind:key="routes.id"
             :to="`${routes.page}`"
           >{{routes.text}}</router-link>
+          <div class="lang_flag">
+            <img
+              v-if="lang === 'en'"
+              src="../../../assets/nl_flag.png"
+              v-on:click="changeLang('nl')"
+            >
+            <img
+              v-if="lang === 'nl'"
+              src="../../../assets/en_flag.png"
+              v-on:click="changeLang('en')"
+            >
+          </div>
           <a
             href="https://chrome.google.com/webstore/detail/co2okninja/omlkdocjhkgbllabpihhdggplladfipe"
             target="_blank"
@@ -45,6 +61,18 @@
               v-bind:key="routes.id"
               :to="`${routes.page}`"
             >{{routes.text}}</router-link>
+            <div class="lang_flag">
+              <img
+                v-if="lang === 'en'"
+                src="../../../assets/nl_flag.png"
+                v-on:click="changeLang('nl')"
+              >
+              <img
+                v-if="lang === 'nl'"
+                src="../../../assets/en_flag.png"
+                v-on:click="changeLang('en')"
+              >
+            </div>
           </div>
         </div>
       </div>
@@ -60,23 +88,18 @@ export default {
       links: [
         {
           id: 0,
-          text: "Business",
+          text: "BUSINESS",
           page: "/business"
         },
         {
           id: 1,
-          text: "CO₂compensatie",
-          page: "/co2compensatie"
+          text: "PROJECTEN",
+          page: "/projecten"
         },
         {
           id: 2,
-          text: "About",
+          text: "ABOUT",
           page: "/about"
-        },
-        {
-          id: 3,
-          text: "Login",
-          page: "/Login"
         }
       ],
 
@@ -84,17 +107,21 @@ export default {
       showMobileMenu: false
     };
   },
+  props: ["lang"],
   methods: {
     //gets called when you scroll
     handleScroll(event) {
-      console.log("handlescroll", window.pageYOffset);
+      // console.log("handlescroll", window.pageYOffset);
       if (window.pageYOffset > 800 && screen.width > 600) {
-        console.log("navbar true");
+        // console.log("navbar true");
         this.isActive = true;
       } else {
-        console.log("navbar false");
+        // console.log("navbar false");
         this.isActive = false;
       }
+    },
+    changeLang(lang) {
+      this.$emit("changeLangNav", lang);
     }
   },
   //add(create) the event
