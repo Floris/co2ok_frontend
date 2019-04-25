@@ -70,13 +70,13 @@
           }
 
         .why_co2ok_content {
-            background: white;
+            background: #faebd7;	//temporary
             height: 1200px;
 
             display: flex;
             position: absolute;
             flex-direction: column;
-            justify-content: space-around;
+            justify-content: space-evenly;
 
 
             border-style: solid rgba(0, 0, 0, 0.0);
@@ -87,12 +87,20 @@
             left: 0;
             right: 0;
             z-index: 50;
-
+            h2 {
+                margin-left: 50px;
+            }
             .content_block {
+                height: 250px;
                 border-bottom: solid rgba(92, 89, 89, 0.249);
                 border-width: thin;
+                align-items: center;
+                
+             
                 img {
                     margin-left: 50px;
+                    width: 123px;
+                    height: 123px;
                 }
                 .content_text {
                     margin-left: 50px;
