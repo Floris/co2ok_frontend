@@ -1,8 +1,15 @@
 @import "_vars.scss";
 
 .footer {
-  background: #fff;
-  border-top: 3px solid #eee;
+  background: $grey2;
+  border-top: 3px solid $grey;
+
+  .fab,
+  fas,
+  i {
+    color: #fff;
+    text-align: center;
+  }
 
   .content {
     height: 100%;
@@ -10,21 +17,26 @@
     justify-content: space-between;
 
     p {
-      color: $mid_blue;
-      margin: 0;
+      color: #fff;
+      margin: 8px 0;
       font-size: 15px;
       vertical-align: middle;
+      text-align: center;
+
     }
   }
 
   .section1 {
     display: flex;
+    flex-wrap: wrap;
     margin: 1em 0;
     flex-direction: row;
-    justify-content: flex-start;
+    justify-content: space-around;
+    width: 100%;
 
     .group {
       flex-wrap: wrap;
+      margin: 1em;
     }
 
     .group-item {
@@ -37,7 +49,6 @@
     }
 
     p {
-      margin: 0 20px 0 0;
       vertical-align: middle;
     }
   }
