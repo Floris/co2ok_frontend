@@ -162,7 +162,8 @@
 
     h2,
     p {
-      // color: #fff;
+      max-width: 800px;
+      margin: 1em 0;
       color: $mid_blue;
     }
 
@@ -187,22 +188,34 @@
         width: 100%;
       }
     }
+
+    a {
+      color: $green;
+      text-decoration: underline;
+    }
   }
 
   .projects {
     background: $light_blue;
+    // padding: 60px 0px 60px;
     padding: 60px 0px 60px;
+    position: relative;
+
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url('./../assets/lotte/Illustraties/Middel_13.svg');
+    // background-attachment: fixed;
+
+    background-position: bottom;
+    height: 400px;
 
     .content {
       display: flex;
       flex-direction: column;
     }
 
-    text-align: center;
-
     p {
-      margin: 0 auto 20px auto;
-      max-width: 900px;
+      max-width: 700px;
     }
 
     .img_cover {
