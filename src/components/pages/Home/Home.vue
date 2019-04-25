@@ -1,7 +1,7 @@
 <template>
   <div class="home">
     <Navigation :lang="lang" @changeLangNav="changeLang"/>
-    <div class="jumbotron1">
+    <div class="jumbotron">
       <!-- <img src="../../../assets/boom2.svg"> -->
       <!-- <div class="img-background-color"></div> -->
       <div class="jumbo_content">
@@ -138,7 +138,6 @@
         </div>-->
       </div>
     </div>
-    <!-- <Faq :faq="faq"></Faq> -->
     <div class="partners">
       <div class="normal">
         <img src="../../../assets/partners/atmosfair.png">
@@ -180,7 +179,6 @@
 <script>
 import lang from "./../../../lang/lang_home.json";
 import { getCookie, setCookie } from "./../../../../functions/cookies";
-import Faq from "./Faq";
 import Footer from "./../../main/Footer/Footer";
 import Navigation from "./../../main/Navigation/Navigation";
 
@@ -219,33 +217,7 @@ export default {
       // section 6
       s6_title: lang.nl.s6_title,
       s6_p1: lang.nl.s6_p1,
-      s6_button: lang.nl.s6_button,
-
-      // section 5
-      faq: {
-        s5_q1: lang.nl.s5_q1,
-        s5_a1: lang.nl.s5_a1,
-        s5_q2: lang.nl.s5_q2,
-        s5_a2: lang.nl.s5_a2,
-        s5_q3: lang.nl.s5_q3,
-        s5_a3: lang.nl.s5_a3,
-        s5_q4: lang.nl.s5_q4,
-        s5_a4: lang.nl.s5_a4,
-        s5_q5: lang.nl.s5_q5,
-        s5_a5: lang.nl.s5_a5,
-        s5_q6: lang.nl.s5_q6,
-        s5_a6: lang.nl.s5_a6,
-        s5_q7: lang.nl.s5_q7,
-        s5_a7: lang.nl.s5_a7,
-        s5_q8: lang.nl.s5_q8,
-        s5_a8: lang.nl.s5_a8,
-        s5_q9: lang.nl.s5_q9,
-        s5_a9: lang.nl.s5_a9,
-        s5_q10: lang.nl.s5_q10,
-        s5_a10: lang.nl.s5_a10,
-        s5_q11: lang.nl.s5_q11,
-        s5_a11: lang.nl.s5_a11
-      }
+      s6_button: lang.nl.s6_button
     };
   },
   mounted: function() {
@@ -308,37 +280,12 @@ export default {
       this.s6_p1 = lang[language].s6_p1;
       this.s6_button = lang[language].s6_button;
 
-      // section 5
-      this.faq.s5_q1 = lang[language].s5_q1;
-      this.faq.s5_a1 = lang[language].s5_a1;
-      this.faq.s5_q2 = lang[language].s5_q2;
-      this.faq.s5_a2 = lang[language].s5_a2;
-      this.faq.s5_q3 = lang[language].s5_q3;
-      this.faq.s5_a3 = lang[language].s5_a3;
-      this.faq.s5_q4 = lang[language].s5_q4;
-      this.faq.s5_a4 = lang[language].s5_a4;
-      this.faq.s5_q5 = lang[language].s5_q5;
-      this.faq.s5_a5 = lang[language].s5_a5;
-      this.faq.s5_q6 = lang[language].s5_q6;
-      this.faq.s5_a6 = lang[language].s5_a6;
-      this.faq.s5_q7 = lang[language].s5_q7;
-      this.faq.s5_a7 = lang[language].s5_a7;
-      this.faq.s5_q8 = lang[language].s5_q8;
-      this.faq.s5_a8 = lang[language].s5_a8;
-      this.faq.s5_q9 = lang[language].s5_q9;
-      this.faq.s5_a9 = lang[language].s5_a9;
-      this.faq.s5_q10 = lang[language].s5_q10;
-      this.faq.s5_a10 = lang[language].s5_a10;
-      this.faq.s5_q11 = lang[language].s5_q11;
-      this.faq.s5_a11 = lang[language].s5_a1;
-
       setCookie("userLang", language, 200);
       this.lang = language;
     } // end changeLang
   },
   // Load Components
   components: {
-    Faq: Faq,
     Footer: Footer,
     Carousel: Carousel,
     Slide: Slide,

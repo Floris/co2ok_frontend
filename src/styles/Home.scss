@@ -8,7 +8,7 @@
   position: relative;
 
   // first section
-  .jumbotron1 {
+  .jumbotron {
     position: relative;
     height: 650px;
     width: 100%;
@@ -236,63 +236,6 @@
     }
   }
 
-  // fifth section
-  .qa_section {
-    min-height: 500px;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
-    padding: 60px 0px 60px;
-    background: $grey2;
-
-    .content {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-content: center;
-      width: $content_max_width;
-      // width: 80%;
-    }
-
-    .qa_block {
-      margin: 18px 0;
-      width: 100%;
-      text-align: left;
-      display: block;
-      color: $mid_blue;
-    }
-
-    .q {
-      border-bottom: 1px solid black;
-      cursor: pointer;
-      font-weight: bold;
-      padding: 10px;
-      color: $mid_blue;
-    }
-
-    .a {
-      padding: 10px;
-      color: $mid_blue;
-      // display: none;
-    }
-
-    // animations
-    .fade-enter-active,
-    .fade-leave-active {
-      transition: opacity 0.5s;
-    }
-
-    .fade-enter,
-    .fade-leave-to
-
-    /* .fade-leave-active below version 2.1.8 */
-      {
-      opacity: 0;
-    }
-  }
-
   // sixth section
   .partners {
     padding: 2em 0;
@@ -388,14 +331,6 @@
       }
     }
 
-    .qa_section {
-      width: 100% !important;
-
-      .content {
-        width: 90% !important;
-      }
-    }
-
     .partners {
       max-width: $grid_width;
     }
@@ -413,7 +348,7 @@
       display: none !important;
     }
 
-    .jumbotron1 {
+    .jumbotron {
       .jumbo_content {
         flex-direction: column;
         justify-content: flex-start;

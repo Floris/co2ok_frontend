@@ -100,6 +100,11 @@ export default {
           id: 2,
           text: "ABOUT",
           page: "/about"
+        },
+        {
+          id: 3,
+          text: "FAQ",
+          page: "/faq"
         }
       ],
 

@@ -1,14 +1,22 @@
 var fs = require('fs');
 
 // import all language files
+
+//homepage files
 var nl_home = require('./nl_/nl_home.js');
 var en_home = require('./en_/en_home.js');
+
+//faq page files
+var nl_faq = require('./nl_/nl_faq.js');
+var en_faq = require('./en_/en_faq.js');
 
 console.log('execute compile.js');
 
 // name of home language kit
 // add more language kit files later
 var home_language_kit = "src/lang/lang_home.json";
+var faq_language_kit = "src/lang/lang_faq.json";
+
 
 // exmaple homepage language object
 // add more language objects later
@@ -17,8 +25,14 @@ var home_language_kit_object = {
   en: en_home
 };
 
+var faq_language_kit_object = {
+  nl: nl_faq,
+  en: en_faq
+};
+
 // create New Home Language Kit
 createLanguageKit(home_language_kit, home_language_kit_object);
+createLanguageKit(faq_language_kit, faq_language_kit_object);
 
 function createLanguageKit(fileName, output) {
   console.log('create HomeLanguageKit');
