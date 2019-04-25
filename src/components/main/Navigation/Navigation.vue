@@ -3,7 +3,7 @@
     <nav class="navbar" v-bind:class="{showBar : isActive}">
       <div class="content">
         <div class="co2ok-logo">
-          <a href="/">
+          <router-link to="/">
             <img
               id="logo1"
               src="../../../assets/co2ok_white.svg"
@@ -14,7 +14,7 @@
               src="../../../assets/co2ok_logo.png"
               v-bind:class="{showLogo : isActive}"
             >
-          </a>
+          </router-link>
         </div>
         <div class="nav-items">
           <router-link

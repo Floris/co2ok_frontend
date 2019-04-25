@@ -1,13 +1,15 @@
 <template>
   <div class="faq">
     <Navigation :lang="lang" @changeLangNav="changeLang"/>
-    <div class="jumbotron"></div>
+    <div class="jumbotron">
+      <div class="background_color"></div>
+    </div>
     <div class="content">
-      <h2>Ninja</h2>
+      <h2>FAQ Ninja</h2>
     </div>
     <Faqbox :faq="lang_ninja"></Faqbox>
     <div class="content">
-      <h2>Business</h2>
+      <h2>FAQ Business</h2>
       <Faqbox :faq="lang_business"></Faqbox>
     </div>
     <Footer></Footer>

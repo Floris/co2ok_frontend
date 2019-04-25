@@ -2,9 +2,13 @@
   <div class="faqbox">
     <div class="content">
       <div class="qa_block" v-for="(item, key) in faq" v-bind:key="key">
-        <div v-on:click="show(key)" class="q">{{item.q}}</div>
+        <div v-on:click="show(key)" class="q">
+          <p>{{item.q}}</p>
+        </div>
         <transition name="fade">
-          <div v-if="active[key]" class="a">{{item.a}}</div>
+          <div v-if="active[key]" class="a">
+            <p>{{item.a}}</p>
+          </div>
         </transition>
       </div>
     </div>
@@ -28,7 +32,8 @@ export default {
         q8: false,
         q9: false,
         q10: false,
-        q11: false
+        q11: false,
+        q12: false
       }
     };
   },
@@ -90,6 +95,9 @@ export default {
           break;
         case "q11":
           this.active.q11 = true;
+          break;
+        case "q12":
+          this.active.q12 = true;
           break;
       }
 
