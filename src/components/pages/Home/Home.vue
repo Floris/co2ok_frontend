@@ -13,43 +13,73 @@
             target="_blank"
             href="https://chrome.google.com/webstore/detail/co2okninja/omlkdocjhkgbllabpihhdggplladfipe"
           >
-            <button class="button white">{{button_header1}}</button>
+            <button class="button green">{{button_header1}}</button>
           </a>
         </div>
       </div>
     </div>
-    <!-- <div class="ourMission">
-      <div class="block">
-        <div class="quotes">"</div>
-        <div class="text">
-          <h2>{{s2_title}}</h2>
-          <p>{{s2_p1}}</p>
-        </div>
-      </div>
-    </div>-->
     <div class="howItWorks">
-      <h2>{{s3_title}}</h2>
-      <div class="img_collection">
-        <div class="img_block">
-          <img src="../../../assets/hoeWerktHet1.svg">
-          <h3>{{s3_img_title1}}</h3>
-          <p>{{s3_img_p1}}</p>
+      <div class="img_background"></div>
+      <div class="img-background-color"></div>
+
+      <div class="block">
+        <h2>{{s3_title}}</h2>
+
+        <div class="carousel showCarousel hidden">
+          <carousel
+            :centerMode="true"
+            :per-page="1"
+            :navigate-to="someLocalProperty"
+            :mouse-drag="true"
+            :perPage="1"
+          >
+            <slide>
+              <div class="img_block">
+                <img src="../../../assets/hoeWerktHet1.svg">
+                <h3>{{s3_img_title1}}</h3>
+                <p>{{s3_img_p1}}</p>
+              </div>
+            </slide>
+            <slide>
+              <div class="img_block">
+                <img src="../../../assets/hoeWerktHet2.svg">
+                <h3>{{s3_img_title2}}</h3>
+                <p>{{s3_img_p2}}</p>
+              </div>
+            </slide>
+            <slide>
+              <div class="img_block">
+                <img src="../../../assets/hoeWerktHet3.svg">
+                <h3>{{s3_img_title3}}</h3>
+                <p>{{s3_img_p3}}</p>
+              </div>
+            </slide>
+          </carousel>
         </div>
-        <div class="img_block">
-          <img src="../../../assets/hoeWerktHet2.svg">
-          <h3>{{s3_img_title2}}</h3>
-          <p>{{s3_img_p2}}</p>
-        </div>
-        <div class="img_block">
-          <img src="../../../assets/hoeWerktHet3.svg">
-          <h3>{{s3_img_title3}}</h3>
-          <p>{{s3_img_p3}}</p>
+
+        <div class="img_collection hideCarousel">
+          <div class="img_block">
+            <img src="../../../assets/hoeWerktHet1.svg">
+            <h3>{{s3_img_title1}}</h3>
+            <p>{{s3_img_p1}}</p>
+          </div>
+          <div class="img_block">
+            <img src="../../../assets/hoeWerktHet2.svg">
+            <h3>{{s3_img_title2}}</h3>
+            <p>{{s3_img_p2}}</p>
+          </div>
+          <div class="img_block">
+            <img src="../../../assets/hoeWerktHet3.svg">
+            <h3>{{s3_img_title3}}</h3>
+            <p>{{s3_img_p3}}</p>
+          </div>
         </div>
       </div>
     </div>
     <div class="companies">
-      <h2>{{s4_title}}</h2>
-      <p>{{s4_p1}}</p>
+      <div class="content">
+        <h2>{{s4_title}}</h2>
+      </div>
       <div class="content">
         <div class="block">
           <img src="../../../assets/companies/hema.png">
@@ -69,8 +99,22 @@
         <div class="block">
           <img src="../../../assets/companies/baxshop.jpeg">
         </div>
+      </div>
+      <div class="content">
         <div class="block">
           <img src="../../../assets/companies/coolblue.png">
+        </div>
+        <div class="block">
+          <img src="../../../assets/companies/bol_com.png">
+        </div>
+        <div class="block">
+          <img src="../../../assets/companies/bol_com.png">
+        </div>
+        <div class="block">
+          <img src="../../../assets/companies/bol_com.png">
+        </div>
+        <div class="block">
+          <img src="../../../assets/companies/bol_com.png">
         </div>
         <div class="block">
           <img src="../../../assets/companies/bol_com.png">
@@ -125,6 +169,7 @@
         </carousel>
       </div>
     </div>
+
     <Footer></Footer>
   </div>
 </template>

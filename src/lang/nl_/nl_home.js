@@ -16,7 +16,7 @@ module.exports = {
   s3_img_title3: "FIGHT CLIMATE CHANGE",
   s3_img_p3: "Met deze commissie financieren we projecten die direct broeikasgassen reduceren.",
   //section4
-  s4_title: "Bedrijven",
+  s4_title: "Bij deze shops kan je nu al klimaatneutraal shoppen: link",
   s4_p1: "Met keuze uit meer dan 20.000+ webshops!",
   s6_title: "CO₂-compensatie projecten",
   s6_p1: "CO₂ok ondersteunt verschillende CO2-compensatieprojecten van Atmosfair. 90% van de CO2-compensatieprojecten van Atmosfair voldoet aan de CDM Gold Standard, de strengste standaard die beschikbaar is voor projecten voor klimaatbescherming. Om ook landen te betrekken die niet over de randvoorwaarden voor grote projecten beschikken, ontwikkelt Atmosfair as we speak allerlei microprojecten.",

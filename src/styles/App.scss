@@ -33,6 +33,7 @@ h3 {
 p {
   font-size: $normal_fs;
   color: $mid_blue;
+  font-weight: 500;
 }
 
 a {
@@ -41,7 +42,7 @@ a {
   color: $mid_blue;
 }
 
-// general content/ layout styling
+// general content/ layout stylin
 .content {
   max-width: $content_max_width;
   height: 100%;

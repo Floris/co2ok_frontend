@@ -16,7 +16,7 @@ module.exports = {
   s3_img_title3: "FIGHT CLIMATE CHANGE",
   s3_img_p3: "With the commision we can finance projects that reduce CO₂.",
   //section4
-  s4_title: "Companies",
+  s4_title: "With these shops you can shop climateneutral: link",
   s4_p1: "Choose from 22.000+ international webshops",
   s6_title: "CO₂-compensation projects",
   s6_p1: "Needs translated text...",

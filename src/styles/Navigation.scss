@@ -13,7 +13,7 @@
     // border: 1px solid $green;
     // border-radius: $border_radius;
     // background: $green;
-    color: #fff;
+    color: $mid_blue;
     padding: 10px;
     vertical-align: middle;
   }
@@ -44,8 +44,8 @@
     width: 100%;
     z-index: 500000;
     max-height: 0;
-    color: black;
-    border-bottom: 3px solid $green;
+    // background: white;
+    // border-bottom: 3px solid #eee;
 
     .content {
       padding: 1em;
@@ -78,6 +78,7 @@
     background: rgba(255, 255, 255, 0.96);
     max-height: 200px;
     transition: max-height 1s;
+    border-bottom: 3px solid $green;
     // width: 80% !important;
     // max-width: 80% !important;
     left: 0 !important;
