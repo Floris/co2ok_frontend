@@ -70,42 +70,57 @@
           }
 
         .why_co2ok_content {
-            background: #faebd7;	//temporary
-            height: 1200px;
+            background: white;	//temporary
+            height: 600px;
 
-            display: flex;
             position: absolute;
+            display: flex;
             flex-direction: column;
-            justify-content: space-evenly;
-
-
-            border-style: solid rgba(0, 0, 0, 0.0);
-            border-width: 1px;
-
-            margin: 0 auto;
-            top: -60px;
+            justify-content: center;
             left: 0;
             right: 0;
+            top: -60px;
+            margin: 0 auto;
+            border-style: solid rgba(0, 0, 0, 0.0);
+            border-width: 1px;
             z-index: 50;
+
+            .content_block {
+                height: 250px;
+                margin: 0 auto;
+
+                .content_text {
+                    margin-left: 30px;
+                    max-width: 880px;
+                    // display: flex;
+                    // flex-direction: column;
+                }
+                .content_in_block {
+                    display: flex;
+                    margin-top: 30px;
+
+                    img {
+                        width: 123px;
+                        height: 123px;
+                        align-self: center;
+                    }
+                }
+            }
+
             h2 {
                 margin-left: 50px;
             }
-            .content_block {
-                height: 250px;
-                border-bottom: solid rgba(92, 89, 89, 0.249);
-                border-width: thin;
-                align-items: center;
-                
-             
-                img {
-                    margin-left: 50px;
-                    width: 123px;
-                    height: 123px;
-                }
-                .content_text {
-                    margin-left: 50px;
-                    max-width: 900px;
-                }
+
+            .VueCarousel-dot {
+                border-bottom: 2px solid #ccc;
+            }
+          
+            .VueCarousel-dot--active {
+                border-bottom: 2px solid #000;
+            }
+
+            .carousel {
+                width: 100%;
             }
 
         }
@@ -130,14 +145,41 @@
             }
         }
     }
+    .showCarousel {
+        display: block;
+        margin: 0 auto;
+    }
+  
+    .why_co2ok {
+        .why_co2ok_content {
+            text-align: center !important;
+
+            .content_block{
+                height: 400px !important;
+            }
+
+            h2 {
+                margin-left: 0px !important;
+            }
+        }
+    }
+    
+    .hideCarousel {
+        display: none !important;
+    }
 }
 
 @media only screen and (max-width: 600px) {
+.zakelijk {
     .top_intro {
         .content {
             img {
                 display: none;
             }
         }
+    }
+    .carousel {
+        display: block;
+      }
     }
 }
