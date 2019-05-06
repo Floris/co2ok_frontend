@@ -1,6 +1,7 @@
 <template>
     <div class="zakelijk">
         <Navigation />
+        <!-- ADD languages -->
         <div class="top_intro">
             <div class="content">
                 <img src="../../../assets/wereldbol.png"/>            
@@ -17,12 +18,12 @@
                 </div>
             </div>
         </div>
+        <!-- ADD languages -->
         <div class="why_co2ok">
             <div class="img_background"></div>
-            <div class="img-background-color"></div>
+            <!-- <div class="img-background-color"></div> -->
 
             <div class="why_co2ok_content content">
-                <!-- ADD languages -->
                 <h2>Waarom Co2ok?</h2>
                 <div class="carousel showCarousel hidden">
                     <carousel
@@ -32,12 +33,12 @@
                     :mouse-drag="true"
                     :perPage="1"
                     >
+                    <!-- ADD languages ALL slides-->
                     <slide>
-                         <!-- ADD languages ALL slides-->
                         <div class="content_block">
                             <img src="../../../assets/icons_zakelijk/zakelijk_globe.png"/>
-                                <h3>Go green</h3>
-                                <p>Als retailer run je je webshop natuurlijk zo duurzaam mogelijk. Sommige dingen liggen echter buiten je macht – het produceren en het vervoer van je producten bijvoorbeeld. Fabrikanten doen er te lang over om klimaatneutraal te worden. Met CO₂ok kunnen je klanten alles kopen wat ze willen, zonder bij te dragen aan klimaatverandering!</p>
+                            <h3>Go green</h3>
+                            <p>Als retailer run je je webshop natuurlijk zo duurzaam mogelijk. Sommige dingen liggen echter buiten je macht – het produceren en het vervoer van je producten bijvoorbeeld. Fabrikanten doen er te lang over om klimaatneutraal te worden. Met CO₂ok kunnen je klanten alles kopen wat ze willen, zonder bij te dragen aan klimaatverandering!</p>
                         </div>
                     </slide>
                     <slide>
@@ -97,7 +98,91 @@
                 </div>
             </div>
         </div>
+        <!-- ADD languages -->
         <div class="block_cijfers">
+            <div class="content">
+                <h2>De cijfers</h2>
+                <h3>Liegen er niet om</h3>
+                   <div class="carousel showCarousel hidden">
+                    <carousel
+                    :centerMode="true"
+                    :per-page="1"
+                    :navigate-to="someLocalProperty"
+                    :mouse-drag="true"
+                    :perPage="1"
+                    >
+                    <slide>
+                        <div class="block">
+                            <img src="">
+                            <p>Wanneer gekozen wordt tussen twee merken van gelijke kwaliteit en prijs, kiest 90% van de klanten waarschijnlijk voor een “cause branded” product</p>
+                            <p>LINK</p>
+                        </div>
+                    </slide>
+                    <slide>
+                        <div class="block">
+                            <p>Wanneer gekozen wordt tussen twee merken van gelijke kwaliteit en prijs, kiest 90% van de klanten waarschijnlijk voor een “cause branded” product</p>
+                            <p>LINK</p>
+                        </div>
+                    </slide>
+                     <slide>
+                        <div class="block">
+                            <p>Wanneer gekozen wordt tussen twee merken van gelijke kwaliteit en prijs, kiest 90% van de klanten waarschijnlijk voor een “cause branded” product</p>
+                            <p>LINK</p>
+                        </div>
+                    </slide>
+                    <slide>
+                        <div class="block">
+                            <p>Wanneer gekozen wordt tussen twee merken van gelijke kwaliteit en prijs, kiest 90% van de klanten waarschijnlijk voor een “cause branded” product</p>
+                            <p>LINK</p>
+                        </div>
+                    </slide>
+                    </carousel>
+                </div>
+                <div class="content_block group hideCarousel">
+                    <div class="block">
+                        <p>Wanneer gekozen wordt tussen twee merken van gelijke kwaliteit en prijs, kiest 90% van de klanten waarschijnlijk voor een “cause branded” product</p>
+                        <p>LINK</p>
+                    </div>
+                     <div class="block">
+                        <p>3 van de 4 respondenten is het er mee eens dat bedrijven acties kunnen ondernemen om zowel winst te verhogen als economische/sociale omstandigheden in de samenleving te verbeteren</p>
+                        <p>LINK</p>
+                    </div>
+                     <div class="block">
+                        <p>92% van consumenten geeft aan een positief beeld te hebben van een bedrijf wanneer een bedrijf een sociaal of milieu probleem aanpakt</p>
+                        <p>LINK</p>
+                    </div>
+                     <div class="block">
+                        <p>66% van consumenten willen dat merken een socio-politieke houding aannemen</p>
+                        <p>LINK</p>
+                    </div>
+                </div>
+            </div>  
+        </div>
+        <div class="block_form">
+            <div class="content">
+                <h2>In een paar minuten een groener imago</h2>
+                <div class="form group">
+                    <div class="plugin_install">
+                        <h3>Plugin installatie</h3>
+                        <button class="button green">Magento</button>
+                        <button class="button green">Wordpress / WooCommerce</button>
+                    </div>
+                    <div class="ecom_input">
+                        <h3>Ander e-commerce system</h3>
+                        <div class="input_fields">
+                            <p>Naam*</p>
+                            <input v-model="name">
+                            <p>E-mail*</p>
+                            <input v-model="email">
+                            <p>telefoon nummer*</p>
+                            <input v-model="number">
+                            <p>e-commerce platform*</p>
+                            <input v-model="ecommerce">
+                            <button class="button green">Verstuur</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </template>

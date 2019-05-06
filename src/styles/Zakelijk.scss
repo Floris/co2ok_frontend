@@ -49,30 +49,31 @@
 
     .why_co2ok {
         position: relative;
-        height: 400px;
+        height: 600px;
         width: 100%;
 
         .img_background {
-            background: url('./../assets/wolken.jpg');
-            background-position: 75% 59%;
+            background: url('./../assets/wolk.png');
+            opacity: 0.5;
             position: absolute;
             height: 100%;
             width: 100%;
-            z-index: 0;
+            z-index: 15;
+            top: -110px;
           }
       
         .img-background-color {
             position: absolute;
-            height: 100%;
+            height: 75%;
             width: 100%;
-            z-index: 3;
+            z-index: 5;
             background: rgba(182, 225, 249, 0.8);
           }
 
         .why_co2ok_content {
             background: white;	//temporary
-            height: 600px;
-
+            box-shadow: -5px 3px 40px 2px rgba(143,137,143,0.74);
+            height: 1000px;
             position: absolute;
             display: flex;
             flex-direction: column;
@@ -86,18 +87,16 @@
             z-index: 50;
 
             .content_block {
-                height: 250px;
-                margin: 0 auto;
-
-                .content_text {
-                    margin-left: 30px;
-                    max-width: 880px;
-                    // display: flex;
-                    // flex-direction: column;
-                }
                 .content_in_block {
                     display: flex;
+                    flex-direction: row;
+                    justify-content: space-evenly;
                     margin-top: 30px;
+                    
+                    .content_text {
+                        width: 880px;
+                        max-width: 100%;
+                    }
 
                     img {
                         width: 123px;
@@ -105,12 +104,17 @@
                         align-self: center;
                     }
                 }
+
+                .content_in_block:not(:last-child) {
+                    border-bottom: solid thin;
+                    border-color: #D2D0D0;
+                }
             }
 
             h2 {
-                margin-left: 50px;
+                text-align: center;
+                margin-top: 10px;
             }
-
             .VueCarousel-dot {
                 border-bottom: 2px solid #ccc;
             }
@@ -125,7 +129,94 @@
 
         }
     }
+    
+    .block_cijfers {
+        position: relative;
+        height: 400px;
+        width: 100%;
+        top: 400px;
+        text-align: center;
 
+        .content {
+            .content_block {
+                .block {
+                    margin: 0 auto;
+                    max-width: 400px;
+                }
+            }
+        }
+    }
+    .block_form {
+        position: relative;
+        height: 750px;
+        width: 100%;
+        top: 400px;
+        text-align: center;
+        background: $green;
+        
+
+        .content {
+            h2 {
+                color: $white;
+            }
+            .form {
+                justify-content: space-evenly;
+                align-items: center;
+                // width: 75%;
+                margin: 0 auto;
+                margin-top: 75px;
+
+                .plugin_install {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    height: 500px;
+                    width: 450px;
+                    box-shadow: -5px 3px 40px 2px rgba(143,137,143,0.74);
+                    background: $white;
+                    border-radius: 5px;
+                    align-items: center;
+
+                    .button {
+                        margin-top: 20px;
+                        width: 75%;
+                    }
+                }
+
+                .ecom_input {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    height: 500px;
+                    width: 450px;
+                    box-shadow: -5px 3px 40px 2px rgba(143,137,143,0.74);
+                    background: $white;
+                    border-radius: 5px;
+        
+                    .button {
+                        height: 40px;
+                        width: 100px;
+                        margin-top: 10px;
+                    }
+
+                    .input_fields {
+                        width: 75%;
+                        margin: 0 auto;
+                        text-align: left;
+                    }
+                    input {
+                        border-radius: 5px;
+                        border: none;
+                        border: solid 1px #ccc;
+                        box-shadow: 2px 2px 5px 0px rgba(191,180,191,1);
+                        height: 30px;
+                        width: 100%;
+                    }
+                }
+
+            }
+        }
+    }
 }
 
 
@@ -152,14 +243,14 @@
   
     .why_co2ok {
         .why_co2ok_content {
-            text-align: center !important;
+            text-align: center;
+            height: 600px !important;
+            .content_block {
 
-            .content_block{
-                height: 400px !important;
-            }
-
-            h2 {
-                margin-left: 0px !important;
+                img {
+                    width: 100px;
+                    height: 100px;
+                }   
             }
         }
     }
