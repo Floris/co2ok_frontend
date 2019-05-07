@@ -54,12 +54,12 @@
 
         .img_background {
             background: url('./../assets/wolk.png');
-            opacity: 0.5;
+            // opacity: 0.5;
             position: absolute;
             height: 100%;
             width: 100%;
             z-index: 15;
-            top: -110px;
+            top: -120px;
           }
       
         .img-background-color {
@@ -115,13 +115,13 @@
                 text-align: center;
                 margin-top: 10px;
             }
-            .VueCarousel-dot {
-                border-bottom: 2px solid #ccc;
-            }
+            // .VueCarousel-dot {
+            //     border-bottom: 2px solid #ccc;
+            // }
           
-            .VueCarousel-dot--active {
-                border-bottom: 2px solid #000;
-            }
+            // .VueCarousel-dot--active {
+            //     border-bottom: 2px solid #000;
+            // }
 
             .carousel {
                 width: 100%;
@@ -132,46 +132,60 @@
     
     .block_cijfers {
         position: relative;
-        height: 400px;
+        height: 600px;
         width: 100%;
-        top: 400px;
+        padding-top: 400px;
         text-align: center;
 
         .content {
             .content_block {
                 .block {
                     margin: 0 auto;
+                    margin-top: 50px;
                     max-width: 400px;
+
+                    p {
+                        max-width: 250px;
+                    }
+                
+                    img {
+                        width: 150px;
+                    }
                 }
             }
         }
     }
     .block_form {
         position: relative;
-        height: 750px;
+        height: 650px;
         width: 100%;
-        top: 400px;
         text-align: center;
-        background: $green;
+        // background: $green;
+        background: url('./../assets/achtergronden_svg/middel_12.svg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
         
 
         .content {
+
             h2 {
-                color: $white;
+                color: black;
             }
+
             .form {
                 justify-content: space-evenly;
                 align-items: center;
-                // width: 75%;
                 margin: 0 auto;
-                margin-top: 75px;
+                margin-top: 30px;
 
                 .plugin_install {
                     display: flex;
                     flex-direction: column;
                     justify-content: center;
                     height: 500px;
-                    width: 450px;
+                    width: 400px;
+                    max-width: 90%;
                     box-shadow: -5px 3px 40px 2px rgba(143,137,143,0.74);
                     background: $white;
                     border-radius: 5px;
@@ -188,7 +202,8 @@
                     flex-direction: column;
                     justify-content: center;
                     height: 500px;
-                    width: 450px;
+                    width: 400px;
+                    max-width: 90%;
                     box-shadow: -5px 3px 40px 2px rgba(143,137,143,0.74);
                     background: $white;
                     border-radius: 5px;
@@ -229,6 +244,12 @@
 }
 
 @media only screen and (max-width: 900px) {
+
+    .showCarousel {
+        display: block;
+        margin: 0 auto;
+    }
+
     .top_intro {
         .content {
             img {
@@ -236,21 +257,46 @@
             }
         }
     }
-    .showCarousel {
-        display: block;
-        margin: 0 auto;
-    }
-  
+
     .why_co2ok {
         .why_co2ok_content {
             text-align: center;
             height: 600px !important;
             .content_block {
-
                 img {
                     width: 100px;
                     height: 100px;
-                }   
+                }
+                p {
+                    max-width: 500px;
+                    margin: 0 auto;
+                }
+            }
+        }
+    }
+
+    .block_cijfers {
+
+        padding-top: 0px !important;
+
+        .content {
+            .block {
+                img {
+                    width: 150px;
+                }
+            }
+        }
+    }
+
+    .block_form {
+        height: 1200px !important;
+        .content {
+            .form {
+                flex-direction: column;
+
+                .plugin_install, .ecom_input {
+                    margin-top: 10px;
+                }
             }
         }
     }
@@ -261,16 +307,24 @@
 }
 
 @media only screen and (max-width: 600px) {
-.zakelijk {
-    .top_intro {
-        .content {
-            img {
-                display: none;
+    .zakelijk {
+        .top_intro {
+            .content {
+                img {
+                    display: none;
+                }
             }
         }
-    }
-    .carousel {
-        display: block;
-      }
+        .why_co2ok_content {
+            .content_block {
+                p {
+                    margin: 0 auto;
+                    max-width: 250px;
+                }
+            }
+        }
+        .carousel {
+            display: block;
+        }
     }
 }

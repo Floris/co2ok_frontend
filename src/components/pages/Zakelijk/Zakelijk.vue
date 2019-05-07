@@ -45,8 +45,7 @@
                         <div class="content_block">
                             <img src="../../../assets/icons_zakelijk/zakelijk_pijl.png"/>
                             <h3>Meer klanten in jouw webshop</h3>
-                            <p>Door je als webshop te associëren met een goed doel, zullen klanten eerder bij jou een aankoop doen dan bij een ander. Ook komen ze vaker terug. Onderzoek heeft aangetoond dat het zowel je merk als klantenbinding versterkt en zorgt voor minder verlaten winkelmandjes. Dit wordt ook wel ‘cause marketing’ genoemd.
-                            Nóg meer klanten bereik je als je meedoet aan onze marketingcampagne. Tijdens deze campagne kun je (als partner) eenvoudig meeliften op ons netwerk. We posten op Facebook, Instagram, LinkedIn, Twitter en komen in magazines en op de radio! Wil je hier meer over weten, neem dan contact op met Jos.</p>
+                            <p>Door je als webshop te associëren met een goed doel, zullen klanten eerder bij jou een aankoop doen dan bij een ander. Ook komen ze vaker terug. Onderzoek heeft aangetoond dat het zowel je merk als klantenbinding versterkt en zorgt voor minder verlaten winkelmandjes. Dit wordt ook wel ‘cause marketing’ genoemd</p>
                         </div>
                     </slide>
                     <slide>
@@ -77,8 +76,7 @@
                         <img src="../../../assets/icons_zakelijk/zakelijk_pijl.png"/>
                         <div class="content_text">
                             <h3>Meer klanten in jouw webshop</h3>
-                            <p>Door je als webshop te associëren met een goed doel, zullen klanten eerder bij jou een aankoop doen dan bij een ander. Ook komen ze vaker terug. Onderzoek heeft aangetoond dat het zowel je merk als klantenbinding versterkt en zorgt voor minder verlaten winkelmandjes. Dit wordt ook wel ‘cause marketing’ genoemd.
-                            Nóg meer klanten bereik je als je meedoet aan onze marketingcampagne. Tijdens deze campagne kun je (als partner) eenvoudig meeliften op ons netwerk. We posten op Facebook, Instagram, LinkedIn, Twitter en komen in magazines en op de radio! Wil je hier meer over weten, neem dan contact op met Jos.</p>
+                            <p>Door je als webshop te associëren met een goed doel, zullen klanten eerder bij jou een aankoop doen dan bij een ander. Ook komen ze vaker terug. Onderzoek heeft aangetoond dat het zowel je merk als klantenbinding versterkt en zorgt voor minder verlaten winkelmandjes. Dit wordt ook wel ‘cause marketing’ genoemd.</p>
                         </div>
                     </div>
                     <div class="content_in_block">
@@ -113,25 +111,28 @@
                     >
                     <slide>
                         <div class="block">
-                            <img src="">
+                            <img src="../../../assets/icons_zakelijk/90.svg"/>
                             <p>Wanneer gekozen wordt tussen twee merken van gelijke kwaliteit en prijs, kiest 90% van de klanten waarschijnlijk voor een “cause branded” product</p>
                             <p>LINK</p>
                         </div>
                     </slide>
                     <slide>
                         <div class="block">
+                            <img src="../../../assets/icons_zakelijk/75.svg"/>
                             <p>Wanneer gekozen wordt tussen twee merken van gelijke kwaliteit en prijs, kiest 90% van de klanten waarschijnlijk voor een “cause branded” product</p>
                             <p>LINK</p>
                         </div>
                     </slide>
                      <slide>
                         <div class="block">
+                            <img src="../../../assets/icons_zakelijk/92.svg"/>
                             <p>Wanneer gekozen wordt tussen twee merken van gelijke kwaliteit en prijs, kiest 90% van de klanten waarschijnlijk voor een “cause branded” product</p>
                             <p>LINK</p>
                         </div>
                     </slide>
                     <slide>
                         <div class="block">
+                            <img src="../../../assets/icons_zakelijk/66.svg"/>
                             <p>Wanneer gekozen wordt tussen twee merken van gelijke kwaliteit en prijs, kiest 90% van de klanten waarschijnlijk voor een “cause branded” product</p>
                             <p>LINK</p>
                         </div>
@@ -140,18 +141,22 @@
                 </div>
                 <div class="content_block group hideCarousel">
                     <div class="block">
+                        <img src="../../../assets/icons_zakelijk/90.svg"/>    
                         <p>Wanneer gekozen wordt tussen twee merken van gelijke kwaliteit en prijs, kiest 90% van de klanten waarschijnlijk voor een “cause branded” product</p>
                         <p>LINK</p>
                     </div>
                      <div class="block">
+                        <img src="../../../assets/icons_zakelijk/75.svg"/>
                         <p>3 van de 4 respondenten is het er mee eens dat bedrijven acties kunnen ondernemen om zowel winst te verhogen als economische/sociale omstandigheden in de samenleving te verbeteren</p>
                         <p>LINK</p>
                     </div>
                      <div class="block">
+                        <img src="../../../assets/icons_zakelijk/92.svg"/>
                         <p>92% van consumenten geeft aan een positief beeld te hebben van een bedrijf wanneer een bedrijf een sociaal of milieu probleem aanpakt</p>
                         <p>LINK</p>
                     </div>
                      <div class="block">
+                        <img src="../../../assets/icons_zakelijk/66.svg"/>
                         <p>66% van consumenten willen dat merken een socio-politieke houding aannemen</p>
                         <p>LINK</p>
                     </div>
@@ -184,18 +189,21 @@
                 </div>
             </div>
         </div>
+        <Footer></Footer>
     </div>
 </template>
 
 <script>
 
 import Navigation from "./../../main/Navigation/Navigation";
+import Footer from "./../../main/Footer/Footer";
 import { Carousel, Slide } from "vue-carousel";
 
 export default {
     name: "Zakelijk",
     components: {
         Navigation: Navigation,
+        Footer: Footer,
         Carousel: Carousel,
         Slide: Slide
     }
