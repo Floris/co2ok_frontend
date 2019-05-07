@@ -1,13 +1,12 @@
 import Home from './components/pages/Home/Home';
-import Zakelijk from './components/pages/Zakelijk/Zakelijk';
+import Faq from './components/pages/Faq/Faq';
 
-export const routes = [
-    { 
-        path: '/', 
-        component: Home 
-    },
-    {
-        path: '/zakelijk',
-        component: Zakelijk
-    }
+export const routes = [{
+    path: '/',
+    component: Home
+  },
+  {
+    path: '/faq',
+    component: Faq
+  }
 ];
