@@ -197,6 +197,7 @@
 
 import Navigation from "./../../main/Navigation/Navigation";
 import Footer from "./../../main/Footer/Footer";
+// import lang from "./../../../lang/lang_zakelijk.json";
 import { Carousel, Slide } from "vue-carousel";
 
 export default {
@@ -206,6 +207,15 @@ export default {
         Footer: Footer,
         Carousel: Carousel,
         Slide: Slide
+    },
+    data() {
+        return {
+            //language
+            // lang: "nl",
+            //text
+            //top intro
+            // title: lang.nl
+        }
     }
 }
 </script>
