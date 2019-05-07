@@ -1,7 +1,7 @@
 <template>
   <div class="home">
     <Navigation :lang="lang" @changeLangNav="changeLang"/>
-    <div class="jumbotron1">
+    <div class="jumbotron">
       <!-- <img src="../../../assets/boom2.svg"> -->
       <!-- <div class="img-background-color"></div> -->
       <div class="jumbo_content">
@@ -78,64 +78,66 @@
     </div>
     <div class="companies">
       <div class="content">
-        <h2>{{s4_title}}</h2>
+        <h2>
+          {{s4_title}}
+          <a href="#" target="_blank">{{s4_link}}</a>
+        </h2>
       </div>
       <div class="content">
         <div class="block">
-          <img src="../../../assets/companies/hema.png">
+          <img src="../../../assets/lotte/Logos_webshops/Middel_1.svg">
         </div>
         <div class="block">
-          <img src="../../../assets/companies/ali.png">
+          <img src="../../../assets/lotte/Logos_webshops/Middel_2.svg">
         </div>
         <div class="block">
-          <img src="../../../assets/companies/dx.png">
+          <img src="../../../assets/lotte/Logos_webshops/Middel_3.svg">
         </div>
         <div class="block">
-          <img src="../../../assets/companies/booking.png">
+          <img src="../../../assets/lotte/Logos_webshops/Middel_4.svg">
         </div>
         <div class="block">
-          <img src="../../../assets/companies/ebay.png">
+          <img src="../../../assets/lotte/Logos_webshops/Middel_5.svg">
         </div>
         <div class="block">
-          <img src="../../../assets/companies/baxshop.jpeg">
+          <img src="../../../assets/lotte/Logos_webshops/Middel_6.svg">
         </div>
       </div>
       <div class="content">
         <div class="block">
-          <img src="../../../assets/companies/coolblue.png">
+          <img src="../../../assets/lotte/Logos_webshops/Middel_7.svg">
         </div>
         <div class="block">
-          <img src="../../../assets/companies/bol_com.png">
+          <img src="../../../assets/lotte/Logos_webshops/Middel_8.svg">
         </div>
         <div class="block">
-          <img src="../../../assets/companies/bol_com.png">
+          <img src="../../../assets/lotte/Logos_webshops/Middel_9.svg">
         </div>
         <div class="block">
-          <img src="../../../assets/companies/bol_com.png">
+          <img src="../../../assets/lotte/Logos_webshops/Middel_10.svg">
         </div>
         <div class="block">
-          <img src="../../../assets/companies/bol_com.png">
+          <img src="../../../assets/lotte/Logos_webshops/Middel_11.svg">
         </div>
         <div class="block">
-          <img src="../../../assets/companies/bol_com.png">
+          <img src="../../../assets/lotte/Logos_webshops/Middel_12.svg">
         </div>
       </div>
     </div>
     <div class="projects">
       <div class="content">
         <h2>{{s6_title}}</h2>
-        <div class="img_cover">
+        <p>{{s6_p1}}</p>
+        <router-link to="/projecten">
+          <button class="button green">{{s6_button}}</button>
+        </router-link>
+        <!-- <div class="img_cover">
           <img src="../../../assets/project1.jpg">
           <img src="../../../assets/project2.jpg">
           <img src="../../../assets/project3.jpg">
-        </div>
-        <p>{{s6_p1}}</p>
-        <router-link to="/projecten">
-          <button class="button green">Bekijk Projecten</button>
-        </router-link>
+        </div>-->
       </div>
     </div>
-    <!-- <Faq :faq="faq"></Faq> -->
     <div class="partners">
       <div class="normal">
         <img src="../../../assets/partners/atmosfair.png">
@@ -177,7 +179,6 @@
 <script>
 import lang from "./../../../lang/lang_home.json";
 import { getCookie, setCookie } from "./../../../../functions/cookies";
-import Faq from "./Faq";
 import Footer from "./../../main/Footer/Footer";
 import Navigation from "./../../main/Navigation/Navigation";
 
@@ -211,36 +212,12 @@ export default {
       // section4
       s4_title: lang.nl.s4_title,
       s4_p1: lang.nl.s4_p1,
+      s4_link: lang.nl.s4_link,
 
       // section 6
       s6_title: lang.nl.s6_title,
       s6_p1: lang.nl.s6_p1,
-
-      // section 5
-      faq: {
-        s5_q1: lang.nl.s5_q1,
-        s5_a1: lang.nl.s5_a1,
-        s5_q2: lang.nl.s5_q2,
-        s5_a2: lang.nl.s5_a2,
-        s5_q3: lang.nl.s5_q3,
-        s5_a3: lang.nl.s5_a3,
-        s5_q4: lang.nl.s5_q4,
-        s5_a4: lang.nl.s5_a4,
-        s5_q5: lang.nl.s5_q5,
-        s5_a5: lang.nl.s5_a5,
-        s5_q6: lang.nl.s5_q6,
-        s5_a6: lang.nl.s5_a6,
-        s5_q7: lang.nl.s5_q7,
-        s5_a7: lang.nl.s5_a7,
-        s5_q8: lang.nl.s5_q8,
-        s5_a8: lang.nl.s5_a8,
-        s5_q9: lang.nl.s5_q9,
-        s5_a9: lang.nl.s5_a9,
-        s5_q10: lang.nl.s5_q10,
-        s5_a10: lang.nl.s5_a10,
-        s5_q11: lang.nl.s5_q11,
-        s5_a11: lang.nl.s5_a11
-      }
+      s6_button: lang.nl.s6_button
     };
   },
   mounted: function() {
@@ -296,34 +273,12 @@ export default {
       //section4
       this.s4_title = lang[language].s4_title;
       this.s4_p1 = lang[language].s4_p1;
+      this.s4_link = lang[language].s4_link;
 
       // section 6
       this.s6_title = lang[language].s6_title;
       this.s6_p1 = lang[language].s6_p1;
-
-      // section 5
-      this.faq.s5_q1 = lang[language].s5_q1;
-      this.faq.s5_a1 = lang[language].s5_a1;
-      this.faq.s5_q2 = lang[language].s5_q2;
-      this.faq.s5_a2 = lang[language].s5_a2;
-      this.faq.s5_q3 = lang[language].s5_q3;
-      this.faq.s5_a3 = lang[language].s5_a3;
-      this.faq.s5_q4 = lang[language].s5_q4;
-      this.faq.s5_a4 = lang[language].s5_a4;
-      this.faq.s5_q5 = lang[language].s5_q5;
-      this.faq.s5_a5 = lang[language].s5_a5;
-      this.faq.s5_q6 = lang[language].s5_q6;
-      this.faq.s5_a6 = lang[language].s5_a6;
-      this.faq.s5_q7 = lang[language].s5_q7;
-      this.faq.s5_a7 = lang[language].s5_a7;
-      this.faq.s5_q8 = lang[language].s5_q8;
-      this.faq.s5_a8 = lang[language].s5_a8;
-      this.faq.s5_q9 = lang[language].s5_q9;
-      this.faq.s5_a9 = lang[language].s5_a9;
-      this.faq.s5_q10 = lang[language].s5_q10;
-      this.faq.s5_a10 = lang[language].s5_a10;
-      this.faq.s5_q11 = lang[language].s5_q11;
-      this.faq.s5_a11 = lang[language].s5_a1;
+      this.s6_button = lang[language].s6_button;
 
       setCookie("userLang", language, 200);
       this.lang = language;
@@ -331,7 +286,6 @@ export default {
   },
   // Load Components
   components: {
-    Faq: Faq,
     Footer: Footer,
     Carousel: Carousel,
     Slide: Slide,
