@@ -54,7 +54,6 @@
 
         .img_background {
             background: url('./../assets/wolk.png');
-            // opacity: 0.5;
             position: absolute;
             height: 100%;
             width: 100%;
@@ -73,7 +72,7 @@
         .why_co2ok_content {
             background: white;	//temporary
             box-shadow: -5px 3px 40px 2px rgba(143,137,143,0.74);
-            height: 1000px;
+            height: 850px;
             position: absolute;
             display: flex;
             flex-direction: column;
@@ -113,7 +112,6 @@
 
             h2 {
                 text-align: center;
-                margin-top: 10px;
             }
             // .VueCarousel-dot {
             //     border-bottom: 2px solid #ccc;
@@ -134,7 +132,7 @@
         position: relative;
         height: 600px;
         width: 100%;
-        padding-top: 400px;
+        padding-top: 250px;
         text-align: center;
 
         .content {
@@ -160,17 +158,13 @@
         height: 650px;
         width: 100%;
         text-align: center;
-        // background: $green;
-        background: url('./../assets/achtergronden_svg/middel_12.svg');
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        
-
+        background: $green;
+        padding-top: 50px;
+    
         .content {
 
             h2 {
-                color: black;
+                color: $white;
             }
 
             .form {
@@ -281,6 +275,7 @@
 
         .content {
             .block {
+                padding-top: 50px;
                 img {
                     width: 150px;
                 }
@@ -289,13 +284,17 @@
     }
 
     .block_form {
-        height: 1200px !important;
+        height: 1000px !important;
         .content {
             .form {
                 flex-direction: column;
 
                 .plugin_install, .ecom_input {
                     margin-top: 10px;
+                }
+
+                .plugin_install {
+                    height: 250px !important;
                 }
             }
         }
@@ -310,6 +309,7 @@
     .zakelijk {
         .top_intro {
             .content {
+                text-align: center;
                 img {
                     display: none;
                 }
