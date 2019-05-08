@@ -1,1 +1,131 @@
 @import "_vars.scss";
+
+.about {
+  position: relative;
+  align-self: center;
+  background: $white;
+
+  .block_intro {
+    position: relative;
+    height: 300px;
+    width: 100%;
+    background: $green;
+
+    .content {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      padding-bottom: 100px;
+    
+      .block_text {
+        width: 430px;
+        text-align: center;
+
+        h3 {
+          color: $white;
+        }
+      }
+    }
+  }
+  .block_history {
+    position: relative;
+    height: 350px;
+    width: 100%;
+    background: $white;
+
+    .content {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      
+      .block_text {
+        background: rgb(235, 234, 234);
+        box-shadow: -5px 3px 40px 2px rgba(143,137,143,0.74);
+        border-style: solid rgba(0, 0, 0, 0.0);
+        border-width: 1px;
+        margin-top: -40px;
+        padding: 50px 60px 0px 60px;
+        width: 550px;
+        height: 600px;
+        z-index: 5;
+        overflow: overlay; //check this out later
+      }
+
+      .button {
+        display: none;
+      }
+
+      .block_img_title {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        z-index: 1;
+
+        h3 {
+          margin-top: 200px;
+          font-size: $medium_fs;
+        
+        }
+        img {
+          margin-top: -180px;
+          width: 500px;
+          height: 450px;
+        }
+      }
+    }
+  }
+
+  .block_fighters {
+    position: relative;
+    height: 1200px;
+    width: 100%;
+    background: $grey;
+    .content {
+      .fighters {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        padding-top: 300px;
+
+        div {
+          background: $white;
+          box-shadow: -5px 3px 40px 2px rgba(143,137,143,0.74);
+          border-style: solid rgba(0, 0, 0, 0.0);
+          border-width: 1px;
+          border-radius: 5px;
+          width: 250px;
+          height: 350px;
+          margin-top: 10px;
+          text-align: center;
+          img {
+            width: 125px;
+            padding: 25px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: $content_max_width) {
+  $grid_width: 90%;
+  .content {
+    width: $grid_width !important;
+  }
+
+}
+@media only screen and (max-width: 900px) {
+  .block_history {
+    .content {
+      flex-direction: column-reverse !important;
+      
+      .button {
+        display: block !important;
+      }
+    }
+  }
+}
+@media only screen and (max-width: 600px) {
+
+}
