@@ -15,7 +15,8 @@
             <p>+31639765259</p>
           </div>
         </div>
-
+      </div>
+      <div class="section1">
         <div class="group">
           <div class="group-item_col">
             <i class="fas fa-envelope big_icon"></i>

@@ -2,8 +2,6 @@
   <div class="home">
     <Navigation :lang="lang" @changeLangNav="changeLang"/>
     <div class="jumbotron">
-      <!-- <img src="../../../assets/boom2.svg"> -->
-      <!-- <div class="img-background-color"></div> -->
       <div class="jumbo_content">
         <img src="../../../assets/boom2.svg">
         <div class="text_block">

@@ -98,7 +98,8 @@
       width: 100%;
       z-index: 3;
       // background: rgba(116, 185, 255, 0.735);
-      background: rgba(182, 225, 249, 0.8);
+      // background: rgba(182, 225, 249, 0.8);
+      background: rgba(46, 204, 113, 0.8);
       // background: rgba(46, 204, 112, 0.735);
     }
 
@@ -267,22 +268,22 @@
       display: none;
     }
 
-    button {
-      background: rgba(0, 0, 0, 0) !important;
-      color: rgba(0, 0, 0, 0) !important;
+    // button {
+    //   background: rgba(0, 0, 0, 0) !important;
+    //   color: rgba(0, 0, 0, 0) !important;
 
-      // border-bottom: 2px solid #000;
-      margin: 3px;
-      border-radius: 0;
-    }
+    //   // border-bottom: 2px solid #000;
+    //   margin: 3px;
+    //   border-radius: 0;
+    // }
 
-    .VueCarousel-dot {
-      border-bottom: 2px solid #ccc;
-    }
+    // .VueCarousel-dot {
+    //   border-bottom: 2px solid #ccc;
+    // }
 
-    .VueCarousel-dot--active {
-      border-bottom: 2px solid #000;
-    }
+    // .VueCarousel-dot--active {
+    //   border-bottom: 2px solid #000;
+    // }
   }
 
   .scratches1 {
@@ -351,12 +352,12 @@
     .jumbotron {
       .jumbo_content {
         flex-direction: column;
-        justify-content: flex-start;
+        justify-content: center;
         text-align: center;
       }
 
       .text_block {
-        margin-top: 90px;
+        // margin-top: 90px;
         max-width: 586px;
       }
 

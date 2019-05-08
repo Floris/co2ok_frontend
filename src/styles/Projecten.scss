@@ -1,0 +1,275 @@
+@import "_vars.scss";
+
+.projecten {
+  background: white;
+  align-self: center;
+  position: relative;
+
+  .jumbotron {
+    position: relative;
+    height: 650px;
+    width: 100%;
+    background: $light_blue;
+    z-index: 1;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 100px;
+
+    img {
+      position: absolute;
+      // transform: rotate(10deg);
+      bottom: 10px;
+      user-select: none;
+      z-index: -1;
+      left: 0;
+      max-width: 45%;
+      width: 600px;
+    }
+
+    .img-background-color {
+      position: absolute;
+      height: 100%;
+      width: 100%;
+    }
+
+    h1 {
+      color: $mid_blue;
+      font-size: $large_fs;
+    }
+
+    p {
+      color: $mid_blue;
+      font-weight: 500;
+    }
+
+    .jumbo_content {
+      position: relative;
+      z-index: 4;
+      height: 100%;
+      margin: 1em;
+      width: $content_max_width;
+
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-end;
+      align-items: center;
+    }
+
+    .text_block {
+      text-align: left;
+      padding: 1em;
+      max-width: 586px;
+    }
+  }
+
+  .project_info {
+    width: $content_max_width;
+    display: block;
+    margin: 0 auto;
+    padding: 60px 0px 60px;
+
+    .group-item_col {
+      width: 50%;
+
+      .text {
+        max-width: 700px;
+        display: block;
+        margin: 0 auto;
+        padding: 0 0 15px;
+
+        h2 {
+          margin: 20px 0 20px;
+        }
+      }
+
+      h3 {
+        margin: 10px 0;
+      }
+    }
+
+    .text {
+      p {
+        max-width: 500px;
+        display: block;
+        margin: 0 auto;
+      }
+
+      h2 {
+        max-width: 500px;
+        display: block;
+        margin: 0 auto;
+      }
+    }
+
+    .img_container {
+      width: 100%;
+      height: 100%;
+      display: block;
+      margin: 0 auto;
+      display: flex;
+      justify-content: center;
+    }
+
+    img {
+      max-width: 600px;
+      width: 100%;
+      height: 100%;
+      //   object-fit: contain;
+      object-fit: cover;
+    }
+  }
+
+  .partners_bg {
+    background: $grey;
+  }
+
+  .partners {
+    padding: 2em 0;
+    margin: 0 auto;
+    max-width: $content_max_width;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: space-between;
+    align-content: center;
+
+    img {
+      height: 140px;
+      width: 140px;
+      display: block;
+      margin: 0 auto;
+    }
+
+    .normal {
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-content: center;
+    }
+
+    .carousel {
+      width: 100%;
+      display: none;
+    }
+
+    // button {
+    //   background: rgba(0, 0, 0, 0) !important;
+    //   color: rgba(0, 0, 0, 0) !important;
+
+    //   // border-bottom: 2px solid #000;
+    //   margin: 3px;
+    //   border-radius: 0;
+    // }
+
+    // .VueCarousel-dot {
+    //   border-bottom: 2px solid #ccc;
+    // }
+
+    // .VueCarousel-dot--active {
+    //   border-bottom: 2px solid #000;
+    // }
+  }
+
+  @media only screen and (max-width: $content_max_width) {
+    $grid_width: 90%;
+
+    .project_info {
+      max-width: $grid_width;
+    }
+
+    .partners {
+      max-width: $grid_width;
+    }
+  }
+
+  @media only screen and (max-width: 900px) {
+    $grid_width: 90%;
+
+    .group-item_col {
+      width: 100% !important;
+    }
+
+    .text {
+      max-width: 100%;
+    }
+
+    .jumbo_content {
+      flex-direction: column;
+    }
+
+    img {
+      left: 0;
+      right: 0;
+      bottom: 0;
+    }
+
+    .text_block {
+      align-self: flex-start;
+      margin-top: 90px;
+      display: block;
+      margin: 0 auto;
+      width: 100%;
+    }
+
+    .project_info {
+      display: block;
+      margin: 0 auto;
+      max-width: $grid_width;
+
+      .group {
+        flex-direction: column;
+      }
+
+      .group:nth-child(2) {
+        .group-item_col:nth-child(2) {
+          order: -1;
+        }
+      }
+
+      img {
+        box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, .3);
+      }
+    }
+
+    .showCarousel {
+      display: block;
+      margin: 0 auto;
+    }
+
+    .hideCarousel {
+      display: none !important;
+    }
+  }
+
+  @media only screen and (max-width: 600px) {
+    h1 {
+      font-size: $header1_mobile !important;
+    }
+
+    h2 {
+      font-size: $header2_mobile !important;
+    }
+
+    .partners {
+      .normal {
+        display: none;
+      }
+
+      img {
+        display: block;
+        margin: 0 auto;
+      }
+
+      .carousel {
+        display: block;
+      }
+    }
+
+  }
+
+
+}
