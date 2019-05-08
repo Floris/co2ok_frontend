@@ -136,37 +136,43 @@
         </div>-->
       </div>
     </div>
-    <div class="partners">
-      <div class="normal">
-        <img src="../../../assets/partners/atmosfair.png">
-        <img src="../../../assets/partners/starters4communities.png">
-        <img src="../../../assets/partners/SBB.png">
-        <img src="../../../assets/partners/FairClimateFund.svg">
-      </div>
-
-      <div class="carousel">
-        <carousel
-          :autoplay="true"
-          :centerMode="true"
-          :loop="true"
-          :per-page="1"
-          :navigate-to="someLocalProperty"
-          :mouse-drag="true"
-          :perPage="1"
-        >
-          <slide>
-            <img src="../../../assets/partners/atmosfair.png">
-          </slide>
-          <slide>
-            <img src="../../../assets/partners/starters4communities.png">
-          </slide>
-          <slide>
-            <img src="../../../assets/partners/SBB.png">
-          </slide>
-          <slide>
-            <img src="../../../assets/partners/FairClimateFund.svg">
-          </slide>
-        </carousel>
+    <div class="privacy">
+      <div class="content">
+        <div class="group">
+          <div class="about_privacy">
+            <h2>Co2ok Privacy Beleid</h2>
+            <p>
+              We verzamelen en saven geen gebruikersdata gezien we dat niet nodig hebben om commissies te ontvangen. Je privacy is heel belangrijk voor ons, wij houden ook niet van arbitraire data-tracking, daarom doen we dat niet.
+              Onze code is open source, dus kun je bekijken hoe het technisch gemaakt is, de volledige code is in te zien, zo kunnen we geen geheimen houden. Hier kun je de code inzien: Broncode browserextensie
+              Om de CO₂ok Ninja te laten werken heeft de extensie alleen bepaalde rechten nodig om lokaal te zien welke webshop je momenteel gebruikt om de commissie te activeren bij de webshop.
+            </p>
+            <p>
+              <router-link to="/privacy">Zie verder onze Privacy Statement</router-link>
+            </p>
+          </div>
+          <div class="contact">
+            <div class="group">
+              <div class="group-item_col">
+                <h2>Contact ons:</h2>
+                <div class="group-item">
+                  <div class="group-item_col">
+                    <i class="fas fa-envelope big_icon"></i>
+                    <i class="fas fa-phone big_icon"></i>
+                  </div>
+                  <div class="group-item_col">
+                    <p>+31639765259</p>
+                    <p>info@co2ok.eco</p>
+                  </div>
+                </div>
+              </div>
+              <div class="group-item_col">
+                <i class="fab fa-instagram"></i>
+                <i class="fab fa-facebook"></i>
+                <i class="fab fa-linkedin"></i>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
 

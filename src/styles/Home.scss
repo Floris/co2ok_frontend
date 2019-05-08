@@ -237,64 +237,64 @@
     }
   }
 
-  // sixth section
-  .partners {
-    padding: 2em 0;
-    display: block;
-    margin: 0 auto;
-    max-width: $content_max_width;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-content: center;
+  .privacy {
+    background: $green;
+    color: #fff;
+    padding: 60px 0 60px;
 
-    img {
-      height: 140px;
-      width: 140px;
-      // display: block;
-      // margin: 0 auto;
+    .group {
+      justify-content: space-around;
     }
 
-    .normal {
-      width: 100%;
+    .group-item_col {
+      justify-content: space-around;
+    }
+
+    a {
+      text-decoration: underline;
+    }
+
+    h2,
+    h3,
+    p,
+    a {
+      color: #fff;
+    }
+
+    .about_privacy {
+      max-width: 600px;
+    }
+
+    .contact {
+      background: #fff;
+      width: 400px;
+
       display: flex;
-      flex-direction: row;
-      justify-content: space-between;
-      align-content: center;
+      flex-direction: column;
+      justify-content: center;
+
+      .group-item {
+        height: 100%;
+      }
+
+      .fas,
+      .fab,
+      i {
+        color: $green;
+        font-size: 32px;
+      }
+
+      h2,
+      h3,
+      p,
+      ul,
+      li,
+      a {
+        list-style: none;
+        font-weight: bold;
+        color: $mid_blue !important;
+      }
     }
-
-    .carousel {
-      width: 100%;
-      display: none;
-    }
-
-    // button {
-    //   background: rgba(0, 0, 0, 0) !important;
-    //   color: rgba(0, 0, 0, 0) !important;
-
-    //   // border-bottom: 2px solid #000;
-    //   margin: 3px;
-    //   border-radius: 0;
-    // }
-
-    // .VueCarousel-dot {
-    //   border-bottom: 2px solid #ccc;
-    // }
-
-    // .VueCarousel-dot--active {
-    //   border-bottom: 2px solid #000;
-    // }
-  }
-
-  .scratches1 {
-    background-size: cover;
-    transform: rotate(180deg);
-    background-image: url('./../assets/achtergronden_svg/Middel_10.svg');
-    bottom: -50px;
-    position: absolute;
-    height: 100%;
-    width: 2000px;
-    z-index: 2;
   }
 
   // media queries
@@ -330,10 +330,6 @@
         // flex-direction: column;
         width: $grid_width;
       }
-    }
-
-    .partners {
-      max-width: $grid_width;
     }
 
   }
@@ -402,21 +398,6 @@
       .block {
         width: 100px;
         height: 100px;
-      }
-    }
-
-    .partners {
-      .normal {
-        display: none;
-      }
-
-      img {
-        display: block;
-        margin: 0 auto;
-      }
-
-      .carousel {
-        display: block;
       }
     }
 

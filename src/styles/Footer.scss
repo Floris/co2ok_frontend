@@ -1,8 +1,29 @@
 @import "_vars.scss";
 
 .footer {
+  position: relative;
   background: $grey2;
   border-top: 3px solid $grey;
+  width: 100%;
+  z-index: 1;
+  margin-top: 30px;
+
+  // ../assets/achtergronden_svg/grijs-line.svg 
+
+  &::before {
+    content: '';
+    margin-top: -13px;
+    width: 100%;
+    background-size: fill;
+    height: 100px;
+    position: absolute;
+    background-position: bottom 20px;
+    background-image: url('../assets/achtergronden_svg/grijs-lijn-2.svg');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    z-index: -1;
+    top: -62px;
+  }
 
   .fab,
   fas,
