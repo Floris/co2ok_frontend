@@ -37,7 +37,7 @@
     .content {
       display: flex;
       flex-direction: row;
-      justify-content: space-between;
+      justify-content: space-around;
       
       .block_text {
         background: rgb(235, 234, 234);
@@ -45,24 +45,37 @@
         border-style: solid rgba(0, 0, 0, 0.0);
         border-width: 1px;
         margin-top: -40px;
-        padding: 50px 60px 0px 60px;
         width: 550px;
-        height: 600px;
+        height: 590px;
+        padding: 50px 60px 0px 60px;
         z-index: 5;
-        overflow: overlay; //check this out later
-      }
+        
+        .title {
+          display: flex;
+          flex-direction: row;
+          align-items: center;
 
-      .button {
+          h2 {
+            font-size: $medium_fs;
+          
+          }
+        }
+      }
+      .block_text_mobile {
         display: none;
       }
-
-      .block_img_title {
+      .img_title {
         display: flex;
         flex-direction: column;
         align-items: center;
         z-index: 1;
 
-        h3 {
+        span {
+          img {
+            width: 30px;
+          }
+        }
+        h2 {
           margin-top: 200px;
           font-size: $medium_fs;
         
@@ -81,6 +94,7 @@
     height: 1200px;
     width: 100%;
     background: $grey;
+
     .content {
       .fighters {
         display: flex;
@@ -88,7 +102,7 @@
         justify-content: space-evenly;
         padding-top: 300px;
 
-        div {
+        .img_block {
           background: $white;
           box-shadow: -5px 3px 40px 2px rgba(143,137,143,0.74);
           border-style: solid rgba(0, 0, 0, 0.0);
@@ -104,6 +118,9 @@
           }
         }
       }
+      .fighters_mobile {
+        display: none;
+      }
     }
   }
 }
@@ -118,14 +135,106 @@
 @media only screen and (max-width: 900px) {
   .block_history {
     .content {
-      flex-direction: column-reverse !important;
-      
-      .button {
-        display: block !important;
+      flex-direction: column !important;
+      align-items: center;
+      .block_text {
+        display: none;
+      }
+      .block_text_mobile {
+        display: flex !important;
+        flex-direction: column;
+        order: 1;
+        border-radius: 15px;
+        background: rgb(235, 234, 234);
+        box-shadow: -5px 3px 40px 2px rgba(143,137,143,0.74);
+        border-style: solid rgba(0, 0, 0, 0.0);
+        border-width: 1px;
+        width: 500px;
+        z-index: 5;
+        position: relative;
+        .text {
+        padding: 5px 15px 5px 15px !important;
+
+        }
+        .title {
+          align-items: flex-start;
+          justify-content: space-around;
+          align-items: center;
+          padding: 15px 0px 15px 0px !important;
+          img {
+            width: 30px;
+          }
+        }
+      }
+      .img_title {
+        h2 {
+          display: none;
+        }
+      }
+    }
+  }
+  .block_fighters {
+    background: $white;
+    .content {
+      .fighters {
+        display: none !important;
+      }
+      .fighters_mobile {
+        display: flex !important;
+        flex-direction: column;
+        position: relative;
+        border-radius: 15px;
+        background: rgb(235, 234, 234);
+        box-shadow: -5px 3px 40px 2px rgba(143,137,143,0.74);
+        border-style: solid rgba(0, 0, 0, 0.0);
+        border-width: 1px;
+        margin: 0 auto;
+        width: 500px;
+        top: 20px;
+
+        .title {
+          align-items: flex-start;
+          justify-content: space-around;
+          align-items: center;
+          padding: 15px 0px 15px 0px !important;
+          img {
+            width: 30px;
+          }
+        }
+        .img_collage {
+          .img_block {
+            img {
+              width: 200px;
+            }
+          }
+        }
       }
     }
   }
 }
 @media only screen and (max-width: 600px) {
+  .block_history {
+    .content {
+      .block_text_mobile {
+        width: 260px;
+        padding: 10px 0px 10px 0px;
+        margin-top: -400px;
 
+        .title {
+          h2 {
+            font-size: $small_fs;
+          }
+          img {
+            width: 20px;
+          }
+        }
+      }
+      .img_title {
+        img {
+          height: 320px !important;
+          width: 330px !important;
+        }
+      }
+    }
+  }
 }
