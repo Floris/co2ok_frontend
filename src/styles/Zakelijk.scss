@@ -1,0 +1,347 @@
+@import "_vars.scss";
+
+.zakelijk {
+  background: $white;
+  position: relative;
+  align-self: center;
+
+  .top_intro {
+    position: relative;
+    background: $light_blue;
+    height: 600px;
+    width: 100%;
+
+    .content {
+      position: relative;
+      z-index: 1;
+      display: flex;
+      flex-direction: row;
+
+      justify-content: space-between;
+      align-items: center;
+
+      .text {
+
+        h2,
+        h3 {
+          margin-bottom: 20px;
+        }
+
+        p {
+          color: $mid_blue;
+          font-weight: 500;
+          max-width: 586px;
+        }
+      }
+
+      img {
+        position: relative;
+        bottom: -65px;
+        max-width: 64%;
+        left: 0;
+        width: 600px;
+        user-select: none;
+        z-index: -1;
+      }
+
+      .button {
+        width: 280px;
+      }
+    }
+
+
+  }
+
+  .why_co2ok {
+    position: relative;
+    height: 600px;
+    width: 100%;
+
+    .img_background {
+      background: url('./../assets/wolk.png');
+      position: absolute;
+      height: 100%;
+      width: 100%;
+      z-index: 15;
+      top: -120px;
+    }
+
+    .img-background-color {
+      position: absolute;
+      height: 75%;
+      width: 100%;
+      z-index: 5;
+      background: rgba(182, 225, 249, 0.8);
+    }
+
+    .why_co2ok_content {
+      background: white; //temporary
+      box-shadow: -5px 3px 40px 2px rgba(143, 137, 143, 0.74);
+      height: 850px;
+      position: absolute;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      left: 0;
+      right: 0;
+      top: -60px;
+      margin: 0 auto;
+      border-style: solid rgba(0, 0, 0, 0.0);
+      border-width: 1px;
+      z-index: 50;
+
+      .content_block {
+        .content_in_block {
+          display: flex;
+          flex-direction: row;
+          justify-content: space-evenly;
+          margin-top: 30px;
+
+          .content_text {
+            width: 880px;
+            max-width: 100%;
+          }
+
+          img {
+            width: 123px;
+            height: 123px;
+            align-self: center;
+          }
+        }
+
+        .content_in_block:not(:last-child) {
+          border-bottom: solid thin;
+          border-color: #D2D0D0;
+        }
+      }
+
+      h2 {
+        text-align: center;
+      }
+
+      // .VueCarousel-dot {
+      //     border-bottom: 2px solid #ccc;
+      // }
+
+      // .VueCarousel-dot--active {
+      //     border-bottom: 2px solid #000;
+      // }
+
+      .carousel {
+        width: 100%;
+      }
+
+    }
+  }
+
+  .block_cijfers {
+    position: relative;
+    height: 600px;
+    width: 100%;
+    padding-top: 250px;
+    text-align: center;
+
+    .content {
+      .content_block {
+        .block {
+          margin: 0 auto;
+          margin-top: 50px;
+          max-width: 400px;
+
+          p {
+            max-width: 250px;
+          }
+
+          img {
+            width: 150px;
+          }
+        }
+      }
+    }
+  }
+
+  .block_form {
+    position: relative;
+    height: 650px;
+    width: 100%;
+    text-align: center;
+    background: $green;
+    padding-top: 50px;
+
+    .content {
+
+      h2 {
+        color: $white;
+      }
+
+      .form {
+        justify-content: space-evenly;
+        align-items: center;
+        margin: 0 auto;
+        margin-top: 30px;
+
+        .plugin_install {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          height: 500px;
+          width: 400px;
+          max-width: 90%;
+          box-shadow: -5px 3px 40px 2px rgba(143, 137, 143, 0.74);
+          background: $white;
+          border-radius: 5px;
+          align-items: center;
+
+          .button {
+            margin-top: 20px;
+            width: 75%;
+          }
+        }
+
+        .ecom_input {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          height: 500px;
+          width: 400px;
+          max-width: 90%;
+          box-shadow: -5px 3px 40px 2px rgba(143, 137, 143, 0.74);
+          background: $white;
+          border-radius: 5px;
+
+          .button {
+            height: 40px;
+            width: 100px;
+            margin-top: 10px;
+          }
+
+          .input_fields {
+            width: 75%;
+            margin: 0 auto;
+            text-align: left;
+          }
+
+          input {
+            border-radius: 5px;
+            border: none;
+            border: solid 1px #ccc;
+            box-shadow: 2px 2px 5px 0px rgba(191, 180, 191, 1);
+            height: 30px;
+            width: 100%;
+          }
+        }
+
+      }
+    }
+  }
+}
+
+
+@media only screen and (max-width: $content_max_width) {
+  $grid_width: 90%;
+
+  .content {
+    width: $grid_width !important;
+  }
+
+}
+
+@media only screen and (max-width: 900px) {
+
+  .showCarousel {
+    display: block;
+    margin: 0 auto;
+  }
+
+  .top_intro {
+    .content {
+      img {
+        display: none;
+      }
+    }
+  }
+
+  .why_co2ok {
+    .why_co2ok_content {
+      text-align: center;
+      height: 600px !important;
+
+      .content_block {
+        img {
+          width: 100px;
+          height: 100px;
+        }
+
+        p {
+          max-width: 500px;
+          margin: 0 auto;
+        }
+      }
+    }
+  }
+
+  .block_cijfers {
+
+    padding-top: 0px !important;
+
+    .content {
+      .block {
+        padding-top: 50px;
+
+        img {
+          width: 150px;
+        }
+      }
+    }
+  }
+
+  .block_form {
+    height: 1000px !important;
+
+    .content {
+      .form {
+        flex-direction: column;
+
+        .plugin_install,
+        .ecom_input {
+          margin-top: 10px;
+        }
+
+        .plugin_install {
+          height: 250px !important;
+        }
+      }
+    }
+  }
+
+  .hideCarousel {
+    display: none !important;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .zakelijk {
+    .top_intro {
+      .content {
+        text-align: center;
+
+        img {
+          display: none;
+        }
+      }
+    }
+
+    .why_co2ok_content {
+      .content_block {
+        p {
+          margin: 0 auto;
+          max-width: 250px;
+        }
+      }
+    }
+
+    .carousel {
+      display: block;
+    }
+  }
+}

@@ -16,17 +16,23 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    padding-bottom: 100px;
 
     img {
-      position: absolute;
-      // transform: rotate(10deg);
-      bottom: 10px;
+      // position: relative;
+      // bottom: 10px;
+      // user-select: none;
+      // z-index: -1;
+      // left: 0;
+      // max-width: 45%;
+      // width: 600px;
+
+      position: relative;
+      bottom: -65px;
+      max-width: 64%;
+      left: 0;
+      width: 600px;
       user-select: none;
       z-index: -1;
-      left: 0;
-      max-width: 45%;
-      width: 600px;
     }
 
     .img-background-color {
@@ -37,7 +43,7 @@
 
     h1 {
       color: $mid_blue;
-      font-size: $large_fs;
+      // font-size: $large_fs;
     }
 
     p {
@@ -54,7 +60,8 @@
 
       display: flex;
       flex-direction: row;
-      justify-content: flex-end;
+      // justify-content: flex-start;
+      justify-content: space-between;
       align-items: center;
     }
 
@@ -66,10 +73,13 @@
   }
 
   .project_info {
-    width: $content_max_width;
+    position: relative;
     display: block;
     margin: 0 auto;
-    padding: 60px 0px 60px;
+
+    .content {
+      padding: 60px 0px 60px;
+    }
 
     .group {
       margin: 20px 0;
@@ -124,6 +134,29 @@
       height: 100%;
       //   object-fit: contain;
       object-fit: cover;
+    }
+
+    .line_container {
+      position: absolute;
+      width: 100%;
+      height: 50px;
+      // z-index: 1;
+      // background: #000;
+    }
+
+    .line {
+      // background: #000;
+      background-image: url('./../assets/achtergronden_svg/witte-lijn.svg');
+      background-repeat: no-repeat; // background-image: url('./../assets/achtergronden_svg/grijs-lijn-2.svg');
+      background-size: cover;
+      background-repeat: repeat;
+      // object-fit: fill;
+      height: 50px;
+      width: 100%;
+      max-width: 100%;
+      position: absolute;
+      z-index: 99;
+      top: -45px;
     }
   }
 
@@ -182,9 +215,9 @@
   @media only screen and (max-width: $content_max_width) {
     $grid_width: 90%;
 
-    .project_info {
-      max-width: $grid_width;
-    }
+    // .project_info {
+    //   max-width: $grid_width;
+    // }
 
     .partners {
       max-width: $grid_width;
@@ -208,15 +241,21 @@
       max-width: 100%;
     }
 
+    .jumbotron {
+      padding-bottom: 100px;
+    }
+
     .jumbo_content {
       flex-direction: column;
 
       img {
+        position: absolute;
         left: 0 !important;
         right: 0 !important;
         bottom: -100px !important;
         margin: 0 auto;
-        max-width: 100%;
+        width: 100%;
+        max-width: 540px;
       }
     }
 
@@ -232,13 +271,12 @@
     .project_info {
       display: block;
       margin: 0 auto;
-      max-width: $grid_width;
 
       .group {
         flex-direction: column;
       }
 
-      .group:nth-child(2) {
+      .group:nth-child(3) {
         .group-item_col:nth-child(2) {
           order: -1;
         }

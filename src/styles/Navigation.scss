@@ -161,6 +161,9 @@
       position: fixed;
       background: white;
       max-height: 200px;
+
+      border-bottom: 3px solid $green;
+
     }
 
     // remove last (download button) from mobile nav
@@ -240,7 +243,7 @@
         padding-top: 125px;
         right: -100px;
         z-index: 10;
-        background: #fff;
+        background: #FAFAFA;
         -webkit-font-smoothing: antialiased;
 
         transform-origin: 0% 0%;

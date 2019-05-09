@@ -16,6 +16,9 @@
           </a>
         </div>
       </div>
+      <div class="line_container">
+        <div class="line"></div>
+      </div>
     </div>
 
     <div class="howItWorks">
@@ -76,9 +79,14 @@
         </div>
       </div>
     </div>
+
     <div class="companies">
+      <div class="line_container">
+        <div class="line"></div>
+      </div>
       <div class="content">
         <h2>
+          hahahhaa
           {{s4_title}}
           <a href="#" target="_blank">{{s4_link}}</a>
         </h2>

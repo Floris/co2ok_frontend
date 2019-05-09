@@ -3,7 +3,6 @@
     <Navigation :lang="lang" @changeLangNav="changeLang"/>
     <div class="jumbotron">
       <div class="jumbo_content">
-        <img src="../../../assets/wereldbol.png">
         <div class="text_block">
           <h1>{{title}}</h1>
           <p>{{p}}</p>
@@ -14,33 +13,39 @@
             <button class="button green">{{button_header1}}</button>
           </a>
         </div>
+        <img src="../../../assets/wereldbol.png">
       </div>
     </div>
 
     <div class="project_info">
-      <div class="group">
-        <div class="group-item_col">
-          <div class="text">
-            <h2>{{s2_title1}}</h2>
-            <div v-html="s2_body1"></div>
-          </div>
-        </div>
-        <div class="group-item_col">
-          <div class="img_container">
-            <img src="../../../assets/windpower.jpg" alt="windpower">
-          </div>
-        </div>
+      <div class="line_container">
+        <div class="line"></div>
       </div>
-      <div class="group">
-        <div class="group-item_col">
-          <div class="img_container">
-            <img src="../../../assets/cooking.jpg" alt="cooking co2 friendly">
+      <div class="content">
+        <div class="group">
+          <div class="group-item_col">
+            <div class="text">
+              <h2>{{s2_title1}}</h2>
+              <div v-html="s2_body1"></div>
+            </div>
+          </div>
+          <div class="group-item_col">
+            <div class="img_container">
+              <img src="../../../assets/windpower.jpg" alt="windpower">
+            </div>
           </div>
         </div>
-        <div class="group-item_col">
-          <div class="text">
-            <h2>{{s2_title2}}</h2>
-            <div v-html="s2_body2"></div>
+        <div class="group">
+          <div class="group-item_col">
+            <div class="img_container">
+              <img src="../../../assets/cooking.jpg" alt="cooking co2 friendly">
+            </div>
+          </div>
+          <div class="group-item_col">
+            <div class="text">
+              <h2>{{s2_title2}}</h2>
+              <div v-html="s2_body2"></div>
+            </div>
           </div>
         </div>
       </div>

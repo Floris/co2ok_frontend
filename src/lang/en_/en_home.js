@@ -21,7 +21,7 @@ module.exports = {
   s4_p1: "Choose from 22.000+ international webshops",
   //
   s6_title: "CO₂-compensation projects",
-  s6_p1: "Needs translated text...",
+  s6_p1: "CO₂ok supports various CO2 compensation projects from Atmosfair. 90% of Atmosfair's CO2 compensation projects meet the CDM Gold Standard, the strictest standard available for climate protection projects. To involve countries that do not have the preconditions for large projects, Atmosfair as we speak is developing all kinds of micro projects.",
   s6_button: "Check Projects",
   //
   s7_title: "CO₂ok Ninja Privacy Policy",
@@ -33,5 +33,5 @@ module.exports = {
           Look further into our Privacy Policy
           </p>
           `,
-  s7_button: "Check here our Privacy Statement"
+  s7_button: "Check our Privacy Statement here"
 };

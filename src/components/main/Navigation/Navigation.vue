@@ -88,8 +88,8 @@ export default {
       links: [
         {
           id: 0,
-          text: "BUSINESS",
-          page: "/business"
+          text: "ZAKELIJK",
+          page: "/zakelijk"
         },
         {
           id: 1,
