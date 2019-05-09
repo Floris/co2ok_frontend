@@ -262,10 +262,12 @@
     }
 
     .about_privacy {
-      max-width: 600px;
+      max-width: 500px;
+      margin: 10px 10px;
     }
 
     .contact {
+      margin: 10px 10px;
       background: #fff;
       width: 400px;
 
@@ -277,11 +279,15 @@
         height: 100%;
       }
 
+      p {
+        font-size: 20px;
+      }
+
       .fas,
       .fab,
       i {
         color: $green;
-        font-size: 32px;
+        font-size: 40px;
       }
 
       h2,
@@ -293,6 +299,10 @@
         list-style: none;
         font-weight: bold;
         color: $mid_blue !important;
+      }
+
+      .email_number {
+        margin-left: 5px;
       }
     }
   }
@@ -353,7 +363,6 @@
       }
 
       .text_block {
-        // margin-top: 90px;
         max-width: 586px;
       }
 
@@ -372,6 +381,39 @@
     .howItWorks {
       .img_collection {
         flex-direction: column;
+      }
+    }
+
+    .privacy {
+      .group:nth-child(1) {
+        flex-direction: column;
+        margin: 10px;
+      }
+
+      text-align: center;
+
+      .group-item {
+        justify-content: center;
+      }
+
+      .group>.group-item_col:nth-child(2) {
+        flex-direction: row;
+        margin: 10px 0;
+        justify-content: space-evenly;
+      }
+
+      .about_privacy {
+        text-align: center;
+        width: 100%;
+        max-width: 100%;
+        margin: 0 auto;
+        text-align: center;
+      }
+
+      .contact {
+        max-width: 900px;
+        width: 100%;
+        margin: 0 auto;
       }
     }
   }

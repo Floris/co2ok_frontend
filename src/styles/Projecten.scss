@@ -71,8 +71,13 @@
     margin: 0 auto;
     padding: 60px 0px 60px;
 
+    .group {
+      margin: 20px 0;
+    }
+
     .group-item_col {
       width: 50%;
+      margin: 0 10px;
 
       .text {
         max-width: 700px;
@@ -188,6 +193,12 @@
 
   @media only screen and (max-width: 900px) {
     $grid_width: 90%;
+
+    .project_info {
+      .group-item_col {
+        margin: 0;
+      }
+    }
 
     .group-item_col {
       width: 100% !important;

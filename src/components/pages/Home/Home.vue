@@ -1,6 +1,7 @@
 <template>
   <div class="home">
     <Navigation :lang="lang" @changeLangNav="changeLang"/>
+
     <div class="jumbotron">
       <div class="jumbo_content">
         <img src="../../../assets/boom2.svg">
@@ -16,6 +17,7 @@
         </div>
       </div>
     </div>
+
     <div class="howItWorks">
       <div class="img_background"></div>
       <div class="img-background-color"></div>
@@ -153,15 +155,15 @@
           <div class="contact">
             <div class="group">
               <div class="group-item_col">
-                <h2>Contact ons:</h2>
+                <h2>Contact</h2>
                 <div class="group-item">
                   <div class="group-item_col">
                     <i class="fas fa-envelope big_icon"></i>
                     <i class="fas fa-phone big_icon"></i>
                   </div>
                   <div class="group-item_col">
-                    <p>+31639765259</p>
-                    <p>info@co2ok.eco</p>
+                    <p class="email_number">+31639765259</p>
+                    <p class="email_number">info@co2ok.eco</p>
                   </div>
                 </div>
               </div>
