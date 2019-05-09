@@ -37,7 +37,7 @@
     p {
       color: #fff;
       margin: 8px 0;
-      font-size: 16px;
+      font-size: 18px;
       vertical-align: middle;
       text-align: center;
     }
@@ -100,12 +100,23 @@
     p {
       margin: 0.5em;
       color: #fff;
-      font-size: 16px;
+      font-size: 18px;
       font-weight: bold;
     }
   }
 
   @media only screen and (max-width: 650px) {
+
+    .section1 {
+      flex-wrap: wrap;
+      margin: 0;
+
+      .group {
+        width: 100%;
+        justify-content: center;
+      }
+    }
+
     .content {
       flex-wrap: wrap;
     }

@@ -242,6 +242,10 @@
     color: #fff;
     padding: 60px 0 60px;
 
+    .content>.group:nth-child(1) {
+      justify-content: space-between;
+    }
+
     .group {
       justify-content: space-around;
     }
