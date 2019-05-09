@@ -5,6 +5,13 @@
   align-self: center;
   background: $white;
 
+  .fade-enter-active{
+    transition: opacity 1s;
+  }
+  .fade-enter /* .fade-leave-active below version 2.1.8 */ {
+    opacity: 0;
+  }
+
   .block_intro {
     position: relative;
     height: 300px;
@@ -109,7 +116,7 @@
           border-width: 1px;
           border-radius: 5px;
           width: 250px;
-          height: 350px;
+          height: 400px;
           margin-top: 10px;
           text-align: center;
           img {
@@ -134,6 +141,7 @@
 }
 @media only screen and (max-width: 900px) {
   .block_history {
+    height: 100% !important;
     .content {
       flex-direction: column !important;
       align-items: center;
@@ -149,20 +157,23 @@
         box-shadow: -5px 3px 40px 2px rgba(143,137,143,0.74);
         border-style: solid rgba(0, 0, 0, 0.0);
         border-width: 1px;
-        width: 500px;
+        width: 400px;
         z-index: 5;
         position: relative;
-        .text {
-        padding: 5px 15px 5px 15px !important;
 
+        .text {
+          padding: 5px 15px 5px 15px !important;
         }
         .title {
-          align-items: flex-start;
-          justify-content: space-around;
           align-items: center;
-          padding: 15px 0px 15px 0px !important;
+          justify-content: space-between;
+          padding: 15px 0px 15px 10px !important;
           img {
+            margin-right: 5px;
             width: 30px;
+          }
+          h2 {
+            font-size: $medium_fs;
           }
         }
       }
@@ -174,7 +185,11 @@
     }
   }
   .block_fighters {
-    background: $white;
+    height: 100% !important;
+    background: $white !important;
+    padding-bottom: 100px;
+    position: relative;
+
     .content {
       .fighters {
         display: none !important;
@@ -189,20 +204,32 @@
         border-style: solid rgba(0, 0, 0, 0.0);
         border-width: 1px;
         margin: 0 auto;
-        width: 500px;
+        width: 400px;
         top: 20px;
 
         .title {
-          align-items: flex-start;
-          justify-content: space-around;
           align-items: center;
-          padding: 15px 0px 15px 0px !important;
+          justify-content: space-between;
+          padding: 15px 0px 15px 10px !important;
           img {
+            margin-right: 5px;
             width: 30px;
+          }
+          h2 {
+            font-size: $medium_fs;
           }
         }
         .img_collage {
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+
           .img_block {
+            text-align: center;
+            width: 100%;
+            border-bottom: solid;
+            border-bottom-color: $grey;
+            padding-top: 30px;
             img {
               width: 200px;
             }
@@ -217,15 +244,10 @@
     .content {
       .block_text_mobile {
         width: 260px;
-        padding: 10px 0px 10px 0px;
-        margin-top: -400px;
 
         .title {
           h2 {
             font-size: $small_fs;
-          }
-          img {
-            width: 20px;
           }
         }
       }
@@ -233,6 +255,18 @@
         img {
           height: 320px !important;
           width: 330px !important;
+        }
+      }
+    }
+  }
+  .block_fighters {
+    .content {
+      .fighters_mobile {
+        width: 260px;
+        .title {
+          h2 {
+            font-size: $small_fs;
+          }
         }
       }
     }
