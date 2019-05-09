@@ -142,15 +142,9 @@
       <div class="content">
         <div class="group">
           <div class="about_privacy">
-            <h2>Co2ok Privacy Beleid</h2>
-            <p>
-              We verzamelen en saven geen gebruikersdata gezien we dat niet nodig hebben om commissies te ontvangen. Je privacy is heel belangrijk voor ons, wij houden ook niet van arbitraire data-tracking, daarom doen we dat niet.
-              Onze code is open source, dus kun je bekijken hoe het technisch gemaakt is, de volledige code is in te zien, zo kunnen we geen geheimen houden. Hier kun je de code inzien: Broncode browserextensie
-              Om de CO₂ok Ninja te laten werken heeft de extensie alleen bepaalde rechten nodig om lokaal te zien welke webshop je momenteel gebruikt om de commissie te activeren bij de webshop.
-            </p>
-            <p>
-              <router-link to="/privacy">Zie verder onze Privacy Statement</router-link>
-            </p>
+            <h2>{{s7_title}}</h2>
+            <div v-html="s7_p"></div>
+            <router-link to="/privacy">{{s7_button}}</router-link>
           </div>
           <div class="contact">
             <div class="group">
@@ -223,7 +217,12 @@ export default {
       // section 6
       s6_title: lang.nl.s6_title,
       s6_p1: lang.nl.s6_p1,
-      s6_button: lang.nl.s6_button
+      s6_button: lang.nl.s6_button,
+
+      // privacy
+      s7_title: lang.nl.s7_title,
+      s7_p: lang.nl.s7_p,
+      s7_button: lang.nl.s7_button
     };
   },
   mounted: function() {
@@ -285,6 +284,11 @@ export default {
       this.s6_title = lang[language].s6_title;
       this.s6_p1 = lang[language].s6_p1;
       this.s6_button = lang[language].s6_button;
+
+      // privacy
+      this.s7_title = lang[language].s7_title;
+      this.s7_p = lang[language].s7_p;
+      this.s7_button = lang[language].s7_button;
 
       setCookie("userLang", language, 200);
       this.lang = language;

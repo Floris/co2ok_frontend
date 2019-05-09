@@ -23,4 +23,15 @@ module.exports = {
   s6_title: "CO₂-compensation projects",
   s6_p1: "Needs translated text...",
   s6_button: "Check Projects",
+  //
+  s7_title: "CO₂ok Ninja Privacy Policy",
+  s7_p: `<p>
+          We fight climate change, we don’ t mine data!That is why we don’ t collect or save any of your personal shopping data.With us your data is yours only.
+          We work transparent and our code is open source.You can have a look how our Ninja App is technically made.The entire source code is open
+          for you, no secrets involved.You find it here: <a href="https://github.com/Mil0dV/co2ok-ninja" target="_blank"> Sourcecode Ninja App - browserextension</a>
+          Our Ninja App system only needs the right to locally see which online shop you are visiting to activate the commission.The information about visited websites does not leave your computer, so your privacy is protected.
+          Look further into our Privacy Policy
+          </p>
+          `,
+  s7_button: "Check here our Privacy Statement"
 };
