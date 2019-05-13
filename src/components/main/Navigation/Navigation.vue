@@ -81,6 +81,9 @@
 </template>
 
 <script>
+import lang from "./../../../lang/lang_navigation.json";
+import { getCookie, setCookie } from "./../../../../functions/cookies";
+
 export default {
   name: "Navigation",
   data() {
@@ -88,22 +91,22 @@ export default {
       links: [
         {
           id: 0,
-          text: "PROJECTEN",
+          text: lang.nl.links[0].text,
           page: "/projecten"
         },
         {
           id: 1,
-          text: "ZAKELIJK",
+          text: lang.nl.links[1].text,
           page: "/zakelijk"
         },
         {
           id: 2,
-          text: "ABOUT",
+          text: lang.nl.links[2].text,
           page: "/about"
         },
         {
           id: 3,
-          text: "FAQ",
+          text: lang.nl.links[3].text,
           page: "/faq"
         }
       ],
@@ -112,8 +115,30 @@ export default {
     };
   },
   props: ["lang"],
-  mounted: function() {},
+  mounted: function() {
+    this.checkCookies();
+  },
   methods: {
+    checkCookies() {
+      console.log(
+        "%ccheck cookies for nav -  " + document.cookie,
+        "color:orange;"
+      );
+
+      if (getCookie("userLang")) {
+        // checks if userLang cookie exists
+        console.log("cookie exists ", getCookie("userLang"));
+        this.changeLang(getCookie("userLang"));
+        return;
+      }
+
+      var userLang = navigator.language || navigator.userLanguage;
+
+      if (userLang.includes("en")) {
+        this.changeLang("en");
+        return;
+      }
+    }, // end checkCookies
     //gets called when you scroll
     handleScroll(event) {
       // console.log("handlescroll", window.pageYOffset);
@@ -125,8 +150,32 @@ export default {
         this.isActive = false;
       }
     },
-    changeLang(lang) {
-      this.$emit("changeLangNav", lang);
+    changeLang(lng) {
+      this.$emit("changeLangNav", lng);
+
+      this.links.splice(0, 1, {
+        id: 0,
+        text: lang[lng].links[0].text,
+        page: "/projecten"
+      });
+
+      this.links.splice(1, 1, {
+        id: 0,
+        text: lang[lng].links[1].text,
+        page: "/zakelijk"
+      });
+
+      this.links.splice(2, 1, {
+        id: 0,
+        text: lang[lng].links[2].text,
+        page: "/about"
+      });
+
+      this.links.splice(3, 1, {
+        id: 0,
+        text: lang[lng].links[3].text,
+        page: "/faq"
+      });
     }
   },
   //add(create) the event

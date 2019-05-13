@@ -86,7 +86,6 @@
       </div>
       <div class="content">
         <h2>
-          hahahhaa
           {{s4_title}}
           <a href="#" target="_blank">{{s4_link}}</a>
         </h2>

@@ -148,7 +148,7 @@
       // background: #000;
       background-image: url('./../assets/achtergronden_svg/witte-lijn.svg');
       background-repeat: no-repeat; // background-image: url('./../assets/achtergronden_svg/grijs-lijn-2.svg');
-      background-size: cover;
+      object-fit: cover;
       background-repeat: repeat;
       // object-fit: fill;
       height: 50px;

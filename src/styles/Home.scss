@@ -86,7 +86,7 @@
     .line {
       background-image: url('./../assets/achtergronden_svg/blauw-lijn.svg');
       background-repeat: no-repeat; // background-image: url('./../assets/achtergronden_svg/grijs-lijn-2.svg');
-      background-size: cover;
+      object-fit: cover;
       background-repeat: repeat;
       transform: rotate(180deg);
       height: 50px;
