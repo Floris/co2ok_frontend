@@ -170,17 +170,21 @@
           </div>
           <div class="ecom_input">
             <h3>{{s4_title3}}</h3>
-            <div class="input_fields">
-              <p>{{s4_input}}</p>
-              <input v-model="name">
-              <p>{{s4_input2}}</p>
-              <input v-model="email">
-              <p>{{s4_input3}}</p>
-              <input v-model="number">
-              <p>{{s4_input4}}</p>
-              <input v-model="ecommerce">
-              <button class="button green">{{s4_button}}</button>
-            </div>
+            <form action="https://hotmail.us20.list-manage.com/subscribe/post" method="POST">
+              <input type="hidden" name="u" value="8e5d19fbeb79f5b19520e1f2b">
+              <input type="hidden" name="id" value="82f97344b0">
+              <div class="input_fields">
+                <p>{{s4_input}}</p>
+                <input type="text" name="MERGE1" id="MERGE1" size="25" value="">
+                <p>{{s4_input2}}</p>
+                <input type="email" autocapitalize="off" autocorrect="off" name="MERGE0" id="MERGE0" size="25" value="">
+                <p>{{s4_input3}}</p>
+                <input type="text" name="MERGE6" id="MERGE6" size="25" value="">
+                <p>{{s4_input4}}</p>
+                <input type="text" name="MERGE2" id="MERGE2" size="25" value="">
+                <button class="button green">{{s4_button}}</button>
+              </div>
+            </form>
           </div>
         </div>
       </div>
