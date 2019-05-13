@@ -163,6 +163,7 @@ export default {
       showHistory : false,
       showFighters: false,
 
+      lang: "nl",
       //section 1
       title: lang.nl.s1_title,
       
