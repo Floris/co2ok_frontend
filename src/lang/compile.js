@@ -45,13 +45,13 @@ createLanguageKit(home_language_kit, home_language_kit_object);
 createLanguageKit(faq_language_kit, faq_language_kit_object);
 createLanguageKit(projecten_language_kit, projecten_language_kit_object);
 
-function createLanguageKit(fileName, output) {
+async function createLanguageKit(fileName, output) {
   console.log('create HomeLanguageKit');
   // console.log('create HomeLanguageKit', output); //debug
 
   // try to remove old file
   try {
-    fs.unlink(fileName, function () {
+    await fs.unlink(fileName, function () {
       console.log('reset file');
     });
   } catch (error) {

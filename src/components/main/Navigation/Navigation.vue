@@ -20,7 +20,7 @@
           <router-link
             class="spacing-desktop"
             v-bind:class="{showItems : isActive}"
-            v-for="routes in links"
+            v-for="(routes) in links"
             v-bind:key="routes.id"
             :to="`${routes.page}`"
           >{{routes.text}}</router-link>
@@ -88,13 +88,13 @@ export default {
       links: [
         {
           id: 0,
-          text: "ZAKELIJK",
-          page: "/zakelijk"
+          text: "PROJECTEN",
+          page: "/projecten"
         },
         {
           id: 1,
-          text: "PROJECTEN",
-          page: "/projecten"
+          text: "ZAKELIJK",
+          page: "/zakelijk"
         },
         {
           id: 2,
@@ -107,12 +107,12 @@ export default {
           page: "/faq"
         }
       ],
-
       isActive: false,
       showMobileMenu: false
     };
   },
   props: ["lang"],
+  mounted: function() {},
   methods: {
     //gets called when you scroll
     handleScroll(event) {
