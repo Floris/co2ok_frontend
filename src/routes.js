@@ -3,6 +3,7 @@ import Faq from './components/pages/Faq/Faq';
 import Projecten from './components/pages/Projecten/Projecten';
 import Zakelijk from './components/pages/Zakelijk/Zakelijk';
 import Login from './components/pages/Login/Login';
+import Dashboard from './components/pages/Dashboard/Dashboard';
 
 export const routes = [{
     path: '/',
@@ -22,5 +23,9 @@ export const routes = [{
   {
     path: '/login',
     component: Login
+  },
+  {
+    path: '/dashboard',
+    component: Dashboard
   }
 ];
