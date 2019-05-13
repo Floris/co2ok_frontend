@@ -24,6 +24,9 @@
             v-bind:key="routes.id"
             :to="`${routes.page}`"
           >{{routes.text}}</router-link>
+          <router-link class="profile" to="/dashboard">
+            <i class="far fa-user"></i>
+          </router-link>
           <div class="lang_flag">
             <img
               v-if="lang === 'en'"
@@ -61,7 +64,10 @@
               v-bind:key="routes.id"
               :to="`${routes.page}`"
             >{{routes.text}}</router-link>
-            <div class="lang_flag">
+            <router-link class="profile_mobile" to="/dashboard">
+              <i class="far fa-user"></i>
+            </router-link>
+            <div class="lang_flag_mobile">
               <img
                 v-if="lang === 'en'"
                 src="../../../assets/nl_flag.png"
@@ -108,11 +114,6 @@ export default {
           id: 3,
           text: lang.nl.links[3].text,
           page: "/faq"
-        },
-        {
-          id: 4,
-          text: lang.nl.links[4].text,
-          page: "/login"
         }
       ],
       isActive: false,
@@ -180,12 +181,6 @@ export default {
         id: 0,
         text: lang[lng].links[3].text,
         page: "/faq"
-      });
-
-      this.links.splice(4, 1, {
-        id: 0,
-        text: lang[lng].links[4].text,
-        page: "/login"
       });
     }
   },

@@ -118,17 +118,61 @@
     display: none;
   }
 
+  .profile {
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    cursor: pointer;
+    padding: 10px;
+
+    i {
+      vertical-align: middle;
+      font-size: 21px;
+    }
+  }
+
+  .profile_mobile {
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    cursor: pointer;
+    margin: 10px 0px 10px 0px;
+
+    i {
+      vertical-align: middle;
+      font-size: 21px;
+    }
+  }
+
   .lang_flag {
+    padding: 10px;
     z-index: 9999999;
     position: relative;
     display: inline-block;
     vertical-align: middle;
     cursor: pointer;
     line-height: 0;
-    margin: 0 4px;
+    // margin: 0 4px;
+    margin: 10px 0px 10px 0px;
 
     img {
-      height: 22px;
+      height: 21px;
+      // width: 50px;
+    }
+  }
+
+  .lang_flag_mobile {
+    z-index: 9999999;
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    cursor: pointer;
+    line-height: 0;
+    // margin: 0 4px;
+    margin: 10px 0px 10px 0px;
+
+    img {
+      height: 21px;
       // width: 50px;
     }
   }

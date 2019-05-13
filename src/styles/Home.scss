@@ -230,9 +230,8 @@
 
     .line {
       background-image: url('./../assets/achtergronden_svg/witte-lijn.svg');
-      background-repeat: no-repeat;
+      // background-repeat: repeat;
       background-size: cover;
-      background-repeat: repeat;
       height: 50px;
       width: 100%;
       max-width: 100%;
