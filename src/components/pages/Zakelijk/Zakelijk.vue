@@ -1,6 +1,6 @@
 <template>
   <div class="zakelijk">
-    <Navigation/>
+    <Navigation :lang="lang" @changeLangNav="changeLang"/>
     <!-- ADD languages -->
     <div class="top_intro">
       <div class="content">
@@ -195,9 +195,10 @@
 </template>
 
 <script>
+import lang from "./../../../lang/lang_about.json";
+import { getCookie, setCookie } from "./../../../../functions/cookies";
 import Navigation from "./../../main/Navigation/Navigation";
 import Footer from "./../../main/Footer/Footer";
-// import lang from "./../../../lang/lang_zakelijk.json";
 import { Carousel, Slide } from "vue-carousel";
 
 export default {
@@ -210,12 +211,40 @@ export default {
   },
   data() {
     return {
-      //language
-      // lang: "nl",
-      //text
-      //top intro
-      // title: lang.nl
+      lang: "nl",
+
     };
+  },
+    methods: {
+      checkCookies() {
+      console.log("%ccheck cookies -  " + document.cookie, "color:red;");
+
+      if (getCookie("userLang")) {
+        // checks if userLang cookie exists
+        console.log("cookie exists ", getCookie("userLang"));
+        this.changeLang(getCookie("userLang"));
+        return;
+      }
+
+      var userLang = navigator.language || navigator.userLanguage;
+
+      if (userLang.includes("en")) {
+        this.changeLang("en");
+        return;
+      }
+    }, // end checkCookies
+
+    changeLang: function(language) {
+      console.log("execute changeLang");
+
+      console.log("change language to " + language);
+
+      //section1
+      this.title = lang[language].s1_title;
+
+      setCookie("userLang", language, 200);
+      this.lang = language;
+    } // end changeLang
   }
 };
 </script>
