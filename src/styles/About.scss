@@ -98,7 +98,6 @@
   }
 
   .block_fighters {
-    position: relative;
     height: 800px;
     width: 100%;
     background: $grey;
@@ -106,8 +105,8 @@
     .content {
       .fighters {
         display: flex;
-        flex-wrap: wrap;
-        justify-content: space-evenly;
+        flex-direction: row;
+        justify-content: space-between;
         padding-top: 300px;
 
         .img_block {
@@ -189,7 +188,7 @@
     height: 100% !important;
     background: $white !important;
     padding-bottom: 100px;
-    position: relative;
+    // position: relative;
 
     .content {
       .fighters {
