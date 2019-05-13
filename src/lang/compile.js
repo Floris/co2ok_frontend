@@ -10,6 +10,7 @@ var en_home = require('./en_/en_home.js');
 var nl_faq = require('./nl_/nl_faq.js');
 var en_faq = require('./en_/en_faq.js');
 
+<<<<<<< HEAD
 //projecten page files
 var nl_projecten = require('./nl_/nl_projecten.js');
 var en_projecten = require('./en_/en_projecten.js');
@@ -17,6 +18,10 @@ var en_projecten = require('./en_/en_projecten.js');
 //projecten page files
 var nl_navigation = require('./nl_/nl_navigation.js');
 var en_navigation = require('./en_/en_navigation.js');
+=======
+var nl_about = require('./nl_/nl_about.js');
+var en_about = require('./en_/en_about.js');
+>>>>>>> 77b5b4d4dbf54a3ae8cb98b6a0be4930fc56a0c9
 
 console.log('execute compile.js');
 
@@ -39,6 +44,7 @@ var faq_language_kit_object = {
   en: en_faq
 };
 
+<<<<<<< HEAD
 var projecten_language_kit_object = {
   nl: nl_projecten,
   en: en_projecten
@@ -55,6 +61,18 @@ createLanguageKit(home_language_kit, home_language_kit_object);
 createLanguageKit(faq_language_kit, faq_language_kit_object);
 createLanguageKit(projecten_language_kit, projecten_language_kit_object);
 createLanguageKit("src/lang/lang_navigation.json", navigation_language_kit_object);
+=======
+var about_language_kit_object = {
+  nl: nl_about,
+  en: en_about
+};
+
+// create New Home Language Kit
+createLanguageKit(home_language_kit, home_language_kit_object);
+createLanguageKit(faq_language_kit, faq_language_kit_object);
+createLanguageKit("src/lang/lang_about.json", about_language_kit_object);
+
+>>>>>>> 77b5b4d4dbf54a3ae8cb98b6a0be4930fc56a0c9
 
 async function createLanguageKit(fileName, output) {
   console.log('create HomeLanguageKit');
