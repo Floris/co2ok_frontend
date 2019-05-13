@@ -38,7 +38,7 @@ module.exports = {
 
   s4_input: "Naam*",
   s4_input2: "E-mail*",
-  s4_input3: "telefoon nummer*",
-  s4_input4: "e-commerce platform*",
+  s4_input3: "Telefoon nummer*",
+  s4_input4: "E-commerce platform*",
   s4_button: "Verstuur",
 };
