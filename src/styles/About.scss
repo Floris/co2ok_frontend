@@ -53,7 +53,8 @@
         border-width: 1px;
         margin-top: -40px;
         width: 550px;
-        height: 590px;
+        // height: 590px;
+        height: fit-content;
         padding: 50px 60px 0px 60px;
         z-index: 5;
         
@@ -98,7 +99,7 @@
 
   .block_fighters {
     position: relative;
-    height: 1200px;
+    height: 800px;
     width: 100%;
     background: $grey;
 
@@ -224,12 +225,12 @@
           justify-content: center;
           align-items: center;
 
-          .img_block {
+          .img_block  {
             text-align: center;
             width: 100%;
-            border-bottom: solid;
-            border-bottom-color: $grey;
-            padding-top: 30px;
+            // border-bottom: solid;
+            // border-bottom-color: $grey;
+            padding-top: 10px;
             img {
               width: 200px;
             }

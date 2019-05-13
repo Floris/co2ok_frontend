@@ -1,11 +1,12 @@
 <template>
   <div class="about">
-    <Navigation />
+    <Navigation  :lang="lang" @changeLangNav="changeLang"/>
     <!-- ADD languages -->
     <div class="block_intro">
       <div class="content">
           <div class="block_text">
-            <h3>"Klimaatverandering is een serieus probleem. Of je nu arm of rijk bent, het raakt ons allemaal!"</h3>
+             
+            <h3>{{title}}</h3>
           </div>
       </div>
     </div>
@@ -13,41 +14,40 @@
       <div class="content">
         <div class="block_text">
           <div class="title">
-            <h2>Het ontstaan van CO₂ok</h2>
+           
+            <h2>{{s2_title}}</h2>
           </div>
           <div class="text">
             <p>
-              In maart 2017 stond Milo op de skipiste. Daar zag hij een bord staan met de CO₂-uitstoot van een week wintersporten. Wat raar dat je dat niet kunt compenseren, dacht hij. Met een vliegticket kan dat wel. Eenmaal thuis las hij in een onderzoek van CE Delft dat spullen en kleding meer impact op het milieu hebben dan auto’s, vliegen en vlees eten bij elkaar. Dan moet je dat toch kunnen compenseren?
+              {{s2_p1}}
             </p>
             <p>
-              Als de overheid niets doet, dan doe ik het, besloot Milo. Hij zei zijn baan op en schreef zich in bij de Kamer van Koophandel. En zo begon hij op 4 oktober 2017 met CO₂ok. Zijn doel? Iedereen in staat te stellen zijn online aankopen klimaatneutraal te doen. Tegelijkertijd wil hij ervoor zorgen dat de levensstandaard van mensen in derdewereldlanden wordt verhoogd. Kortom: een win-winsituatie dus.
+              {{s2_p2}}
             </p>
             <p>
-              Sinds oktober 2018 is Jos mede-eigenaar van CO₂ok. Jos heeft een commerciële achtergrond en wilde graag voor zichzelf beginnen. Ook wilde hij zijn kennis graag inzetten voor het milieu. Toen hij hoorde over CO₂ok was hij direct enthousiast. Hij belde Milo op en al snel was hun samenwerking een feit. Milo is verantwoordelijk voor de ideeën en de techniek en Jos voor de bedrijfsvoering.
-            </p>  
+              {{s2_p3}}
             <p>
-              Hun droom? Over vijf jaar worden alle producten klimaatneutraal geproduceerd en is het compenseren van je aankopen niet meer nodig. Daardoor is CO₂ok overbodig geworden.
+              {{s2_p4}}
             </p>
           </div>
         </div>
         <div class="block_text_mobile">
           <div class="title group-item">
-            <h2>Het ontstaan van CO₂ok</h2>
+            <h2>{{s2_title}}</h2>
             <img src="../../../assets/Middel_24.svg" @click="showHistory = !showHistory">
           </div>
           <transition name="fade">
           <div class="text" v-if="showHistory">
             <p>
-              In maart 2017 stond Milo op de skipiste. Daar zag hij een bord staan met de CO2-uitstoot van een week wintersporten. Wat raar dat je dat niet kunt compenseren, dacht hij. Met een vliegticket kan dat wel. Eenmaal thuis las hij in een onderzoek van CE Delft dat spullen en kleding meer impact op het milieu hebben dan auto’s, vliegen en vlees eten bij elkaar. Dan moet je dat toch kunnen compenseren?
+              {{s2_p1}}
             </p>
             <p>
-              Als de overheid niets doet, dan doe ik het, besloot Milo. Hij zei zijn baan op en schreef zich in bij de Kamer van Koophandel. En zo begon hij op 4 oktober 2017 met CO₂ok. Zijn doel? Iedereen in staat te stellen zijn online aankopen klimaatneutraal te doen. Tegelijkertijd wil hij ervoor zorgen dat de levensstandaard van mensen in derdewereldlanden wordt verhoogd. Kortom: een win-winsituatie dus.
+              {{s2_p2}}
             </p>
             <p>
-              Sinds oktober 2018 is Jos mede-eigenaar van CO₂ok. Jos heeft een commerciële achtergrond en wilde graag voor zichzelf beginnen. Ook wilde hij zijn kennis graag inzetten voor het milieu. Toen hij hoorde over CO₂ok was hij direct enthousiast. Hij belde Milo op en al snel was hun samenwerking een feit. Milo is verantwoordelijk voor de ideeën en de techniek en Jos voor de bedrijfsvoering.
-            </p>  
+              {{s2_p3}}
             <p>
-              Hun droom? Over vijf jaar worden alle producten klimaatneutraal geproduceerd en is het compenseren van je aankopen niet meer nodig. Daardoor is CO₂ok overbodig geworden.
+              {{s2_p4}}
             </p>
           </div>
           </transition>
@@ -55,7 +55,7 @@
         <!-- img & title fighters section -->
         <div class="img_title">
           <img src="../../../assets/weegschaal.png">
-          <h2>De klimaatstrijders van CO₂ok</h2>
+          <h2>{{s3_title}}</h2>
         </div>
       </div>
     </div>
@@ -71,41 +71,27 @@
               <i class="fab fa-twitter"></i>
             </div>
             <div class="img_block">
-              <img src="../../../assets/about_fotos/jos.png"/>
-              <h3>Milo de Vries</h3>
+              <!-- <img src="../../../assets/about_fotos/jos.png"/> -->
+              <!-- <h3>Milo de Vries</h3>
               <p>Founder</p>
-              <p>quote</p>
+              <p>quote</p> -->
             </div>
             <div class="img_block">
-              <img src="../../../assets/about_fotos/maaike.png"/>
-              <h3>Maaike Braat</h3>
+              <!-- <img src="../../../assets/about_fotos/maaike.png"/> -->
+              <!-- <h3>Maaike Braat</h3>
               <p>Scientist</p>
-              <p>Het kan altijd sneller en beter en dit is een stap in de goede richting.</p>
+              <p>Het kan altijd sneller en beter en dit is een stap in de goede richting.</p> -->
             </div>
             <div class="img_block">
-              <img src="../../../assets/about_fotos/michiel-1.png"/>
+              <!-- <img src="../../../assets/about_fotos/michiel-1.png"/>
               <h3>Milo de Vries</h3>
               <p>Founder</p>
-              <p>quote</p>
-            </div>
-            <div class="img_block">
-              <img src="../../../assets/about_fotos/sanne.png"/>
-              <h3>Milo de Vries</h3>
-              <p>Founder</p>
-              <p>quote</p>
-            </div>
-            <div class="img_block">
-              <img src="../../../assets/about_fotos/ahlam.png"/>
-              <h3>Ahlam saber</h3>
-              <p>Partner Manager</p>
-              <p>Silence in the face of evil is itself evil. Not to speak is to speak. Not to act is to act.</p>
-              <i class="fab fa-linkedin"></i>
-              <i class="fab fa-twitter"></i>
+              <p>quote</p> -->
             </div>
           </div>
           <div class="fighters_mobile">
             <div class="title group-item">
-              <h2>De klimaatstrijders van CO₂ok</h2>
+              <h2>{{s3_title}}</h2>
               <img src="../../../assets/Middel_24.svg" @click="showFighters = !showFighters">
             </div>
             <transition name="fade">
@@ -113,40 +99,40 @@
               <div class="img_block">
                 <img src="../../../assets/about_fotos/milo.png"/>
                 <h3>Milo de Vries</h3>
-                <p>Founder</p>
-                <p>quote</p>
+                <p>Founder and factotum</p>
+                <p>“Saving the climate, one gram at a time”</p>
                 <i class="fab fa-linkedin"></i>
                 <i class="fab fa-twitter"></i>
               </div>
               <div class="img_block">
-                <img src="../../../assets/about_fotos/jos.png"/>
+                <!-- <img src="../../../assets/about_fotos/jos.png"/>
                 <h3>Milo de Vries</h3>
                 <p>Founder</p>
-                <p>quote</p>
+                <p>quote</p> -->
               </div>
               <div class="img_block">
-                <img src="../../../assets/about_fotos/maaike.png"/>
+                <!-- <img src="../../../assets/about_fotos/maaike.png"/>
                 <h3>Milo de Vries</h3>
                 <p>Founder</p>
-                <p>quote</p>
+                <p>quote</p> -->
               </div>
               <div class="img_block">
-                <img src="../../../assets/about_fotos/michiel-1.png"/>
+                <!-- <img src="../../../assets/about_fotos/michiel-1.png"/>
                 <h3>Milo de Vries</h3>
                 <p>Founder</p>
-                <p>quote</p>
+                <p>quote</p> -->
               </div>
               <div class="img_block">
-                <img src="../../../assets/about_fotos/sanne.png"/>
+                <!-- <img src="../../../assets/about_fotos/sanne.png"/>
                 <h3>Milo de Vries</h3>
                 <p>Founder</p>
-                <p>quote</p>
+                <p>quote</p> -->
               </div>
               <div class="img_block">
-                <img src="../../../assets/about_fotos/ahlam.png"/>
+                <!-- <img src="../../../assets/about_fotos/ahlam.png"/>
                 <h3>Milo de Vries</h3>
                 <p>Founder</p>
-                <p>quote</p>
+                <p>quote</p> -->
               </div>
             </div>
             </transition>
@@ -158,8 +144,11 @@
 </template>
 
 <script>
+import lang from "./../../../lang/lang_about.json";
+import { getCookie, setCookie } from "./../../../../functions/cookies";
 import Navigation from "./../../main/Navigation/Navigation";
 import Footer from "./../../main/Footer/Footer";
+
 import { Carousel, Slide } from "vue-carousel";
 
 export default {
@@ -171,30 +160,72 @@ export default {
   },
   data() {
     return {
-      showHistory : true,
+      showHistory : false,
       showFighters: false,
-      window: {
-        width: 0
-      }
+
+      //section 1
+      title: lang.nl.s1_title,
+      
+      //section 2
+      s2_title: lang.nl.s2_title,
+      s2_p1: lang.nl.s2_p1,
+      s2_p2: lang.nl.s2_p2,
+      s2_p3: lang.nl.s2_p3,
+      s2_p4: lang.nl.s2_p4,
+      
+      //section 3
+      s3_title: lang.nl.s3_title
+
     }
   },
-  created() {
-    window.addEventListener('resize', this.handleResize)
-    this.handleResize();
-  },
-  destroyed() {
-    window.removeEventListener('resize', this.handleResize)
+  mounted: function(){
+    this.checkCookies();
+
+    // The .$on function gets the language emit function from the navigation
+    this.$on("changeLangNav", lang => {
+      this.changeLang(lang);
+    });
   },
   methods: {
-    handleResize() {
-      this.window.width = window.innerWidth;
-      console.log(this.window.width);
-      // console.log(this.show);
-      if(this.window.with = window.innerWidth < 900) {
-        this.showHistory = false;
+      checkCookies() {
+      console.log("%ccheck cookies -  " + document.cookie, "color:red;");
 
+      if (getCookie("userLang")) {
+        // checks if userLang cookie exists
+        console.log("cookie exists ", getCookie("userLang"));
+        this.changeLang(getCookie("userLang"));
+        return;
       }
-    }
+
+      var userLang = navigator.language || navigator.userLanguage;
+
+      if (userLang.includes("en")) {
+        this.changeLang("en");
+        return;
+      }
+    }, // end checkCookies
+
+    changeLang: function(language) {
+      console.log("execute changeLang");
+
+      console.log("change language to " + language);
+
+      //section1
+        this.title = lang[language].s1_title;
+
+      //section 2
+        this.s2_title = lang[language].s2_title;
+        this.s2_p1 = lang[language].s2_p1;
+        this.s2_p2 = lang[language].s2_p2;
+        this.s2_p3 = lang[language].s2_p3;
+        this.s2_p4 = lang[language].s2_p4;
+
+      //section 3
+        this.s3_title = lang[language].s3_title;
+
+      setCookie("userLang", language, 200);
+      this.lang = language;
+    } // end changeLang
   }
 }
 </script>

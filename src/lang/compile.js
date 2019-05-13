@@ -10,6 +10,9 @@ var en_home = require('./en_/en_home.js');
 var nl_faq = require('./nl_/nl_faq.js');
 var en_faq = require('./en_/en_faq.js');
 
+var nl_about = require('./nl_/nl_about.js');
+var en_about = require('./en_/en_about.js');
+
 console.log('execute compile.js');
 
 // name of home language kit
@@ -30,9 +33,16 @@ var faq_language_kit_object = {
   en: en_faq
 };
 
+var about_language_kit_object = {
+  nl: nl_about,
+  en: en_about
+};
+
 // create New Home Language Kit
 createLanguageKit(home_language_kit, home_language_kit_object);
 createLanguageKit(faq_language_kit, faq_language_kit_object);
+createLanguageKit("src/lang/lang_about.json", about_language_kit_object);
+
 
 function createLanguageKit(fileName, output) {
   console.log('create HomeLanguageKit');
