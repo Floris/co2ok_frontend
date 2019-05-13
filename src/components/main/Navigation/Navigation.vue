@@ -108,6 +108,11 @@ export default {
           id: 3,
           text: lang.nl.links[3].text,
           page: "/faq"
+        },
+        {
+          id: 4,
+          text: lang.nl.links[4].text,
+          page: "/login"
         }
       ],
       isActive: false,
@@ -175,6 +180,12 @@ export default {
         id: 0,
         text: lang[lng].links[3].text,
         page: "/faq"
+      });
+
+      this.links.splice(4, 1, {
+        id: 0,
+        text: lang[lng].links[4].text,
+        page: "/login"
       });
     }
   },

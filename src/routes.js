@@ -2,6 +2,7 @@ import Home from './components/pages/Home/Home';
 import Faq from './components/pages/Faq/Faq';
 import Projecten from './components/pages/Projecten/Projecten';
 import Zakelijk from './components/pages/Zakelijk/Zakelijk';
+import Login from './components/pages/Login/Login';
 
 export const routes = [{
     path: '/',
@@ -15,7 +16,11 @@ export const routes = [{
     path: '/projecten',
     component: Projecten,
   }, {
-    path: '/Zakelijk',
+    path: '/zakelijk',
     component: Zakelijk
+  },
+  {
+    path: '/login',
+    component: Login
   }
 ];
