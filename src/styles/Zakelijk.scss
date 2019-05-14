@@ -160,6 +160,13 @@
     }
   }
 
+  .doughnut_chart {
+    div {
+      left: 0 !important;
+      right: 0 !important;
+    }
+  }
+
   .block_form {
     position: relative;
     height: 650px;
