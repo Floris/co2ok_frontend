@@ -15,6 +15,7 @@ var en_faq = require('./en_/en_faq.js');
 var nl_projecten = require('./nl_/nl_projecten.js');
 var en_projecten = require('./en_/en_projecten.js');
 
+<<<<<<< HEAD
 //projecten page files
 var nl_navigation = require('./nl_/nl_navigation.js');
 var en_navigation = require('./en_/en_navigation.js');
@@ -22,6 +23,11 @@ var en_navigation = require('./en_/en_navigation.js');
 var nl_about = require('./nl_/nl_about.js');
 var en_about = require('./en_/en_about.js');
 >>>>>>> 77b5b4d4dbf54a3ae8cb98b6a0be4930fc56a0c9
+=======
+//zakelijk page files
+var nl_zakelijk = require('./nl_/nl_zakelijk.js');
+var en_zakelijk = require('./en_/en_zakelijk.js');
+>>>>>>> 3d1141b4bda0dd27865abb67632c05b79e429fdd
 
 console.log('execute compile.js');
 
@@ -30,6 +36,7 @@ console.log('execute compile.js');
 var home_language_kit = "src/lang/lang_home.json";
 var faq_language_kit = "src/lang/lang_faq.json";
 var projecten_language_kit = "src/lang/lang_projecten.json";
+var zakelijk_language_kit = "src/lang/lang_zakelijk.json"
 
 
 // exmaple homepage language object
@@ -50,16 +57,25 @@ var projecten_language_kit_object = {
   en: en_projecten
 };
 
+<<<<<<< HEAD
 var navigation_language_kit_object = {
   nl: nl_navigation,
   en: en_navigation
 };
 
 
+=======
+var zakelijk_language_kit_object = {
+  nl: nl_zakelijk,
+  en: en_zakelijk
+};
+
+>>>>>>> 3d1141b4bda0dd27865abb67632c05b79e429fdd
 // create New Home Language Kit
 createLanguageKit(home_language_kit, home_language_kit_object);
 createLanguageKit(faq_language_kit, faq_language_kit_object);
 createLanguageKit(projecten_language_kit, projecten_language_kit_object);
+<<<<<<< HEAD
 createLanguageKit("src/lang/lang_navigation.json", navigation_language_kit_object);
 =======
 var about_language_kit_object = {
@@ -73,6 +89,9 @@ createLanguageKit(faq_language_kit, faq_language_kit_object);
 createLanguageKit("src/lang/lang_about.json", about_language_kit_object);
 
 >>>>>>> 77b5b4d4dbf54a3ae8cb98b6a0be4930fc56a0c9
+=======
+createLanguageKit(zakelijk_language_kit, zakelijk_language_kit_object);
+>>>>>>> 3d1141b4bda0dd27865abb67632c05b79e429fdd
 
 async function createLanguageKit(fileName, output) {
   console.log('create HomeLanguageKit');
