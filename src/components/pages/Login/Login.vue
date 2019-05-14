@@ -1,27 +1,20 @@
 <template>
   <div class="login">
     <Navigation :lang="lang" @changeLangNav="changeLang"/>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
+    <div class="background_left"></div>
+    <!-- <div class="content"> -->
+    <div class="content">
+      <div class="group-item_col">
+        <img src="../../../assets/wereldbol.png">
+      </div>
+      <div class="group-item_col">
+        <Register_view/>
+        <Login_view/>
+      </div>
+    </div>
+    <!-- </div> -->
 
-    <h1>Login/ Register page</h1>
-    <!-- <form> -->
-    <input placeholder="email" type="text" v-model="email">
-    <input placeholder="password" type="password" v-model="password">
-    <button v-on:click="sendRegisterForm">Register</button>
-    <button v-on:click="sendLoginForm">Aanmelden</button>
     <p class="error_msg" v-if="error_message">{{error_message}}</p>
-    <!-- </form> -->
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-
-    <Footer></Footer>
   </div>
 </template>
 
@@ -32,11 +25,16 @@ import { getCookie, setCookie } from "./../../../../functions/cookies";
 import Navigation from "./../../main/Navigation/Navigation";
 import Footer from "./../../main/Footer/Footer";
 
+import Register_view from "./components/Register_view";
+import Login_view from "./components/Login_view";
+
 export default {
   name: "Login",
   components: {
     Navigation: Navigation,
-    Footer: Footer
+    Footer: Footer,
+    Register_view: Register_view,
+    Login_view: Login_view
   },
   data() {
     return {
@@ -74,15 +72,17 @@ export default {
             email: this.email,
             password: this.password,
             sort: "webshop"
-          },
-          header: { "X-CSRFToken": "gZvnzSFeGp7h68WjCzmFky6wMkiJZXDU" } // <-- generated csrf token here
+          }
+          // header: { "X-CSRFToken": "gZvnzSFeGp7h68WjCzmFky6wMkiJZXDU" } // <-- generated csrf token here
         })
         .then(response => {
           console.log(response);
 
           if (response.data.authenticate) {
             setCookie("loggedIn", true, 5); // set cookie logged in
-            setCookie("userToken", response.data.token, 5); // set cookie logged in
+            setCookie("userToken", response.data.token, 5); // set 'Token' from Server
+
+            // store username in vuex
             this.error_message = null;
             this.$router.push("/dashboard"); // redirect to dashboard
           } else {
@@ -113,8 +113,8 @@ export default {
             city: "Zandvoort",
             zipcode: "2042ar",
             street: "straat"
-          },
-          header: { "X-CSRFToken": "gZvnzSFeGp7h68WjCzmFky6wMkiJZXDU" }
+          }
+          // header: { "X-CSRFToken": "gZvnzSFeGp7h68WjCzmFky6wMkiJZXDU" }
         })
         .then(response => {
           if (response.data.error) {

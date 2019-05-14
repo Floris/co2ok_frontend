@@ -2,10 +2,23 @@
 // (runtime-only or standalone) has been set in webpack.base.conf with an alias.
 import Vue from 'vue';
 import VueRouter from 'vue-router';
+
+import {
+  store
+} from './store';
+
+// axios csrf settings
+import Axios from 'axios'
+Axios.defaults.xsrfHeaderName = 'X-CSRFTOKEN';
+Axios.defaults.xsrfCookieName = 'XCSRF-TOKEN';
+Axios.defaults.withCredentials = true;
+Vue.prototype.$axios = Axios;
+
 import {
   routes
 } from './routes';
-import App from './App'
+
+import App from './App';
 
 Vue.config.productionTip = false;
 
@@ -20,5 +33,6 @@ const router = new VueRouter({
 new Vue({
   el: '#app',
   router,
+  store,
   render: h => h(App)
 });

@@ -17,7 +17,8 @@
     "browser-sync": "^2.26.3",
     "vue": "^2.5.2",
     "vue-carousel": "^0.18.0",
-    "vue-router": "^3.0.5"
+    "vue-router": "^3.0.5",
+    "vuex": "^3.1.1"
   },
   "devDependencies": {
     "autoprefixer": "^7.1.2",
