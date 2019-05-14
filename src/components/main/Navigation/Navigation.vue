@@ -160,19 +160,19 @@ export default {
       });
 
       this.links.splice(1, 1, {
-        id: 0,
+        id: 1,
         text: lang[lng].links[1].text,
         page: "/zakelijk"
       });
 
       this.links.splice(2, 1, {
-        id: 0,
+        id: 2,
         text: lang[lng].links[2].text,
         page: "/about"
       });
 
       this.links.splice(3, 1, {
-        id: 0,
+        id: 3,
         text: lang[lng].links[3].text,
         page: "/faq"
       });

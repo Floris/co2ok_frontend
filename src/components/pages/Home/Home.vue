@@ -29,13 +29,7 @@
         <h2>{{s3_title}}</h2>
 
         <div class="carousel showCarousel hidden">
-          <carousel
-            :centerMode="true"
-            :per-page="1"
-            :navigate-to="someLocalProperty"
-            :mouse-drag="true"
-            :perPage="1"
-          >
+          <carousel :centerMode="true" :per-page="1" :mouse-drag="true" :perPage="1">
             <slide>
               <div class="img_block">
                 <img src="../../../assets/hoeWerktHet1.svg">
