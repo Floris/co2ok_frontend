@@ -5,16 +5,14 @@
     <div class="block_intro">
       <div class="content">
           <div class="block_text">
-             
-            <h3>{{title}}</h3>
+             <h2>{{title}}</h2>
           </div>
       </div>
     </div>
     <div class="block_history">
       <div class="content">
         <div class="block_text">
-          <div class="title">
-           
+          <div class="title">      
             <h2>{{s2_title}}</h2>
           </div>
           <div class="text">
@@ -30,6 +28,9 @@
               {{s2_p4}}
             </p>
           </div>
+        </div>
+        <div class="weegschaal">
+          <img src="../../../assets/weegschaalscheef.svg">
         </div>
         <div class="block_text_mobile">
           <div class="title group-item">
@@ -53,40 +54,41 @@
           </transition>
         </div>
         <!-- img & title fighters section -->
-        <div class="img_title">
-          <img src="../../../assets/weegschaal.png">
-          <h2>{{s3_title}}</h2>
-        </div>
       </div>
     </div>
     <div class="block_fighters">
       <div class="content">
           <div class="fighters">
-            <div class="img_block">
-              <img src="../../../assets/about_fotos/milo.png"/>
-              <h3>Milo de Vries</h3>
-              <p>Founder and factotum</p>
-              <p>“Saving the climate, one gram at a time”</p>
-              <i class="fab fa-linkedin"></i>
-              <i class="fab fa-twitter"></i>
+            <div class="title">
+              <h2>{{s3_title}}</h2>
             </div>
-            <div class="img_block">
-              <!-- <img src="../../../assets/about_fotos/jos.png"/> -->
-              <!-- <h3>Milo de Vries</h3>
-              <p>Founder</p>
-              <p>quote</p> -->
-            </div>
-            <div class="img_block">
-              <!-- <img src="../../../assets/about_fotos/maaike.png"/> -->
-              <!-- <h3>Maaike Braat</h3>
-              <p>Scientist</p>
-              <p>Het kan altijd sneller en beter en dit is een stap in de goede richting.</p> -->
-            </div>
-            <div class="img_block">
-              <!-- <img src="../../../assets/about_fotos/michiel-1.png"/>
-              <h3>Milo de Vries</h3>
-              <p>Founder</p>
-              <p>quote</p> -->
+            <div class="img_collage">
+              <div class="img_block">
+                <img src="../../../assets/about_fotos/milo.png"/>
+                <h3>Milo de Vries</h3>
+                <p>Founder and factotum</p>
+                <p>“Saving the climate, one gram at a time”</p>
+                <i class="fab fa-linkedin"></i>
+                <i class="fab fa-twitter"></i>
+              </div>
+              <div class="img_block">
+                <!-- <img src="../../../assets/about_fotos/jos.png"/> -->
+                <!-- <h3>Milo de Vries</h3>
+                <p>Founder</p>
+                <p>quote</p> -->
+              </div>
+              <div class="img_block">
+                <!-- <img src="../../../assets/about_fotos/maaike.png"/> -->
+                <!-- <h3>Maaike Braat</h3>
+                <p>Scientist</p>
+                <p>Het kan altijd sneller en beter en dit is een stap in de goede richting.</p> -->
+              </div>
+              <div class="img_block">
+                <!-- <img src="../../../assets/about_fotos/michiel-1.png"/>
+                <h3>Milo de Vries</h3>
+                <p>Founder</p>
+                <p>quote</p> -->
+              </div>
             </div>
           </div>
           <div class="fighters_mobile">
@@ -162,6 +164,8 @@ export default {
     return {
       showHistory : false,
       showFighters: false,
+
+      counter: 0,
 
       lang: "nl",
       //section 1
