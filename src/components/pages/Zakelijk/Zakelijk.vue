@@ -171,26 +171,29 @@
           </div>
           <div class="ecom_input">
             <h3>{{s4_title3}}</h3>
-            <form action="https://hotmail.us20.list-manage.com/subscribe/post" method="POST">
+              <p v-if="error">
+                {{ error }}
+              </p>
+            <form action="https://hotmail.us20.list-manage.com/subscribe/post" method="POST" @submit="checkForm">
               <input type="hidden" name="u" value="8e5d19fbeb79f5b19520e1f2b">
               <input type="hidden" name="id" value="82f97344b0">
               <div class="input_fields">
                 <p>{{s4_input}}</p>
-                <input type="text" name="MERGE1" id="MERGE1" size="25" value>
+                <input v-model="name" type="text" name="MERGE1" id="MERGE1" size="25" >
                 <p>{{s4_input2}}</p>
                 <input
+                  v-model="email"
                   type="email"
                   autocapitalize="off"
                   autocorrect="off"
                   name="MERGE0"
                   id="MERGE0"
                   size="25"
-                  value
                 >
                 <p>{{s4_input3}}</p>
-                <input type="text" name="MERGE6" id="MERGE6" size="25" value>
+                <input v-model="phonenum" type="text" name="MERGE6" id="MERGE6" size="25">
                 <p>{{s4_input4}}</p>
-                <input type="text" name="MERGE2" id="MERGE2" size="25" value>
+                <input v-model="ecommerce" type="text" name="MERGE2" id="MERGE2" size="25">
                 <button class="button green">{{s4_button}}</button>
               </div>
             </form>
@@ -222,6 +225,14 @@ export default {
       percent4: 0,
 
       isActive: false,
+
+
+      error: '',
+
+      name: null,
+      email: null,
+      phonenum: null,
+      ecommerce: null,
 
       //section 1
       title: lang.nl.title,
@@ -263,7 +274,10 @@ export default {
       s4_input2: lang.nl.s4_input2,
       s4_input3: lang.nl.s4_input3,
       s4_input4: lang.nl.s4_input4,
-      s4_button: lang.nl.s4_button
+      s4_button: lang.nl.s4_button,
+
+      s4_error: lang.nl.s4_error,
+
     };
   },
   methods: {
@@ -332,6 +346,7 @@ export default {
       this.s4_input3 = lang[language].s4_input3;
       this.s4_input4 = lang[language].s4_input4;
       this.s4_button = lang[language].s4_button;
+      this.s4_error = lang[language].s4_error;
 
       setCookie("userLang", language, 200);
       this.lang = language;
@@ -380,6 +395,17 @@ export default {
         }, 5);
         this.isActive = true;
       }
+    },
+    checkForm: function (e) {
+      if (this.name && this.email && this.phonenum && this.ecommerce) {
+        return true;
+      }
+
+      if (!this.name || !this.email || !this.phonenum || !this.ecommerce) {
+        this.error = this.s4_error;
+      }
+      
+      e.preventDefault();
     }
   },
   created() {

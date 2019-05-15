@@ -41,4 +41,5 @@ module.exports = {
   s4_input3: "Phone number*",
   s4_input4: "E-commerce platform*",
   s4_button: "Send",
+  s4_error: "Please fill in all fields"
 };
