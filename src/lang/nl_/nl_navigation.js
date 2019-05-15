@@ -6,7 +6,7 @@ module.exports = {
       text: "ZAKELIJK",
     },
     {
-      text: "ABOUT",
+      text: "OVER",
     },
     {
       text: "FAQ",
