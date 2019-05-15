@@ -5,6 +5,12 @@
   position: relative;
   align-self: center;
 
+  .block {
+    a {
+      text-decoration: underline;
+    }
+  }
+
   .top_intro {
     position: relative;
     background: $light_blue;
