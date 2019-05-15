@@ -34,9 +34,9 @@
           <img src="../../../assets/weegschaalscheef.svg">
         </div>
         <div class="block_text_mobile">
-          <div class="title group-item">
+          <div class="title group-item" @click="showHistory = !showHistory">
             <h2>{{s2_title}}</h2>
-            <img src="../../../assets/Middel_24.svg" @click="showHistory = !showHistory">
+            <img src="../../../assets/Middel_24.svg">
           </div>
           <transition name="fade">
           <div class="text" v-if="showHistory">
@@ -93,9 +93,9 @@
             </div>
           </div>
           <div class="fighters_mobile">
-            <div class="title group-item">
+            <div class="title group-item" @click="showFighters = !showFighters">
               <h2>{{s3_title}}</h2>
-              <img src="../../../assets/Middel_24.svg" @click="showFighters = !showFighters">
+              <img src="../../../assets/Middel_24.svg">
             </div>
             <transition name="fade">
             <div class="img_collage group" v-if="showFighters">
