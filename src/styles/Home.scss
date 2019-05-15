@@ -42,12 +42,10 @@
     }
 
     h1 {
-      color: $mid_blue;
       font-size: $large_fs;
     }
 
     p {
-      color: $mid_blue;
       font-weight: 500;
     }
 
@@ -94,7 +92,7 @@
       max-width: 100%;
       position: absolute;
       z-index: 99;
-      bottom: -49px;
+      bottom: -30px;
     }
 
   }
@@ -163,7 +161,6 @@
     }
 
     p {
-      color: $mid_blue;
       display: block;
       margin: 20px auto 0;
       max-width: 300px;
@@ -191,7 +188,6 @@
     p {
       max-width: 800px;
       margin: 1em 0;
-      color: $mid_blue;
     }
 
     .content {
@@ -347,7 +343,7 @@
       a {
         list-style: none;
         font-weight: bold;
-        color: $mid_blue !important;
+        color: #000 !important;
       }
 
       .email_number {

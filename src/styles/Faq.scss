@@ -13,13 +13,13 @@
   .jumbotron {
     height: 200px;
     width: 100%;
-    background-image: url('./../assets/wolken_unsplash.jpg');
-    background-position: 75% 59%;
+    // background-image: url('./../assets/wolken_unsplash.jpg');
+    // background-position: 75% 59%;
 
     .background_color {
       height: 100%;
       width: 100%;
-      background: rgba(46, 204, 113, 0.8);
+      background: rgba(46, 204, 113, 1);
     }
   }
 
@@ -77,7 +77,8 @@
       width: 100%;
       text-align: left;
       display: block;
-      color: $mid_blue;
+      // color: $mid_blue;
+      color: #000;
     }
 
     .q {
@@ -85,12 +86,14 @@
       cursor: pointer;
       font-weight: bold;
       //   padding: 10px;
-      color: $mid_blue;
+      // color: $mid_blue;
+      color: #000;
     }
 
     .a {
       padding: 0 10px;
-      color: $mid_blue;
+      // color: $mid_blue;
+      color: #000;
 
       // display: none;
       p {

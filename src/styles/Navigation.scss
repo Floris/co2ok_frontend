@@ -12,7 +12,7 @@
     // border: 1px solid $green;
     // border-radius: $border_radius;
     // background: $green;
-    color: $mid_blue;
+    color: #000;
     padding: 10px;
     vertical-align: middle;
   }
@@ -102,7 +102,7 @@
   }
 
   .showItems {
-    color: $mid_blue;
+    color: #000;
     display: inline-block;
   }
 
@@ -145,6 +145,8 @@
   }
 
   .lang_flag {
+    width: 33px;
+    height: 21px;
     padding: 10px;
     z-index: 9999999;
     position: relative;
@@ -184,7 +186,7 @@
   }
 
   .router-link-active {
-    border-bottom: 2px solid $mid_blue;
+    border-bottom: 2px solid #000;
     // width: 100%;
     // height: 2px;
   }
@@ -203,6 +205,11 @@
 @media only screen and (max-width: 700px) {
 
   .navigation {
+
+    .router-link-active {
+      border: 0;
+      border-bottom: 0;
+    }
 
     .co2ok-logo {
       flex-grow: 0 !important;
@@ -237,6 +244,10 @@
       z-index: 10;
       -webkit-user-select: none;
       user-select: none;
+
+      a {
+        font-size: 19px;
+      }
 
       input {
         display: block;

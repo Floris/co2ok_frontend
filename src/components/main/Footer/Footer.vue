@@ -1,8 +1,5 @@
 <template>
   <div class="footer">
-    <div class="line_container">
-      <img src="../../../assets/achtergronden_svg/grijs-lijn-2.svg" class="line">
-    </div>
     <div class="content">
       <div class="section1">
         <div class="group">
