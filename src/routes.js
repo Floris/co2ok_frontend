@@ -4,6 +4,7 @@ import Projecten from './components/pages/Projecten/Projecten';
 import Zakelijk from './components/pages/Zakelijk/Zakelijk';
 import About from './components/pages/About/About';
 import Privacy from './components/pages/Privacy/Privacy';
+import Installatie from './components/pages/Installatie/Installatie';
 
 
 export const routes = [{
@@ -28,5 +29,9 @@ export const routes = [{
   {
     path: '/privacy',
     component: Privacy
+  },
+  {
+    path: '/installatie',
+    component: Installatie
   }
 ];

@@ -1,0 +1,14 @@
+@import "_vars.scss";
+
+.installatie {
+  background: orange;
+  position: relative;
+  align-self: center;
+  
+  .block_intro {
+    position: relative;
+    height: 600px;
+    width: 100%;
+    background: $green;
+  }
+}
