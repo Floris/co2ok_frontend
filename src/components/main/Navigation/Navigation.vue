@@ -40,10 +40,10 @@
             href="https://chrome.google.com/webstore/detail/co2okninja/omlkdocjhkgbllabpihhdggplladfipe"
             target="_blank"
           >
-            <button
+            <!-- <button
               v-bind:class="{showButton : isActive}"
               class="button green hidden"
-            >Download Ninja</button>
+            >Download Ninja</button>-->
           </a>
         </div>
 

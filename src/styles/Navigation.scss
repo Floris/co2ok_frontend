@@ -80,10 +80,10 @@
   .showBar {
     overflow: hidden;
     position: fixed;
-    background: rgba(255, 255, 255, 0.96);
+    background: rgba(255, 255, 255, 0.98);
     max-height: 200px;
     transition: max-height 1s;
-    border-bottom: 3px solid $green;
+    // border-bottom: 3px solid $green;
     // width: 80% !important;
     // max-width: 80% !important;
     left: 0 !important;
@@ -140,7 +140,7 @@
   }
 
   .router-link-active {
-    border-bottom: 2px solid $green;
+    border-bottom: 2px solid $mid_blue;
     // width: 100%;
     // height: 2px;
   }

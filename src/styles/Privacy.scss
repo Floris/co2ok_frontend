@@ -1,0 +1,14 @@
+// Privacy.scss
+
+@import "_vars.scss";
+
+.privacy {
+  background: $green;
+
+  .container {
+    max-width: $content_max_width;
+    padding: 100px 0;
+    // height: 100%;
+    margin: 0 auto;
+  }
+}
