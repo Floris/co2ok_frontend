@@ -133,7 +133,7 @@ export default {
         .then(response => {
           if (response.data.error) {
             this.error_message = response.data.error; // show message - response.data.error
-            // show message - response.data.error
+            return;
           }
           if (response) {
             console.log("res", response);
