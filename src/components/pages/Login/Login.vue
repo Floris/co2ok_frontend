@@ -3,18 +3,40 @@
     <Navigation :lang="lang" @changeLangNav="changeLang"/>
     <div class="background_left"></div>
     <!-- <div class="content"> -->
-    <div class="content">
-      <div class="group-item_col">
-        <img src="../../../assets/wereldbol.png">
+    <div class="content container">
+      <div class="group-item">
+        <!-- <img src="../../../assets/wereldbol.png"> -->
+        <img src="../../../assets/boom2.svg">
+        <div class="download_section">
+          <h1>Download Ninja!</h1>
+          <p>Geen registratie nodig.</p>
+          <a
+            target="_blank"
+            href="https://chrome.google.com/webstore/detail/co2okninja/omlkdocjhkgbllabpihhdggplladfipe"
+          >
+            <button class="button green">Download Ninja - Het is gratis</button>
+          </a>
+        </div>
       </div>
-      <div class="group-item_col">
-        <Register_view/>
-        <Login_view/>
+      <div class="group-item">
+        <div class="group-item_col">
+          <Register_view
+            v-if="show === 'register'"
+            @sendRegisterForm="handleRegisterForm"
+            @switchTo="showComponent"
+            @errorMessage="throwError"
+          />
+          <Login_view
+            v-if="show === 'login'"
+            @sendLoginForm="handleLoginForm"
+            @switchTo="showComponent"
+            @errorMessage="throwError"
+          />
+          <p class="error_msg" v-if="error_message">{{error_message}}</p>
+        </div>
       </div>
     </div>
     <!-- </div> -->
-
-    <p class="error_msg" v-if="error_message">{{error_message}}</p>
   </div>
 </template>
 
@@ -39,38 +61,31 @@ export default {
   data() {
     return {
       lang: "nl",
+      show: "register",
 
       error_message: null,
-      urlServer: "http://127.0.0.1:8000",
-
-      // form data
-      email: "",
-      password: "",
-      company: "company",
-      number: "number",
-      sort: "webshop",
-      name: "name2332",
-      link: "https://www.link.com",
-      country: "The Netherlands",
-      city: "Zandvoort",
-      zipcode: "2042ar",
-      street: "straat"
+      urlServer: "http://127.0.0.1:8000"
     };
   },
   mounted: function() {
     this.checkIfLoggedIn();
+
+    // The .$on function gets the languege emit function from the navigation
+    this.$on("changeLangNav", lang => {
+      this.changeLang(lang);
+    });
   },
   methods: {
-    sendLoginForm() {
-      console.log("%csendLoginForm", "color:blue");
+    handleLoginForm(data) {
+      console.log("%chandleLoginForm", "color:blue");
 
-      // login validation
+      // TODO: login validation
 
       axios
         .post(this.urlServer + "/login/", {
           body: {
-            email: this.email,
-            password: this.password,
+            email: data.email,
+            password: data.password,
             sort: "webshop"
           }
           // header: { "X-CSRFToken": "gZvnzSFeGp7h68WjCzmFky6wMkiJZXDU" } // <-- generated csrf token here
@@ -91,28 +106,27 @@ export default {
         })
         .catch(error => {
           console.log(error);
+          this.error_message = error;
         });
     },
 
-    sendRegisterForm() {
-      console.log("%csendRegisterForm", "color:green");
-
-      // register validation
+    handleRegisterForm(data) {
+      console.log("%chandleRegisterForm", "color:green");
 
       axios
         .post(this.urlServer + "/signup/", {
           body: {
-            company: "company",
-            email: this.email,
-            password: this.password,
-            number: "number",
-            sort: "webshop",
-            name: "name2332",
-            link: "https://www.link.com",
-            country: "The Netherlands",
-            city: "Zandvoort",
-            zipcode: "2042ar",
-            street: "straat"
+            company: "TEST_company",
+            email: data.email,
+            password: data.password,
+            number: "TEST_number" + Math.random(),
+            sort: "TEST_webshop" + Math.random(),
+            name: "TEST_name" + Math.random(),
+            link: "TEST_URL" + Math.random(),
+            country: "TEST_country" + Math.random(),
+            city: "TEST_city" + Math.random(),
+            zipcode: "TEST_zipcode" + Math.random(),
+            street: "TEST_street" + Math.random()
           }
           // header: { "X-CSRFToken": "gZvnzSFeGp7h68WjCzmFky6wMkiJZXDU" }
         })
@@ -123,10 +137,12 @@ export default {
           }
           if (response) {
             console.log("res", response);
+            this.show = "login";
           }
         })
         .catch(error => {
           console.log(error);
+          this.error_message = error;
         });
     },
 
@@ -160,7 +176,15 @@ export default {
 
       setCookie("userLang", language, 200);
       this.lang = language;
-    } // end changeLang
+    }, // end changeLang
+
+    showComponent(component) {
+      this.show = component;
+    },
+
+    throwError(msg) {
+      this.error_message = msg;
+    }
   }
 };
 </script>

@@ -91,6 +91,25 @@ a {
   //   -webkit-font-smoothing: antialiased;
 }
 
+.input {
+  width: 233px;
+  height: 36px;
+  background: #eee;
+  padding: 0 10px;
+
+  outline: 0;
+  vertical-align: middle;
+  white-space: nowrap;
+  box-sizing: border-box;
+  box-shadow: 0 10px 6px -6px #ccc;
+  border: 0;
+  border-radius: $border_radius;
+
+  font-size: 14px;
+  display: inline-block;
+  margin: 6px auto;
+}
+
 
 .green {
   background: $green;

@@ -1,5 +1,7 @@
 var fs = require('fs');
 
+console.log('execute compile.js');
+
 // import all language files
 
 //homepage files
@@ -18,14 +20,12 @@ var en_projecten = require('./en_/en_projecten.js');
 var nl_navigation = require('./nl_/nl_navigation.js');
 var en_navigation = require('./en_/en_navigation.js');
 
-console.log('execute compile.js');
+var nl_about = require('./nl_/nl_about.js');
+var en_about = require('./en_/en_about.js');
 
-// name of home language kit
-// add more language kit files later
-var home_language_kit = "src/lang/lang_home.json";
-var faq_language_kit = "src/lang/lang_faq.json";
-var projecten_language_kit = "src/lang/lang_projecten.json";
-
+//zakelijk page files
+var nl_zakelijk = require('./nl_/nl_zakelijk.js');
+var en_zakelijk = require('./en_/en_zakelijk.js');
 
 // exmaple homepage language object
 // add more language objects later
@@ -39,22 +39,35 @@ var faq_language_kit_object = {
   en: en_faq
 };
 
+
 var projecten_language_kit_object = {
   nl: nl_projecten,
   en: en_projecten
 };
+
 
 var navigation_language_kit_object = {
   nl: nl_navigation,
   en: en_navigation
 };
 
+var zakelijk_language_kit_object = {
+  nl: nl_zakelijk,
+  en: en_zakelijk
+};
+
+var about_language_kit_object = {
+  nl: nl_about,
+  en: en_about
+};
 
 // create New Home Language Kit
-createLanguageKit(home_language_kit, home_language_kit_object);
-createLanguageKit(faq_language_kit, faq_language_kit_object);
-createLanguageKit(projecten_language_kit, projecten_language_kit_object);
+createLanguageKit("src/lang/lang_home.json", home_language_kit_object);
+createLanguageKit("src/lang/lang_faq.json", faq_language_kit_object);
+createLanguageKit("src/lang/lang_projecten.json", projecten_language_kit_object);
 createLanguageKit("src/lang/lang_navigation.json", navigation_language_kit_object);
+createLanguageKit("src/lang/lang_about.json", about_language_kit_object);
+createLanguageKit("src/lang/lang_zakelijk.json", zakelijk_language_kit_object);
 
 async function createLanguageKit(fileName, output) {
   console.log('create HomeLanguageKit');

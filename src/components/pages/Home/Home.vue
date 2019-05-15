@@ -8,12 +8,9 @@
         <div class="text_block">
           <h1>{{title}}</h1>
           <p>{{title2}}</p>
-          <a
-            target="_blank"
-            href="https://chrome.google.com/webstore/detail/co2okninja/omlkdocjhkgbllabpihhdggplladfipe"
-          >
+          <router-link to="/login">
             <button class="button green">{{button_header1}}</button>
-          </a>
+          </router-link>
         </div>
       </div>
       <div class="line_container">
@@ -29,13 +26,7 @@
         <h2>{{s3_title}}</h2>
 
         <div class="carousel showCarousel hidden">
-          <carousel
-            :centerMode="true"
-            :per-page="1"
-            :navigate-to="someLocalProperty"
-            :mouse-drag="true"
-            :perPage="1"
-          >
+          <carousel :centerMode="true" :per-page="1" :mouse-drag="true" :perPage="1">
             <slide>
               <div class="img_block">
                 <img src="../../../assets/hoeWerktHet1.svg">

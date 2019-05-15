@@ -5,6 +5,12 @@
   position: relative;
   align-self: center;
 
+  .block {
+    a {
+      text-decoration: underline;
+    }
+  }
+
   .top_intro {
     position: relative;
     background: $light_blue;
@@ -157,6 +163,13 @@
           }
         }
       }
+    }
+  }
+
+  .doughnut_chart {
+    div {
+      left: 0 !important;
+      right: 0 !important;
     }
   }
 

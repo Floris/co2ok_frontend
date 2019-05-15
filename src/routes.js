@@ -4,6 +4,9 @@ import Projecten from './components/pages/Projecten/Projecten';
 import Zakelijk from './components/pages/Zakelijk/Zakelijk';
 import Login from './components/pages/Login/Login';
 import Dashboard from './components/pages/Dashboard/Dashboard';
+import About from './components/pages/About/About';
+import Privacy from './components/pages/Privacy/Privacy';
+
 
 export const routes = [{
     path: '/',
@@ -15,8 +18,9 @@ export const routes = [{
   },
   {
     path: '/projecten',
-    component: Projecten,
-  }, {
+    component: Projecten
+  },
+  {
     path: '/zakelijk',
     component: Zakelijk
   },
@@ -27,5 +31,13 @@ export const routes = [{
   {
     path: '/dashboard',
     component: Dashboard
+  },
+  {
+    path: '/about',
+    component: About
+  },
+  {
+    path: '/privacy',
+    component: Privacy
   }
 ];
