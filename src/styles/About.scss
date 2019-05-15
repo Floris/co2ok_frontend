@@ -81,17 +81,16 @@
   }
 
   .block_fighters {
-    // height: 800px;
     width: 100%;
     background: $grey;
     position: relative;
     height: auto;
+    
     .content {
       .fighters {
         height: auto;
         display: flex;
         flex-direction: column;
-        // justify-content: center;
         align-content: center;
         margin-top: 50px;
         padding-bottom: 30px;
@@ -104,7 +103,7 @@
           display: flex;
           flex-direction: row;
           flex-wrap: wrap;
-          justify-content: space-between;
+          max-width: 100%;
           .img_block {
             background: $white;
             box-shadow: -5px 3px 40px 2px rgba(143,137,143,0.74);
@@ -113,8 +112,9 @@
             border-radius: 5px;
             width: 250px;
             height: 400px;
-            margin-top: 10px;
             text-align: center;
+            margin: 0 auto;
+            margin-top: 10px;
 
             h3 {
               font-size: $medium_fs;
@@ -140,6 +140,7 @@
   }
 
 }
+
 @media only screen and (max-width: 900px) {
   .block_intro {
     .content {
@@ -265,6 +266,7 @@
           font-size: $medium_fs !important;
         }
       }
+
     }
   }
   .block_history {
@@ -274,6 +276,9 @@
           height: 320px !important;
           width: 330px !important;
         }
+      }
+      .weegschaal {
+        width: 300px !important;
       }
     }
   }
