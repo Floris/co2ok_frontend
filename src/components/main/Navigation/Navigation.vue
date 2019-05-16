@@ -24,7 +24,7 @@
             v-bind:key="routes.id"
             :to="`${routes.page}`"
           >{{routes.text}}</router-link>
-          <router-link class="profile" to="/dashboard">
+          <router-link class="profile" to="/login">
             <i class="far fa-user"></i>
           </router-link>
           <div class="lang_flag">
@@ -64,7 +64,7 @@
               v-bind:key="routes.id"
               :to="`${routes.page}`"
             >{{routes.text}}</router-link>
-            <router-link class="profile_mobile" to="/dashboard">
+            <router-link class="profile_mobile" to="/login">
               <i class="far fa-user"></i>
             </router-link>
             <div class="lang_flag_mobile">

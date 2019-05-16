@@ -6,12 +6,9 @@
         <div class="text_block">
           <h1>{{title}}</h1>
           <p>{{p}}</p>
-          <a
-            target="_blank"
-            href="https://chrome.google.com/webstore/detail/co2okninja/omlkdocjhkgbllabpihhdggplladfipe"
-          >
+          <router-link to="/login">
             <button class="button green">{{button_header1}}</button>
-          </a>
+          </router-link>
         </div>
         <img src="../../../assets/wereldbol.png">
       </div>
