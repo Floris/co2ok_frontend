@@ -2,7 +2,7 @@
   <div class="projecten">
     <Navigation :lang="lang" @changeLangNav="changeLang"/>
     <div class="jumbotron">
-      <div class="jumbo_content">
+      <div class="jumbo_content content">
         <div class="text_block">
           <h1>{{title}}</h1>
           <p>{{p}}</p>
