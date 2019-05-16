@@ -3,7 +3,7 @@ module.exports = {
   //section1
   title: "Shop climate neutral",
   title2: "Save the climate – Ninja makes sure webshops invest in green energy!",
-  button_header1: "Download Ninja - It's free",
+  button_header1: "Join Ninja - It's free",
   //section2
   s2_title: "Our mission",
   s2_p1: "Become a CO₂ok Ninja with our Ninja extension. You shop and the store pays a CO₂ compensation at no extra cost for you. Fighting climate change was never this easy.",

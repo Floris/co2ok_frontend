@@ -3,7 +3,7 @@ module.exports = {
   //section1
   title: "Shop klimaat neutraal",
   title2: "Red het milieu – Ninja zorgt ervoor dat webshops geld investeren in groene energie!",
-  button_header1: "Download Ninja - Het is gratis",
+  button_header1: "Join Ninja - Het is gratis",
   //section2
   s2_title: "Onze missie",
   s2_p1: "Ga met ons de strijd aan. Door elke online aankoop die je doet CO₂ok te maken, beperken we de hoeveelheid broeikasgassen die in de lucht komen. Zo gaan we samen klimaatverandering tegen!",
