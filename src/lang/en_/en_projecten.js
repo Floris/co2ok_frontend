@@ -1,7 +1,7 @@
 module.exports = {
   title: "CO₂ compensation projects",
   p: "The transport and production of any purchased item causes the emission of greenhouse gases. Manufacturers try to reduce this emission, but most fail to show actual progress. A purchase of *that* item you want can become climate neutral through CO₂-compensation.",
-  button_header1: "Download Ninja - It's free",
+  button_header1: "Join Ninja - It's free",
   s2_title1: "Emission reduction projects outside the Netherlands",
   s2_body1: `<p>Atmosfair’s energy efficiency projects support sustainability development in developing countries by handing over technology, fighting poverty and reducing the emission of CO₂.</p>    
       <h3>WIND POWER</h3>

@@ -1,7 +1,7 @@
 module.exports = {
   title: "CO₂ compensatie projecten",
   p: "Tijdens de productie en het transport van producten komen broeikasgassen vrij. Fabrikanten proberen deze uitstoot terug te dringen, maar de meeste schieten hier niet zo hard mee op. Om toch juist dát product dat je wilt klimaatneutraal te kunnen kopen, is CO₂-compensatie een uitkomst.",
-  button_header1: "Download Ninja - Het is gratis",
+  button_header1: "Join Ninja - Het is gratis",
   s2_title1: "Uitstootvermindering",
   s2_body1: `<p>De energie-efficiëntie projecten van Atmosfair ondersteunen duurzame ontwikkeling door technologie over te dragen, bestrijden armoede én verminderen CO₂-uitstoot.</p>
       <h3>KOOKSTELLEN</h3>
