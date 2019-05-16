@@ -10,7 +10,6 @@
     <h1>Dashboard</h1>
 
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum nobis illum et dolorum reprehenderit, vero laborum repellendus vitae provident non ea tenetur! Iure odit deleniti deserunt sequi dolorum nobis hic.</p>
-
     <br>
     <br>
     <br>
