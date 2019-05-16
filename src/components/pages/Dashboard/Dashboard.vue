@@ -41,6 +41,8 @@ export default {
   },
   mounted: function() {
     this.checkIfLoggedIn();
+
+    this.checkCookies();
   },
   methods: {
     checkIfLoggedIn() {

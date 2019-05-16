@@ -114,6 +114,11 @@ export default {
           id: 3,
           text: lang.nl.links[3].text,
           page: "/faq"
+        },
+        {
+          id: 4,
+          text: lang.nl.links[4].text,
+          page: "/inspiratie"
         }
       ],
       isActive: false,
@@ -174,12 +179,18 @@ export default {
       this.links.splice(2, 1, {
         id: 2,
         text: lang[lng].links[2].text,
-        page: "/about"
+        page: "/inspiratie"
       });
 
       this.links.splice(3, 1, {
         id: 3,
         text: lang[lng].links[3].text,
+        page: "/about"
+      });
+
+      this.links.splice(4, 1, {
+        id: 4,
+        text: lang[lng].links[4].text,
         page: "/faq"
       });
     }

@@ -1,0 +1,49 @@
+@import "_vars.scss";
+
+.inspiratie {
+
+  .jumbotron {
+    height: 200px;
+    width: 100%;
+    // background-image: url('./../assets/wolken_unsplash.jpg');
+    // background-position: 75% 59%;
+
+    .background_color {
+      height: 100%;
+      width: 100%;
+      background: $light_blue;
+    }
+  }
+
+
+  .medium_posts {
+    display: flex;
+    flex-wrap: wrap;
+    flex-grow: 2;
+
+    .post {
+      width: 300px;
+      height: 250px;
+      max-width: 400px;
+
+
+      border: 1px solid #fff;
+      border-radius: $border-radius;
+
+      background-color: rgba(189, 195, 199, 0.8);
+      margin: 5px auto;
+    }
+  }
+
+  .instagram_feed {
+    flex-wrap: wrap;
+
+    .post {
+      width: 300px;
+      height: 300px;
+      background-color: rgba(189, 195, 199, 0.8);
+      margin: 5px;
+    }
+  }
+
+}

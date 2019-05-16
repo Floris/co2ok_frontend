@@ -6,13 +6,13 @@ module.exports = {
       text: "BUSINESS",
     },
     {
+      text: "INSPIRATION"
+    },
+    {
       text: "ABOUT",
     },
     {
       text: "FAQ",
-    },
-    {
-      text: "LOGIN"
     }
   ]
 }

@@ -172,9 +172,9 @@ export default {
     this.checkCookies();
 
     // The .$on function gets the language emit function from the navigation
-    this.$on("changeLangNav", lang => {
-      this.changeLang(lang);
-    });
+    // this.$on("changeLangNav", lang => {
+    //   this.changeLang(lang);
+    // });
   },
   methods: {
     checkCookies() {

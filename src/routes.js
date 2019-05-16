@@ -6,6 +6,8 @@ import Login from './components/pages/Login/Login';
 import Dashboard from './components/pages/Dashboard/Dashboard';
 import About from './components/pages/About/About';
 import Privacy from './components/pages/Privacy/Privacy';
+import Inspiratie from './components/pages/Inspiratie/Inspiratie';
+
 
 
 export const routes = [{
@@ -39,5 +41,9 @@ export const routes = [{
   {
     path: '/privacy',
     component: Privacy
+  },
+  {
+    path: '/inspiratie',
+    component: Inspiratie
   }
 ];

@@ -266,6 +266,9 @@ export default {
       s4_button: lang.nl.s4_button
     };
   },
+  mounted() {
+    this.checkCookies();
+  },
   methods: {
     checkCookies() {
       console.log("%ccheck cookies -  " + document.cookie, "color:red;");
