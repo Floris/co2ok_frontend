@@ -1,16 +1,18 @@
 <template>
   <div class="login_view">
-    <h1>Aanmelden</h1>
+    <h1>{{lang_kit.login_h1}}</h1>
     <input class="input" placeholder="email" type="text" v-model="email">
     <input class="input" placeholder="password" type="password" v-model="password">
-    <button class="button green" v-on:click="sendLoginForm">Aanmelden</button>
-    <a v-on:click="goToRegister">Ik heb nog GEEN account</a>
+    <button class="button green" v-on:click="sendLoginForm">{{lang_kit.login_button1}}</button>
+    <a v-on:click="goToRegister">{{lang_kit.login_button2}}</a>
   </div>
 </template>
 
 <script>
 export default {
   name: "login_view",
+  props: ["lang_kit"],
+
   data() {
     return {
       email: "",
