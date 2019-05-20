@@ -166,8 +166,13 @@
         <div class="form group">
           <div class="plugin_install">
             <h3>{{s4_title2}}</h3>
-            <button class="button green">Magento</button>
-            <button class="button green">Wordpress / WooCommerce</button>
+            <router-link to="/installatie">
+              <button class="button green">Magento</button>
+            </router-link>
+
+            <router-link to="/installatie">
+              <button class="button green">Wordpress / WooCommerce</button>
+            </router-link>
           </div>
           <div class="ecom_input">
             <h3>{{s4_title3}}</h3>
