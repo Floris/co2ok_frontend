@@ -1,14 +1,397 @@
 @import "_vars.scss";
 
 .installatie {
-  background: orange;
   position: relative;
   align-self: center;
-  
+
   .block_intro {
     position: relative;
-    height: 600px;
     width: 100%;
+    height: 1050px;
     background: $green;
+
+    .content {
+      display: flex;
+      flex-direction: row;
+
+      .installatie_blok {
+        height: 850px;
+        width: 100%;
+        background-color: white;
+        box-shadow: 0 8px 6px -6px rgba(0, 0, 0, 0.36);
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 100px;
+
+        .blok_titleinstallatie {
+          width: 100%;
+          height: 140px;
+          background-color: transparent;
+          flex-direction: column;
+
+          .blok_titel {
+            width: 100%;
+            height: 50%;
+            text-align: center;
+            margin-top: 40px;
+            background-color: transparent;
+          }
+
+          .blok_subtitel {
+            width: 100%;
+            height: 50%;
+            background-color: transparent;
+            text-align: center;
+            margin-top: -10px;
+
+            h3 {
+              color: $green;
+            }
+          }
+
+          .titel_lijn {
+            width: 90%;
+            height: 1px;
+            background-color: black;
+            margin-left: auto;
+            margin-right: auto;
+          }
+        }
+
+        .blokken {
+          display: flex;
+          flex-direction: row;
+          width: 90%;
+          margin: 0 auto;
+
+          .blok {
+            width: 50%;
+            height: 510px;
+            background-color: transparent;
+            margin-top: 20px;
+
+            .blok_2 {
+              width: 90%;
+              // height:28%;
+              background-color: transparent;
+
+              h3 {
+                color: black;
+                text-align: left;
+              }
+
+              p {
+                color: black;
+              }
+
+              .blk_2 {
+                width: 100%;
+                height: auto;
+                display: flex;
+                flex-direction: row;
+
+                p {
+                  padding-top: 30px;
+                }
+
+                .installatie_foto1 {
+                  width: 317px;
+                  height: 134px;
+                  background-image: url('./../assets/WC-plugin-installatie1.png');
+                  background-size: cover;
+                }
+              }
+
+              .installatie_foto2 {
+                width: 317px;
+                height: 114px;
+                background-image: url('./../assets/WC-plugin-installatie-3-300x118.png');
+                background-size: cover;
+                margin-top: 10px;
+                // padding-bottom: 15px;
+              }
+            }
+
+            .blok_3 {
+              width: 100%;
+              // height: 100%;
+              background-color: transparent;
+
+              h3 {
+                color: black;
+                text-align: left;
+              }
+
+              .installatie_foto3 {
+                width: 100%;
+                height: 200px;
+                background-image: url('./../assets/Knop-in-Magento-shop.png');
+                background-size: cover;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: $content_max_width) {
+  $grid_width: 90%;
+
+  .content {
+    width: $grid_width !important;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .block_intro {
+    width: 100%;
+    height: 1800px !important;
+    background: $green;
+
+    .installatie_blok {
+      height: 1500px !important;
+    }
+
+    .blok_subtitel {
+      width: 80% !important;
+      height: 50%;
+      background-color: transparent;
+      text-align: center;
+      margin-top: -10px;
+      margin: auto;
+
+      h3 {
+        color: $green;
+      }
+
+      .titel_lijn {
+        width: 90%;
+        height: 1px;
+        background-color: black;
+        margin-left: auto;
+        margin-right: auto;
+      }
+    }
+
+    .blokken {
+      display: flex;
+      flex-direction: column !important;
+
+      .blok {
+        width: 100% !important;
+        height: 510px;
+        background-color: transparent;
+
+        .blok_2 {
+          width: 100% !important;
+          background-color: transparent;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-self: center;
+
+          .installatie_foto2 {
+            width: 80%;
+            height: 104px;
+            background-image: url('./../assets/WC-plugin-installatie-3-300x118.png');
+            background-size: cover;
+            justify-content: center;
+            align-self: center;
+          }
+
+
+          h3 {
+            color: black;
+            text-align: center !important;
+          }
+
+          p {
+            text-align: center;
+          }
+
+          .blk_2 {
+            width: 100%;
+            height: auto;
+            display: flex;
+            flex-direction: column;
+            background-color: transparent;
+            text-align: center;
+            margin-top: 20px;
+            justify-content: center;
+
+
+
+            .installatie_foto1 {
+              width: 80%;
+              height: 104px;
+              background-image: url('./../assets/WC-plugin-installatie1.png');
+              background-size: cover;
+            }
+
+
+          }
+        }
+      }
+
+      .blok_3 {
+        width: 100%;
+        // height: 100%;
+        background-color: transparent;
+        padding-top: 90px;
+
+        h3 {
+          color: black;
+          text-align: center !important;
+        }
+
+        p {
+          color: black;
+          text-align: center;
+        }
+
+        .installatie_foto3 {
+          width: 80%;
+          height: 400px !important;
+          background-image: url('./../assets/Knop-in-Magento-shop.png');
+          background-size: cover;
+          margin-top: -50px;
+        }
+      }
+    }
+  }
+}
+
+
+
+
+@media only screen and (max-width: 600px) {
+
+  .block_intro {
+    width: 100%;
+    height: 1850px !important;
+    background: $green;
+
+
+    .content {
+      height: 1000px;
+
+      .installatie_blok {
+        height: 1600px !important;
+
+        .blok_titleinstallatie {
+          .blok_subtitel {
+            width: 80% !important;
+            height: 50%;
+            background-color: transparent;
+            text-align: center;
+            margin-top: -10px;
+            margin: auto;
+          }
+            h3 {
+              color: $green;
+            }
+
+            .titel_lijn {
+              width: 90%;
+              height: 1px;
+              background-color: black;
+              margin-left: auto;
+              margin-right: auto;
+              margin-top: 10px !important;
+
+            }
+        }
+      }
+
+      .blokken {
+        display: flex;
+        flex-direction: column !important;
+
+        .blok {
+          width: 100% !important;
+          height: 510px;
+          background-color: transparent;
+
+          .blok_2 {
+            // width:100%;
+            background-color: transparent;
+            flex-direction: column;
+            margin-left: auto !important;
+            margin-right: auto !important;
+
+            h3 {
+              color: black;
+              text-align: center !important;
+            }
+
+            p {
+              text-align: center;
+            }
+
+
+            .installatie_foto2 {
+              width: 100% !important;
+              height: 104px;
+              background-image: url('./../assets/WC-plugin-installatie-3-300x118.png');
+              background-size: cover;
+              margin-left: 10%;
+              margin-right: 10%;
+              margin-top: -25px;
+            }
+
+            .blk_2 {
+              width: 100%;
+              height: auto;
+              display: flex;
+              flex-direction: row;
+              background-color: transparent;
+              text-align: center;
+              margin-left: auto !important;
+              margin-right: auto !important;
+
+              .installatie_foto1 {
+                width: 80%;
+                height: 104px;
+                background-image: url('./../assets/WC-plugin-installatie1.png');
+                background-size: cover;
+                margin-left: auto;
+                margin-right: auto;
+                margin-top: -25px;
+              }
+
+            }
+          }
+
+          .blok_3 {
+            width: 90%;
+            // height: 100%;
+            background-color: transparent;
+            margin-top: 130px;
+            margin-left: auto;
+            margin-right: auto;
+
+            h3 {
+              color: black;
+              text-align: center !important;
+            }
+
+            p {
+              color: black;
+              text-align: center;
+            }
+
+            .installatie_foto3 {
+              width: 100%;
+              height: 100px;
+              background-image: url('./../assets/Knop-in-Magento-shop.png');
+              background-size: cover;
+              margin-top: -170px;
+            }
+          }
+        }
+      }
+    }
   }
 }

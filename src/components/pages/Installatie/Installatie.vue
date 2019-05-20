@@ -3,6 +3,57 @@
     <Navigation :lang="lang" @changeLangNav="changeLang"/>
     <div class="block_intro">
       <div class="content">
+        <div class="installatie_blok">
+          <div class="blok_titleinstallatie">
+            <div class="blok_titel">
+              <h1>Plugin Installatie</h1>
+            </div>
+            <div class="blok_subtitel">
+              <h3>Met een paar klikken vecht je mee en is je imago supergroen!</h3>
+            </div>
+            <div class="titel_lijn"></div>
+          </div>
+          <div class="blokken">
+            <div class="blok">
+              <div class="blok_2">
+                <h3>WooCommerce plugin installatie</h3>
+                <p>
+                  1: Login in de beheeromgeving van je webshop (de WordPress admin)
+                  2: Open het ‘Nieuwe plugin’/‘Add new plugin’ scherm:
+                </p>
+              </div>
+              <div class="blok_2">
+                <div class="blk_2"></div>
+                <div class="blk_2">
+                  <div class="installatie_foto1"></div>
+                </div>
+              </div>
+              <div class="blok_2">
+                <p>
+                  3: Zoek naar ‘co2ok’
+                  <br>4: Klik op ‘Nu installeren’/’Install Now’:
+                </p>
+                <div class="installatie_foto2"></div>
+              </div>
+              <div class="blok_2">
+                <p>
+                  5: Na enkele momenten is de plugin geïnstalleerd, klik vervolgens op ‘Activeren’:
+                  Dat was het! De rest gaat vanzelf. Mocht je nog vragen hebben/onverhoopt tegen problemen aanlopen, we staan we je graag telefonisch/per mail te woord.
+                </p>
+              </div>
+              <div class="blok_2"></div>
+            </div>
+            <div class="blok">
+              <div class="blok_3">
+                <h3>Magento extension/plugin</h3>
+                <p>Onze Magento plugin is sinds kort in de Magento marketplace beschikbaar! Hier terug te vinden. Binnenkort komt hier de installatiehandleiding. Voorbeeld van de knop in een Magento shop:</p>
+              </div>
+              <div class="blok_3">
+                <div class="installatie_foto3"></div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
     <Footer></Footer>
@@ -10,7 +61,6 @@
 </template>
 
 <script>
-
 // import lang from "./../../../lang/lang_installatie.json";
 import { getCookie, setCookie } from "./../../../../functions/cookies";
 import Navigation from "./../../main/Navigation/Navigation";
@@ -19,14 +69,14 @@ import Footer from "./../../main/Footer/Footer";
 export default {
   data() {
     return {
-      lang: "nl",
-    }
+      lang: "nl"
+    };
   },
   components: {
     Navigation: Navigation,
     Footer: Footer
   },
-   mounted: function() {
+  mounted: function() {
     this.checkCookies();
 
     // The .$on function gets the language emit function from the navigation
@@ -75,7 +125,7 @@ export default {
       this.lang = language;
     } // end changeLang
   }
-}
+};
 </script>
 
 
