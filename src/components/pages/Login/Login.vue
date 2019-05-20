@@ -11,6 +11,7 @@
           <h1>Download Ninja!</h1>
           <p>Geen registratie nodig.</p>
           <a
+            id="downloadButton"
             target="_blank"
             href="https://chrome.google.com/webstore/detail/co2okninja/omlkdocjhkgbllabpihhdggplladfipe"
           >
@@ -68,6 +69,14 @@ export default {
     };
   },
   mounted: function() {
+    var isFirefox = typeof InstallTrigger !== "undefined";
+
+    // if browser is firefox change button link
+    if (isFirefox) {
+      document.getElementById("downloadButton").href =
+        "https://addons.mozilla.org/en-US/firefox/addon/co2ok-ninja/";
+    }
+
     this.checkIfLoggedIn();
 
     // The .$on function gets the languege emit function from the navigation
