@@ -1,20 +1,19 @@
 <template>
   <div class="register_view">
-    <h1>Registreren</h1>
+    <h1>{{lang_kit.register_h1}}</h1>
     <input class="input" placeholder="email" type="text" v-model="email">
     <input class="input" placeholder="password" type="password" v-model="password">
     <button class="button green" v-on:click="sendRegisterForm">Join CO2ok</button>
-    <p class="privacy">
-      Bij het aanmelden ga ik akkoord met de
-      <a href="/privacy">Privacy policy</a> van CO₂ok.
-    </p>
-    <a v-on:click="goToLogin">Ik heb al een account</a>
+    <p class="privacy" v-html="lang_kit.register_p"></p>
+    <a v-on:click="goToLogin">{{lang_kit.register_button}}</a>
   </div>
 </template>
 
 <script>
 export default {
   name: "register_view",
+  props: ["lang_kit"],
+
   data() {
     return {
       email: "",

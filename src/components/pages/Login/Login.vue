@@ -8,13 +8,14 @@
         <!-- <img src="../../../assets/wereldbol.png"> -->
         <img src="../../../assets/boom2.svg">
         <div class="download_section">
-          <h1>Download Ninja!</h1>
-          <p>Geen registratie nodig.</p>
+          <h1>{{lang_kit.download_h1}}</h1>
+          <p>{{lang_kit.download_p}}</p>
           <a
+            id="downloadButton"
             target="_blank"
             href="https://chrome.google.com/webstore/detail/co2okninja/omlkdocjhkgbllabpihhdggplladfipe"
           >
-            <button class="button green">Download Ninja - Het is gratis</button>
+            <button class="button green">{{lang_kit.download_button}}</button>
           </a>
         </div>
       </div>
@@ -22,12 +23,15 @@
         <div class="group-item_col">
           <Register_view
             v-if="show === 'register'"
+            :lang_kit="lang_kit"
             @sendRegisterForm="handleRegisterForm"
             @switchTo="showComponent"
             @errorMessage="throwError"
           />
+
           <Login_view
             v-if="show === 'login'"
+            :lang_kit="lang_kit"
             @sendLoginForm="handleLoginForm"
             @switchTo="showComponent"
             @errorMessage="throwError"
@@ -50,6 +54,8 @@ import Footer from "./../../main/Footer/Footer";
 import Register_view from "./components/Register_view";
 import Login_view from "./components/Login_view";
 
+import lang from "./../../../lang/lang_login.json";
+
 export default {
   name: "Login",
   components: {
@@ -63,11 +69,31 @@ export default {
       lang: "nl",
       show: "register",
 
+      lang_kit: {
+        download_h1: lang.nl.download_h1,
+        download_p: lang.nl.download_p,
+        download_button: lang.nl.download_button,
+        register_h1: lang.nl.register_h1,
+        register_p: lang.nl.register_p,
+        register_button: lang.nl.register_button,
+        login_h1: lang.nl.login_h1,
+        login_button1: lang.nl.login_button1,
+        login_button2: lang.nl.login_button2
+      },
+
       error_message: null,
       urlServer: "http://127.0.0.1:8000"
     };
   },
   mounted: function() {
+    var isFirefox = typeof InstallTrigger !== "undefined";
+
+    // if browser is firefox change button link
+    if (isFirefox) {
+      document.getElementById("downloadButton").href =
+        "https://addons.mozilla.org/en-US/firefox/addon/co2ok-ninja/";
+    }
+
     this.checkIfLoggedIn();
 
     // The .$on function gets the languege emit function from the navigation
@@ -173,6 +199,18 @@ export default {
     changeLang: function(language) {
       console.log("execute changeLang");
       console.log("change language to " + language);
+
+      this.lang_kit = {
+        download_h1: lang[language].download_h1,
+        download_p: lang[language].download_p,
+        download_button: lang[language].download_button,
+        register_h1: lang[language].register_h1,
+        register_p: lang[language].register_p,
+        register_button: lang[language].register_button,
+        login_h1: lang[language].login_h1,
+        login_button1: lang[language].login_button1,
+        login_button2: lang[language].login_button2
+      };
 
       setCookie("userLang", language, 200);
       this.lang = language;

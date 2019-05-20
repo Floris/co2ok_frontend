@@ -27,6 +27,10 @@ var en_about = require('./en_/en_about.js');
 var nl_zakelijk = require('./nl_/nl_zakelijk.js');
 var en_zakelijk = require('./en_/en_zakelijk.js');
 
+//login page files
+var nl_login = require('./nl_/nl_login.js');
+var en_login = require('./en_/en_login.js');
+
 // exmaple homepage language object
 // add more language objects later
 var home_language_kit_object = {
@@ -61,6 +65,11 @@ var about_language_kit_object = {
   en: en_about
 };
 
+var login_language_kit_object = {
+  nl: nl_login,
+  en: en_login
+};
+
 // create New Home Language Kit
 createLanguageKit("src/lang/lang_home.json", home_language_kit_object);
 createLanguageKit("src/lang/lang_faq.json", faq_language_kit_object);
@@ -68,6 +77,8 @@ createLanguageKit("src/lang/lang_projecten.json", projecten_language_kit_object)
 createLanguageKit("src/lang/lang_navigation.json", navigation_language_kit_object);
 createLanguageKit("src/lang/lang_about.json", about_language_kit_object);
 createLanguageKit("src/lang/lang_zakelijk.json", zakelijk_language_kit_object);
+createLanguageKit("src/lang/lang_login.json", login_language_kit_object);
+
 
 async function createLanguageKit(fileName, output) {
   console.log('create HomeLanguageKit');
@@ -86,7 +97,7 @@ async function createLanguageKit(fileName, output) {
   try {
     fs.appendFile(fileName, JSON.stringify(output), function (err) {
       if (err) throw err;
-      console.log('HomeLanguageKit saved!');
+      console.log('Languagekit saved!');
     });
   } catch (error) {
     console.log('error creating file', error);

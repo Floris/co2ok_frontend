@@ -339,11 +339,7 @@ export default {
     handleScroll(event) {
       // console.log("handlescroll", window.pageYOffset);
 
-      if (
-        window.pageYOffset > 800 &&
-        screen.width > 600 &&
-        this.isActive === false
-      ) {
+      if (window.pageYOffset > 800 && this.isActive === false) {
         var self = this;
         var donutValue1 = 0;
         var donutValue2 = 0;
