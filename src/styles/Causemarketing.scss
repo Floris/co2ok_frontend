@@ -1,0 +1,247 @@
+@import "_vars.scss";
+
+.causemarketing {
+  background: $white;
+  position: relative;
+  align-self: center;
+
+  .top_intro {
+    position: relative;
+    background: $green;
+    height: 600px;
+    width: 100%;
+
+    .content {
+      position: relative;
+      z-index: 1;
+      display: flex;
+      flex-direction: row;
+
+      justify-content: space-evenly;
+      align-items: center;
+
+      .text {
+        h1,h3,p {
+          color: $white;
+        }
+
+        p {
+          font-weight: 500;
+          max-width: 586px;
+        }
+      }
+
+      img {
+        position: relative;
+        bottom: -65px;
+        max-width: 64%;
+        right: 0;
+        width: 600px;
+        user-select: none;
+        z-index: -1;
+      }
+
+      .button {
+        width: 280px;
+      }
+    }
+  }
+  .bulletpoints {
+    position: relative;
+    height: 500px;
+    background: $white;
+    z-index: 1;
+    top: -75px;
+    .content {
+      padding-top: 75px;
+      .img_gallery {
+        display: flex;
+        flex-direction: row;
+        margin: 0 auto;
+        .img_block {
+          text-align: center;
+          width: 20%;
+          margin: 0 auto;
+          
+          img {
+            padding-bottom: 30px;
+            width: 125px;
+          }
+
+          .text {
+            position: relative;
+            bottom: -50px;
+            word-wrap: break-word;
+            h3 {
+              font-size: 20px;
+            }
+          }
+        }
+      }
+      .carousel {
+        width: 100%;
+      }
+    }
+  }
+  .block_cijfers {
+    position: relative;
+    height: 700px;
+    width: 100%;
+    text-align: center;
+    background: $green;
+
+    .content {
+      padding-top: 100px;
+      .content_block {
+        .block {
+          margin: 0 auto;
+          margin-top: 50px;
+          max-width: 400px;
+
+          p {
+            max-width: 250px;
+          }
+
+          img {
+            width: 150px;
+          }
+        }
+      }
+      h2,h3 {
+        color: white;
+      }
+    }
+    //font-colour desktop & mobile.
+    .block {
+      .link {
+
+        a {
+          text-decoration: underline;
+          color: white
+        }
+      }
+      p {
+        color: white;
+      }
+      
+    }
+  }
+  .meer_weten {
+    position: relative;
+    height: 300px;
+
+    .content {
+      display: flex;
+      flex-direction: column;
+      // justify-content: center;
+      align-items: center;
+      .text {
+        text-align: center;
+        
+        h1 {
+          margin-top: 50px;
+        }
+        .link {
+          a {
+            color: lightblue;
+          }
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+  .doughnut_chart {
+    div {
+      left: 0 !important;
+      right: 0 !important;
+    }
+  }
+}
+
+
+@media only screen and (max-width: $content_max_width) {
+  $grid_width: 90%;
+
+  .content {
+    width: $grid_width !important;
+  }
+
+}
+
+@media only screen and (max-width: 900px) {
+
+  .showCarousel {
+    display: block;
+    margin: 0 auto;
+  }
+
+  .hideCarousel {
+    display: none !important;
+  }
+
+  .carousel {
+    display: block;
+  }
+
+  .causemarketing {
+    .top_intro {
+      .content {
+        flex-direction: column !important;
+
+        .text {
+          text-align: center;
+        }
+        img {
+          width: 220px !important;
+          bottom: -50px;
+        }
+      }
+    }
+    .bulletpoints {
+      height: 450px;
+      padding-top: 0px !important;
+      .content {
+        .img_block {
+          text-align: center;
+          margin-top: 50px;
+          .text {
+            padding-top: 20px;
+            margin: 0 auto;
+            width: 60%;
+          }
+          img {
+            width: 125px;
+          }
+        }
+      }
+    }
+    .block_cijfers {
+      height: 600px;
+      .content {
+        padding-top: 50px;
+        .block {
+          padding-top: 20px;
+        }
+      }
+    }
+  }
+}
+
+
+@media only screen and (max-width: 600px) {
+  .causemarketing {
+    .bulletpoints {
+      .content {
+        .img_block {
+
+          .text {
+            width: 100% !important;
+          }
+        }
+      }
+    }
+    .meer_weten {
+      height: 350px;
+    }
+  }
+}

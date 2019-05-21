@@ -35,6 +35,10 @@ var en_login = require('./en_/en_login.js');
 var nl_installatie = require('./nl_/nl_installatie.js');
 var en_installatie = require('./en_/en_installatie.js');
 
+//causemarketing page files
+var nl_causemarketing = require('./nl_/nl_causemarketing.js');
+var en_causemarketing = require('./en_/en_causemarketing.js');
+
 // exmaple homepage language object
 // add more language objects later
 var home_language_kit_object = {
@@ -77,6 +81,11 @@ var login_language_kit_object = {
 var installatie_language_kit_object = {
   nl: nl_installatie,
   en: en_installatie
+}
+
+var causemarketing_language_kit_object = {
+  nl: nl_causemarketing,
+  en: en_causemarketing
 };
 
 // create New Home Language Kit
@@ -88,6 +97,8 @@ createLanguageKit("src/lang/lang_about.json", about_language_kit_object);
 createLanguageKit("src/lang/lang_zakelijk.json", zakelijk_language_kit_object);
 createLanguageKit("src/lang/lang_login.json", login_language_kit_object);
 createLanguageKit("src/lang/lang_installatie.json", installatie_language_kit_object);
+createLanguageKit("src/lang/lang_causemarketing.json", causemarketing_language_kit_object);
+
 
 async function createLanguageKit(fileName, output) {
   console.log('create HomeLanguageKit');

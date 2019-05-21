@@ -7,7 +7,7 @@ import Dashboard from './components/pages/Dashboard/Dashboard';
 import About from './components/pages/About/About';
 import Privacy from './components/pages/Privacy/Privacy';
 import Installatie from './components/pages/Installatie/Installatie';
-
+import Causemarketing from './components/pages/Causemarketing/Causemarketing';
 
 export const routes = [{
     path: '/',
@@ -44,5 +44,8 @@ export const routes = [{
   {
     path: '/installatie',
     component: Installatie
+  }, {
+    path: '/causemarketing',
+    component: Causemarketing
   }
 ];
