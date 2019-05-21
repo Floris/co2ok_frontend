@@ -17,9 +17,7 @@
             <div class="blok">
               <div class="blok_2">
                 <h3>{{s2_title1}}</h3>
-                <p>
-                 {{s2_p1}}
-                </p>
+                <p>{{s2_p1}}</p>
               </div>
               <div class="blok_2">
                 <div class="blk_2"></div>
@@ -28,14 +26,11 @@
                 </div>
               </div>
               <div class="blok_2">
-                <p v-html="s2_p2">
-                </p>
+                <p v-html="s2_p2"></p>
                 <div class="installatie_foto2"></div>
               </div>
               <div class="blok_2">
-                <p>
-                  {{s2_p3}}
-                </p>
+                <p>{{s2_p3}}</p>
               </div>
               <div class="blok_2"></div>
             </div>
@@ -80,7 +75,6 @@ export default {
       //magento installation
       s3_title1: lang.nl.s3_title1,
       s3_p1: lang.nl.s3_p1
-
     };
   },
   components: {
@@ -89,11 +83,6 @@ export default {
   },
   mounted: function() {
     this.checkCookies();
-
-    // The .$on function gets the language emit function from the navigation
-    this.$on("changeLangNav", lang => {
-      this.changeLang(lang);
-    });
   },
   methods: {
     checkCookies() {

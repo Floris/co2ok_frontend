@@ -98,7 +98,7 @@ export default {
         {
           id: 0,
           text: lang.nl.links[0].text,
-          page: "/projecten"
+          page: "/ninja"
         },
         {
           id: 1,
@@ -108,13 +108,23 @@ export default {
         {
           id: 2,
           text: lang.nl.links[2].text,
-          page: "/about"
+          page: "/projecten"
         },
         {
           id: 3,
           text: lang.nl.links[3].text,
+          page: "/about"
+        },
+        {
+          id: 4,
+          text: lang.nl.links[4].text,
           page: "/faq"
         }
+        // {
+        //   id: 5,
+        //   text: lang.nl.links[5].text,
+        //   page: "/login"
+        // }
       ],
       isActive: false,
       showMobileMenu: false
@@ -123,6 +133,8 @@ export default {
   props: ["lang"],
   mounted: function() {
     this.checkCookies();
+
+    console.log(lang.nl.links);
   },
   methods: {
     checkCookies() {
@@ -162,7 +174,7 @@ export default {
       this.links.splice(0, 1, {
         id: 0,
         text: lang[lng].links[0].text,
-        page: "/projecten"
+        page: "/ninja"
       });
 
       this.links.splice(1, 1, {
@@ -174,12 +186,18 @@ export default {
       this.links.splice(2, 1, {
         id: 2,
         text: lang[lng].links[2].text,
-        page: "/about"
+        page: "/projecten"
       });
 
       this.links.splice(3, 1, {
         id: 3,
         text: lang[lng].links[3].text,
+        page: "/about"
+      });
+
+      this.links.splice(4, 1, {
+        id: 4,
+        text: lang[lng].links[4].text,
         page: "/faq"
       });
     }

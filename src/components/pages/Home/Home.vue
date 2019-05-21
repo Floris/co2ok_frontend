@@ -3,170 +3,149 @@
     <Navigation :lang="lang" @changeLangNav="changeLang"/>
 
     <div class="jumbotron">
+      <div class="img-background-color"></div>
       <div class="jumbo_content">
-        <img src="../../../assets/boom2.svg">
         <div class="text_block">
-          <h1>{{title}}</h1>
-          <p>{{title2}}</p>
-          <router-link to="/login">
-            <button class="button green">{{button_header1}}</button>
-          </router-link>
+          <h1>CO₂ compensation, because there is no planet B.</h1>
+          <p>Tijdens de productie en het transport komen broeikasgassen vrij. Fabrikanten proberen deze uitstoot terug te dringen, maar de meeste schieten hier niet zo hard mee op. Om toch juist dat product CO₂ neutraal te kunnen kopen, is CO₂-compensatie een uitkomst.</p>
         </div>
-      </div>
-      <div class="line_container">
-        <div class="line"></div>
       </div>
     </div>
 
     <div class="howItWorks">
-      <div class="img_background"></div>
-      <div class="img-background-color"></div>
+      <div class="line_container">
+        <div class="line"></div>
+      </div>
 
       <div class="block">
-        <h2>{{s3_title}}</h2>
+        <h2>Onze services</h2>
 
         <div class="carousel showCarousel hidden">
-          <carousel :centerMode="true" :per-page="1" :mouse-drag="true" :perPage="1">
+          <carousel :centerMode="true" autoplay :per-page="1" :mouse-drag="true">
             <slide>
-              <div class="img_block">
-                <img src="../../../assets/hoeWerktHet1.svg">
-                <h3>{{s3_img_title1}}</h3>
-                <p>{{s3_img_p1}}</p>
+              <div class="group-item_col">
+                <i class="fas fa-cloud"></i>
+                <div class="text_box">
+                  <h3>Voor de consumenten</h3>
+                  <p>Wij bieden consumenten de mogelijkheid een extensie te downloaden, om hun aankopen klimaat neutraal te maken.</p>
+                </div>
               </div>
             </slide>
             <slide>
-              <div class="img_block">
-                <img src="../../../assets/hoeWerktHet2.svg">
-                <h3>{{s3_img_title2}}</h3>
-                <p>{{s3_img_p2}}</p>
+              <div class="group-item_col">
+                <i class="fas fa-calculator"></i>
+                <div class="text_box">
+                  <h3>Statistieken CO₂ compensatie</h3>
+                  <p>Maak je eigen account en bekijk hoeveel CO₂ jij al gecompenseerd hebt!</p>
+                </div>
               </div>
             </slide>
             <slide>
               <div class="img_block">
                 <img src="../../../assets/hoeWerktHet3.svg">
-                <h3>{{s3_img_title3}}</h3>
-                <p>{{s3_img_p3}}</p>
+                <h3>Deel 3</h3>
+                <p>sdij sdijf aijidfj</p>
+              </div>
+            </slide>
+            <slide>
+              <div class="group-item_col">
+                <i class="fas fa-desktop"></i>
+                <div class="text_box">
+                  <h3>Voor de webshop</h3>
+                  <p>Wij bieden webshops de mogelijkheid een plugin te installeren. Hiermee kunnen webshops klimaat neutraal worden.</p>
+                </div>
               </div>
             </slide>
           </carousel>
         </div>
 
-        <div class="img_collection hideCarousel">
-          <div class="img_block">
-            <img src="../../../assets/hoeWerktHet1.svg">
-            <h3>{{s3_img_title1}}</h3>
-            <p>{{s3_img_p1}}</p>
+        <div class="group hideCarousel">
+          <div class="group-item_col">
+            <i class="fas fa-cloud"></i>
+            <div class="text_box">
+              <h3>Voor de consumenten</h3>
+              <p>Wij bieden consumenten de mogelijkheid een extensie te downloaden, om hun aankopen klimaat neutraal te maken.</p>
+            </div>
           </div>
-          <div class="img_block">
-            <img src="../../../assets/hoeWerktHet2.svg">
-            <h3>{{s3_img_title2}}</h3>
-            <p>{{s3_img_p2}}</p>
+          <div class="group-item_col">
+            <i class="fas fa-calculator"></i>
+            <div class="text_box">
+              <h3>Statistieken CO₂ compensatie</h3>
+              <p>Maak je eigen account en bekijk hoeveel CO₂ jij al gecompenseerd hebt!</p>
+            </div>
           </div>
-          <div class="img_block">
-            <img src="../../../assets/hoeWerktHet3.svg">
-            <h3>{{s3_img_title3}}</h3>
-            <p>{{s3_img_p3}}</p>
+          <div class="group-item_col">
+            <i class="fas fa-desktop"></i>
+            <div class="text_box">
+              <h3>Voor de webshop</h3>
+              <p>Wij bieden webshops de mogelijkheid een plugin te installeren. Hiermee kunnen webshops klimaat neutraal worden.</p>
+            </div>
           </div>
         </div>
       </div>
     </div>
 
-    <div class="companies">
-      <div class="line_container">
-        <div class="line"></div>
-      </div>
+    <div class="calculation">
       <div class="content">
-        <h2>
-          {{s4_title}}
-          <a href="#" target="_blank">{{s4_link}}</a>
-        </h2>
+        <h2>CO₂ data berekening</h2>
       </div>
-      <div class="content">
-        <div class="block">
-          <img src="../../../assets/lotte/Logos_webshops/Middel_1.svg">
+    </div>
+
+    <div class="tree group_col content">
+      <div class="line">
+        <div class="bol_wrapper">
+          <!-- <div class="bol"></div> -->
+          <div class="bol2"></div>
         </div>
-        <div class="block">
-          <img src="../../../assets/lotte/Logos_webshops/Middel_2.svg">
+        <div class="bol_wrapper">
+          <!-- <div class="bol"></div> -->
+          <div class="bol2"></div>
         </div>
-        <div class="block">
-          <img src="../../../assets/lotte/Logos_webshops/Middel_3.svg">
+        <div class="bol_wrapper">
+          <!-- <div class="bol"></div> -->
+          <div class="bol2"></div>
         </div>
-        <div class="block">
-          <img src="../../../assets/lotte/Logos_webshops/Middel_4.svg">
-        </div>
-        <div class="block">
-          <img src="../../../assets/lotte/Logos_webshops/Middel_5.svg">
-        </div>
-        <div class="block">
-          <img src="../../../assets/lotte/Logos_webshops/Middel_6.svg">
+        <div class="bol_wrapper">
+          <!-- <div class="bol"></div> -->
+          <div class="bol2"></div>
         </div>
       </div>
-      <div class="content">
-        <div class="block">
-          <img src="../../../assets/lotte/Logos_webshops/Middel_7.svg">
+      <div class="group">
+        <div class="text_box">
+          <h3>1: Co2 uitstoten berekenen</h3>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Beatae, necessitatibus in distinctio officia magni ex consequatur assumenda doloremque doloribus suscipit optio. Illum tempore sed quisquam provident placeat sequi, hic natus?</p>
         </div>
-        <div class="block">
-          <img src="../../../assets/lotte/Logos_webshops/Middel_8.svg">
+      </div>
+      <div class="group">
+        <div class="text_box">
+          <h3>2: Klimaat neutraal</h3>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Beatae, necessitatibus in distinctio officia magni ex consequatur assumenda doloremque doloribus suscipit optio. Illum tempore sed quisquam provident placeat sequi, hic natus?</p>
         </div>
-        <div class="block">
-          <img src="../../../assets/lotte/Logos_webshops/Middel_9.svg">
+      </div>
+      <div class="group">
+        <div class="text_box">
+          <h3>3: Compensatie projecten</h3>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Beatae, necessitatibus in distinctio officia magni ex consequatur assumenda doloremque doloribus suscipit optio. Illum tempore sed quisquam provident placeat sequi, hic natus?</p>
         </div>
-        <div class="block">
-          <img src="../../../assets/lotte/Logos_webshops/Middel_10.svg">
-        </div>
-        <div class="block">
-          <img src="../../../assets/lotte/Logos_webshops/Middel_11.svg">
-        </div>
-        <div class="block">
-          <img src="../../../assets/lotte/Logos_webshops/Middel_12.svg">
+      </div>
+      <div class="group">
+        <div class="text_box">
+          <h3>4: Klimaat impact</h3>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Beatae, necessitatibus in distinctio officia magni ex consequatur assumenda doloremque doloribus suscipit optio. Illum tempore sed quisquam provident placeat sequi, hic natus?</p>
         </div>
       </div>
     </div>
-    <div class="projects">
+
+    <div class="bomenPlanten">
       <div class="content">
-        <h2>{{s6_title}}</h2>
-        <p>{{s6_p1}}</p>
-        <router-link to="/projecten">
-          <button class="button green">{{s6_button}}</button>
-        </router-link>
-        <!-- <div class="img_cover">
-          <img src="../../../assets/project1.jpg">
-          <img src="../../../assets/project2.jpg">
-          <img src="../../../assets/project3.jpg">
-        </div>-->
-      </div>
-    </div>
-    <div class="privacy">
-      <div class="content">
-        <div class="group">
-          <div class="about_privacy">
-            <h2>{{s7_title}}</h2>
-            <div v-html="s7_p"></div>
-            <router-link to="/privacy">{{s7_button}}</router-link>
-          </div>
-          <div class="contact">
-            <div class="group">
-              <div class="group-item_col">
-                <h2>Contact</h2>
-                <div class="group-item">
-                  <div class="group-item_col">
-                    <i class="fas fa-envelope big_icon"></i>
-                    <i class="fas fa-phone big_icon"></i>
-                  </div>
-                  <div class="group-item_col">
-                    <p class="email_number">+31639765259</p>
-                    <p class="email_number">info@co2ok.eco</p>
-                  </div>
-                </div>
-              </div>
-              <div class="group-item_col">
-                <i class="fab fa-instagram"></i>
-                <i class="fab fa-facebook"></i>
-                <i class="fab fa-linkedin"></i>
-              </div>
-            </div>
-          </div>
-        </div>
+        <h2>Oh dus jullie planten bomen enzo?</h2>
+        <p>
+          Nee. Hoewel bomen op zich natuurlijk wel CO₂ opnemen, zijn er verschillende redenen om te twijfelen aan het effect van zulke projecten: Pas na 50 jaar begint een bos een daadwerkelijk effect op de bescherming van het klimaat te hebben. Als het bos voor die tijd wordt gekapt of op een andere manier verdwijnt (bijvoorbeeld als gevolg van een plaag infectie) is de winst teniet gedaan. Ook kan de bescherming van het ene bos niet voorkomen dat het bos ernaast gekapt wordt – per saldo dus weer geen winst. Atmosfair geeft hier nog
+          <a
+            href="https://www.atmosfair.de/en/standards/forest_projects/"
+            target="_blank"
+          >verdere toelichting</a> op.
+        </p>
       </div>
     </div>
 
@@ -175,62 +154,25 @@
 </template>
 
 <script>
-import lang from "./../../../lang/lang_home.json";
+// import lang from "./../../../lang/lang_home.json";
 import { getCookie, setCookie } from "./../../../../functions/cookies";
 import Footer from "./../../main/Footer/Footer";
 import Navigation from "./../../main/Navigation/Navigation";
-
 import { Carousel, Slide } from "vue-carousel";
 
 export default {
   name: "Home",
+  components: {
+    Navigation: Navigation,
+    Footer: Footer,
+    Carousel: Carousel,
+    Slide: Slide
+  },
   data() {
     return {
-      show: false,
-      // language
-      lang: "nl",
-      // text
-      title: lang.nl.title,
-      title2: lang.nl.title2,
-      button_header1: lang.nl.button_header1,
-
-      //section2
-      s2_title: lang.nl.s2_title,
-      s2_p1: lang.nl.s2_p1,
-
-      // section3
-      s3_title: lang.nl.s3_title,
-      s3_img_title1: lang.nl.s3_img_title1,
-      s3_img_p1: lang.nl.s3_img_p1,
-      s3_img_title2: lang.nl.s3_img_title2,
-      s3_img_p2: lang.nl.s3_img_p2,
-      s3_img_title3: lang.nl.s3_img_title3,
-      s3_img_p3: lang.nl.s3_img_p3,
-
-      // section4
-      s4_title: lang.nl.s4_title,
-      s4_p1: lang.nl.s4_p1,
-      s4_link: lang.nl.s4_link,
-
-      // section 6
-      s6_title: lang.nl.s6_title,
-      s6_p1: lang.nl.s6_p1,
-      s6_button: lang.nl.s6_button,
-
-      // privacy
-      s7_title: lang.nl.s7_title,
-      s7_p: lang.nl.s7_p,
-      s7_button: lang.nl.s7_button
+      lang: "nl"
     };
   },
-  mounted: function() {
-    this.checkCookies();
-
-    // The .$on function gets the languege emit function from the navigation
-    this.$on("changeLangNav", lang => {
-      this.changeLang(lang);
-    });
-  }, // end mounted
   methods: {
     checkCookies() {
       console.log("%ccheck cookies -  " + document.cookie, "color:red;");
@@ -255,52 +197,37 @@ export default {
 
       console.log("change language to " + language);
 
-      //section1
-      this.title = lang[language].title;
-      this.title2 = lang[language].title2;
-      this.button_header1 = lang[language].button_header1;
-
-      //section2
-      this.s2_title = lang[language].s2_title;
-      this.s2_p1 = lang[language].s2_p1;
-
-      //section3
-      this.s3_title = lang[language].s3_title;
-      this.s3_img_title1 = lang[language].s3_img_title1;
-      this.s3_img_p1 = lang[language].s3_img_p1;
-      this.s3_img_title2 = lang[language].s3_img_title2;
-      this.s3_img_p2 = lang[language].s3_img_p2;
-      this.s3_img_title3 = lang[language].s3_img_title3;
-      this.s3_img_p3 = lang[language].s3_img_p3;
-
-      //section4
-      this.s4_title = lang[language].s4_title;
-      this.s4_p1 = lang[language].s4_p1;
-      this.s4_link = lang[language].s4_link;
-
-      // section 6
-      this.s6_title = lang[language].s6_title;
-      this.s6_p1 = lang[language].s6_p1;
-      this.s6_button = lang[language].s6_button;
-
-      // privacy
-      this.s7_title = lang[language].s7_title;
-      this.s7_p = lang[language].s7_p;
-      this.s7_button = lang[language].s7_button;
-
       setCookie("userLang", language, 200);
       this.lang = language;
-    } // end changeLang
+    }, // end changeLang
+
+    //gets called when you scroll
+    handleScroll(event) {
+      // console.log("handlescroll", window.pageYOffset);
+      //   if (window.pageYOffset > 800 && screen.width > 600) {
+      //     // console.log("navbar true");
+      //     this.isActive = true;
+      //   } else {
+      //     // console.log("navbar false");
+      //     this.isActive = false;
+      //   }
+    }
   },
-  // Load Components
-  components: {
-    Footer: Footer,
-    Carousel: Carousel,
-    Slide: Slide,
-    Navigation: Navigation
+  mounted: function() {
+    this.checkCookies();
+  }, // end mounted
+  //add(create) the event
+  created() {
+    window.addEventListener("scroll", this.handleScroll);
+  },
+  //remove the event
+  destroyed() {
+    window.removeEventListener("scroll", this.handleScroll);
+    console.log("destroyed");
   }
 };
 </script>
+
 
 // import style here
 <style lang="scss" src="./../../../styles/Home.scss"></style>
