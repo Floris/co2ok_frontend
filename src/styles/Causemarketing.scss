@@ -51,9 +51,9 @@
     height: 500px;
     background: $white;
     z-index: 1;
-    padding-top: 75px;
     top: -75px;
     .content {
+      padding-top: 75px;
       .img_gallery {
         display: flex;
         flex-direction: row;
