@@ -31,6 +31,10 @@ var en_zakelijk = require('./en_/en_zakelijk.js');
 var nl_login = require('./nl_/nl_login.js');
 var en_login = require('./en_/en_login.js');
 
+//installatie page files
+var nl_installatie = require('./nl_/nl_installatie.js');
+var en_installatie = require('./en_/en_installatie.js');
+
 // exmaple homepage language object
 // add more language objects later
 var home_language_kit_object = {
@@ -68,6 +72,11 @@ var about_language_kit_object = {
 var login_language_kit_object = {
   nl: nl_login,
   en: en_login
+}
+
+var installatie_language_kit_object = {
+  nl: nl_installatie,
+  en: en_installatie
 };
 
 // create New Home Language Kit
@@ -78,7 +87,7 @@ createLanguageKit("src/lang/lang_navigation.json", navigation_language_kit_objec
 createLanguageKit("src/lang/lang_about.json", about_language_kit_object);
 createLanguageKit("src/lang/lang_zakelijk.json", zakelijk_language_kit_object);
 createLanguageKit("src/lang/lang_login.json", login_language_kit_object);
-
+createLanguageKit("src/lang/lang_installatie.json", installatie_language_kit_object);
 
 async function createLanguageKit(fileName, output) {
   console.log('create HomeLanguageKit');
