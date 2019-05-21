@@ -7,7 +7,7 @@ module.exports = {
   //section2
   s2_title1: "MEER MARKETING MOGELIJKHEDEN",
   s2_title2: "MEER VERDIENEN",
-  s2_title3: "MILIEUBEWUST IS HOT",
+  s2_title3: "KLIMAATVERANDERING IS HOT",
   s2_title4: "POSITIEVE PUBLIEKE RELATIES",
 
   s2_p1: "Cause Marketing versterkt “Brand Story” en helpt daarmee met de loyaliteit van klanten.",
