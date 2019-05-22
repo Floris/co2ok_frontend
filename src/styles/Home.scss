@@ -55,17 +55,17 @@
       font-weight: 500;
     }
 
-    .jumbo_content {
+    .content {
       position: relative;
       z-index: 4;
       height: 650px;
+      width: 100%;
       margin: 1em;
-      width: $content_max_width;
 
       display: flex;
       flex-direction: row;
-      // justify-content: flex-start;
-      justify-content: space-between;
+      justify-content: flex-start;
+      // justify-content: space-between;
       align-items: center;
     }
 
@@ -75,7 +75,7 @@
       padding: 1em;
 
       // margin: 1em;
-      max-width: 586px;
+      max-width: 688px;
     }
 
   }
@@ -240,6 +240,81 @@
     }
   }
 
+  .help {
+    padding: 100px 0;
+    position: relative;
+    background-image: url('./../assets/vrouw.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    .img-background-color {
+      z-index: 0;
+      top: 0;
+      position: absolute;
+      background: rgba(0, 155, 237, 0.33);
+      width: 100%;
+      height: 100%;
+    }
+
+    .group {
+      position: relative;
+      z-index: 5;
+      justify-content: flex-end;
+    }
+
+    .main {
+      .group {
+        justify-content: flex-start;
+
+        button {
+          margin: 0 1rem 0 0;
+        }
+      }
+    }
+
+    p,
+    h2 {
+      color: #fff;
+    }
+
+    p {
+      max-width: 500px;
+    }
+  }
+
+  .calculation {
+    padding: 100px 0;
+    text-align: left;
+
+    h2,
+    h3,
+    .kgs {
+      color: $green;
+    }
+
+    .calculation_left {
+      width: 90%;
+    }
+
+    p {
+      max-width: 800px;
+    }
+
+    .kgs {
+      font-size: 30px;
+    }
+
+    img {
+      margin: 0 auto;
+      width: 280px;
+      height: 200px;
+    }
+
+    .group-item_col {
+      text-align: center;
+    }
+  }
+
   .bomenPlanten {
     padding: 100px 0;
     text-align: center;
@@ -264,14 +339,6 @@
   // media queries
   @media only screen and (max-width: $content_max_width) {
     $grid_width: 90%;
-
-    .jumbo_content {
-      width: $grid_width !important;
-
-      .text_block {
-        max-width: 400px;
-      }
-    }
 
     .howItWorks {
       .block {
@@ -298,6 +365,19 @@
       display: none !important;
     }
 
+    .calculation {
+      .calculation_right {
+        order: 0;
+      }
+
+      .calculation_left {
+        order: 3;
+      }
+
+      .group {
+        flex-direction: column;
+      }
+    }
 
   }
 
@@ -317,6 +397,18 @@
 
     .hideMobile {
       display: none;
+    }
+
+    .help {
+      .content {
+        margin: 0 !important;
+        padding: 0 !important;
+      }
+
+      .group {
+        justify-content: center;
+        margin: 0;
+      }
     }
   }
 }

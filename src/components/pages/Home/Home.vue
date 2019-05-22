@@ -4,7 +4,7 @@
 
     <div class="jumbotron">
       <div class="img-background-color"></div>
-      <div class="jumbo_content">
+      <div class="content">
         <div class="text_block">
           <h1>CO₂ compensation, because there is no planet B.</h1>
           <p>Tijdens de productie en het transport komen broeikasgassen vrij. Fabrikanten proberen deze uitstoot terug te dringen, maar de meeste schieten hier niet zo hard mee op. Om toch juist dat product CO₂ neutraal te kunnen kopen, is CO₂-compensatie een uitkomst.</p>
@@ -38,13 +38,6 @@
                   <h3>Statistieken CO₂ compensatie</h3>
                   <p>Maak je eigen account en bekijk hoeveel CO₂ jij al gecompenseerd hebt!</p>
                 </div>
-              </div>
-            </slide>
-            <slide>
-              <div class="img_block">
-                <img src="../../../assets/hoeWerktHet3.svg">
-                <h3>Deel 3</h3>
-                <p>sdij sdijf aijidfj</p>
               </div>
             </slide>
             <slide>
@@ -82,12 +75,6 @@
             </div>
           </div>
         </div>
-      </div>
-    </div>
-
-    <div class="calculation">
-      <div class="content">
-        <h2>CO₂ data berekening</h2>
       </div>
     </div>
 
@@ -136,6 +123,45 @@
       </div>
     </div>
 
+    <div class="help">
+      <div class="img-background-color"></div>
+      <div class="content group">
+        <div class="main group-item_col">
+          <h2>Help mee, shop klimaat neutraal!</h2>
+          <p>Klimaat is hot - steeds meer mensen kiezen voor duurzaam en groen. Help mee met het bestrijden van klimaatverandering, door je op te geven als webshop of consument. Het enige wat je hoeft te doen, is een gratis browser extensie te installeren. Als je een webshop eigenaar bent kun je een gratis plugin installeren.</p>
+          <div class="group">
+            <router-link to="/login">
+              <button class="button green">Strijd mee als webshop</button>
+            </router-link>
+            <router-link to="/login">
+              <button class="button green">Strijd mee als consument</button>
+            </router-link>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="calculation">
+      <div class="content group">
+        <div class="calculation_left">
+          <h2>CO₂ data berekening</h2>
+          <p>
+            Hoe weten we nou hoeveel CO₂ uitgestoten wordt bij de productie van goederen? En hoeveel willen we jou dan vragen bij te dragen om die uitstoot te compenseren? Hoewel het lastig is, hebben we een goede oplossing.
+            Het antwoord op de eerste vraag klinkt misschien niet bevredigend. Het is namelijk erg lastig om per product uit te rekenen hoeveel CO₂ gecompenseerd zou moeten worden om klimaatneutraal te shoppen. Er is geen manier om dit snel en gegrond te doen voor een organisatie als de onze. Er zijn teveel variabelen waar we mee rekening zouden moeten houden. Per product zou het ons twee maanden duren. In die tijd kunnen we samen veel meer nuttige dingen doen voor de natuur, toch?
+          </p>
+          <p>Een oplossing zou zijn als fabrikanten dit voor hun rekening nemen. ‘Om deze schoen te produceren is 30 kilo CO₂ uitgestoten.’ Niet alleen zou het ons allemaal een stuk bewuster maken hoe we met onze wereld omgaan, maar ook zou het de producenten sieren. We zouden namelijk precies weten hoeveel we moeten compenseren om klimaatneutraal te kunnen shoppen.</p>
+          <p>En nu het goede nieuws: met onze methode komen we er ook! Om in te schatten hoeveel jij zou moeten bijdragen om klimaatneutraal te shoppen, hebben wij de gemiddelde kosten voor CO₂-compensatie per product uitgerekend in relatie tot de prijs van het product. Als jij tussen 0,83% extra betaalt bovenop de totale prijs van je het product, shop je klimaatneutraal. Klinkt als een gek bedrag? Tel de btw erbij die we op je bijdrage moeten betalen, en je komt op één procent. </p>
+          <p>Trouwens, één procent is strikt genomen aan de ruime kant. Het is beter om te veel te doen, dan te weinig. Atmosfair is er trouwens wel blij mee. Met jouw bijdrage zorgen ze bijvoorbeeld voor luchtkwaliteitverbetering in ontwikkelingslanden.</p>
+        </div>
+        <div class="calculation_right group-item_col">
+          <img src="../../../assets/ninja_sit.png" alt="Sitting co2ok ninja">
+          <p class="kgs">{{number}} KGS</p>
+          <h3>Co2 gecompenseerd</h3>
+          <p>(Our developers are working hard to make the CO2 counter work in the near future)</p>
+        </div>
+      </div>
+    </div>
+
     <div class="bomenPlanten">
       <div class="content">
         <h2>Oh dus jullie planten bomen enzo?</h2>
@@ -170,7 +196,9 @@ export default {
   },
   data() {
     return {
-      lang: "nl"
+      lang: "nl",
+      number: 0,
+      timer: null
     };
   },
   methods: {
@@ -215,6 +243,12 @@ export default {
   },
   mounted: function() {
     this.checkCookies();
+
+    this.timer = setInterval(() => {
+      this.number = Math.round(
+        Math.random() * Math.round(Math.random() * 10000)
+      );
+    }, 1000);
   }, // end mounted
   //add(create) the event
   created() {
@@ -223,6 +257,7 @@ export default {
   //remove the event
   destroyed() {
     window.removeEventListener("scroll", this.handleScroll);
+    clearInterval(this.timer);
     console.log("destroyed");
   }
 };
