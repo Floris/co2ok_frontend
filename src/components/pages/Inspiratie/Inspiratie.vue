@@ -126,58 +126,10 @@ export default {
     Navigation: Navigation,
     Footer: Footer
   },
-  data() {
-    return {
-      lang: "nl"
-    };
-  },
   mounted: function() {
     this.checkCookies();
-    // this.getMediumPosts();
   },
   methods: {
-    
-    // getMediumPosts() {
-    //   try {
-    //     fetch("https://medium.com/@nebulasio/latest?format=json", {
-    //       method: "GET", // *GET, POST, PUT, DELETE, etc.
-    //       mode: "cors", // no-cors, cors, *same-origin
-    //       cache: "no-cache", // *default, no-cache, reload, force-cache, only-if-cached
-    //       credentials: "same-origin", // include, *same-origin, omit
-    //       headers: {
-    //         "Content-Type": "application/json",
-    //         "Access-Control-Allow-Origin": "*",
-    //         "Access-Control-Allow-Headers":
-    //           "Origin, X-Requested-With, Content-Type, Accept"
-    //         // 'Content-Type': 'application/x-www-form-urlencoded',
-    //       }
-    //     })
-    //       .then(res => {
-    //         console.log("response", res);
-    //       })
-    //       .catch(err => {
-    //         console.log(err);
-    //       });
-    //   } catch (error) {
-    //     console.log(error);
-    //   }
-
-      // axios
-      // .get("https://medium.com/@nebulasio/latest?format=json", {
-      //   headers: {
-      //     "Access-Control-Allow-Origin": "*"
-      //     // "Content-Type": "application/json"
-      //   }
-      // })
-      // .then(res => {
-      //   console.log(res);
-      // })
-      // .catch(err => {
-      //   // window.alert("Error cannot get blog posts.");
-      //   console.log(err);
-      // });
-    // },// end getMediumPosts
-
     checkCookies() {
       console.log("%ccheck cookies -  " + document.cookie, "color:red;");
 
