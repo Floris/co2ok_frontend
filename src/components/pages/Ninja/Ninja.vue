@@ -175,7 +175,7 @@
 </template>
 
 <script>
-import lang from "./../../../lang/lang_home.json";
+import lang from "./../../../lang/lang_ninja.json";
 import { getCookie, setCookie } from "./../../../../functions/cookies";
 import Footer from "./../../main/Footer/Footer";
 import Navigation from "./../../main/Navigation/Navigation";

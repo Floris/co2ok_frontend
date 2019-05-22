@@ -6,8 +6,8 @@
       <div class="img-background-color"></div>
       <div class="content">
         <div class="text_block">
-          <h1>CO₂ compensation, because there is no planet B.</h1>
-          <p>Tijdens de productie en het transport komen broeikasgassen vrij. Fabrikanten proberen deze uitstoot terug te dringen, maar de meeste schieten hier niet zo hard mee op. Om toch juist dat product CO₂ neutraal te kunnen kopen, is CO₂-compensatie een uitkomst.</p>
+          <h1>{{s1_title}}</h1>
+          <p>{{s1_p}}</p>
         </div>
       </div>
     </div>
@@ -18,34 +18,43 @@
       </div>
 
       <div class="block">
-        <h2>Onze services</h2>
+        <h2>{{s2_title}}</h2>
 
         <div class="carousel showCarousel hidden">
           <carousel :centerMode="true" autoplay :per-page="1" :mouse-drag="true">
             <slide>
               <div class="group-item_col">
                 <i class="fas fa-cloud"></i>
+                <h3>{{s2_title_1}}</h3>
                 <div class="text_box">
-                  <h3>Voor de consumenten</h3>
-                  <p>Wij bieden consumenten de mogelijkheid een extensie te downloaden, om hun aankopen klimaat neutraal te maken.</p>
+                  <p>{{s2_p_1}}</p>
+                  <router-link to="/ninja">
+                    <button class="button green">{{s2_button_1}}</button>
+                  </router-link>
                 </div>
               </div>
             </slide>
             <slide>
               <div class="group-item_col">
                 <i class="fas fa-calculator"></i>
+                <h3>{{s2_title_2}}</h3>
                 <div class="text_box">
-                  <h3>Statistieken CO₂ compensatie</h3>
-                  <p>Maak je eigen account en bekijk hoeveel CO₂ jij al gecompenseerd hebt!</p>
+                  <p>{{s2_p_2}}</p>
+                  <router-link to="/login">
+                    <button class="button green">{{s2_button_2}}</button>
+                  </router-link>
                 </div>
               </div>
             </slide>
             <slide>
               <div class="group-item_col">
                 <i class="fas fa-desktop"></i>
+                <h3>{{s2_title_3}}</h3>
                 <div class="text_box">
-                  <h3>Voor de webshop</h3>
-                  <p>Wij bieden webshops de mogelijkheid een plugin te installeren. Hiermee kunnen webshops klimaat neutraal worden.</p>
+                  <p>{{s2_p_3}}</p>
+                  <router-link to="/zakelijk">
+                    <button class="button green">{{s2_button_3}}</button>
+                  </router-link>
                 </div>
               </div>
             </slide>
@@ -56,22 +65,31 @@
           <div class="group-item_col">
             <i class="fas fa-cloud"></i>
             <div class="text_box">
-              <h3>Voor de consumenten</h3>
-              <p>Wij bieden consumenten de mogelijkheid een extensie te downloaden, om hun aankopen klimaat neutraal te maken.</p>
+              <h3>{{s2_title_1}}</h3>
+              <p>{{s2_p_1}}</p>
+              <router-link to="/ninja">
+                <button class="button green">{{s2_button_1}}</button>
+              </router-link>
             </div>
           </div>
           <div class="group-item_col">
             <i class="fas fa-calculator"></i>
             <div class="text_box">
-              <h3>Statistieken CO₂ compensatie</h3>
-              <p>Maak je eigen account en bekijk hoeveel CO₂ jij al gecompenseerd hebt!</p>
+              <h3>{{s2_title_2}}</h3>
+              <p>{{s2_p_2}}</p>
+              <router-link to="/login">
+                <button class="button green">{{s2_button_2}}</button>
+              </router-link>
             </div>
           </div>
           <div class="group-item_col">
             <i class="fas fa-desktop"></i>
             <div class="text_box">
-              <h3>Voor de webshop</h3>
-              <p>Wij bieden webshops de mogelijkheid een plugin te installeren. Hiermee kunnen webshops klimaat neutraal worden.</p>
+              <h3>{{s2_title_3}}</h3>
+              <p>{{s2_p_3}}</p>
+              <router-link to="/login">
+                <button class="button green">{{s2_button_3}}</button>
+              </router-link>
             </div>
           </div>
         </div>
@@ -81,61 +99,85 @@
     <div class="tree content">
       <div class="line" id="fillLine">
         <div class="bol_wrapper">
-          <div class="bol" id="bol1">
-            <img src="../../../assets/illu_4.svg" alt="planeet">
-          </div>
-          <div class="bol2" id="bol1_"></div>
+          <transition name="fade">
+            <div v-if="bol1" class="bol" id="bol1">
+              <img src="../../../assets/illu_4.svg" alt="planeet">
+            </div>
+          </transition>
+          <transition name="fade">
+            <div v-if="bol1" class="bol2" id="bol1_"></div>
+          </transition>
         </div>
+
         <div class="bol_wrapper">
-          <div class="bol" id="bol2">
-            <img src="../../../assets/illu_4.svg" alt="planeet">
-          </div>
-          <div class="bol2" id="bol2_"></div>
+          <transition name="fade">
+            <div v-if="bol2" class="bol" id="bol2">
+              <img src="../../../assets/illu_4.svg" alt="planeet">
+            </div>
+          </transition>
+          <transition name="fade">
+            <div v-if="bol2" class="bol2" id="bol2_"></div>
+          </transition>
         </div>
+
         <div class="bol_wrapper">
-          <div class="bol" id="bol3">
-            <img src="../../../assets/illu_4.svg" alt="planeet">
-          </div>
-          <div class="bol2" id="bol3_"></div>
+          <transition name="fade">
+            <div v-if="bol3" class="bol" id="bol3">
+              <img src="../../../assets/illu_4.svg" alt="planeet">
+            </div>
+          </transition>
+          <transition name="fade">
+            <div v-if="bol3" class="bol2" id="bol3_"></div>
+          </transition>
         </div>
+
         <div class="bol_wrapper">
-          <div class="bol" id="bol4">
-            <img src="../../../assets/illu_4.svg" alt="planeet">
-          </div>
-          <div class="bol2" id="bol4_"></div>
+          <transition name="fade">
+            <div v-if="bol4" class="bol" id="bol4">
+              <img src="../../../assets/illu_4.svg" alt="planeet">
+            </div>
+          </transition>
+          <transition name="fade">
+            <div v-if="bol4" class="bol2" id="bol4_"></div>
+          </transition>
         </div>
       </div>
       <div class="group_col">
-        <div class="group">
-          <div class="text_box">
-            <h3>1: Co2 uitstoten berekenen</h3>
-            <p>Wij berekenen de bij productie en transport vrijgekomen broeikasgassen. Deze rekenen we om naar de vergelijkbare hoeveelheid CO₂, zo staat bijvoorbeeld 1 gram methaan gelijk aan 100 gram CO₂.</p>
+        <transition name="fade">
+          <div v-if="bol1" class="group">
+            <div class="text_box">
+              <h3>{{s3_title_1}}</h3>
+              <p>{{s3_p_1}}</p>
+            </div>
           </div>
-        </div>
-        <div class="group">
-          <div class="text_box">
-            <h3>2: Klimaat neutraal</h3>
-            <p>Als je ervoor kiest om je aankoop CO₂ok te maken, betaal je een klein bedrag extra tijdens je aankoop.</p>
+        </transition>
+
+        <transition name="fade">
+          <div v-if="bol2" class="group">
+            <div class="text_box">
+              <h3>{{s3_title_2}}</h3>
+              <p>{{s3_p_2}}</p>
+            </div>
           </div>
-        </div>
-        <div class="group">
-          <div class="text_box">
-            <h3>3: Compensatie projecten</h3>
-            <p>
-              Met dit bedrag worden duurzame energie of CO₂-uitstoot verminderende projecten gefinancierd (dit doen we via onze gecertificeerde partner,
-              <a
-                href="https://www.atmosfair.de/en/"
-                target="_blank"
-              >Atmosfair</a>)
-            </p>
+        </transition>
+
+        <transition name="fade">
+          <div v-if="bol3" class="group">
+            <div class="text_box">
+              <h3>{{s3_title_3}}</h3>
+              <p v-html="s3_p_3"></p>
+            </div>
           </div>
-        </div>
-        <div class="group">
-          <div class="text_box">
-            <h3>4: Klimaat impact</h3>
-            <p>Deze projecten zorgen ervoor dat er minder CO₂ wordt uitgestoten. Die besparing komt overeen met de uitstoot van je aankoop – per saldo heeft je aankoop dus geen klimaatimpact!</p>
+        </transition>
+
+        <transition name="fade">
+          <div v-if="bol4" class="group">
+            <div class="text_box">
+              <h3>{{s3_title_4}}</h3>
+              <p>{{s3_p_4}}</p>
+            </div>
           </div>
-        </div>
+        </transition>
       </div>
     </div>
 
@@ -143,14 +185,14 @@
       <div class="img-background-color"></div>
       <div class="content group">
         <div class="main group-item_col">
-          <h2>Help mee, shop klimaat neutraal!</h2>
-          <p>Klimaat is hot - steeds meer mensen kiezen voor duurzaam en groen. Help mee met het bestrijden van klimaatverandering, door je op te geven als webshop of consument. Het enige wat je hoeft te doen, is een gratis browser extensie te installeren. Als je een webshop eigenaar bent kun je een gratis plugin installeren.</p>
+          <h2>{{s4_title}}</h2>
+          <p>{{s4_p}}</p>
           <div class="group buttons">
             <router-link to="/login">
-              <button class="button green">Strijd mee als webshop</button>
+              <button class="button green">{{s4_button1}}</button>
             </router-link>
             <router-link to="/login">
-              <button class="button green">Strijd mee als consument</button>
+              <button class="button green">{{s4_button2}}</button>
             </router-link>
           </div>
         </div>
@@ -160,34 +202,22 @@
     <div class="calculation">
       <div class="content group">
         <div class="calculation_left">
-          <h2>CO₂ data berekening</h2>
-          <p>
-            Hoe weten we nou hoeveel CO₂ uitgestoten wordt bij de productie van goederen? En hoeveel willen we jou dan vragen bij te dragen om die uitstoot te compenseren? Hoewel het lastig is, hebben we een goede oplossing.
-            Het antwoord op de eerste vraag klinkt misschien niet bevredigend. Het is namelijk erg lastig om per product uit te rekenen hoeveel CO₂ gecompenseerd zou moeten worden om klimaatneutraal te shoppen. Er is geen manier om dit snel en gegrond te doen voor een organisatie als de onze. Er zijn teveel variabelen waar we mee rekening zouden moeten houden. Per product zou het ons twee maanden duren. In die tijd kunnen we samen veel meer nuttige dingen doen voor de natuur, toch?
-          </p>
-          <p>Een oplossing zou zijn als fabrikanten dit voor hun rekening nemen. ‘Om deze schoen te produceren is 30 kilo CO₂ uitgestoten.’ Niet alleen zou het ons allemaal een stuk bewuster maken hoe we met onze wereld omgaan, maar ook zou het de producenten sieren. We zouden namelijk precies weten hoeveel we moeten compenseren om klimaatneutraal te kunnen shoppen.</p>
-          <p>En nu het goede nieuws: met onze methode komen we er ook! Om in te schatten hoeveel jij zou moeten bijdragen om klimaatneutraal te shoppen, hebben wij de gemiddelde kosten voor CO₂-compensatie per product uitgerekend in relatie tot de prijs van het product. Als jij tussen 0,83% extra betaalt bovenop de totale prijs van je het product, shop je klimaatneutraal. Klinkt als een gek bedrag? Tel de btw erbij die we op je bijdrage moeten betalen, en je komt op één procent.</p>
-          <p>Trouwens, één procent is strikt genomen aan de ruime kant. Het is beter om te veel te doen, dan te weinig. Atmosfair is er trouwens wel blij mee. Met jouw bijdrage zorgen ze bijvoorbeeld voor luchtkwaliteitverbetering in ontwikkelingslanden.</p>
+          <h2>{{s5_title_1}}</h2>
+          <div v-html="s5_p_1"></div>
         </div>
         <div class="calculation_right group-item_col">
           <img src="../../../assets/ninja_sit.png" alt="Sitting co2ok ninja">
           <p class="kgs">{{number}} KGS</p>
-          <h3>Co2 gecompenseerd</h3>
-          <p>(Our developers are working hard to make the CO2 counter work in the near future)</p>
+          <h3>{{s5_title_sm}}</h3>
+          <!-- <p>{{s5_p_2}}</p> -->
         </div>
       </div>
     </div>
 
     <div class="bomenPlanten">
       <div class="content">
-        <h2>Oh dus jullie planten bomen enzo?</h2>
-        <p>
-          Nee. Hoewel bomen op zich natuurlijk wel CO₂ opnemen, zijn er verschillende redenen om te twijfelen aan het effect van zulke projecten: Pas na 50 jaar begint een bos een daadwerkelijk effect op de bescherming van het klimaat te hebben. Als het bos voor die tijd wordt gekapt of op een andere manier verdwijnt (bijvoorbeeld als gevolg van een plaag infectie) is de winst teniet gedaan. Ook kan de bescherming van het ene bos niet voorkomen dat het bos ernaast gekapt wordt – per saldo dus weer geen winst. Atmosfair geeft hier nog
-          <a
-            href="https://www.atmosfair.de/en/standards/forest_projects/"
-            target="_blank"
-          >verdere toelichting</a> op.
-        </p>
+        <h2>{{s6_title}}</h2>
+        <p v-html="s6_p"></p>
       </div>
     </div>
 
@@ -196,7 +226,7 @@
 </template>
 
 <script>
-// import lang from "./../../../lang/lang_home.json";
+import lang from "./../../../lang/lang_home.json";
 import { getCookie, setCookie } from "./../../../../functions/cookies";
 import Footer from "./../../main/Footer/Footer";
 import Navigation from "./../../main/Navigation/Navigation";
@@ -214,7 +244,53 @@ export default {
     return {
       lang: "nl",
       number: 0,
-      timer: null
+      timer: null,
+      bol1: false,
+      bol2: false,
+      bol3: false,
+      bol4: false,
+
+      s1_title: lang.nl.s1_title,
+      s1_p: lang.nl.s1_p,
+
+      s2_title: lang.nl.s2_title,
+
+      s2_title_1: lang.nl.s2_title_1,
+      s2_p_1: lang.nl.s2_p_1,
+      s2_button_1: lang.nl.s2_button_1,
+
+      s2_title_2: lang.nl.s2_title_2,
+      s2_p_2: lang.nl.s2_p_2,
+      s2_button_2: lang.nl.s2_button_2,
+
+      s2_title_3: lang.nl.s2_title_3,
+      s2_p_3: lang.nl.s2_p_3,
+      s2_button_3: lang.nl.s2_button_3,
+
+      s3_title_1: lang.nl.s3_title_1,
+      s3_p_1: lang.nl.s3_p_1,
+
+      s3_title_2: lang.nl.s3_title_2,
+      s3_p_2: lang.nl.s3_p_2,
+
+      s3_title_3: lang.nl.s3_title_3,
+      s3_p_3: lang.nl.s3_p_3,
+
+      s3_title_4: lang.nl.s3_title_4,
+      s3_p_4: lang.nl.s3_p_4,
+
+      s4_title: lang.nl.s4_title,
+      s4_p: lang.nl.s4_p,
+      s4_button1: lang.nl.s4_button1,
+      s4_button2: lang.nl.s4_button2,
+
+      s5_title_1: lang.nl.s5_title,
+      s5_p_1: lang.nl.s5_p_1,
+      s5_title_sm: lang.nl.s5_title_sm,
+      s5_p_2: lang.nl.s5_p_2,
+
+      s6_title: lang.nl.s6_title,
+      s6_p: lang.nl.s6_p
     };
   },
   methods: {
@@ -241,6 +317,48 @@ export default {
 
       console.log("change language to " + language);
 
+      this.s1_title = lang[language].s1_title;
+      this.s1_p = lang[language].s1_p;
+
+      this.s2_title = lang[language].s2_title;
+
+      this.s2_title_1 = lang[language].s2_title_1;
+      this.s2_p_1 = lang[language].s2_p_1;
+      this.s2_button_1 = lang[language].s2_button_1;
+
+      this.s2_title_2 = lang[language].s2_title_2;
+      this.s2_p_2 = lang[language].s2_p_2;
+      this.s2_button_2 = lang[language].s2_button_2;
+
+      this.s2_title_3 = lang[language].s2_title_3;
+      this.s2_p_3 = lang[language].s2_p_3;
+      this.s2_button_3 = lang[language].s2_button_3;
+
+      this.s3_title_1 = lang[language].s3_title_1;
+      this.s3_p_1 = lang[language].s3_p_1;
+
+      this.s3_title_2 = lang[language].s3_title_2;
+      this.s3_p_2 = lang[language].s3_p_2;
+
+      this.s3_title_3 = lang[language].s3_title_3;
+      this.s3_p_3 = lang[language].s3_p_3;
+
+      this.s3_title_4 = lang[language].s3_title_4;
+      this.s3_p_4 = lang[language].s3_p_4;
+
+      this.s4_title = lang[language].s4_title;
+      this.s4_p = lang[language].s4_p;
+      this.s4_button1 = lang[language].s4_button1;
+      this.s4_button2 = lang[language].s4_button2;
+
+      this.s5_title_1 = lang[language].s5_title;
+      this.s5_p_1 = lang[language].s5_p_1;
+      this.s5_title_sm = lang[language].s5_title_sm;
+      this.s5_p_2 = lang[language].s5_p_2;
+
+      this.s6_title = lang[language].s6_title;
+      this.s6_p = lang[language].s6_p;
+
       setCookie("userLang", language, 200);
       this.lang = language;
     }, // end changeLang
@@ -253,23 +371,35 @@ export default {
       var pageY = window.pageYOffset;
 
       if (pageY > 615) {
-        document.getElementById("bol1").style.display = "block";
-        document.getElementById("bol1_").style.display = "block";
+        this.bol1 = true;
+        // document.getElementById("bol1").style.display = "block";
+        // document.getElementById("bol1_").style.display = "block";
+      } else {
+        this.bol1 = false;
       }
 
       if (pageY > 795) {
-        document.getElementById("bol2").style.display = "block";
-        document.getElementById("bol2_").style.display = "block";
+        this.bol2 = true;
+        // document.getElementById("bol2").style.display = "block";
+        // document.getElementById("bol2_").style.display = "block";
+      } else {
+        this.bol2 = false;
       }
 
       if (pageY > 980) {
-        document.getElementById("bol3").style.display = "block";
-        document.getElementById("bol3_").style.display = "block";
+        this.bol3 = true;
+        // document.getElementById("bol3").style.display = "block";
+        // document.getElementById("bol3_").style.display = "block";
+      } else {
+        this.bol3 = false;
       }
 
       if (pageY > 1167) {
-        document.getElementById("bol4").style.display = "block";
-        document.getElementById("bol4_").style.display = "block";
+        this.bol4 = true;
+        // document.getElementById("bol4").style.display = "block";
+        // document.getElementById("bol4_").style.display = "block";
+      } else {
+        this.bol4 = false;
       }
 
       var begin = pageY - 1100;

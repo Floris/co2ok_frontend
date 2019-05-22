@@ -1,37 +1,61 @@
 /* eslint-disable quotes */
 module.exports = {
-  //section1
-  title: "Shop climate neutral",
-  title2: "Save the climate – Ninja makes sure webshops invest in green energy!",
-  button_header1: "Join Ninja - It's free",
-  //section2
-  s2_title: "Our mission",
-  s2_p1: "Become a CO₂ok Ninja with our Ninja extension. You shop and the store pays a CO₂ compensation at no extra cost for you. Fighting climate change was never this easy.",
-  //section3
-  s3_title: "How it works",
-  s3_img_title1: "Install in seconds",
-  s3_img_p1: "Takes just 4 clicks.",
-  s3_img_title2: "Shop",
-  s3_img_p2: "Shop as CO₂ok Ninja.",
-  s3_img_title3: "FIGHT CLIMATE CHANGE",
-  s3_img_p3: "With the commision we can finance projects that reduce CO₂.",
-  //section4
-  s4_title: "With these shops you can shop climateneutral:",
-  s4_link: "Check all 22000+ webshops",
-  s4_p1: "Choose from 22.000+ international webshops",
-  //
-  s6_title: "CO₂-compensation projects",
-  s6_p1: "CO₂ok supports various CO2 compensation projects from Atmosfair. 90% of Atmosfair's CO2 compensation projects meet the CDM Gold Standard, the strictest standard available for climate protection projects. To involve countries that do not have the preconditions for large projects, Atmosfair as we speak is developing all kinds of micro projects.",
-  s6_button: "Check Projects",
-  //
-  s7_title: "CO₂ok Ninja Privacy Policy",
-  s7_p: `<p>
-          We fight climate change, we don’ t mine data!That is why we don’ t collect or save any of your personal shopping data.With us your data is yours only.
-          We work transparent and our code is open source.You can have a look how our Ninja App is technically made.The entire source code is open
-          for you, no secrets involved.You find it here: <a href="https://github.com/Mil0dV/co2ok-ninja" target="_blank"> Sourcecode Ninja App - browserextension</a>
-          Our Ninja App system only needs the right to locally see which online shop you are visiting to activate the commission.The information about visited websites does not leave your computer, so your privacy is protected.
-          Look further into our Privacy Policy
-          </p>
-          `,
-  s7_button: "Check our Privacy Statement here"
-};
+  s1_title: "CO₂ compensation, because there is no planet B.",
+  s1_p: "Greenhouse gases are released during production and transport. Manufacturers are trying to reduce these emissions, but most of them are not getting along well. To be able to purchase that product CO product neutrally, CO₂ compensation is a solution.",
+
+  s2_title: "Our services",
+
+  s2_title_1: "For the consumers",
+  s2_p_1: "We offer consumers the possibility to download an extension to make their purchases climate neutral.",
+  s2_button_1: "Join us as a Ninja",
+
+  s2_title_2: "Statistics CO₂ compensation",
+  s2_p_2: "Create your own account and see how much CO₂ you have already compensated!",
+  s2_button_2: "View dashboard",
+
+  s2_title_3: "For the webshop",
+  s2_p_3: "We offer webshops the possibility to install a plugin. This allows web shops to become climate neutral.",
+  s2_button_3: "Join us as a webshop",
+
+  s3_title_1: "1: Calculate CO2 emissions",
+  s3_p_1: "We calculate the greenhouse gases released during production and transport. We convert this into the comparable amount of CO₂, for example, 1 gram of methane equals 100 grams of CO₂.",
+
+  s3_title_2: "2: Climate neutral",
+  s3_p_2: "If you choose to make your CO₂ok purchase, you pay a small extra amount during your purchase.",
+
+  s3_title_3: "3: Compensation projects",
+  s3_p_3: `This amount is used to finance renewable energy or CO₂-reducing projects (we do this through our certified partner,
+                <a
+                  href="https://www.atmosfair.de/en/"
+                  target="_blank"
+                >Atmosfair</a>)`,
+
+  s3_title_4: "4: Climat impact",
+  s3_p_4: "These projects ensure that less CO₂ is emitted. That saving corresponds to the emissions of your purchase - on balance your purchase therefore has no climate impact!",
+
+  s4_title: "Help us, shop climate neutral!",
+  s4_p: "Climate is hot - more and more people are opting for sustainable and green. Help fight climate change by registering as a webshop or consumer. All you have to do is install a free browser extension. If you are a webshop owner you can install a free plugin.",
+  s4_button1: "Fight as a webshop",
+  s4_button2: "Fight as a consumer",
+
+  s5_title: "CO₂ data calculation",
+  s5_p_1: `<p>
+            How do we know how much CO₂ is emitted during the production of goods ? And how much do we want to ask you to contribute to offset those emissions ? Although it is difficult, we have a good solution. The answer to the first question may not sound satisfactory.After all, it is very difficult to calculate how much CO₂ should be compensated for each product in order to shop climate - neutral.There is no way to do this quickly and well - founded for an organization like ours.There are too many variables that we should take into account.It would take us two months per product.In that time we can do much more useful things for nature together, right ?
+            </p>
+            <p>
+            A solution would be
+            if manufacturers take care of this.
+            "To produce this shoe, 30 kilos of CO₂ were emitted."
+            Not only would it make us all a lot more aware of how we deal with our world, it would also adorn the producers.We would know exactly how much we have to compensate to be able to shop climate neutral. 
+            </p>`,
+
+  s5_title_sm: "CO₂ compensated",
+  s5_p_2: "(Our developers work hard to make the counter work)",
+
+  s6_title: "Oh so you plant trees and stuff?",
+  s6_p: `No. Although trees in themselves do take up CO zich, there are several reasons to doubt the effect of such projects: Only after 50 years does a forest begin to have a real effect on climate protection. If the forest is cut down before that time or disappears in another way (for example as a result of a pest infection), the profit is canceled. The protection of one forest cannot prevent the forest from being felled next to it - so on balance no profit. Atmosfair gives here
+          <a
+            href="https://www.atmosfair.de/en/standards/forest_projects/"
+            target="_blank"
+          >further explanation</a>.`,
+}
