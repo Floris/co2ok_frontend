@@ -1,4 +1,5 @@
 import Home from './components/pages/Home/Home';
+import Ninja from './components/pages/Ninja/Ninja';
 import Faq from './components/pages/Faq/Faq';
 import Projecten from './components/pages/Projecten/Projecten';
 import Zakelijk from './components/pages/Zakelijk/Zakelijk';
@@ -12,19 +13,27 @@ import Causemarketing from './components/pages/Causemarketing/Causemarketing';
 export const routes = [{
     path: '/',
     component: Home
+  }, {
+    path: '/ninja',
+    component: Ninja
   },
   {
-    path: '/faq',
-    component: Faq
+    path: '/zakelijk',
+    component: Zakelijk
   },
   {
     path: '/projecten',
     component: Projecten
   },
   {
-    path: '/zakelijk',
-    component: Zakelijk
+    path: '/about',
+    component: About
   },
+  {
+    path: '/faq',
+    component: Faq
+  },
+
   {
     path: '/login',
     component: Login
@@ -33,10 +42,7 @@ export const routes = [{
     path: '/dashboard',
     component: Dashboard
   },
-  {
-    path: '/about',
-    component: About
-  },
+
   {
     path: '/privacy',
     component: Privacy

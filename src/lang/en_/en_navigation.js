@@ -1,9 +1,12 @@
 module.exports = {
   links: [{
-      text: "PROJECTS",
+      text: "NINJA",
     },
     {
       text: "BUSINESS",
+    },
+    {
+      text: "PROJECTS",
     },
     {
       text: "ABOUT",
