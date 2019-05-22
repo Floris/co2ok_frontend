@@ -47,11 +47,11 @@
     }
 
     h1 {
-      color: #fff;
+      color: #000;
     }
 
     p {
-      color: #fff;
+      color: #000;
       font-weight: 500;
     }
 
@@ -157,7 +157,7 @@
     }
 
     .fas {
-      font-size: 150px;
+      font-size: 100px;
       color: $green;
     }
 
@@ -183,17 +183,22 @@
       align-content: center;
       justify-content: space-between;
       height: 100%;
-      // width: 14px;
       width: 5px;
       left: 0;
       right: 0;
-      background: $green;
+      // background: $green;
+      // background: linear-gradient(top, $green 50%, black 50%);
+    }
+
+    #fillLine {
+      // background-image: linear-gradient(top, $green 0%, black 100%);
     }
 
     .bol_wrapper {
       position: relative;
       margin: 0 auto;
-      height: 187px;
+      height: 25%;
+      // height: 125px;
       display: flex;
       flex-direction: column;
       justify-content: center;
@@ -201,18 +206,31 @@
     }
 
     .bol {
+      transition: width 2s,
+        height 2s,
+        transform 2s;
+      display: none;
       position: absolute;
       left: -20px;
       right: 0;
       border: 1px solid rgba(0, 0, 0, 0);
       border-radius: 30px;
-      background: $dark_green;
+      // background: $dark_green;
       height: 40px;
       width: 40px;
       z-index: 3;
+
+      img {
+        height: 100%;
+        width: 100%;
+      }
     }
 
     .bol2 {
+      transition: width 2s,
+        height 2s,
+        transform 2s;
+      display: none;
       position: absolute;
       left: -30px;
       // top: -10px;
@@ -231,8 +249,9 @@
       border-radius: $border_radius;
       box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
       padding: 1rem;
-      height: 187px;
+      max-height: 500px;
       max-width: 400px;
+      margin: 0.3rem 0;
     }
 
     .group:nth-child(even) {
@@ -241,7 +260,7 @@
   }
 
   .help {
-    padding: 100px 0;
+    padding: 60px 0;
     position: relative;
     background-image: url('./../assets/vrouw.png');
     background-repeat: no-repeat;
@@ -274,7 +293,7 @@
 
     p,
     h2 {
-      color: #fff;
+      color: #000;
     }
 
     p {
@@ -283,7 +302,7 @@
   }
 
   .calculation {
-    padding: 100px 0;
+    padding: 60px 0;
     text-align: left;
 
     h2,
@@ -316,7 +335,7 @@
   }
 
   .bomenPlanten {
-    padding: 100px 0;
+    padding: 60px 0;
     text-align: center;
     background: $green;
 
@@ -354,7 +373,35 @@
 
   }
 
+  @media only screen and (max-width: 1060px) {
+    .tree {
+      display: flex;
+      justify-content: center;
+
+      .line {
+        position: relative;
+        height: unset !important;
+        // margin: 0 50px;
+      }
+
+    }
+  }
+
   @media only screen and (max-width: 900px) {
+
+    .jumbotron {
+      text-align: center;
+    }
+
+    .help {
+      background: unset;
+      text-align: center;
+
+      .group,
+      .buttons {
+        justify-content: center !important;
+      }
+    }
 
     .showCarousel {
       display: block;
@@ -366,12 +413,18 @@
     }
 
     .calculation {
+
+      text-align: center;
+
       .calculation_right {
         order: 0;
+        width: 100%;
       }
 
       .calculation_left {
         order: 3;
+        // width: 100%;
+        margin: 0 auto;
       }
 
       .group {
@@ -399,10 +452,29 @@
       display: none;
     }
 
+    .tree {
+      .line {
+        display: none;
+      }
+    }
+
     .help {
       .content {
-        margin: 0 !important;
+        margin: 0 auto !important;
         padding: 0 !important;
+      }
+
+      .buttons {
+        flex-wrap: wrap;
+
+        .button {
+          width: 100%;
+        }
+
+        a {
+          width: 100%;
+          margin: 0.5rem 0;
+        }
       }
 
       .group {
@@ -410,5 +482,12 @@
         margin: 0;
       }
     }
+
+    .calculation_left {
+      h2 {
+        margin: 1rem 0;
+      }
+    }
+
   }
 }

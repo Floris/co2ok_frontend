@@ -78,47 +78,63 @@
       </div>
     </div>
 
-    <div class="tree group_col content">
-      <div class="line">
+    <div class="tree content">
+      <div class="line" id="fillLine">
         <div class="bol_wrapper">
-          <!-- <div class="bol"></div> -->
-          <div class="bol2"></div>
-        </div>
-        <div class="bol_wrapper">
-          <!-- <div class="bol"></div> -->
-          <div class="bol2"></div>
+          <div class="bol" id="bol1">
+            <img src="../../../assets/illu_4.svg" alt="planeet">
+          </div>
+          <div class="bol2" id="bol1_"></div>
         </div>
         <div class="bol_wrapper">
-          <!-- <div class="bol"></div> -->
-          <div class="bol2"></div>
+          <div class="bol" id="bol2">
+            <img src="../../../assets/illu_4.svg" alt="planeet">
+          </div>
+          <div class="bol2" id="bol2_"></div>
         </div>
         <div class="bol_wrapper">
-          <!-- <div class="bol"></div> -->
-          <div class="bol2"></div>
+          <div class="bol" id="bol3">
+            <img src="../../../assets/illu_4.svg" alt="planeet">
+          </div>
+          <div class="bol2" id="bol3_"></div>
+        </div>
+        <div class="bol_wrapper">
+          <div class="bol" id="bol4">
+            <img src="../../../assets/illu_4.svg" alt="planeet">
+          </div>
+          <div class="bol2" id="bol4_"></div>
         </div>
       </div>
-      <div class="group">
-        <div class="text_box">
-          <h3>1: Co2 uitstoten berekenen</h3>
-          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Beatae, necessitatibus in distinctio officia magni ex consequatur assumenda doloremque doloribus suscipit optio. Illum tempore sed quisquam provident placeat sequi, hic natus?</p>
+      <div class="group_col">
+        <div class="group">
+          <div class="text_box">
+            <h3>1: Co2 uitstoten berekenen</h3>
+            <p>Wij berekenen de bij productie en transport vrijgekomen broeikasgassen. Deze rekenen we om naar de vergelijkbare hoeveelheid CO₂, zo staat bijvoorbeeld 1 gram methaan gelijk aan 100 gram CO₂.</p>
+          </div>
         </div>
-      </div>
-      <div class="group">
-        <div class="text_box">
-          <h3>2: Klimaat neutraal</h3>
-          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Beatae, necessitatibus in distinctio officia magni ex consequatur assumenda doloremque doloribus suscipit optio. Illum tempore sed quisquam provident placeat sequi, hic natus?</p>
+        <div class="group">
+          <div class="text_box">
+            <h3>2: Klimaat neutraal</h3>
+            <p>Als je ervoor kiest om je aankoop CO₂ok te maken, betaal je een klein bedrag extra tijdens je aankoop.</p>
+          </div>
         </div>
-      </div>
-      <div class="group">
-        <div class="text_box">
-          <h3>3: Compensatie projecten</h3>
-          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Beatae, necessitatibus in distinctio officia magni ex consequatur assumenda doloremque doloribus suscipit optio. Illum tempore sed quisquam provident placeat sequi, hic natus?</p>
+        <div class="group">
+          <div class="text_box">
+            <h3>3: Compensatie projecten</h3>
+            <p>
+              Met dit bedrag worden duurzame energie of CO₂-uitstoot verminderende projecten gefinancierd (dit doen we via onze gecertificeerde partner,
+              <a
+                href="https://www.atmosfair.de/en/"
+                target="_blank"
+              >Atmosfair</a>)
+            </p>
+          </div>
         </div>
-      </div>
-      <div class="group">
-        <div class="text_box">
-          <h3>4: Klimaat impact</h3>
-          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Beatae, necessitatibus in distinctio officia magni ex consequatur assumenda doloremque doloribus suscipit optio. Illum tempore sed quisquam provident placeat sequi, hic natus?</p>
+        <div class="group">
+          <div class="text_box">
+            <h3>4: Klimaat impact</h3>
+            <p>Deze projecten zorgen ervoor dat er minder CO₂ wordt uitgestoten. Die besparing komt overeen met de uitstoot van je aankoop – per saldo heeft je aankoop dus geen klimaatimpact!</p>
+          </div>
         </div>
       </div>
     </div>
@@ -129,7 +145,7 @@
         <div class="main group-item_col">
           <h2>Help mee, shop klimaat neutraal!</h2>
           <p>Klimaat is hot - steeds meer mensen kiezen voor duurzaam en groen. Help mee met het bestrijden van klimaatverandering, door je op te geven als webshop of consument. Het enige wat je hoeft te doen, is een gratis browser extensie te installeren. Als je een webshop eigenaar bent kun je een gratis plugin installeren.</p>
-          <div class="group">
+          <div class="group buttons">
             <router-link to="/login">
               <button class="button green">Strijd mee als webshop</button>
             </router-link>
@@ -150,7 +166,7 @@
             Het antwoord op de eerste vraag klinkt misschien niet bevredigend. Het is namelijk erg lastig om per product uit te rekenen hoeveel CO₂ gecompenseerd zou moeten worden om klimaatneutraal te shoppen. Er is geen manier om dit snel en gegrond te doen voor een organisatie als de onze. Er zijn teveel variabelen waar we mee rekening zouden moeten houden. Per product zou het ons twee maanden duren. In die tijd kunnen we samen veel meer nuttige dingen doen voor de natuur, toch?
           </p>
           <p>Een oplossing zou zijn als fabrikanten dit voor hun rekening nemen. ‘Om deze schoen te produceren is 30 kilo CO₂ uitgestoten.’ Niet alleen zou het ons allemaal een stuk bewuster maken hoe we met onze wereld omgaan, maar ook zou het de producenten sieren. We zouden namelijk precies weten hoeveel we moeten compenseren om klimaatneutraal te kunnen shoppen.</p>
-          <p>En nu het goede nieuws: met onze methode komen we er ook! Om in te schatten hoeveel jij zou moeten bijdragen om klimaatneutraal te shoppen, hebben wij de gemiddelde kosten voor CO₂-compensatie per product uitgerekend in relatie tot de prijs van het product. Als jij tussen 0,83% extra betaalt bovenop de totale prijs van je het product, shop je klimaatneutraal. Klinkt als een gek bedrag? Tel de btw erbij die we op je bijdrage moeten betalen, en je komt op één procent. </p>
+          <p>En nu het goede nieuws: met onze methode komen we er ook! Om in te schatten hoeveel jij zou moeten bijdragen om klimaatneutraal te shoppen, hebben wij de gemiddelde kosten voor CO₂-compensatie per product uitgerekend in relatie tot de prijs van het product. Als jij tussen 0,83% extra betaalt bovenop de totale prijs van je het product, shop je klimaatneutraal. Klinkt als een gek bedrag? Tel de btw erbij die we op je bijdrage moeten betalen, en je komt op één procent.</p>
           <p>Trouwens, één procent is strikt genomen aan de ruime kant. Het is beter om te veel te doen, dan te weinig. Atmosfair is er trouwens wel blij mee. Met jouw bijdrage zorgen ze bijvoorbeeld voor luchtkwaliteitverbetering in ontwikkelingslanden.</p>
         </div>
         <div class="calculation_right group-item_col">
@@ -231,14 +247,44 @@ export default {
 
     //gets called when you scroll
     handleScroll(event) {
-      // console.log("handlescroll", window.pageYOffset);
-      //   if (window.pageYOffset > 800 && screen.width > 600) {
-      //     // console.log("navbar true");
-      //     this.isActive = true;
-      //   } else {
-      //     // console.log("navbar false");
-      //     this.isActive = false;
-      //   }
+      console.log("handlescroll", window.pageYOffset, 1811);
+      // if (window.pageYOffset > 1120 && screen.width > 600) {
+      // console.log("navbar true");
+      var pageY = window.pageYOffset;
+
+      if (pageY > 615) {
+        document.getElementById("bol1").style.display = "block";
+        document.getElementById("bol1_").style.display = "block";
+      }
+
+      if (pageY > 795) {
+        document.getElementById("bol2").style.display = "block";
+        document.getElementById("bol2_").style.display = "block";
+      }
+
+      if (pageY > 980) {
+        document.getElementById("bol3").style.display = "block";
+        document.getElementById("bol3_").style.display = "block";
+      }
+
+      if (pageY > 1167) {
+        document.getElementById("bol4").style.display = "block";
+        document.getElementById("bol4_").style.display = "block";
+      }
+
+      var begin = pageY - 1100;
+      var end = 230;
+
+      var p1 = 0;
+      var p2 = 100;
+
+      p1 = (100 / end) * begin;
+
+      console.log(`${p1}% --- ${p2}%`);
+
+      document.getElementById(
+        "fillLine"
+      ).style.backgroundImage = `-webkit-linear-gradient(top, #2ecc71 ${p1}%, white ${p2}%)`;
     }
   },
   mounted: function() {
