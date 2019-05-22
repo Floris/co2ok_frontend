@@ -8,25 +8,113 @@
 
     <div class="content group">
       <div class="medium_posts">
-        <div class="post">d</div>
-        <div class="post">d</div>
-        <div class="post">x</div>
-        <div class="post">e</div>
-        <div class="post">x</div>
-        <div class="post">v</div>
+        <div class="post">
+          <div><img class="img_background" src="../../../assets/blog_image1.jpg" alt=""></div>
+          <div class="img-background-color"></div>
+          <div class="top green">
+            <p>Bedrijf</p>
+          </div>
+          <div class="bottom">
+            <div class="title">
+              <p>Veel nieuwe dingen!</p>
+            </div>
+            <div class="author">
+              <img src="../../../assets/about_fotos/milo.png">
+              <p> Milo de vries | 22 mei 2019</p>
+            </div>
+          </div>
+        </div>
+        <div class="post">
+          <div><img class="img_background" src="../../../assets/blog_image2.jpeg" alt=""></div>
+          <div class="img-background-color"></div>
+          <div class="top orange">
+            <p>Compensatie</p>
+          </div>
+          <div class="bottom">
+            <div class="title">
+              <p>Help onze planeet!</p>
+            </div>
+            <div class="author">
+              <img src="../../../assets/about_fotos/milo.png">
+              <p> Milo de vries | 22 mei 2019</p>
+            </div>
+          </div>
+        </div>
+        <div class="post">
+          <div><img class="img_background" src="../../../assets/blog_image3.jpg" alt=""></div>
+          <div class="img-background-color"></div>
+          <div class="top orange">
+            <p>Compensatie</p>
+          </div>
+          <div class="bottom">
+            <div class="title">
+              <p>Waarom "boxed" water beter is</p>
+            </div>
+            <div class="author">
+              <img src="../../../assets/about_fotos/milo.png">
+              <p> Milo de vries | 22 mei 2019</p>
+            </div>
+          </div>
+        </div>
+        <div class="post">
+          <div><img class="img_background" src="../../../assets/blog_image4.jpg" alt=""></div>
+          <div class="img-background-color"></div>
+          <div class="top red">
+            <p>Co2 Use</p>
+          </div>
+          <div class="bottom">
+            <div class="title">
+              <p>Zonnenpaneel itempje</p>
+            </div>
+            <div class="author">
+              <img src="../../../assets/about_fotos/milo.png">
+              <p> Milo de vries | 22 mei 2019</p>
+            </div>
+          </div>
+        </div>
+        <div class="post">
+          <div><img class="img_background" src="../../../assets/blog_image5.jpg" alt=""></div>
+          <div class="img-background-color"></div>
+          <div class="top red">
+            <p>Co2 Use</p>
+          </div>
+          <div class="bottom">
+            <div class="title">
+              <p>Help onze planeet!</p>
+            </div>
+            <div class="author">
+              <img src="../../../assets/about_fotos/milo.png">
+              <p> Milo de vries | 22 mei 2019</p>
+            </div>
+          </div>
+        </div>
+        <div class="post">
+          <div><img class="img_background" src="../../../assets/blog_image6.jpg" alt=""></div>
+          <div class="img-background-color"></div>
+          <div class="top red">
+            <p>Co2 Use</p>
+          </div>
+          <div class="bottom">
+            <div class="title">
+              <p>Help onze planeet!</p>
+            </div>
+            <div class="author">
+              <img src="../../../assets/about_fotos/milo.png">
+              <p> Milo de vries | 22 mei 2019</p>
+            </div>
+          </div>
+        </div>
       </div>
       <div class="instagram_feed">
-        <div class="post">d</div>
-        <div class="post">d</div>
+        <iframe id="instagram-embed-0" class="instagram-media instagram-media-rendered" style="background: white; max-width: 658px; width: calc(100% - 2px); border-radius: 3px; border: 1px solid #dbdbdb; box-shadow: none; display: block; margin: 0px 0px 12px; min-width: 300px; padding: 0px;" src="https://www.instagram.com/p/BxIcchDFuHE/embed?utm_source=ig_embedembed/captioned/" scrolling="no" data-instgrm-payload-id="instagram-media-payload-0" height="750" frameborder="0"><span data-mce-type="bookmark" style="display: inline-block; width: 0px; overflow: hidden; line-height: 0;" class="mce_SELRES_start"></span><span data-mce-type="bookmark" style="display: inline-block; width: 0px; overflow: hidden; line-height: 0;" class="mce_SELRES_start"></span><span data-mce-type="bookmark" style="display: inline-block; width: 0px; overflow: hidden; line-height: 0;" class="mce_SELRES_start"></span></iframe>
       </div>
     </div>
-
     <Footer></Footer>
   </div>
 </template>
-
 <script>
-import axios from "axios";
+
+// import axios from "axios";
 import { getCookie, setCookie } from "./../../../../functions/cookies";
 
 import Navigation from "./../../main/Navigation/Navigation";
@@ -45,34 +133,34 @@ export default {
   },
   mounted: function() {
     this.checkCookies();
-
-    this.getMediumPosts();
+    // this.getMediumPosts();
   },
   methods: {
-    getMediumPosts() {
-      try {
-        fetch("https://medium.com/@nebulasio/latest?format=json", {
-          method: "GET", // *GET, POST, PUT, DELETE, etc.
-          mode: "cors", // no-cors, cors, *same-origin
-          cache: "no-cache", // *default, no-cache, reload, force-cache, only-if-cached
-          credentials: "same-origin", // include, *same-origin, omit
-          headers: {
-            "Content-Type": "application/json",
-            "Access-Control-Allow-Origin": "*",
-            "Access-Control-Allow-Headers":
-              "Origin, X-Requested-With, Content-Type, Accept"
-            // 'Content-Type': 'application/x-www-form-urlencoded',
-          }
-        })
-          .then(res => {
-            console.log("response", res);
-          })
-          .catch(err => {
-            console.log(err);
-          });
-      } catch (error) {
-        console.log(error);
-      }
+    
+    // getMediumPosts() {
+    //   try {
+    //     fetch("https://medium.com/@nebulasio/latest?format=json", {
+    //       method: "GET", // *GET, POST, PUT, DELETE, etc.
+    //       mode: "cors", // no-cors, cors, *same-origin
+    //       cache: "no-cache", // *default, no-cache, reload, force-cache, only-if-cached
+    //       credentials: "same-origin", // include, *same-origin, omit
+    //       headers: {
+    //         "Content-Type": "application/json",
+    //         "Access-Control-Allow-Origin": "*",
+    //         "Access-Control-Allow-Headers":
+    //           "Origin, X-Requested-With, Content-Type, Accept"
+    //         // 'Content-Type': 'application/x-www-form-urlencoded',
+    //       }
+    //     })
+    //       .then(res => {
+    //         console.log("response", res);
+    //       })
+    //       .catch(err => {
+    //         console.log(err);
+    //       });
+    //   } catch (error) {
+    //     console.log(error);
+    //   }
 
       // axios
       // .get("https://medium.com/@nebulasio/latest?format=json", {
@@ -88,7 +176,7 @@ export default {
       //   // window.alert("Error cannot get blog posts.");
       //   console.log(err);
       // });
-    }, // end getMediumPosts
+    // },// end getMediumPosts
 
     checkCookies() {
       console.log("%ccheck cookies -  " + document.cookie, "color:red;");
