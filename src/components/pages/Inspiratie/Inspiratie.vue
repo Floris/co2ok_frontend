@@ -60,7 +60,7 @@
           <div><img class="img_background" src="../../../assets/blog_image4.jpg" alt=""></div>
           <div class="img-background-color"></div>
           <div class="top red">
-            <p>Co2 Use</p>
+            <p>Co2 Gebruik</p>
           </div>
           <div class="bottom">
             <div class="title">
@@ -76,7 +76,7 @@
           <div><img class="img_background" src="../../../assets/blog_image5.jpg" alt=""></div>
           <div class="img-background-color"></div>
           <div class="top red">
-            <p>Co2 Use</p>
+            <p>Co2 Gebruik</p>
           </div>
           <div class="bottom">
             <div class="title">
@@ -92,7 +92,7 @@
           <div><img class="img_background" src="../../../assets/blog_image6.jpg" alt=""></div>
           <div class="img-background-color"></div>
           <div class="top red">
-            <p>Co2 Use</p>
+            <p>Co2 Gebruik</p>
           </div>
           <div class="bottom">
             <div class="title">
