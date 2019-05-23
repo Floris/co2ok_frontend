@@ -17,6 +17,12 @@
           </router-link>
         </div>
         <div class="nav-items">
+          <div class="dropdown">
+            <router-link class="dropdown_zakelijk spacing-desktop" to="/zakelijk">{{zakelijk}}</router-link>
+            <div class="dropdown-content">
+            <router-link class="spacing-desktop dropdown_zakelijk" to="/causemarketing">CAUSEMARKETING</router-link>
+            </div>
+          </div>
           <router-link
             class="spacing-desktop"
             v-bind:class="{showItems : isActive}"
@@ -67,6 +73,7 @@
             <router-link class="profile_mobile" to="/login">
               <i class="far fa-user"></i>
             </router-link>
+            <router-link to="/causemarketing">CAUSE MARKETING</router-link>
             <div class="lang_flag_mobile">
               <img
                 v-if="lang === 'en'"
@@ -100,11 +107,11 @@ export default {
           text: lang.nl.links[0].text,
           page: "/ninja"
         },
-        {
-          id: 1,
-          text: lang.nl.links[1].text,
-          page: "/zakelijk"
-        },
+        // {
+        //   id: 1,
+        //   text: lang.nl.links[1].text,
+        //   page: "/zakelijk"
+        // },
         {
           id: 2,
           text: lang.nl.links[2].text,
@@ -126,6 +133,7 @@ export default {
         //   page: "/login"
         // }
       ],
+      zakelijk: lang.nl.zakelijk,
       isActive: false,
       showMobileMenu: false
     };
@@ -177,29 +185,31 @@ export default {
         page: "/ninja"
       });
 
+      // this.links.splice(1, 1, {
+      //   id: 1,
+      //   text: lang[lng].links[1].text,
+      //   page: "/zakelijk"
+      // });
+
       this.links.splice(1, 1, {
         id: 1,
         text: lang[lng].links[1].text,
-        page: "/zakelijk"
+        page: "/projecten"
       });
 
       this.links.splice(2, 1, {
         id: 2,
         text: lang[lng].links[2].text,
-        page: "/projecten"
+        page: "/about"
       });
 
       this.links.splice(3, 1, {
         id: 3,
         text: lang[lng].links[3].text,
-        page: "/about"
-      });
-
-      this.links.splice(4, 1, {
-        id: 4,
-        text: lang[lng].links[4].text,
         page: "/faq"
       });
+
+      this.zakelijk = lang[lng].zakelijk;
     }
   },
   //add(create) the event
