@@ -5,13 +5,12 @@
       <div class="background_color"></div>
     </div>
     <div class="questions">
-      <!-- <div class="line_container">
-        <div class="line"></div>
-      </div>-->
       <div class="content">
         <h2>FAQ Ninja</h2>
+        <Faqbox :faq="lang_ninja"></Faqbox>
       </div>
-      <Faqbox :faq="lang_ninja"></Faqbox>
+    </div>
+    <div class="questions">
       <div class="content">
         <h2>FAQ Business</h2>
         <Faqbox :faq="lang_business"></Faqbox>
@@ -134,11 +133,6 @@ export default {
   },
   mounted: function() {
     this.checkCookies();
-
-    // The .$on function gets the languege emit function from the navigation
-    this.$on("changeLangNav", lang => {
-      this.changeLang(lang);
-    });
   }, // end mounted
   methods: {
     checkCookies() {

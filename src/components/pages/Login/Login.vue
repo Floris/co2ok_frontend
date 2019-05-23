@@ -95,11 +95,6 @@ export default {
     }
 
     this.checkIfLoggedIn();
-
-    // The .$on function gets the languege emit function from the navigation
-    this.$on("changeLangNav", lang => {
-      this.changeLang(lang);
-    });
   },
   methods: {
     handleLoginForm(data) {

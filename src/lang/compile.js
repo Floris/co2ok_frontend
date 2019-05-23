@@ -4,9 +4,13 @@ console.log('execute compile.js');
 
 // import all language files
 
-//homepage files
+//home files
 var nl_home = require('./nl_/nl_home.js');
 var en_home = require('./en_/en_home.js');
+
+//ninja files
+var nl_ninja = require('./nl_/nl_ninja.js');
+var en_ninja = require('./en_/en_ninja.js');
 
 //faq page files
 var nl_faq = require('./nl_/nl_faq.js');
@@ -39,11 +43,16 @@ var en_installatie = require('./en_/en_installatie.js');
 var nl_causemarketing = require('./nl_/nl_causemarketing.js');
 var en_causemarketing = require('./en_/en_causemarketing.js');
 
-// exmaple homepage language object
 // add more language objects later
+
 var home_language_kit_object = {
   nl: nl_home,
   en: en_home
+};
+
+var ninja_language_kit_object = {
+  nl: nl_ninja,
+  en: en_ninja
 };
 
 var faq_language_kit_object = {
@@ -88,8 +97,9 @@ var causemarketing_language_kit_object = {
   en: en_causemarketing
 };
 
-// create New Home Language Kit
+// create New Language Kit
 createLanguageKit("src/lang/lang_home.json", home_language_kit_object);
+createLanguageKit("src/lang/lang_ninja.json", ninja_language_kit_object);
 createLanguageKit("src/lang/lang_faq.json", faq_language_kit_object);
 createLanguageKit("src/lang/lang_projecten.json", projecten_language_kit_object);
 createLanguageKit("src/lang/lang_navigation.json", navigation_language_kit_object);
@@ -101,8 +111,8 @@ createLanguageKit("src/lang/lang_causemarketing.json", causemarketing_language_k
 
 
 async function createLanguageKit(fileName, output) {
-  console.log('create HomeLanguageKit');
-  // console.log('create HomeLanguageKit', output); //debug
+  console.log('create LanguageKit');
+  // console.log('create LanguageKit', output); //debug
 
   // try to remove old file
   try {
