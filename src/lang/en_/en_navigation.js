@@ -3,9 +3,6 @@ module.exports = {
       text: "NINJA",
     },
     {
-      text: "BUSINESS",
-    },
-    {
       text: "PROJECTS",
     },
     {
@@ -17,5 +14,6 @@ module.exports = {
     {
       text: "LOGIN"
     }
-  ]
+  ],
+  zakelijk: "BUSINESS",
 }
