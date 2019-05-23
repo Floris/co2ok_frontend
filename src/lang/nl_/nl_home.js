@@ -17,6 +17,10 @@ module.exports = {
   s2_p_3: "Wij bieden webshops de mogelijkheid een plugin te installeren. Hiermee kunnen webshops klimaat neutraal worden.",
   s2_button_3: "Strijd mee als webshop",
 
+  s2_title_4: "CO₂ compensation",
+  s2_p_4: "Met de kleine fee's die wij ontvangen, wordt er 95% in projecten gestoken die van belang zijn voor het verminderen van de CO₂ uitstoot!",
+  s2_button_4: "Bekijk projecten",
+
   s3_title_1: "1: Co2 uitstoten berekenen",
   s3_p_1: "Wij berekenen de bij productie en transport vrijgekomen broeikasgassen. Deze rekenen we om naar de vergelijkbare hoeveelheid CO₂, zo staat bijvoorbeeld 1 gram methaan gelijk aan 100 gram CO₂.",
 

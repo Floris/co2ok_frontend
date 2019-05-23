@@ -17,6 +17,10 @@ module.exports = {
   s2_p_3: "We offer webshops the possibility to install a plugin. This allows web shops to become climate neutral.",
   s2_button_3: "Join us as a webshop",
 
+  s2_title_4: "CO₂ compensation",
+  s2_p_4: "With the small fees that we receive, 95% is invested in projects that are important for reducing CO₂ emissions!",
+  s2_button_4: "View projects",
+
   s3_title_1: "1: Calculate CO2 emissions",
   s3_p_1: "We calculate the greenhouse gases released during production and transport. We convert this into the comparable amount of CO₂, for example, 1 gram of methane equals 100 grams of CO₂.",
 
