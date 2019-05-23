@@ -447,6 +447,37 @@
     }
   }
 
+  .partners {
+    padding: 2em 0;
+    margin: 0 auto;
+    max-width: $content_max_width;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: space-between;
+    align-content: center;
+
+    img {
+      height: 140px;
+      width: 140px;
+      display: block;
+      margin: 0 auto;
+    }
+
+    .normal {
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-content: center;
+    }
+
+    .carousel {
+      width: 100%;
+      display: none;
+    }
+  }
+
   .fade-enter-active,
   .fade-leave-active {
     transition: opacity .5s;
@@ -474,6 +505,10 @@
       .img_collection {
         width: $grid_width;
       }
+    }
+
+    .partners {
+      max-width: $grid_width;
     }
 
   }
@@ -628,6 +663,21 @@
     .calculation_left {
       h2 {
         margin: 1rem 0;
+      }
+    }
+
+    .partners {
+      .normal {
+        display: none;
+      }
+
+      img {
+        display: block;
+        margin: 0 auto;
+      }
+
+      .carousel {
+        display: block;
       }
     }
 

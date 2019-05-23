@@ -9,19 +9,16 @@
           <h1>{{title}}</h1>
           <p>{{title2}}</p>
           <router-link to="/login">
-            <button class="button green">{{button_header1}}</button>
+            <button class="button white">{{button_header1}}</button>
           </router-link>
         </div>
-      </div>
-      <div class="line_container">
-        <div class="line"></div>
       </div>
     </div>
 
     <div class="howItWorks">
-      <div class="img_background"></div>
-      <div class="img-background-color"></div>
-
+      <div class="line_container">
+        <div class="line"></div>
+      </div>
       <div class="block">
         <h2>{{s3_title}}</h2>
 
@@ -72,9 +69,6 @@
     </div>
 
     <div class="companies">
-      <div class="line_container">
-        <div class="line"></div>
-      </div>
       <div class="content">
         <h2>
           {{s4_title}}
@@ -122,12 +116,13 @@
         </div>
       </div>
     </div>
+
     <div class="projects">
       <div class="content">
         <h2>{{s6_title}}</h2>
         <p>{{s6_p1}}</p>
         <router-link to="/projecten">
-          <button class="button green">{{s6_button}}</button>
+          <button class="button white">{{s6_button}}</button>
         </router-link>
         <!-- <div class="img_cover">
           <img src="../../../assets/project1.jpg">
@@ -136,6 +131,17 @@
         </div>-->
       </div>
     </div>
+
+    <div class="besparing">
+      <div class="content">
+        <p>
+          Wij hebben al
+          <span id="kgs">{{number}} KGS</span> CO2 bespaard.
+        </p>
+        <p>Wordt ninja en bespaar 9.000 auto-km's per jaar!</p>
+      </div>
+    </div>
+
     <div class="privacy">
       <div class="content">
         <div class="group">
@@ -189,6 +195,10 @@ export default {
       show: false,
       // language
       lang: "nl",
+
+      number: 0,
+      timer: null,
+
       // text
       title: lang.nl.title,
       title2: lang.nl.title2,
@@ -225,7 +235,17 @@ export default {
   },
   mounted: function() {
     this.checkCookies();
+    this.timer = setInterval(() => {
+      this.number = Math.round(
+        Math.random() * Math.round(Math.random() * 10000)
+      );
+    }, 1000);
   }, // end mounted
+  //remove the event
+  destroyed() {
+    clearInterval(this.timer);
+    console.log("destroyed");
+  },
   methods: {
     checkCookies() {
       console.log("%ccheck cookies -  " + document.cookie, "color:red;");

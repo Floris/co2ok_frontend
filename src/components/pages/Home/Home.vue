@@ -267,6 +267,60 @@
       </div>
     </div>
 
+    <div class="partners_bg">
+      <div class="partners">
+        <h2>{{s3_title}}</h2>
+        <p>{{s3_text}}</p>
+
+        <div class="normal">
+          <a href="https://www.atmosfair.de/en/" target="_blank">
+            <img src="../../../assets/partners/atmosfair.png">
+          </a>
+          <a href="https://www.starters4communities.nl/" target="_blank">
+            <img src="../../../assets/partners/starters4communities.png">
+          </a>
+          <a href="https://www.s-bb.nl/bedrijven/erkenning/leerbedrijf-worden" target="_blank">
+            <img src="../../../assets/partners/SBB.png">
+          </a>
+          <a href="https://www.fairclimatefund.nl/en" target="_blank">
+            <img src="../../../assets/partners/FairClimateFund.svg">
+          </a>
+        </div>
+
+        <div class="carousel">
+          <carousel
+            :autoplay="true"
+            :centerMode="true"
+            :loop="true"
+            :per-page="1"
+            :mouse-drag="true"
+            :perPage="1"
+          >
+            <slide>
+              <a href="https://www.atmosfair.de/en/" target="_blank">
+                <img src="../../../assets/partners/atmosfair.png">
+              </a>
+            </slide>
+            <slide>
+              <a href="https://www.starters4communities.nl/" target="_blank">
+                <img src="../../../assets/partners/starters4communities.png">
+              </a>
+            </slide>
+            <slide>
+              <a href="https://www.s-bb.nl/bedrijven/erkenning/leerbedrijf-worden" target="_blank">
+                <img src="../../../assets/partners/SBB.png">
+              </a>
+            </slide>
+            <slide>
+              <a href="https://www.fairclimatefund.nl/en" target="_blank">
+                <img src="../../../assets/partners/FairClimateFund.svg">
+              </a>
+            </slide>
+          </carousel>
+        </div>
+      </div>
+    </div>
+
     <Footer></Footer>
   </div>
 </template>
@@ -291,6 +345,7 @@ export default {
       lang: "nl",
       number: 0,
       timer: null,
+
       bol1: false,
       bol2: false,
       bol3: false,
