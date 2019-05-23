@@ -1,7 +1,7 @@
 /* eslint-disable quotes */
 module.exports = {
-  s1_title: "CO₂ compensation, because there is no planet B.",
-  s1_p: "Tijdens de productie en het transport komen broeikasgassen vrij. Fabrikanten proberen deze uitstoot terug te dringen, maar de meeste schieten hier niet zo hard mee op. Om toch juist dat product CO₂ neutraal te kunnen kopen, is CO₂-compensatie een uitkomst.",
+  s1_title: "Maak je bedrijf CO₂ neutraal",
+  s1_title2: "Wees CO₂ neutraal en word een ninja!",
 
   s2_title: "Onze diensten",
 

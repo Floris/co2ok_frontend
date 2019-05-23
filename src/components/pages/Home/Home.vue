@@ -10,16 +10,12 @@
         <h1 class="quote_head">CO₂ compensation, because there is no planet B.</h1>
         <div class="head_group group">
           <div class="text_block">
-            <h2>Make your company compensate CO₂</h2>
+            <h2>{{s1_title}}</h2>
           </div>
           <div class="text_block">
-            <h2>Stay CO₂ neutral and become a ninja!</h2>
+            <h2>{{s1_title2}}</h2>
           </div>
         </div>
-        <!-- <div class="text_block">
-          <h1>{{s1_title}}</h1>
-          <p>{{s1_p}}</p>
-        </div>-->
       </div>
     </div>
 
@@ -301,7 +297,7 @@ export default {
       bol4: false,
 
       s1_title: lang.nl.s1_title,
-      s1_p: lang.nl.s1_p,
+      s1_title2: lang.nl.s1_title2,
 
       s2_title: lang.nl.s2_title,
 
@@ -372,7 +368,7 @@ export default {
       console.log("change language to " + language);
 
       this.s1_title = lang[language].s1_title;
-      this.s1_p = lang[language].s1_p;
+      this.s1_title2 = lang[language].s1_title2;
 
       this.s2_title = lang[language].s2_title;
 

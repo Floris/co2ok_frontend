@@ -1,7 +1,7 @@
 /* eslint-disable quotes */
 module.exports = {
-  s1_title: "CO₂ compensation, because there is no planet B.",
-  s1_p: "Greenhouse gases are released during production and transport. Manufacturers are trying to reduce these emissions, but most of them are not getting along well. To be able to purchase that product CO product neutrally, CO₂ compensation is a solution.",
+  s1_title: "Make your company compensate CO₂",
+  s1_title2: "Stay CO₂ neutral and become a ninja!",
 
   s2_title: "Our services",
 
