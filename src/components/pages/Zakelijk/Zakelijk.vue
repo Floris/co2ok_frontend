@@ -3,7 +3,7 @@
     <Navigation :lang="lang" @changeLangNav="changeLang"/>
     <div class="top_intro">
       <div class="content">
-        <img src="../../../assets/wereldbol.png">
+        <img src="../../../assets/wereldbol5.svg">
         <div class="text">
           <!-- ADD languages -->
           <h1>{{title}}</h1>
@@ -14,6 +14,9 @@
       </div>
     </div>
     <div class="bulletpoints">
+      <div class="line_container">
+        <div class="line"></div>
+      </div>
       <div class="content">
         <div class="carousel showCarousel hidden">
           <carousel :centerMode="true" :per-page="1" :mouse-drag="true" :perPage="1">
@@ -206,7 +209,9 @@
           <carousel :centerMode="true" :per-page="1" :mouse-drag="true" :perPage="1">
             <slide>
               <div class="img_block">
-                <img src="../../../assets/natuurvol-wonen.png">
+                <a href="https://www.natuurvol.nl/wonen/" target="_blank">
+                  <img src="../../../assets/natuurvol-wonen.png">
+                </a>
                 <div class="text">
                   <p>{{s4_p1}}</p>
                 </div>
@@ -214,7 +219,9 @@
             </slide>
             <slide>
               <div class="img_block">
-                <img src="../../../assets/happytowels.jpg">
+                <a href="https://happytowels.nl/" target="_blank">
+                  <img src="../../../assets/happytowels.jpg">
+                </a>
                 <div class="text">
                   <p>{{s4_p2}}</p>
                 </div>
@@ -222,7 +229,9 @@
             </slide>
             <slide>
               <div class="img_block">
-                <img src="../../../assets/download.png">
+                <a href="https://bamboedesign.nl/" target="_blank">
+                  <img src="../../../assets/download.png">
+                </a>
                 <div class="text">
                   <p>{{s4_p3}}</p>
                 </div>
@@ -233,19 +242,25 @@
         <div class="hideCarousel">
           <div class="img_gallery">
             <div class="img_block">
-              <img src="../../../assets/natuurvol-wonen.png">
+              <a href="https://www.natuurvol.nl/wonen/" target="_blank">
+                <img src="../../../assets/natuurvol-wonen.png">
+              </a>
               <div class="text">
                 <p>{{s4_p1}}</p>
               </div>
             </div>
             <div class="img_block">
-              <img src="../../../assets/happytowels.jpg">
+              <a href="https://happytowels.nl/" target="_blank">
+                <img src="../../../assets/happytowels.jpg">
+              </a>
               <div class="text">
                 <p>{{s4_p2}}</p>
               </div>
             </div>
             <div class="img_block">
-              <img src="../../../assets/download.png">
+              <a href="https://bamboedesign.nl/" target="_blank">
+                <img src="../../../assets/download.png">
+              </a>
               <div class="text">
                 <p>{{s4_p3}}</p>
               </div>

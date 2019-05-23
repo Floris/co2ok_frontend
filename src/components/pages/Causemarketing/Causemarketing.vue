@@ -3,7 +3,7 @@
     <Navigation :lang="lang" @changeLangNav="changeLang"/>
     <div class="top_intro">
       <div class="content">
-        <img src="../../../assets/wereldbol.png">
+        <img src="../../../assets/wereldbol5.svg">
         <div class="text">
           <!-- ADD languages -->
           <h1>{{title1}}</h1>
@@ -13,6 +13,9 @@
       </div>
     </div>
     <div class="bulletpoints">
+      <div class="line_container">
+        <div class="line"></div>
+      </div>
       <div class="content">
         <h2>Our services</h2>
         <div class="carousel showCarousel hidden">
