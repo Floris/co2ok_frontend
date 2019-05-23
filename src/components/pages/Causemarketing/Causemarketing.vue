@@ -14,11 +14,13 @@
     </div>
     <div class="bulletpoints">
       <div class="content">
+        <h2>Our services</h2>
         <div class="carousel showCarousel hidden">
           <carousel :centerMode="true" :per-page="1" :mouse-drag="true" :perPage="1">
             <slide>
               <div class="img_block">
-                <img src="../../../assets/book.svg">
+                <!-- <img src="../../../assets/book.svg"> -->
+                <i class="fas fa-book fa-5x blue"></i>
                 <div class="text">
                   <h3>{{s2_title1}}</h3>
                   <p>{{s2_p1}}</p>
@@ -27,7 +29,8 @@
             </slide>
             <slide>
               <div class="img_block">
-                <img src="../../../assets/pijl.svg">
+                <!-- <img src="../../../assets/pijl.svg"> -->
+                <i class="fas fa-coins fa-5x blue"></i>
                 <div class="text">
                   <h3>{{s2_title2}}</h3>
                   <p>{{s2_p2}}</p>
@@ -36,7 +39,8 @@
             </slide>
             <slide>
               <div class="img_block">
-                <img src="../../../assets/hart.svg">
+                <!-- <img src="../../../assets/hart.svg"> -->
+                <i class="fas fa-fire fa-5x blue"></i>
                 <div class="text">
                   <h3>{{s2_title3}}</h3>
                   <p>{{s2_p3}}</p>
@@ -45,7 +49,8 @@
             </slide>
             <slide>
               <div class="img_block">
-                <img src="../../../assets/hand.svg">
+                <!-- <img src="../../../assets/hand.svg"> -->
+                <i class="far fa-handshake fa-5x blue"></i>
                 <div class="text">
                   <h3>{{s2_title4}}</h3>
                   <p>{{s2_p4}}</p>
@@ -57,28 +62,32 @@
         <div class="hideCarousel">
           <div class="img_gallery">
             <div class="img_block">
-              <img src="../../../assets/book.svg">
+              <!-- <img src="../../../assets/book.svg"> -->
+              <i class="fas fa-book fa-5x blue"></i>
               <div class="text">
                 <h3>{{s2_title1}}</h3>
                 <p>{{s2_p1}}</p>
               </div>
             </div>
             <div class="img_block">
-              <img src="../../../assets/pijl.svg">
+              <!-- <img src="../../../assets/pijl.svg"> -->
+              <i class="fas fa-coins fa-5x blue"></i>
               <div class="text">
                 <h3>{{s2_title2}}</h3>
                 <p>{{s2_p2}}</p>
               </div>
             </div>
             <div class="img_block">
-              <img src="../../../assets/hart.svg">
+              <!-- <img src="../../../assets/hart.svg"> -->
+              <i class="fas fa-fire fa-5x blue"></i>
               <div class="text">
                 <h3>{{s2_title3}}</h3>
                 <p>{{s2_p3}}</p>
               </div>
             </div>
             <div class="img_block">
-              <img src="../../../assets/hand.svg">
+              <!-- <img src="../../../assets/hand.svg"> -->
+              <i class="far fa-handshake fa-5x blue"></i>
               <div class="text">
                 <h3>{{s2_title4}}</h3>
                 <p>{{s2_p4}}</p>
@@ -96,28 +105,28 @@
           <carousel :centerMode="true" :per-page="1" :mouse-drag="true" :perPage="1">
             <slide>
               <div class="block">
-                <DoughnutChart :percent="percent1" foregroundColor="#FFFFFF" backgroundColor="#D6D6D6" :visibleValue="true"/>
+                <DoughnutChart :percent="percent1" foregroundColor="#B6E1F9" backgroundColor="#FFFFFF" :visibleValue="true"/>
                 <p>{{s3_p1}}</p>
                 <p class="link" v-html="s3_link1"></p>
               </div>
             </slide>
             <slide>
               <div class="block">
-                <DoughnutChart :percent="percent2" foregroundColor="#FFFFFF" backgroundColor="#D6D6D6" :visibleValue="true"/>
+                <DoughnutChart :percent="percent2" foregroundColor="#B6E1F9" backgroundColor="#FFFFFF" :visibleValue="true"/>
                 <p>{{s3_p2}}</p>
                 <p class="link" v-html="s3_link2"></p>
               </div>
             </slide>
             <slide>
               <div class="block">
-                <DoughnutChart :percent="percent3" foregroundColor="#FFFFFF" backgroundColor="#D6D6D6" :visibleValue="true"/>
+                <DoughnutChart :percent="percent3" foregroundColor="#B6E1F9" backgroundColor="#FFFFFF" :visibleValue="true"/>
                 <p>{{s3_p3}}</p>
                 <p class="link" v-html="s3_link3"></p>
               </div>
             </slide>
             <slide>
               <div class="block">
-                <DoughnutChart :percent="percent4" foregroundColor="#FFFFFF" backgroundColor="#D6D6D6" :visibleValue="true"/>
+                <DoughnutChart :percent="percent4" foregroundColor="#B6E1F9" backgroundColor="#FFFFFF" :visibleValue="true"/>
                 <p>{{s3_p4}}</p>
                 <p class="link" v-html="s3_link4"></p>
               </div>
@@ -126,26 +135,26 @@
         </div>
         <div class="content_block group hideCarousel">
           <div class="block">
-            <DoughnutChart :percent="percent1" foregroundColor="#FFFFFF" backgroundColor="#D6D6D6" :visibleValue="true"/>
+            <DoughnutChart :percent="percent1" foregroundColor="#B6E1F9" backgroundColor="#FFFFFF" :visibleValue="true"/>
             <!-- {{lang}} -->
             <p>{{s3_p1}}</p>
             <p class="link" v-html="s3_link1"></p>
           </div>
           <div class="block">
 
-            <DoughnutChart :percent="percent2" foregroundColor="#FFFFFF" backgroundColor="#D6D6D6" :visibleValue="true"/>
+            <DoughnutChart :percent="percent2" foregroundColor="#B6E1F9" backgroundColor="#FFFFFF" :visibleValue="true"/>
             <p>{{s3_p2}}</p>
             <p class="link" v-html="s3_link2"></p>
           </div>
           <div class="block">
 
-            <DoughnutChart :percent="percent3" foregroundColor="#FFFFFF" backgroundColor="#D6D6D6" :visibleValue="true"/>
+            <DoughnutChart :percent="percent3" foregroundColor="#B6E1F9" backgroundColor="#FFFFFF" :visibleValue="true"/>
             <p>{{s3_p3}}</p>
             <p class="link" v-html="s3_link3"></p>
           </div>
           <div class="block">
 
-            <DoughnutChart :percent="percent4" foregroundColor="#FFFFFF" backgroundColor="#D6D6D6" :visibleValue="true"/>
+            <DoughnutChart :percent="percent4" foregroundColor="#B6E1F9" backgroundColor="#FFFFFF" :visibleValue="true"/>
             <p>{{s3_p4}}</p>
             <p class="link" v-html="s3_link4"></p>
           </div>
