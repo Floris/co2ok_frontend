@@ -269,8 +269,8 @@
 
     <div class="partners_bg">
       <div class="partners">
-        <h2>{{s3_title}}</h2>
-        <p>{{s3_text}}</p>
+        <h2>{{partners_title}}</h2>
+        <p>{{partners_text}}</p>
 
         <div class="normal">
           <a href="https://www.atmosfair.de/en/" target="_blank">
@@ -395,7 +395,10 @@ export default {
       s5_p_2: lang.nl.s5_p_2,
 
       s6_title: lang.nl.s6_title,
-      s6_p: lang.nl.s6_p
+      s6_p: lang.nl.s6_p,
+
+      partners_title: lang.nl.partners_title,
+      partners_text: lang.nl.partners_text
     };
   },
   methods: {
@@ -467,6 +470,9 @@ export default {
 
       this.s6_title = lang[language].s6_title;
       this.s6_p = lang[language].s6_p;
+
+      this.partners_title = lang[language].partners_title;
+      this.partners_text = lang[language].partners_text;
 
       setCookie("userLang", language, 200);
       this.lang = language;

@@ -58,4 +58,7 @@ module.exports = {
             href="https://www.atmosfair.de/en/standards/forest_projects/"
             target="_blank"
           >verdere toelichting</a> op.`,
+
+  partners_title: "Partners",
+  partners_text: "Met liefde introduceren wij onze partners in de strijd tegen klimaatverandering!"
 }

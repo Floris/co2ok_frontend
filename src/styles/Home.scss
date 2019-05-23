@@ -448,6 +448,8 @@
   }
 
   .partners {
+    height: 100% !important;
+
     padding: 2em 0;
     margin: 0 auto;
     max-width: $content_max_width;
@@ -682,4 +684,5 @@
     }
 
   }
+
 }
