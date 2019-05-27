@@ -43,38 +43,45 @@
       }
     }
   }
+
   .bulletpoints {
     position: relative;
     height: 550px;
     background: $white;
     z-index: 1;
+
     // top: -75px;
     .blue {
       color: $light_blue;
     }
+
+
     .content {
       padding-top: 20px;
+
       .img_gallery {
         display: flex;
         flex-direction: row;
         margin: 0 auto;
-        .img_block {
-          text-align: center;
-          width: 20%;
-          margin: 0 auto;
-          
-          img {
-            padding-bottom: 30px;
-            width: 125px;
-          }
 
-          .text {
-            position: relative;
-            bottom: -50px;
-            word-wrap: break-word;
-            h3 {
-              font-size: 20px;
-            }
+      }
+      .img_block {
+        text-align: center;
+        width: 20%;
+        margin: 0 auto;
+
+        img {
+          padding-bottom: 30px;
+          width: 125px;
+        }
+
+        .text {
+          position: relative;
+          bottom: -50px;
+          word-wrap: break-word;
+
+          h3 {
+            font-size: 20px;
           }
         }
       }
@@ -82,10 +89,12 @@
         text-align: center;
         padding-bottom: 55px;
       }
+
       .carousel {
         width: 100%;
       }
     }
+
     .line_container {
       position: absolute;
       width: 100%;
@@ -109,6 +118,7 @@
       top: -45px;
     }
   }
+
   .block_cijfers {
     position: relative;
     height: 700px;
@@ -118,6 +128,7 @@
 
     .content {
       padding-top: 100px;
+
       .content_block {
         .block {
           margin: 0 auto;
@@ -136,6 +147,7 @@
         }
       }
     }
+
     //font-colour desktop & mobile.
     .block {
 
@@ -151,6 +163,7 @@
       }
     }
   }
+
   .meer_weten {
     position: relative;
     height: 300px;
@@ -160,27 +173,30 @@
       flex-direction: column;
       // justify-content: center;
       align-items: center;
+
       .text {
         text-align: center;
-        
+
         h1 {
           margin-top: 50px;
         }
+
         .link {
           text-decoration: underline;
         }
       }
     }
   }
+
   .doughnut_chart {
     div {
       left: 0 !important;
       right: 0 !important;
     }
   }
+
+  
 }
-
-
 @media only screen and (max-width: $content_max_width) {
   $grid_width: 90%;
 
@@ -209,40 +225,52 @@
     .top_intro {
       .content {
         flex-direction: column !important;
+
         .text {
           text-align: center;
         }
+
         img {
           width: 220px !important;
           bottom: -50px;
         }
       }
     }
+
     .bulletpoints {
       height: 450px;
       padding-top: 0px !important;
+
       .content {
         h2 {
           padding-bottom: 0 !important;
         }
+
         .img_block {
           text-align: center;
           margin-top: 50px;
+          width: 100% !important;
+
           .text {
             padding-top: 20px;
             margin: 0 auto;
-            width: 60%;
+            width: 60% !important;
+            position: inherit;
           }
+
           img {
             width: 125px;
           }
         }
       }
     }
+
     .block_cijfers {
       height: 600px;
+
       .content {
         padding-top: 50px;
+
         .block {
           padding-top: 20px;
         }
@@ -257,13 +285,13 @@
     .bulletpoints {
       .content {
         .img_block {
-
           .text {
             width: 100% !important;
           }
         }
       }
     }
+
     .meer_weten {
       height: 350px;
     }

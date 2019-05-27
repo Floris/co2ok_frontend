@@ -300,8 +300,7 @@ export default {
       // console.log("handlescroll", window.pageYOffset);
 
       if (
-        window.pageYOffset > 800 &&
-        screen.width > 600 &&
+        window.pageYOffset > 800 && 
         this.isActive === false
       ) {
         var self = this;
