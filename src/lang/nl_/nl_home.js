@@ -1,7 +1,7 @@
 /* eslint-disable quotes */
 module.exports = {
-  s1_title: "CO₂ compensation, because there is no planet B.",
-  s1_p: "Tijdens de productie en het transport komen broeikasgassen vrij. Fabrikanten proberen deze uitstoot terug te dringen, maar de meeste schieten hier niet zo hard mee op. Om toch juist dat product CO₂ neutraal te kunnen kopen, is CO₂-compensatie een uitkomst.",
+  s1_title: "Maak je bedrijf CO₂ neutraal",
+  s1_title2: "Wees CO₂ neutraal en word een ninja!",
 
   s2_title: "Onze diensten",
 
@@ -16,6 +16,10 @@ module.exports = {
   s2_title_3: "Voor de webshop",
   s2_p_3: "Wij bieden webshops de mogelijkheid een plugin te installeren. Hiermee kunnen webshops klimaat neutraal worden.",
   s2_button_3: "Strijd mee als webshop",
+
+  s2_title_4: "CO₂ compensation",
+  s2_p_4: "Met de kleine fee's die wij ontvangen, wordt er 95% in projecten gestoken die van belang zijn voor het verminderen van de CO₂ uitstoot!",
+  s2_button_4: "Bekijk projecten",
 
   s3_title_1: "1: Co2 uitstoten berekenen",
   s3_p_1: "Wij berekenen de bij productie en transport vrijgekomen broeikasgassen. Deze rekenen we om naar de vergelijkbare hoeveelheid CO₂, zo staat bijvoorbeeld 1 gram methaan gelijk aan 100 gram CO₂.",
@@ -54,4 +58,7 @@ module.exports = {
             href="https://www.atmosfair.de/en/standards/forest_projects/"
             target="_blank"
           >verdere toelichting</a> op.`,
+
+  partners_title: "Partners",
+  partners_text: "Met liefde introduceren wij onze partners in de strijd tegen klimaatverandering!"
 }

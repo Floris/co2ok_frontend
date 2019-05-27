@@ -1,7 +1,7 @@
 /* eslint-disable quotes */
 module.exports = {
-  s1_title: "CO₂ compensation, because there is no planet B.",
-  s1_p: "Greenhouse gases are released during production and transport. Manufacturers are trying to reduce these emissions, but most of them are not getting along well. To be able to purchase that product CO product neutrally, CO₂ compensation is a solution.",
+  s1_title: "Make your company compensate CO₂",
+  s1_title2: "Stay CO₂ neutral and become a ninja!",
 
   s2_title: "Our services",
 
@@ -16,6 +16,10 @@ module.exports = {
   s2_title_3: "For the webshop",
   s2_p_3: "We offer webshops the possibility to install a plugin. This allows web shops to become climate neutral.",
   s2_button_3: "Join us as a webshop",
+
+  s2_title_4: "CO₂ compensation",
+  s2_p_4: "With the small fees that we receive, 95% is invested in projects that are important for reducing CO₂ emissions!",
+  s2_button_4: "View projects",
 
   s3_title_1: "1: Calculate CO2 emissions",
   s3_p_1: "We calculate the greenhouse gases released during production and transport. We convert this into the comparable amount of CO₂, for example, 1 gram of methane equals 100 grams of CO₂.",
@@ -58,4 +62,7 @@ module.exports = {
             href="https://www.atmosfair.de/en/standards/forest_projects/"
             target="_blank"
           >further explanation</a>.`,
+
+  partners_title: "Partners",
+  partners_text: "We heartily introduce our partners in our fight against climate change!"
 }

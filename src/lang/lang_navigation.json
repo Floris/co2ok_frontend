@@ -1,1 +1,1 @@
-{"nl":{"links":[{"text":"NINJA"},{"text":"ZAKELIJK"},{"text":"PROJECTEN"},{"text":"OVER"},{"text":"FAQ"},{"text":"LOGIN"}]},"en":{"links":[{"text":"NINJA"},{"text":"BUSINESS"},{"text":"PROJECTS"},{"text":"ABOUT"},{"text":"FAQ"},{"text":"LOGIN"}]}}
+{"nl":{"links":[{"text":"NINJA"},{"text":"PROJECTEN"},{"text":"OVER"},{"text":"FAQ"},{"text":"LOGIN"}],"zakelijk":"ZAKELIJK"},"en":{"links":[{"text":"NINJA"},{"text":"PROJECTS"},{"text":"ABOUT"},{"text":"FAQ"},{"text":"LOGIN"}],"zakelijk":"BUSINESS"}}

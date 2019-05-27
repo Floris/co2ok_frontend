@@ -12,7 +12,7 @@
     position: relative;
     height: 650px;
     width: 100%;
-    background: $light_blue;
+    background: $green;
     z-index: 1;
 
     display: flex;
@@ -43,10 +43,12 @@
 
     h1 {
       font-size: $large_fs;
+      color: #fff;
     }
 
     p {
       font-weight: 500;
+      color: #fff;
     }
 
     .jumbo_content {
@@ -103,27 +105,26 @@
     position: relative;
     height: 400px;
     width: 100%;
-    // background: blue;
-    // background: $light_blue;
 
-    .img_background {
-      background-image: url('./../assets/wolken_unsplash.jpg');
-      background-position: 85% 68%;
+    background: #fff;
+
+    .line_container {
       position: absolute;
-      height: 100%;
       width: 100%;
-      z-index: 0;
+      height: 50px;
+      top: 0;
     }
 
-    .img-background-color {
-      position: absolute;
-      height: 100%;
+    .line {
+      background-image: url('./../assets/achtergronden_svg/witte-lijn.svg');
+      // background-repeat: repeat;
+      background-size: cover;
+      height: 50px;
       width: 100%;
-      z-index: 0;
-      // background: rgba(116, 185, 255, 0.735);
-      background: rgba(182, 225, 249, 0.8);
-      // background: rgba(46, 204, 113, 0.8);
-      // background: rgba(46, 204, 112, 0.735);
+      max-width: 100%;
+      position: absolute;
+      z-index: 2;
+      top: -49px;
     }
 
     .carousel {
@@ -132,22 +133,16 @@
 
     .block {
       z-index: 4;
-      // border-radius: $border_radius;
-      border-style: solid rgba(0, 0, 0, 0.0);
-      border-width: 1px;
       display: flex;
       margin: 0 auto;
       flex-direction: column;
       justify-content: center;
       left: 0;
       right: 0;
-      top: -60px;
       background: #fff;
-      position: absolute;
       width: $content_max_width;
       text-align: center;
       height: 500px;
-      box-shadow: 0 8px 6px -6px rgba(0, 0, 0, 0.36);
       padding: 40px 0;
     }
 
@@ -176,13 +171,13 @@
   .companies {
     position: relative;
     min-height: 500px;
-    background: #fff;
+    background: #eee;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
     text-align: center;
-    padding: 160px 0px 60px;
+    padding: 60px 0px 60px;
 
     h2,
     p {
@@ -216,29 +211,11 @@
       color: $green;
       text-decoration: underline;
     }
-
-    .line_container {
-      position: absolute;
-      width: 100%;
-      height: 50px;
-      top: 0;
-    }
-
-    .line {
-      background-image: url('./../assets/achtergronden_svg/witte-lijn.svg');
-      // background-repeat: repeat;
-      background-size: cover;
-      height: 50px;
-      width: 100%;
-      max-width: 100%;
-      position: absolute;
-      z-index: 2;
-      top: -49px;
-    }
   }
 
   .projects {
-    background: $light_blue;
+    // background: $light_blue;
+    background: $green;
     // padding: 60px 0px 60px;
     padding: 60px 0px 60px;
     position: relative;
@@ -256,7 +233,12 @@
       flex-direction: column;
     }
 
+    h2 {
+      color: #fff;
+    }
+
     p {
+      color: #fff;
       max-width: 700px;
     }
 
@@ -275,6 +257,20 @@
       width: calc(100% / 3);
       max-height: 300px;
       // height: 100px;
+    }
+  }
+
+  .besparing {
+    padding: 60px 0;
+    text-align: center;
+
+    p {
+      font-size: $medium_fs;
+      font-weight: bold;
+    }
+
+    #kgs {
+      color: $green;
     }
   }
 
@@ -414,13 +410,13 @@
 
       img {
         // display: none;
-        bottom: 200px;
+        bottom: 70px;
         right: 0;
         margin: 0 auto;
         // top: -120px;
         width: 100% !important;
         // max-width: 12000px;
-        max-width: 1200px;
+        max-width: 600px;
       }
     }
 
