@@ -186,31 +186,38 @@ export default {
       this.show = !this.show;
 
       if (this.show) {
-        // document.getElementsByClassName("navbar")[0].style.position = "fixed";
-
         var element = document.getElementById("hamburger_button");
         document.body.style.overflow = "hidden";
+        document.body.style.height = "100vh";
+        document.getElementById("app").style.overflow = "hidden";
+
         element.classList.add("is-active");
 
-        document.getElementById("logo1").style.display = "initial"; // show white logo
-        // document.getElementsByClassName("hideLogo")[0].style.display = "none"; // show white logo
+        document.getElementsByClassName("navbar")[0].style.background =
+          "#2ecc71";
+        document.getElementsByClassName("navbar")[0].style.boxShadow =
+          "initial";
 
-        document.getElementsByClassName("showLogo")[0].style.display = "none"; // hide normal logo
-
-        // document.getElementsByClassName("showBar")[0].style.background =
-        //   "#2ecc71";
-
-        document.getElementsByClassName("navbar")[0].style.position = "fixed";
+        document.getElementById("logo1").style.display = "none";
+        document.getElementById("logo2").style.display = "initial";
 
         this.isActive = true;
       } else {
-        // document.getElementsByClassName("navbar")[0].style.position = "fixed";
-
         document.body.style.overflow = "initial";
+        document.body.style.height = "initial";
+
+        document.getElementById("app").style.overflow = "initial";
 
         var element = document.getElementById("hamburger_button");
 
         element.classList.remove("is-active");
+
+        document.getElementsByClassName("navbar")[0].style.background = "#fff";
+        document.getElementsByClassName("navbar")[0].style.boxShadow =
+          "1px 1px 4px 0 rgba(0, 0, 0, .1)";
+
+        document.getElementById("logo1").style.display = "initial";
+        document.getElementById("logo2").style.display = "none";
 
         this.isActive = false;
       }
