@@ -10,6 +10,10 @@
       </div>
     </div>
     <div class="block_history">
+      <div class="line_container">
+        <div class="line"></div>
+      </div>
+
       <div class="content">
         <div class="block_text">
           <div class="title">      
