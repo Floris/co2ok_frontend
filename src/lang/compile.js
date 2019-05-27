@@ -43,6 +43,10 @@ var en_installatie = require('./en_/en_installatie.js');
 var nl_causemarketing = require('./nl_/nl_causemarketing.js');
 var en_causemarketing = require('./en_/en_causemarketing.js');
 
+//privacystatement page files
+var nl_privacy = require('./nl_/nl_privacy.js');
+var en_privacy = require('./en_/en_privacy.js');
+
 // add more language objects later
 
 var home_language_kit_object = {
@@ -97,6 +101,11 @@ var causemarketing_language_kit_object = {
   en: en_causemarketing
 };
 
+var privacy_language_kit_object = {
+  nl: nl_privacy,
+  en: en_privacy
+};
+
 // create New Language Kit
 createLanguageKit("src/lang/lang_home.json", home_language_kit_object);
 createLanguageKit("src/lang/lang_ninja.json", ninja_language_kit_object);
@@ -108,6 +117,7 @@ createLanguageKit("src/lang/lang_zakelijk.json", zakelijk_language_kit_object);
 createLanguageKit("src/lang/lang_login.json", login_language_kit_object);
 createLanguageKit("src/lang/lang_installatie.json", installatie_language_kit_object);
 createLanguageKit("src/lang/lang_causemarketing.json", causemarketing_language_kit_object);
+createLanguageKit("src/lang/lang_privacy.json", privacy_language_kit_object)
 
 
 async function createLanguageKit(fileName, output) {
