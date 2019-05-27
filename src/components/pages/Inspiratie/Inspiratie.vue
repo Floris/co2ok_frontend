@@ -5,7 +5,9 @@
     <div class="jumbotron">
       <div class="background_color"></div>
     </div>
-
+    <div class="line_container">
+        <div class="line"></div>
+    </div>
     <div class="content group">
       <div class="medium_posts">
         <div class="post">
@@ -106,7 +108,7 @@
         </div>
       </div>
       <div class="instagram_feed">
-        <iframe id="instagram-embed-0" class="instagram-media instagram-media-rendered" style="background: white; max-width: 658px; width: calc(100% - 2px); border-radius: 3px; border: 1px solid #dbdbdb; box-shadow: none; display: block; margin: 0px 0px 12px; min-width: 300px; padding: 0px;" src="https://www.instagram.com/p/BxIcchDFuHE/embed?utm_source=ig_embedembed/captioned/" scrolling="no" data-instgrm-payload-id="instagram-media-payload-0" height="750" frameborder="0"><span data-mce-type="bookmark" style="display: inline-block; width: 0px; overflow: hidden; line-height: 0;" class="mce_SELRES_start"></span><span data-mce-type="bookmark" style="display: inline-block; width: 0px; overflow: hidden; line-height: 0;" class="mce_SELRES_start"></span><span data-mce-type="bookmark" style="display: inline-block; width: 0px; overflow: hidden; line-height: 0;" class="mce_SELRES_start"></span></iframe>
+        <iframe id="instagram-embed-0" class="instagram-media instagram-media-rendered" style="background: white; max-width: 600px; width: calc(100% - 2px); border-radius: 3px; border: 1px solid #dbdbdb; box-shadow: none; display: block; margin: 0px 0px 12px; min-width: 280px; padding: 0px;" src="https://www.instagram.com/p/BxIcchDFuHE/embed?utm_source=ig_embedembed/captioned/" scrolling="no" data-instgrm-payload-id="instagram-media-payload-0" height="750" frameborder="0"><span data-mce-type="bookmark" style="display: inline-block; width: 0px; overflow: hidden; line-height: 0;" class="mce_SELRES_start"></span><span data-mce-type="bookmark" style="display: inline-block; width: 0px; overflow: hidden; line-height: 0;" class="mce_SELRES_start"></span><span data-mce-type="bookmark" style="display: inline-block; width: 0px; overflow: hidden; line-height: 0;" class="mce_SELRES_start"></span></iframe>
       </div>
     </div>
     <Footer></Footer>

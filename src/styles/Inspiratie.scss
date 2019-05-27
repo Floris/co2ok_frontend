@@ -3,7 +3,7 @@
 .inspiratie {
 
   .jumbotron {
-    height: 200px;
+    height: 400px;
     width: 100%;
     .background_color {
       height: 100%;
@@ -11,14 +11,15 @@
       background: $light_blue;
     }
   }
-
   .medium_posts {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     width: 100%;
     height: 100%;
-
+    margin-top: -300px;
+    position: relative;
+    z-index: 3;
     .post {
       position: relative;
       display: flex;
@@ -99,16 +100,50 @@
   }
 
   .instagram_feed {
-    margin-top: 20px;
+    margin-top: -280px;
+    position: relative;
+    z-index: 3;
   }
-}
 
-@media only screen and (max-width: 900px) {
-  .content {
-    flex-direction: column;
+  .line_container {
+    position: absolute;
+    width: 100%;
+    height: 50px;
+    // top: -50px;
+  }
 
-  .instagram_feed {
-    margin: 0 auto;
+  .line {
+    background-image: url('./../assets/achtergronden_svg/witte-lijn.svg');
+    // background-repeat: repeat;
+    background-size: cover;
+    height: 50px;
+    width: 100%;
+    max-width: 100%;
+    position: absolute;
+    z-index: 2;
+    top: -49px;
+  }
+
+  @media only screen and (max-width: 900px) {
+    .content {
+      flex-direction: column;
+  
+    .instagram_feed {
+      margin: 0 auto;
+      }
     }
   }
+
+  @media only screen and (max-width: 600px) {
+    .content {
+      display: flex;
+      flex-direction: column-reverse !important;
+
+
+      .instagram_feed {
+        margin-top: -280px !important;
+        }
+    }
+  }  
 }
+
