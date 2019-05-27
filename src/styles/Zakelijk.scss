@@ -34,6 +34,7 @@
         }
 
         p {
+          color: $mid_blue;
           font-weight: 500;
           max-width: 586px;
         }
@@ -328,9 +329,6 @@
     }
   }
 
-  ///
-
-
   @media only screen and (max-width: $content_max_width) {
     $grid_width: 90%;
 
@@ -490,5 +488,4 @@
       }
     }
   }
-
 }
