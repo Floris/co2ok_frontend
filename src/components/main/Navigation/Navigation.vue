@@ -17,15 +17,17 @@
           </router-link>
         </div>
         <div class="nav-items">
-          <div class="dropdown">
-            <router-link class="dropdown_zakelijk spacing-desktop" to="/zakelijk">{{zakelijk}}</router-link>
+          <div class="dropdown spacing-desktop">
+            <router-link class="spacing-desktop" to="/zakelijk">{{zakelijk}}</router-link>
             <div class="dropdown-content">
-            <router-link class="spacing-desktop dropdown_zakelijk" to="/causemarketing">CAUSEMARKETING</router-link>
+              <router-link class="spacing-desktop" to="/causemarketing">CAUSEMARKETING</router-link>
             </div>
           </div>
+
           <router-link
             class="spacing-desktop"
             v-bind:class="{showItems : isActive}"
+            v-bind:id="'navItem-'+routes.id"
             v-for="(routes) in links"
             v-bind:key="routes.id"
             :to="`${routes.page}`"

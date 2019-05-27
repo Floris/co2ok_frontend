@@ -7,7 +7,7 @@
 
   .top_intro {
     position: relative;
-    background: $green;
+    background: $light_blue;
     height: 600px;
     width: 100%;
 
@@ -15,15 +15,12 @@
       position: relative;
       z-index: 1;
       display: flex;
-      flex-direction: row;
+      flex-direction: row-reverse;
 
       justify-content: space-evenly;
       align-items: center;
 
       .text {
-        h1,h3,p {
-          color: $white;
-        }
 
         p {
           font-weight: 500;
@@ -33,7 +30,7 @@
 
       img {
         position: relative;
-        bottom: -65px;
+        bottom: -125px;
         max-width: 64%;
         right: 0;
         width: 600px;
@@ -46,23 +43,31 @@
       }
     }
   }
+
   .bulletpoints {
     position: relative;
-    height: 500px;
+    height: 550px;
     background: $white;
     z-index: 1;
-    top: -75px;
+
+    // top: -75px;
+    .blue {
+      color: $light_blue;
+    }
+
     .content {
-      padding-top: 75px;
+      padding-top: 20px;
+
       .img_gallery {
         display: flex;
         flex-direction: row;
         margin: 0 auto;
+
         .img_block {
           text-align: center;
           width: 20%;
           margin: 0 auto;
-          
+
           img {
             padding-bottom: 30px;
             width: 125px;
@@ -72,26 +77,58 @@
             position: relative;
             bottom: -50px;
             word-wrap: break-word;
+
             h3 {
               font-size: 20px;
             }
           }
         }
       }
+
+      h2 {
+        text-align: center;
+        padding-bottom: 55px;
+      }
+
       .carousel {
         width: 100%;
       }
     }
+
+    .line_container {
+      position: absolute;
+      width: 100%;
+      height: 50px;
+      // z-index: 1;
+      // background: #000;
+    }
+
+    .line {
+      // background: #000;
+      background-image: url('./../assets/achtergronden_svg/witte-lijn.svg');
+      background-repeat: no-repeat; // background-image: url('./../assets/achtergronden_svg/grijs-lijn-2.svg');
+      background-size: cover;
+      width: 100%;
+      // object-fit: fill;
+      height: 50px;
+      width: 100%;
+      max-width: 100%;
+      position: absolute;
+      z-index: 99;
+      top: -45px;
+    }
   }
+
   .block_cijfers {
     position: relative;
     height: 700px;
     width: 100%;
     text-align: center;
-    background: $green;
+    background: $grey;
 
     .content {
       padding-top: 100px;
+
       .content_block {
         .block {
           margin: 0 auto;
@@ -105,27 +142,28 @@
           img {
             width: 150px;
           }
+
+
         }
       }
-      h2,h3 {
-        color: white;
-      }
     }
+
     //font-colour desktop & mobile.
     .block {
+
+      span {
+        color: black !important;
+      }
+
       .link {
 
         a {
           text-decoration: underline;
-          color: white
         }
       }
-      p {
-        color: white;
-      }
-      
     }
   }
+
   .meer_weten {
     position: relative;
     height: 300px;
@@ -135,113 +173,125 @@
       flex-direction: column;
       // justify-content: center;
       align-items: center;
+
       .text {
         text-align: center;
-        
+
         h1 {
           margin-top: 50px;
         }
+
         .link {
-          a {
-            color: lightblue;
-          }
           text-decoration: underline;
         }
       }
     }
   }
+
   .doughnut_chart {
     div {
       left: 0 !important;
       right: 0 !important;
     }
   }
-}
 
+  @media only screen and (max-width: $content_max_width) {
+    $grid_width: 90%;
 
-@media only screen and (max-width: $content_max_width) {
-  $grid_width: 90%;
-
-  .content {
-    width: $grid_width !important;
-  }
-
-}
-
-@media only screen and (max-width: 900px) {
-
-  .showCarousel {
-    display: block;
-    margin: 0 auto;
-  }
-
-  .hideCarousel {
-    display: none !important;
-  }
-
-  .carousel {
-    display: block;
-  }
-
-  .causemarketing {
-    .top_intro {
-      .content {
-        flex-direction: column !important;
-
-        .text {
-          text-align: center;
-        }
-        img {
-          width: 220px !important;
-          bottom: -50px;
-        }
-      }
+    .content {
+      width: $grid_width !important;
     }
-    .bulletpoints {
-      height: 450px;
-      padding-top: 0px !important;
-      .content {
-        .img_block {
-          text-align: center;
-          margin-top: 50px;
+
+  }
+
+  @media only screen and (max-width: 900px) {
+
+    .showCarousel {
+      display: block;
+      margin: 0 auto;
+    }
+
+    .hideCarousel {
+      display: none !important;
+    }
+
+    .carousel {
+      display: block;
+    }
+
+    .causemarketing {
+      .top_intro {
+        .content {
+          flex-direction: column !important;
+
           .text {
-            padding-top: 20px;
-            margin: 0 auto;
-            width: 60%;
+            text-align: center;
           }
+
           img {
-            width: 125px;
+            width: 220px !important;
+            bottom: -50px;
           }
         }
       }
-    }
-    .block_cijfers {
-      height: 600px;
-      .content {
-        padding-top: 50px;
-        .block {
-          padding-top: 20px;
+
+      .bulletpoints {
+        height: 450px;
+        padding-top: 0px !important;
+
+        .content {
+          h2 {
+            padding-bottom: 0 !important;
+          }
+
+          .img_block {
+            text-align: center;
+            margin-top: 50px;
+
+            .text {
+              padding-top: 20px;
+              margin: 0 auto;
+              width: 60%;
+            }
+
+            img {
+              width: 125px;
+            }
+          }
+        }
+      }
+
+      .block_cijfers {
+        height: 600px;
+
+        .content {
+          padding-top: 50px;
+
+          .block {
+            padding-top: 20px;
+          }
         }
       }
     }
   }
-}
 
 
-@media only screen and (max-width: 600px) {
-  .causemarketing {
-    .bulletpoints {
-      .content {
-        .img_block {
+  @media only screen and (max-width: 600px) {
+    .causemarketing {
+      .bulletpoints {
+        .content {
+          .img_block {
 
-          .text {
-            width: 100% !important;
+            .text {
+              width: 100% !important;
+            }
           }
         }
       }
-    }
-    .meer_weten {
-      height: 350px;
+
+      .meer_weten {
+        height: 350px;
+      }
     }
   }
 }
