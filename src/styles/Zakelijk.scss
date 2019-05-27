@@ -327,130 +327,29 @@
       }
     }
   }
-}
+
+  ///
 
 
-@media only screen and (max-width: $content_max_width) {
-  $grid_width: 90%;
-
-  .content {
-    width: $grid_width !important;
-  }
-
-}
-
-@media only screen and (max-width: 900px) {
-
-  .showCarousel {
-    display: block;
-    margin: 0 auto;
-  }
-
-  .top_intro {
-    .content {
-      justify-content: center !important;
-      text-align: center;
-
-      img {
-        display: none;
-      }
-    }
-  }
-
-  .bulletpoints {
-    height: 300px !important;
+  @media only screen and (max-width: $content_max_width) {
+    $grid_width: 90%;
 
     .content {
-      padding-top: 0px !important;
-
-      .img_block {
-        text-align: center;
-
-        // margin-top: 50px;
-        .text {
-          padding-top: 20px;
-          margin: 0 auto;
-          width: 60%;
-        }
-
-        img {
-          width: 125px;
-        }
-      }
+      width: $grid_width !important;
     }
+
   }
 
-  .why_co2ok {
-    height: 600px !important;
+  @media only screen and (max-width: 900px) {
 
-    .why_co2ok_content {
-      text-align: center;
-      height: 600px !important;
-
-      h2 {
-        padding-bottom: 10px;
-      }
-
-      .content_block {
-        img {
-          padding: 10px;
-          width: 100px;
-          height: 100px;
-        }
-
-        p {
-          max-width: 500px;
-          margin: 0 auto;
-        }
-      }
+    .showCarousel {
+      display: block;
+      margin: 0 auto;
     }
-  }
 
-  .partners {
-    height: 550px !important;
-
-    .content {
-      .img_block {
-        padding-top: 50px;
-        text-align: center;
-        width: 100%;
-        margin: 0 auto;
-
-        img {
-          width: 50%;
-        }
-      }
-    }
-  }
-
-  .block_form {
-    height: 1000px !important;
-
-    .content {
-      .form {
-        flex-direction: column;
-
-        .plugin_install,
-        .ecom_input {
-          margin-top: 10px;
-        }
-
-        .plugin_install {
-          height: 250px !important;
-        }
-      }
-    }
-  }
-
-  .hideCarousel {
-    display: none !important;
-  }
-}
-
-@media only screen and (max-width: 600px) {
-  .zakelijk {
     .top_intro {
       .content {
+        justify-content: center !important;
         text-align: center;
 
         img {
@@ -459,33 +358,137 @@
       }
     }
 
-    .why_co2ok_content {
-      .content_block {
-        p {
-          margin: 0 auto;
-          max-width: 250px;
-        }
-      }
-
-      h2 {
-        padding-bottom: 0px !important;
-      }
-    }
-
-    .partners {
-      height: 600px !important;
+    .bulletpoints {
+      height: 300px !important;
 
       .content {
+        padding-top: 0px !important;
+
         .img_block {
+          text-align: center;
+
+          // margin-top: 50px;
+          .text {
+            padding-top: 20px;
+            margin: 0 auto;
+            width: 60%;
+          }
+
           img {
-            width: 75%;
+            width: 125px;
           }
         }
       }
     }
 
-    .carousel {
-      display: block;
+    .why_co2ok {
+      height: 600px !important;
+
+      .why_co2ok_content {
+        text-align: center;
+        height: 600px !important;
+
+        h2 {
+          padding-bottom: 10px;
+        }
+
+        .content_block {
+          img {
+            padding: 10px;
+            width: 100px;
+            height: 100px;
+          }
+
+          p {
+            max-width: 500px;
+            margin: 0 auto;
+          }
+        }
+      }
+    }
+
+    .partners {
+      height: 550px !important;
+
+      .content {
+        .img_block {
+          padding-top: 50px;
+          text-align: center;
+          width: 100%;
+          margin: 0 auto;
+
+          img {
+            width: 50%;
+          }
+        }
+      }
+    }
+
+    .block_form {
+      height: 1000px !important;
+
+      .content {
+        .form {
+          flex-direction: column;
+
+          .plugin_install,
+          .ecom_input {
+            margin-top: 10px;
+          }
+
+          .plugin_install {
+            height: 250px !important;
+          }
+        }
+      }
+    }
+
+    .hideCarousel {
+      display: none !important;
     }
   }
+
+  @media only screen and (max-width: 600px) {
+    .zakelijk {
+      .top_intro {
+        .content {
+          text-align: center;
+
+          img {
+            display: none;
+          }
+        }
+      }
+
+      .why_co2ok_content {
+        .content_block {
+          p {
+            margin: 0 auto;
+            max-width: 250px;
+          }
+        }
+
+        h2 {
+          padding-bottom: 0px !important;
+        }
+      }
+
+      .partners {
+        height: 600px !important;
+
+        .content {
+          .img_block {
+            img {
+              width: 75%;
+            }
+          }
+        }
+      }
+
+      .carousel {
+        display: block;
+      }
+    }
+  }
+
 }
