@@ -10,6 +10,10 @@
       </div>
     </div>
     <div class="block_history">
+      <div class="line_container">
+        <div class="line"></div>
+      </div>
+
       <div class="content">
         <div class="block_text">
           <div class="title">
@@ -26,9 +30,9 @@
           <img src="../../../assets/weegschaalscheef.svg">
         </div>
         <div class="block_text_mobile">
-          <div class="title group-item">
+          <div class="title group-item" @click="showHistory = !showHistory">
             <h2>{{s2_title}}</h2>
-            <img src="../../../assets/Middel_24.svg" @click="showHistory = !showHistory">
+            <img src="../../../assets/Middel_24.svg">
           </div>
           <transition name="fade">
             <div class="text" v-if="showHistory">
@@ -78,9 +82,9 @@
           </div>
         </div>
         <div class="fighters_mobile">
-          <div class="title group-item">
+          <div class="title group-item" @click="showFighters = !showFighters">
             <h2>{{s3_title}}</h2>
-            <img src="../../../assets/Middel_24.svg" @click="showFighters = !showFighters">
+            <img src="../../../assets/Middel_24.svg">
           </div>
           <transition name="fade">
             <div class="img_collage group" v-if="showFighters">
@@ -136,9 +140,7 @@ import lang from "./../../../lang/lang_about.json";
 import { getCookie, setCookie } from "./../../../../functions/cookies";
 import Navigation from "./../../main/Navigation/Navigation";
 import Footer from "./../../main/Footer/Footer";
-
 import { Carousel, Slide } from "vue-carousel";
-
 export default {
   components: {
     Navigation: Navigation,
@@ -150,9 +152,7 @@ export default {
     return {
       showHistory: false,
       showFighters: false,
-
       counter: 0,
-
       lang: "nl",
       //section 1
       title: lang.nl.s1_title,
@@ -170,44 +170,39 @@ export default {
   },
   mounted: function() {
     this.checkCookies();
+    // The .$on function gets the language emit function from the navigation
+    this.$on("changeLangNav", lang => {
+      this.changeLang(lang);
+    });
   },
   methods: {
     checkCookies() {
       console.log("%ccheck cookies -  " + document.cookie, "color:red;");
-
       if (getCookie("userLang")) {
         // checks if userLang cookie exists
         console.log("cookie exists ", getCookie("userLang"));
         this.changeLang(getCookie("userLang"));
         return;
       }
-
       var userLang = navigator.language || navigator.userLanguage;
-
       if (userLang.includes("en")) {
         this.changeLang("en");
         return;
       }
     }, // end checkCookies
-
     changeLang: function(language) {
       console.log("execute changeLang");
-
       console.log("change language to " + language);
-
       //section1
       this.title = lang[language].s1_title;
-
       //section 2
       this.s2_title = lang[language].s2_title;
       this.s2_p1 = lang[language].s2_p1;
       this.s2_p2 = lang[language].s2_p2;
       this.s2_p3 = lang[language].s2_p3;
       this.s2_p4 = lang[language].s2_p4;
-
       //section 3
       this.s3_title = lang[language].s3_title;
-
       setCookie("userLang", language, 200);
       this.lang = language;
     } // end changeLang
