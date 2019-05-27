@@ -127,7 +127,7 @@
             <slide>
               <div class="content_block">
                 <!-- <img src="../../../assets/icons_zakelijk/zakelijk_globe.svg"> -->
-                <i class="fas fa-heart fa-10x blue"></i>
+                <i class="fas fa-heart fa-8x blue"></i>
                 <h3>{{s3_title2}}</h3>
                 <p>{{s3_p1}}</p>
               </div>
@@ -135,7 +135,7 @@
             <slide>
               <div class="content_block">
                 <!-- <img src="../../../assets/icons_zakelijk/zakelijk_pijl.svg"> -->
-                <i class="fas fa-cogs fa-10x blue"></i>
+                <i class="fas fa-cogs fa-8x blue"></i>
                 <h3>{{s3_title3}}</h3>
                 <p>{{s3_p2}}</p>
               </div>
@@ -143,7 +143,7 @@
             <slide>
               <div class="content_block">
                 <!-- <img src="../../../assets/icons_zakelijk/zakelijk_euro.svg"> -->
-                <i class="fas fa-bolt fa-10x blue"></i>
+                <i class="fas fa-bolt fa-8x blue"></i>
                 <h3>{{s3_title4}}</h3>
                 <p>{{s3_p3}}</p>
               </div>
@@ -151,7 +151,7 @@
             <slide>
               <div class="content_block">
                 <!-- <img src="../../../assets/icons_zakelijk/zakelijk_vink.svg"> -->
-                <i class="fas fa-hand-point-down fa-10x blue"></i>
+                <i class="fas fa-hand-point-down fa-8x blue"></i>
                 <h3>{{s3_title5}}</h3>
                 <p>{{s3_p4}}</p>
               </div>
