@@ -24,6 +24,7 @@ var en_projecten = require('./en_/en_projecten.js');
 var nl_navigation = require('./nl_/nl_navigation.js');
 var en_navigation = require('./en_/en_navigation.js');
 
+//about page files
 var nl_about = require('./nl_/nl_about.js');
 var en_about = require('./en_/en_about.js');
 
@@ -48,7 +49,6 @@ var nl_privacy = require('./nl_/nl_privacy.js');
 var en_privacy = require('./en_/en_privacy.js');
 
 // add more language objects later
-
 var home_language_kit_object = {
   nl: nl_home,
   en: en_home
