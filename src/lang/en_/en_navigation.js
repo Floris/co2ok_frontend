@@ -12,13 +12,13 @@ module.exports = {
       text: "PROJECTS",
     },
     {
+      text: "INSPIRATION",
+    },
+    {
       text: "ABOUT",
     },
     {
       text: "FAQ",
-    },
-    {
-      text: "LOGIN"
     }
   ],
   zakelijk: "BUSINESS",

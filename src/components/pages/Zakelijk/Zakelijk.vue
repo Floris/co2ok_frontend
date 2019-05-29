@@ -383,6 +383,9 @@ export default {
       s5_error: lang.nl.s5_error
     };
   },
+  mounted() {
+    this.checkCookies();
+  },
   methods: {
     checkCookies() {
       console.log("%ccheck cookies -  " + document.cookie, "color:red;");

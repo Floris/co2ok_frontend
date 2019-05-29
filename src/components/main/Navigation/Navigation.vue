@@ -95,10 +95,15 @@ export default {
         {
           id: 4,
           text: lang.nl.links[4].text,
-          page: "/about"
+          page: "/inspiratie"
         },
         {
           id: 5,
+          text: lang.nl.links[4].text,
+          page: "/about"
+        },
+        {
+          id: 6,
           text: lang.nl.links[5].text,
           page: "/faq"
         }
@@ -170,12 +175,18 @@ export default {
       this.links.splice(4, 1, {
         id: 4,
         text: lang[lng].links[4].text,
-        page: "/about"
+        page: "/inspiratie"
       });
 
       this.links.splice(5, 1, {
         id: 5,
         text: lang[lng].links[5].text,
+        page: "/about"
+      });
+
+      this.links.splice(6, 1, {
+        id: 6,
+        text: lang[lng].links[6].text,
         page: "/faq"
       });
 
