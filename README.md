@@ -27,6 +27,8 @@ npm run build --report
 npm run build_local
 ```
 
+## language compiler 
+docs https://github.com/Floris/language_translation_kit
 ``` bash
 # language compiler
 npm run compile_lang
