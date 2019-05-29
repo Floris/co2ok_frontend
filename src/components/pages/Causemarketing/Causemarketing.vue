@@ -108,28 +108,48 @@
           <carousel :centerMode="true" :per-page="1" :mouse-drag="true" :perPage="1">
             <slide>
               <div class="block">
-                <DoughnutChart :percent="percent1" foregroundColor="#B6E1F9" backgroundColor="#FFFFFF" :visibleValue="true"/>
+                <DoughnutChart
+                  :percent="percent1"
+                  foregroundColor="#B6E1F9"
+                  backgroundColor="#FFFFFF"
+                  :visibleValue="true"
+                />
                 <p>{{s3_p1}}</p>
                 <p class="link" v-html="s3_link1"></p>
               </div>
             </slide>
             <slide>
               <div class="block">
-                <DoughnutChart :percent="percent2" foregroundColor="#B6E1F9" backgroundColor="#FFFFFF" :visibleValue="true"/>
+                <DoughnutChart
+                  :percent="percent2"
+                  foregroundColor="#B6E1F9"
+                  backgroundColor="#FFFFFF"
+                  :visibleValue="true"
+                />
                 <p>{{s3_p2}}</p>
                 <p class="link" v-html="s3_link2"></p>
               </div>
             </slide>
             <slide>
               <div class="block">
-                <DoughnutChart :percent="percent3" foregroundColor="#B6E1F9" backgroundColor="#FFFFFF" :visibleValue="true"/>
+                <DoughnutChart
+                  :percent="percent3"
+                  foregroundColor="#B6E1F9"
+                  backgroundColor="#FFFFFF"
+                  :visibleValue="true"
+                />
                 <p>{{s3_p3}}</p>
                 <p class="link" v-html="s3_link3"></p>
               </div>
             </slide>
             <slide>
               <div class="block">
-                <DoughnutChart :percent="percent4" foregroundColor="#B6E1F9" backgroundColor="#FFFFFF" :visibleValue="true"/>
+                <DoughnutChart
+                  :percent="percent4"
+                  foregroundColor="#B6E1F9"
+                  backgroundColor="#FFFFFF"
+                  :visibleValue="true"
+                />
                 <p>{{s3_p4}}</p>
                 <p class="link" v-html="s3_link4"></p>
               </div>
@@ -138,26 +158,43 @@
         </div>
         <div class="content_block group hideCarousel">
           <div class="block">
-            <DoughnutChart :percent="percent1" foregroundColor="#B6E1F9" backgroundColor="#FFFFFF" :visibleValue="true"/>
+            <DoughnutChart
+              :percent="percent1"
+              foregroundColor="#B6E1F9"
+              backgroundColor="#FFFFFF"
+              :visibleValue="true"
+            />
             <!-- {{lang}} -->
             <p>{{s3_p1}}</p>
             <p class="link" v-html="s3_link1"></p>
           </div>
           <div class="block">
-
-            <DoughnutChart :percent="percent2" foregroundColor="#B6E1F9" backgroundColor="#FFFFFF" :visibleValue="true"/>
+            <DoughnutChart
+              :percent="percent2"
+              foregroundColor="#B6E1F9"
+              backgroundColor="#FFFFFF"
+              :visibleValue="true"
+            />
             <p>{{s3_p2}}</p>
             <p class="link" v-html="s3_link2"></p>
           </div>
           <div class="block">
-
-            <DoughnutChart :percent="percent3" foregroundColor="#B6E1F9" backgroundColor="#FFFFFF" :visibleValue="true"/>
+            <DoughnutChart
+              :percent="percent3"
+              foregroundColor="#B6E1F9"
+              backgroundColor="#FFFFFF"
+              :visibleValue="true"
+            />
             <p>{{s3_p3}}</p>
             <p class="link" v-html="s3_link3"></p>
           </div>
           <div class="block">
-
-            <DoughnutChart :percent="percent4" foregroundColor="#B6E1F9" backgroundColor="#FFFFFF" :visibleValue="true"/>
+            <DoughnutChart
+              :percent="percent4"
+              foregroundColor="#B6E1F9"
+              backgroundColor="#FFFFFF"
+              :visibleValue="true"
+            />
             <p>{{s3_p4}}</p>
             <p class="link" v-html="s3_link4"></p>
           </div>
@@ -177,7 +214,6 @@
 </template>
 
 <script>
-
 import lang from "./../../../lang/lang_causemarketing.json";
 import { getCookie, setCookie } from "./../../../../functions/cookies";
 import Navigation from "./../../main/Navigation/Navigation";
@@ -227,15 +263,12 @@ export default {
       s3_link3: lang.nl.s3_link3,
       s3_link4: lang.nl.s3_link4,
 
-      //section4 
+      //section4
       s4_title1: lang.nl.s4_title1,
-      s4_link1: lang.nl.s4_link1,
-
-
-      
-    }
+      s4_link1: lang.nl.s4_link1
+    };
   },
-   methods: {
+  methods: {
     checkCookies() {
       console.log("%ccheck cookies -  " + document.cookie, "color:red;");
 
@@ -299,11 +332,7 @@ export default {
     handleScroll(event) {
       // console.log("handlescroll", window.pageYOffset);
 
-      if (
-        window.pageYOffset > 800 &&
-        screen.width > 600 &&
-        this.isActive === false
-      ) {
+      if (window.pageYOffset > 800 && this.isActive === false) {
         var self = this;
         var donutValue1 = 0;
         var donutValue2 = 0;
@@ -340,7 +369,7 @@ export default {
         }, 5);
         this.isActive = true;
       }
-    },
+    }
   },
   created() {
     window.addEventListener("scroll", e => this.handleScroll(e));
@@ -355,7 +384,7 @@ export default {
     Slide: Slide,
     DoughnutChart
   }
-}
+};
 </script>
 
 <style lang="scss" src="./../../../styles/Causemarketing.scss"></style>

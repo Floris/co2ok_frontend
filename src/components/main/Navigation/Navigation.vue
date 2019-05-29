@@ -4,79 +4,14 @@
       <div class="content">
         <div class="co2ok-logo">
           <router-link to="/">
-            <img
-              id="logo1"
-              src="../../../assets/co2ok_white.svg"
-              v-bind:class="{hideLogo : isActive}"
-            >
-            <img
-              id="hiddenLogo"
-              src="../../../assets/co2ok_logo.png"
-              v-bind:class="{showLogo : isActive}"
-            >
+            <img id="logo1" src="../../../assets/co2ok_logo.png">
+            <img id="logo2" src="../../../assets/co2ok_white.svg">
           </router-link>
         </div>
+
         <div class="nav-items">
-          <div class="dropdown spacing-desktop">
-            <router-link class="spacing-desktop" to="/zakelijk">{{zakelijk}}</router-link>
-            <div class="dropdown-content">
-              <router-link class="spacing-desktop" to="/causemarketing">CAUSEMARKETING</router-link>
-            </div>
-          </div>
-
-          <router-link
-            class="spacing-desktop"
-            v-bind:class="{showItems : isActive}"
-            v-bind:id="'navItem-'+routes.id"
-            v-for="(routes) in links"
-            v-bind:key="routes.id"
-            :to="`${routes.page}`"
-          >{{routes.text}}</router-link>
-          <router-link class="profile" to="/login">
-            <i class="far fa-user"></i>
-          </router-link>
-          <div class="lang_flag">
-            <img
-              v-if="lang === 'en'"
-              src="../../../assets/nl_flag.png"
-              v-on:click="changeLang('nl')"
-            >
-            <img
-              v-if="lang === 'nl'"
-              src="../../../assets/en_flag.png"
-              v-on:click="changeLang('en')"
-            >
-          </div>
-          <a
-            href="https://chrome.google.com/webstore/detail/co2okninja/omlkdocjhkgbllabpihhdggplladfipe"
-            target="_blank"
-          >
-            <!-- <button
-              v-bind:class="{showButton : isActive}"
-              class="button green hidden"
-            >Download Ninja</button>-->
-          </a>
-        </div>
-
-        <div class="nav-items-mobile">
-          <input type="checkbox">
-          <!-- Span for hamburger icon -->
-          <span></span>
-          <span></span>
-          <span></span>
-          <!-- mobile menu -->
-          <div class="mobile-menu">
-            <router-link
-              class="spacing"
-              v-for="routes in links"
-              v-bind:key="routes.id"
-              :to="`${routes.page}`"
-            >{{routes.text}}</router-link>
-            <router-link class="profile_mobile" to="/login">
-              <i class="far fa-user"></i>
-            </router-link>
-            <router-link to="/causemarketing">CAUSE MARKETING</router-link>
-            <div class="lang_flag_mobile">
+          <div class="spacing-desktop">
+            <div class="lang_flag">
               <img
                 v-if="lang === 'en'"
                 src="../../../assets/nl_flag.png"
@@ -88,10 +23,42 @@
                 v-on:click="changeLang('en')"
               >
             </div>
+            <button
+              class="hamburger hamburger--collapse"
+              id="hamburger_button"
+              type="button"
+              v-on:click="openNav()"
+            >
+              <span class="hamburger-box">
+                <span class="hamburger-inner"></span>
+              </span>
+            </button>
           </div>
         </div>
       </div>
     </nav>
+
+    <!-- <transition name="fade"> -->
+    <div id="myNav" v-if="show" class="overlay">
+      <!-- Overlay content -->
+      <div class="overlay-content">
+        <router-link
+          v-bind:class="{showItems : isActive}"
+          v-bind:id="'navItem-'+routes.id"
+          v-for="(routes) in links"
+          v-bind:key="routes.id"
+          :to="`${routes.page}`"
+        >{{routes.text}}</router-link>
+        <router-link class="profile" to="/login">
+          <i class="far fa-user"></i>
+        </router-link>
+        <!-- <a href="#">About</a>
+        <a href="#">Services</a>
+        <a href="#">Clients</a>
+        <a href="#">Contact</a>-->
+      </div>
+    </div>
+    <!-- </transition> -->
   </div>
 </template>
 
@@ -103,39 +70,44 @@ export default {
   name: "Navigation",
   data() {
     return {
+      show: false,
       links: [
         {
           id: 0,
           text: lang.nl.links[0].text,
           page: "/ninja"
         },
-        // {
-        //   id: 1,
-        //   text: lang.nl.links[1].text,
-        //   page: "/zakelijk"
-        // },
+        {
+          id: 1,
+          text: lang.nl.links[1].text,
+          page: "/zakelijk"
+        },
         {
           id: 2,
           text: lang.nl.links[2].text,
-          page: "/projecten"
+          page: "/causemarketing"
         },
         {
           id: 3,
           text: lang.nl.links[3].text,
-          page: "/about"
+          page: "/projecten"
         },
         {
           id: 4,
           text: lang.nl.links[4].text,
+          page: "/inspiratie"
+        },
+        {
+          id: 5,
+          text: lang.nl.links[4].text,
+          page: "/about"
+        },
+        {
+          id: 6,
+          text: lang.nl.links[5].text,
           page: "/faq"
         }
-        // {
-        //   id: 5,
-        //   text: lang.nl.links[5].text,
-        //   page: "/login"
-        // }
       ],
-      zakelijk: lang.nl.zakelijk,
       isActive: false,
       showMobileMenu: false
     };
@@ -145,6 +117,11 @@ export default {
     this.checkCookies();
 
     console.log(lang.nl.links);
+
+    if (this.show) {
+    } else {
+      document.body.style.overflow = "initial";
+    }
   },
   methods: {
     checkCookies() {
@@ -168,16 +145,6 @@ export default {
       }
     }, // end checkCookies
     //gets called when you scroll
-    handleScroll(event) {
-      // console.log("handlescroll", window.pageYOffset);
-      if (window.pageYOffset > 800 && screen.width > 600) {
-        // console.log("navbar true");
-        this.isActive = true;
-      } else {
-        // console.log("navbar false");
-        this.isActive = false;
-      }
-    },
     changeLang(lng) {
       this.$emit("changeLangNav", lng);
 
@@ -187,31 +154,84 @@ export default {
         page: "/ninja"
       });
 
-      // this.links.splice(1, 1, {
-      //   id: 1,
-      //   text: lang[lng].links[1].text,
-      //   page: "/zakelijk"
-      // });
-
       this.links.splice(1, 1, {
         id: 1,
         text: lang[lng].links[1].text,
-        page: "/projecten"
+        page: "/zakelijk"
       });
 
       this.links.splice(2, 1, {
         id: 2,
         text: lang[lng].links[2].text,
-        page: "/about"
+        page: "/causemarketing"
       });
 
       this.links.splice(3, 1, {
         id: 3,
         text: lang[lng].links[3].text,
+        page: "/projecten"
+      });
+
+      this.links.splice(4, 1, {
+        id: 4,
+        text: lang[lng].links[4].text,
+        page: "/inspiratie"
+      });
+
+      this.links.splice(5, 1, {
+        id: 5,
+        text: lang[lng].links[5].text,
+        page: "/about"
+      });
+
+      this.links.splice(6, 1, {
+        id: 6,
+        text: lang[lng].links[6].text,
         page: "/faq"
       });
 
       this.zakelijk = lang[lng].zakelijk;
+    },
+    /* Open */
+    openNav() {
+      this.show = !this.show;
+
+      if (this.show) {
+        var element = document.getElementById("hamburger_button");
+        document.body.style.overflow = "hidden";
+        document.body.style.height = "100vh";
+        document.getElementById("app").style.overflow = "hidden";
+
+        element.classList.add("is-active");
+
+        document.getElementsByClassName("navbar")[0].style.background =
+          "#2ecc71";
+        document.getElementsByClassName("navbar")[0].style.boxShadow =
+          "initial";
+
+        document.getElementById("logo1").style.display = "none";
+        document.getElementById("logo2").style.display = "initial";
+
+        this.isActive = true;
+      } else {
+        document.body.style.overflow = "initial";
+        document.body.style.height = "initial";
+
+        document.getElementById("app").style.overflow = "initial";
+
+        var element = document.getElementById("hamburger_button");
+
+        element.classList.remove("is-active");
+
+        document.getElementsByClassName("navbar")[0].style.background = "#fff";
+        document.getElementsByClassName("navbar")[0].style.boxShadow =
+          "1px 1px 4px 0 rgba(0, 0, 0, .1)";
+
+        document.getElementById("logo1").style.display = "initial";
+        document.getElementById("logo2").style.display = "none";
+
+        this.isActive = false;
+      }
     }
   },
   //add(create) the event

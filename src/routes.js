@@ -10,6 +10,9 @@ import Privacy from './components/pages/Privacy/Privacy';
 import Installatie from './components/pages/Installatie/Installatie';
 import Causemarketing from './components/pages/Causemarketing/Causemarketing';
 
+import Inspiratie from './components/pages/Inspiratie/Inspiratie';
+
+
 export const routes = [{
     path: '/',
     component: Home
@@ -53,5 +56,9 @@ export const routes = [{
   }, {
     path: '/causemarketing',
     component: Causemarketing
+  },
+  {
+    path: '/inspiratie',
+    component: Inspiratie
   }
 ];

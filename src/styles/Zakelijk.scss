@@ -34,6 +34,7 @@
         }
 
         p {
+          color: $mid_blue;
           font-weight: 500;
           max-width: 586px;
         }
@@ -60,7 +61,7 @@
   .bulletpoints {
     position: relative;
     height: 400px;
-    background: $white;
+    background: white;
     z-index: 1;
 
     // top: -75px;
@@ -328,9 +329,6 @@
     }
   }
 
-  ///
-
-
   @media only screen and (max-width: $content_max_width) {
     $grid_width: 90%;
 
@@ -359,11 +357,11 @@
     }
 
     .bulletpoints {
-      height: 300px !important;
 
+      // height: auto !important;
       .content {
-        padding-top: 0px !important;
 
+        // padding-top: 0px !important;
         .img_block {
           text-align: center;
 
@@ -382,14 +380,14 @@
     }
 
     .why_co2ok {
-      height: 600px !important;
+      height: 650px !important;
 
       .why_co2ok_content {
         text-align: center;
-        height: 600px !important;
 
         h2 {
           padding-bottom: 10px;
+          padding-top: 10px;
         }
 
         .content_block {
@@ -400,7 +398,7 @@
           }
 
           p {
-            max-width: 500px;
+            max-width: 500px !important;
             margin: 0 auto;
           }
         }
@@ -408,8 +406,8 @@
     }
 
     .partners {
-      height: 550px !important;
 
+      // height: auto !important;
       .content {
         .img_block {
           padding-top: 50px;
@@ -490,5 +488,4 @@
       }
     }
   }
-
 }

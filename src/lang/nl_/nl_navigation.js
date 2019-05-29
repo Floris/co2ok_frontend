@@ -3,16 +3,22 @@ module.exports = {
       text: "NINJA",
     },
     {
+      text: "ZAKELIJK",
+    },
+    {
+      text: "CAUSE MARKETING",
+    },
+    {
       text: "PROJECTEN",
+    },
+    {
+      text: "INSPIRATIE",
     },
     {
       text: "OVER",
     },
     {
       text: "FAQ",
-    },
-    {
-      text: "LOGIN"
     }
   ],
   zakelijk: "ZAKELIJK",

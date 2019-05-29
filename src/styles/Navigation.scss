@@ -1,82 +1,131 @@
 // Navigation.scss
 @import "_vars.scss";
+@import "hamburgers.scss"; // hamburger menu animation with styling
 
 .navigation {
+  position: relative;
+  z-index: 9999999999;
+
+  .fade-enter-active,
+  .fade-leave-active {
+    transition: opacity 0.1s;
+  }
+
+  .fade-enter,
+  .fade-leave-to
+
+  /* .fade-leave-active below version 2.1.8 */
+    {
+    opacity: 0;
+  }
+
+
+  /* The Overlay (background) */
+  .overlay {
+    /* Height & width depends on how you want to reveal the overlay (see JS below) */
+    overflow: hidden;
+    z-index: 9999999999;
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    // display: none;
+    /* Stay in place */
+    z-index: 1;
+    /* Sit on top */
+    left: 0;
+    top: 0;
+    background-color: $green;
+    /* Black fallback color */
+    // background-color: rgba(46, 204, 113, 0.99);
+    background: $green;
+    /* Black w/opacity */
+    overflow-x: hidden;
+    /* Disable horizontal scroll */
+    // transition: 0.5s;
+    /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
+  }
+
+  /* Position the content inside the overlay */
+  .overlay-content {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+
+    .far {
+      font-size: 36px;
+    }
+  }
+
+  /* The navigation links inside the overlay */
+  .overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: #fff;
+    display: block;
+    /* Display block instead of inline */
+    transition: 0.3s;
+    /* Transition effects on hover (color) */
+  }
+
+  /* When you mouse over the navigation links, change their color */
+  .overlay a:hover,
+  .overlay a:focus {
+    color: #f1f1f1;
+  }
+
+  /* Position the close button (top right corner) */
+  .overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+  }
+
+  .hamburger {
+    position: relative;
+    z-index: 9999999999999999;
+    vertical-align: middle;
+    line-height: 0;
+    padding: 0;
+    color: #fff;
+  }
+
+  ///
+  ///
 
   .nav-items-mobile {
     display: none;
   }
 
   .spacing-desktop {
-    margin: 0 4px;
+    // margin: 0 4px;
     // border: 1px solid $green;
     // border-radius: $border_radius;
     // background: $green;
     color: #000;
-    padding: 10px;
+    // padding: 10px;
     vertical-align: middle;
   }
 
-  .spacing-desktop:hover {
-    // background: #eee;
-    margin: 0 4px;
-  }
-
-  .dropdown {
-    position: relative;
-    display: inline-flex;
-    margin: 0;
-    padding: 0;
-  }
-
-  .dropdown-content {
-    display: none;
-    z-index: 1;
-  }
-
-  .dropdown-content a {
-    color: black;
-    text-decoration: none;
-    display: block;
-  }
-
-  .dropdown:hover .dropdown-content {
-    display: initial;
-  }
-
-  .dropdown:hover~#navItem-1,
-  .dropdown:hover~#navItem-2 {
-    display: none;
-  }
-
-
-  // .spacing-desktop:nth-last-child(1) {
-  //   border: 1px solid #fff200;
-  //   border-radius: $border_radius;
-  //   background: #fff200;
-  //   color: #000;
-  //   padding: 10px;
-  // }
-
-  // .spacing-desktop:nth-last-child(1):hover {
-  //   // background: rgba(0, 184, 148, 1.0);
-  //   // border-color: rgba(0, 184, 148, 1.0);
-  //   background: $green;
-  //   border-color: $green;
-  // }
-
   .navbar {
-    position: absolute;
+    position: fixed;
     width: 100%;
-    z-index: 500000;
-    max-height: 0;
+    z-index: 99999;
+    // max-height: 0;
+    background: #fff;
     box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, .1);
 
     // background: white;
     // border-bottom: 3px solid #eee;
 
     .content {
-      padding: 1em;
+      padding: 1em 0;
       height: inherit;
       display: flex;
       flex-direction: row;
@@ -117,8 +166,6 @@
     right: 0 !important;
   }
 
-
-
   .showButton {
     display: inline-block !important;
     margin: 0 4px;
@@ -133,15 +180,11 @@
     display: inline-block;
   }
 
-  .showLogo {
-    display: block !important;
+  #logo1 {
+    display: initial;
   }
 
-  #hiddenLogo {
-    display: none;
-  }
-
-  .hideLogo {
+  #logo2 {
     display: none;
   }
 
@@ -172,17 +215,16 @@
   }
 
   .lang_flag {
-    width: 33px;
-    height: 21px;
-    padding: 10px;
-    z-index: 9999999;
+    max-width: 100px;
+    // height: 24px;
+    margin: 0 15px;
+    // z-index: 9999999;
     position: relative;
     display: inline-block;
     vertical-align: middle;
-    cursor: pointer;
     line-height: 0;
+    cursor: pointer;
     // margin: 0 4px;
-    margin: 10px 0px 10px 0px;
 
     img {
       height: 21px;
@@ -191,7 +233,7 @@
   }
 
   .lang_flag_mobile {
-    z-index: 9999999;
+    // z-index: 9999999;
     position: relative;
     display: inline-block;
     vertical-align: middle;
@@ -199,11 +241,6 @@
     line-height: 0;
     // margin: 0 4px;
     margin: 10px 0px 10px 0px;
-
-    img {
-      height: 21px;
-      // width: 50px;
-    }
   }
 
   .active_border {
@@ -218,148 +255,26 @@
     // height: 2px;
   }
 
-
-}
-
-@media only screen and (max-width: $content_max_width) {
-  .navigation {
-    .content {
-      width: 90%;
+  @media only screen and (max-width: $content_max_width) {
+    .navigation {
+      .content {
+        width: 90%;
+      }
     }
   }
-}
 
-@media only screen and (max-width: 700px) {
-
-  .navigation {
-
-    .router-link-active {
-      border: 0;
-      border-bottom: 0;
-    }
-
-    .co2ok-logo {
-      flex-grow: 0 !important;
-    }
-
-    #hiddenLogo {
-      display: block !important;
-    }
-
-    #logo1 {
-      display: none;
-    }
-
+  @media only screen and (max-width: 700px) {
     .navbar {
       position: fixed;
-      background: white;
-      max-height: 200px;
-
-      // border-bottom: 3px solid $green;
-
+      background: #fff;
+      height: auto;
+      max-height: initial;
     }
 
-    // remove last (download button) from mobile nav
-    // .spacing:nth-last-child(1) {
-    //   display: none;
-    // }
-
-    .nav-items-mobile {
-      display: block;
-      position: absolute;
-      right: 25px;
-      z-index: 10;
-      -webkit-user-select: none;
-      user-select: none;
-
-      a {
-        font-size: 19px;
-      }
-
-      input {
-        display: block;
-        width: 40px;
-        height: 32px;
-        position: absolute;
-        top: -7px;
-        left: -5px;
-        cursor: pointer;
-        opacity: 0;
-        z-index: 30;
-        -webkit-touch-callout: none;
-      }
-
-      span {
-        display: block;
-        position: fixed;
-        width: 33px;
-        height: 4px;
-        margin-bottom: 5px;
-        position: relative;
-        background: #cdcdcd;
-        border-radius: 3px;
-        z-index: 20;
-        transform-origin: 4px 0px;
-        transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0),
-          background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0),
-          opacity 0.55s ease;
-      }
-
-      span:first-child {
-        transform-origin: 0% 0%;
-      }
-
-      span:nth-last-child(2) {
-        transform-origin: 0% 100%;
-      }
-
-      input:checked~span {
-        opacity: 1;
-        transform: rotate(45deg) translate(-2px, -1px);
-        background: #232323;
-      }
-
-      input:checked~span:nth-last-child(3) {
-        opacity: 0;
-        transform: rotate(0deg) scale(0.2, 0.2);
-      }
-
-      input:checked~span:nth-last-child(2) {
-        opacity: 1;
-        transform: rotate(-45deg) translate(0, -1px);
-      }
-
-      .mobile-menu {
-        display: flex;
-        flex-direction: column;
-        position: fixed;
-        height: 100%;
-        width: 325px;
-        margin: -100px 0 0 0;
-        padding: 25px;
-        padding-top: 125px;
-        right: -100px;
-        z-index: 10;
-        background: #FAFAFA;
-        -webkit-font-smoothing: antialiased;
-
-        transform-origin: 0% 0%;
-        transform: translate(100%, 0);
-        transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0);
-
-
-        .spacing {
-          margin: 10px 0px 10px 0px;
-        }
-      }
-
-      input:checked~div {
-        transform: scale(1.0, 1.0);
-      }
+    .overlay a,
+    .overlay .far {
+      font-size: 29px;
     }
   }
 
-  .nav-items {
-    display: none;
-  }
 }

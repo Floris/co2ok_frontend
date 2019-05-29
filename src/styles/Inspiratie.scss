@@ -1,0 +1,153 @@
+@import "_vars.scss";
+
+.inspiratie {
+
+  .jumbotron {
+    height: 400px;
+    width: 100%;
+
+    .background_color {
+      height: 100%;
+      width: 100%;
+      background: $light_blue;
+    }
+  }
+
+  .medium_posts {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    margin-top: -300px;
+    position: relative;
+    z-index: 3;
+
+    .post {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      width: 300px;
+      height: 250px;
+      max-width: 400px;
+
+      background-size: cover;
+      margin: 20px;
+
+      p {
+        color: white;
+      }
+
+      .red {
+        background: red;
+      }
+
+      .green {
+        background: #2ecc71;
+      }
+
+      .orange {
+        background: #ffaf40;
+      }
+
+      .img_background {
+        background-image: url('./../assets/blog_image1.jpg');
+        background-size: cover;
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        z-index: 1;
+        border-radius: $border-radius;
+      }
+
+      .img-background-color {
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        z-index: 2;
+        background: rgba(0, 0, 0, 0.5);
+        border-radius: $border-radius;
+      }
+
+
+      .top {
+        z-index: 3;
+        margin-right: auto;
+        margin-left: 20px;
+        margin-top: 20px;
+        padding: 5px 10px 5px 10px;
+        border-radius: $border-radius;
+
+        p {
+          margin: 0 auto;
+        }
+      }
+
+      .bottom {
+        z-index: 3;
+        margin-left: 20px;
+        margin-right: 20px;
+        margin-top: auto;
+
+        .author {
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+
+          img {
+            padding-right: 5px;
+            width: 10%;
+            height: 10%;
+          }
+        }
+      }
+    }
+  }
+
+  .instagram_feed {
+    margin-top: -280px;
+    position: relative;
+    z-index: 3;
+  }
+
+  .line_container {
+    position: absolute;
+    width: 100%;
+    height: 50px;
+    // top: -50px;
+  }
+
+  .line {
+    background-image: url('./../assets/achtergronden_svg/witte-lijn.svg');
+    // background-repeat: repeat;
+    background-size: cover;
+    height: 50px;
+    width: 100%;
+    max-width: 100%;
+    position: absolute;
+    z-index: 2;
+    top: -49px;
+  }
+
+  @media only screen and (max-width: 900px) {
+    .content {
+      flex-direction: column;
+
+      .instagram_feed {
+        margin: 0 auto;
+      }
+    }
+  }
+
+  @media only screen and (max-width: 600px) {
+    .blog_content {
+      display: flex;
+      flex-direction: column-reverse !important;
+
+
+      .instagram_feed {
+        margin-top: -280px !important;
+      }
+    }
+  }
+}
