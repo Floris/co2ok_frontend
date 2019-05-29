@@ -159,6 +159,8 @@ export default {
         this.changeLang("en");
         return;
       }
+
+      document.body.style.overflow = "initial";
     }, // end checkCookies
 
     changeLang: function(language) {

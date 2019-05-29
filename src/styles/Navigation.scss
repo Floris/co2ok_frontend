@@ -19,13 +19,14 @@
     opacity: 0;
   }
 
-
   /* The Overlay (background) */
   .overlay {
+
     /* Height & width depends on how you want to reveal the overlay (see JS below) */
     overflow: hidden;
     z-index: 9999999999;
-    height: 100%;
+    height: 0;
+    transition: 0.5s;
     width: 100%;
     position: fixed;
     // display: none;
@@ -34,15 +35,20 @@
     /* Sit on top */
     left: 0;
     top: 0;
-    background-color: $green;
+    // background-color: $green;
     /* Black fallback color */
     // background-color: rgba(46, 204, 113, 0.99);
-    background: $green;
+    // background: $green;
+    background: #fff;
     /* Black w/opacity */
     overflow-x: hidden;
     /* Disable horizontal scroll */
     // transition: 0.5s;
     /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
+  }
+
+  .showOverlay {
+    height: 100%;
   }
 
   /* Position the content inside the overlay */
@@ -66,7 +72,8 @@
     padding: 8px;
     text-decoration: none;
     font-size: 36px;
-    color: #fff;
+    // color: #fff;
+    color: #000;
     display: block;
     /* Display block instead of inline */
     transition: 0.3s;
@@ -76,7 +83,8 @@
   /* When you mouse over the navigation links, change their color */
   .overlay a:hover,
   .overlay a:focus {
-    color: #f1f1f1;
+    // color: #f1f1f1;
+    color: $green;
   }
 
   /* Position the close button (top right corner) */
@@ -119,6 +127,8 @@
     z-index: 99999;
     // max-height: 0;
     background: #fff;
+    // background: rgba(0, 0, 0, 0);
+    // background: $green;
     box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, .1);
 
     // background: white;
@@ -250,7 +260,7 @@
   }
 
   .router-link-active {
-    border-bottom: 2px solid #000;
+    border-bottom: 2px solid $green;
     // width: 100%;
     // height: 2px;
   }

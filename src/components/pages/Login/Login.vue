@@ -95,6 +95,8 @@ export default {
     }
 
     this.checkIfLoggedIn();
+
+    document.body.style.overflow = "initial";
   },
   methods: {
     handleLoginForm(data) {

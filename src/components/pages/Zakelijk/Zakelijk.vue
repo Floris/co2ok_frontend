@@ -385,6 +385,7 @@ export default {
   },
   mounted() {
     this.checkCookies();
+    console.log("Zakelijk mounted");
   },
   methods: {
     checkCookies() {

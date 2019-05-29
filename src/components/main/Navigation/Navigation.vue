@@ -24,7 +24,7 @@
               >
             </div>
             <button
-              class="hamburger hamburger--collapse"
+              class="hamburger hamburger--spin"
               id="hamburger_button"
               type="button"
               v-on:click="openNav()"
@@ -39,7 +39,8 @@
     </nav>
 
     <!-- <transition name="fade"> -->
-    <div id="myNav" v-if="show" class="overlay">
+    <!-- v-if="show"  -->
+    <div id="myNav" class="overlay">
       <!-- Overlay content -->
       <div class="overlay-content">
         <router-link
@@ -121,6 +122,7 @@ export default {
     if (this.show) {
     } else {
       document.body.style.overflow = "initial";
+      document.getElementById("app").style.overflow = "initial";
     }
   },
   methods: {
@@ -200,36 +202,44 @@ export default {
         var element = document.getElementById("hamburger_button");
         document.body.style.overflow = "hidden";
         document.body.style.height = "100vh";
+
         document.getElementById("app").style.overflow = "hidden";
 
         element.classList.add("is-active");
-
-        document.getElementsByClassName("navbar")[0].style.background =
-          "#2ecc71";
+        // document.getElementsByClassName("navbar")[0].style.background =
+        // "#2ecc71";
+        document.getElementsByClassName("navbar")[0].style.background = "#fff";
         document.getElementsByClassName("navbar")[0].style.boxShadow =
           "initial";
 
-        document.getElementById("logo1").style.display = "none";
-        document.getElementById("logo2").style.display = "initial";
+        // document.getElementById("logo1").style.display = "none";
+        // document.getElementById("logo2").style.display = "initial";
 
         this.isActive = true;
+
+        document.getElementsByClassName("overlay")[0].style.height = "100%";
       } else {
+        document.getElementById("app").style.overflow = "initial";
+
+        document.getElementById("app").style.height = "100%";
         document.body.style.overflow = "initial";
         document.body.style.height = "initial";
-
-        document.getElementById("app").style.overflow = "initial";
 
         var element = document.getElementById("hamburger_button");
 
         element.classList.remove("is-active");
 
-        document.getElementsByClassName("navbar")[0].style.background = "#fff";
-        document.getElementsByClassName("navbar")[0].style.boxShadow =
-          "1px 1px 4px 0 rgba(0, 0, 0, .1)";
+        setTimeout(() => {
+          document.getElementsByClassName("navbar")[0].style.background =
+            "#fff";
+          document.getElementsByClassName("navbar")[0].style.boxShadow =
+            "1px 1px 4px 0 rgba(0, 0, 0, .1)";
 
-        document.getElementById("logo1").style.display = "initial";
-        document.getElementById("logo2").style.display = "none";
+          document.getElementById("logo1").style.display = "initial";
+          document.getElementById("logo2").style.display = "none";
+        }, 300);
 
+        document.getElementsByClassName("overlay")[0].style.height = "0";
         this.isActive = false;
       }
     }

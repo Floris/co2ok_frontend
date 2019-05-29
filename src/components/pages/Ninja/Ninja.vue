@@ -240,6 +240,7 @@ export default {
         Math.random() * Math.round(Math.random() * 10000)
       );
     }, 1000);
+    document.body.style.overflow = "initial";
   }, // end mounted
   //remove the event
   destroyed() {
