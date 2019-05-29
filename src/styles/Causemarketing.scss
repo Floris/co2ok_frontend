@@ -197,34 +197,30 @@
     }
   }
 
+  @media only screen and (max-width: $content_max_width) {
+    $grid_width: 90%;
 
-}
+    .content {
+      width: $grid_width !important;
+    }
 
-@media only screen and (max-width: $content_max_width) {
-  $grid_width: 90%;
-
-  .content {
-    width: $grid_width !important;
   }
 
-}
+  @media only screen and (max-width: 900px) {
 
-@media only screen and (max-width: 900px) {
+    .showCarousel {
+      display: block;
+      margin: 0 auto;
+    }
 
-  .showCarousel {
-    display: block;
-    margin: 0 auto;
-  }
+    .hideCarousel {
+      display: none !important;
+    }
 
-  .hideCarousel {
-    display: none !important;
-  }
+    .carousel {
+      display: block;
+    }
 
-  .carousel {
-    display: block;
-  }
-
-  .causemarketing {
     .top_intro {
       .content {
         flex-direction: column !important;
@@ -280,11 +276,9 @@
       }
     }
   }
-}
 
 
-@media only screen and (max-width: 600px) {
-  .causemarketing {
+  @media only screen and (max-width: 600px) {
     .bulletpoints {
       .content {
         .img_block {
@@ -299,4 +293,5 @@
       height: 350px;
     }
   }
+
 }
