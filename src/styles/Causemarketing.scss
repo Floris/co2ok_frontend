@@ -47,7 +47,7 @@
   .bulletpoints {
     position: relative;
     height: 550px;
-    background: $white;
+    background: white;
     z-index: 1;
 
     // top: -75px;
@@ -241,8 +241,8 @@
     }
 
     .bulletpoints {
-      height: 450px;
-      padding-top: 0px !important;
+      // height: auto;
+      // padding-top: 0px !important;
 
       .content {
         h2 {
@@ -269,10 +269,10 @@
     }
 
     .block_cijfers {
-      height: 600px;
+      // height: auto;
 
       .content {
-        padding-top: 50px;
+        // padding-top: 50px;
 
         .block {
           padding-top: 20px;

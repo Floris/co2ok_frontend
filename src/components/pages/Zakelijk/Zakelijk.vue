@@ -127,7 +127,7 @@
             <slide>
               <div class="content_block">
                 <!-- <img src="../../../assets/icons_zakelijk/zakelijk_globe.svg"> -->
-                <i class="fas fa-heart fa-10x blue"></i>
+                <i class="fas fa-heart fa-8x blue"></i>
                 <h3>{{s3_title2}}</h3>
                 <p>{{s3_p1}}</p>
               </div>
@@ -135,7 +135,7 @@
             <slide>
               <div class="content_block">
                 <!-- <img src="../../../assets/icons_zakelijk/zakelijk_pijl.svg"> -->
-                <i class="fas fa-cogs fa-10x blue"></i>
+                <i class="fas fa-cogs fa-8x blue"></i>
                 <h3>{{s3_title3}}</h3>
                 <p>{{s3_p2}}</p>
               </div>
@@ -143,7 +143,7 @@
             <slide>
               <div class="content_block">
                 <!-- <img src="../../../assets/icons_zakelijk/zakelijk_euro.svg"> -->
-                <i class="fas fa-bolt fa-10x blue"></i>
+                <i class="fas fa-bolt fa-8x blue"></i>
                 <h3>{{s3_title4}}</h3>
                 <p>{{s3_p3}}</p>
               </div>
@@ -151,7 +151,7 @@
             <slide>
               <div class="content_block">
                 <!-- <img src="../../../assets/icons_zakelijk/zakelijk_vink.svg"> -->
-                <i class="fas fa-hand-point-down fa-10x blue"></i>
+                <i class="fas fa-hand-point-down fa-8x blue"></i>
                 <h3>{{s3_title5}}</h3>
                 <p>{{s3_p4}}</p>
               </div>
@@ -165,7 +165,7 @@
             <!-- <span class="fa-stack fa-2x">
               <i class="fas fa-heart fa-stack-2x blue"></i>
               <i class="fas fa-leaf fa-stack-1x fa-inverse"></i>
-            </span> -->
+            </span>-->
             <div class="content_text">
               <h3>{{s3_title2}}</h3>
               <p>{{s3_p1}}</p>
@@ -455,47 +455,6 @@ export default {
       setCookie("userLang", language, 200);
       this.lang = language;
     }, // end changeLang
-    handleScroll(event) {
-      // console.log("handlescroll", window.pageYOffset);
-
-      if (window.pageYOffset > 800 && this.isActive === false) {
-        var self = this;
-        var donutValue1 = 0;
-        var donutValue2 = 0;
-        var donutValue3 = 0;
-        var donutValue4 = 0;
-        var self = this;
-        var interval = setInterval(() => {
-          donutValue1++;
-          self.percent1 = donutValue1;
-          if (donutValue1 === 91) {
-            clearInterval(interval); // stop interval
-          }
-        }, 5);
-        var interval2 = setInterval(() => {
-          donutValue2++;
-          this.percent2 = donutValue2;
-          if (donutValue2 === 75) {
-            clearInterval(interval2); // stop interval
-          }
-        }, 5);
-        var interval3 = setInterval(() => {
-          donutValue3++;
-          this.percent3 = donutValue3;
-          if (donutValue3 === 92) {
-            clearInterval(interval3); // stop interval
-          }
-        }, 5);
-        var interval4 = setInterval(() => {
-          donutValue4++;
-          this.percent4 = donutValue4;
-          if (donutValue4 === 66) {
-            clearInterval(interval4); // stop interval
-          }
-        }, 5);
-        this.isActive = true;
-      }
-    },
 
     checkForm: function(e) {
       if (this.name && this.email && this.phonenum && this.ecommerce) {
