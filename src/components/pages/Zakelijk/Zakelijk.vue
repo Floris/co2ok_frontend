@@ -22,7 +22,7 @@
           <carousel :centerMode="true" :per-page="1" :mouse-drag="true" :perPage="1">
             <slide>
               <div class="img_block">
-                <i class="fas fa-heart fa-10x blue"></i>
+                <i class="fas fa-heart fa-8x blue"></i>
                 <div class="text">
                   <h3>{{s2_p1}}</h3>
                   <!-- <h3>{{s2_title1}}</h3>
@@ -32,7 +32,7 @@
             </slide>
             <slide>
               <div class="img_block">
-                <i class="fas fa-hand-point-down fa-10x blue"></i>
+                <i class="fas fa-hand-point-down fa-8x blue"></i>
                 <div class="text">
                   <h3>{{s2_p3}}</h3>
                   <!-- <h3>{{s2_title3}}</h3>
@@ -43,7 +43,7 @@
             <slide>
               <div class="img_block">
                 <!-- <img src="../../../assets/blauw_hart.svg"> -->
-                <i class="fas fa-chart-bar fa-10x blue"></i>
+                <i class="fas fa-chart-bar fa-8x blue"></i>
                 <div class="text">
                   <h3>{{s2_p4}}</h3>
                   <!-- <h3>{{s2_title4}}</h3>
@@ -54,7 +54,7 @@
             <slide>
               <div class="img_block">
                 <!-- <img src="../../../assets/blauw_hart.svg"> -->
-                <i class="fab fa-creative-commons-nc-eu fa-10x blue"></i>
+                <i class="fab fa-creative-commons-nc-eu fa-8x blue"></i>
                 <div class="text">
                   <h3>{{s2_p5}}</h3>
                   <!-- <h3>{{s2_title4}}</h3>
@@ -64,7 +64,7 @@
             </slide>
             <slide>
               <div class="img_block">
-                <i class="fas fa-heart fa-10x blue"></i>
+                <i class="fas fa-heart fa-8x blue"></i>
                 <div class="text">
                   <h3>{{s2_p2}}</h3>
                   <!-- <h3>{{s2_title2}}</h3>
@@ -78,7 +78,7 @@
           <div class="img_gallery">
             <div class="img_block">
               <!-- <img src="../../../assets/blauw_hart.svg"> -->
-              <i class="fas fa-heart fa-6x blue"></i>
+              <i class="fas fa-heart fa-8x blue"></i>
               <div class="text">
                 <h3>{{s2_p1}}</h3>
                 <!-- <h3>{{s2_title1}}</h3>
@@ -86,7 +86,7 @@
               </div>
             </div>
             <div class="img_block">
-              <i class="fas fa-hand-point-down fa-6x blue"></i>
+              <i class="fas fa-hand-point-down fa-8x blue"></i>
               <div class="text">
                 <h3>{{s2_p3}}</h3>
                 <!-- <h3>{{s2_title3}}</h3>
@@ -94,7 +94,7 @@
               </div>
             </div>
             <div class="img_block">
-              <i class="fas fa-chart-bar fa-6x blue"></i>
+              <i class="fas fa-chart-bar fa-8x blue"></i>
               <div class="text">
                 <h3>{{s2_p4}}</h3>
                 <!-- <h3>{{s2_title4}}</h3>
@@ -103,7 +103,7 @@
             </div>
             <div class="img_block">
               <!-- <img src="../../../assets/blauw_hart.svg"> -->
-              <i class="fab fa-creative-commons-nc-eu fa-6x blue"></i>
+              <i class="fab fa-creative-commons-nc-eu fa-8x blue"></i>
               <div class="text">
                 <h3>{{s2_p5}}</h3>
                 <!-- <h3>{{s2_title4}}</h3>
@@ -112,7 +112,7 @@
             </div>
             <div class="img_block">
               <!-- <img src="../../../assets/blauw_hart.svg"> -->
-              <i class="fas fa-heart fa-6x blue"></i>
+              <i class="fas fa-heart fa-8x blue"></i>
               <div class="text">
                 <h3>{{s2_p2}}</h3>
                 <!-- <h3>{{s2_title2}}</h3>
