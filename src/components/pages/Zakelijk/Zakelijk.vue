@@ -276,8 +276,12 @@
           <div class="plugin_install">
             <h3>{{s5_title2}}</h3>
             <!-- <button class="button green">Magento</button> -->
-            <router-link to="/installatie" tag="button" class="button">Magento</router-link>
-            <router-link to="/installatie" tag="button" class="button">Wordpress / WooCommerce</router-link>
+            <router-link to="/installatie" tag="button" class="button light_blue">Magento</router-link>
+            <router-link
+              to="/installatie"
+              tag="button"
+              class="button light_blue"
+            >Wordpress / WooCommerce</router-link>
           </div>
           <div class="ecom_input">
             <h3>{{s5_title3}}</h3>
@@ -306,7 +310,7 @@
                 <input v-model="phonenum" type="text" name="MERGE6" id="MERGE6" size="25">
                 <p>{{s5_input4}}</p>
                 <input v-model="ecommerce" type="text" name="MERGE2" id="MERGE2" size="25">
-                <button class="button">{{s5_button}}</button>
+                <button class="button light_blue">{{s5_button}}</button>
               </div>
             </form>
           </div>

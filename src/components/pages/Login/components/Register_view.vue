@@ -4,6 +4,17 @@
     <input class="input" placeholder="email" type="text" v-model="email">
     <input class="input" placeholder="password" type="password" v-model="password">
     <button class="button green" v-on:click="sendRegisterForm">Join CO2ok</button>
+    <ul class="harts">
+      <li>
+        <i class="fas fa-heart"></i> Zie hoeveel kg CO₂ je voorkomen hebt
+      </li>
+      <li>
+        <i class="fas fa-heart"></i> Kies je CO₂ compensatieproject
+      </li>
+      <li>
+        <i class="fas fa-heart"></i> Verdien geheime beloningen in het Ninja referral program
+      </li>
+    </ul>
     <p class="privacy" v-html="lang_kit.register_p"></p>
     <a v-on:click="goToLogin">{{lang_kit.register_button}}</a>
   </div>

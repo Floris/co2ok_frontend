@@ -3,7 +3,7 @@
     <Navigation :lang="lang" @changeLangNav="changeLang"/>
     <div class="background_left"></div>
     <!-- <div class="content"> -->
-    <div class="content container">
+    <div class="main content container">
       <div class="group-item">
         <!-- <img src="../../../assets/wereldbol.png"> -->
         <img src="../../../assets/boom2.svg">
@@ -41,6 +41,7 @@
       </div>
     </div>
     <!-- </div> -->
+    <Footer/>
   </div>
 </template>
 

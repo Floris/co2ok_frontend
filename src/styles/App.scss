@@ -125,7 +125,7 @@ a {
 
 .input {
   width: 233px;
-  height: 36px;
+  height: 44px;
   background: #eee;
   padding: 0 10px;
 
@@ -175,6 +175,17 @@ a {
 .orange:hover {
   background: #ff9f1a;
   border-color: #ff9f1a;
+}
+
+.light_blue {
+  background: $light_blue;
+  border-color: $light_blue;
+  color: #fff;
+}
+
+.light_blue:hover {
+  background: #74b9ff;
+  border-color: #74b9ff;
 }
 
 // end button styling

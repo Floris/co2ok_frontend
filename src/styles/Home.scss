@@ -280,10 +280,12 @@
 
     .bol {
       top: 8.5px;
+      // top: 0/.47rem;
       position: absolute;
       height: 55px;
       width: 55px;
       z-index: 3;
+      padding: 0;
 
       text-align: center;
 
