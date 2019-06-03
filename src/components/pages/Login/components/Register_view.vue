@@ -6,13 +6,16 @@
     <button class="button green" v-on:click="sendRegisterForm">Join CO2ok</button>
     <ul class="harts">
       <li>
-        <i class="fas fa-heart"></i> Zie hoeveel kg CO₂ je voorkomen hebt
+        <i class="fas fa-heart"></i>
+        {{lang_kit.li1}}
       </li>
       <li>
-        <i class="fas fa-heart"></i> Kies je CO₂ compensatieproject
+        <i class="fas fa-heart"></i>
+        {{lang_kit.li2}}
       </li>
       <li>
-        <i class="fas fa-heart"></i> Verdien geheime beloningen in het Ninja referral program
+        <i class="fas fa-heart"></i>
+        {{lang_kit.li3}}
       </li>
     </ul>
     <p class="privacy" v-html="lang_kit.register_p"></p>
