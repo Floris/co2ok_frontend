@@ -10,7 +10,9 @@
       text-decoration: underline;
     }
   }
-
+  .blue {
+    color: #7BCEFD
+  }
   .top_intro {
     position: relative;
     background: $light_blue;
@@ -120,35 +122,19 @@
 
   .why_co2ok {
     position: relative;
-    height: 1050px;
+    height: 1125px;
     width: 100%;
-    background: $grey;
+    background: #F5F5F5;
 
-    // .img_background {
-    //   background: url('./../assets/wolk.png');
-    //   position: absolute;
-    //   height: 100%;
-    //   width: 100%;
-    //   z-index: 15;
-    //   top: -120px;
-    // }
-
-    // .img-background-color {
-    //   position: absolute;
-    //   height: 75%;
-    //   width: 100%;
-    //   z-index: 5;
-    //   background: rgba(182, 225, 249, 0.8);
-    // }
-
+    .sliders {
+      width: 75%;
+      margin: 0 auto;
+    }
     .why_co2ok_content {
-      width: 70% !important;
-      position: absolute;
+      position: relative;
       display: flex;
       flex-direction: column;
-      justify-content: center;
-      margin-top: auto;
-      margin-bottom: auto;
+      top: 100px;
       left: 0;
       right: 0;
       border-style: solid rgba(0, 0, 0, 0.0);
@@ -159,27 +145,19 @@
         .content_in_block {
           display: flex;
           flex-direction: row;
-          justify-content: space-evenly;
+          // justify-content: space-evenly;
           padding-bottom: 20px;
+          margin: 0 auto;
           .content_text {
             width: 880px;
-            max-width: 100%;
           }
-          // img {
-          //   width: 150px;
-          //   height: 150px;
-          //   margin-left: 50px;
-          //   margin-right: 50px;
-          //   align-self: center;
-          // }
-          .fas {
+          .fas, .fab {
             margin-left: 50px;
             margin-right: 50px;
+            margin-top: auto;
+            margin-bottom: auto;
           }
 
-        }
-        .blue {
-          color: $light_blue;
         }
       }
 
@@ -205,7 +183,8 @@
 
   .partners {
     position: relative;
-    height: 600px;
+    // height: 600px;
+    height: auto;
     .content {
       padding-top: 50px;
       .text {
@@ -267,7 +246,7 @@
           .button {
             margin-top: 20px;
             width: 75%;
-            background: $light_blue;
+            background: #7BCEFD;
             color: white;
           }
         }
@@ -295,7 +274,7 @@
             text-align: left;
 
             button {
-              background: $light_blue;
+              background: #7BCEFD;
               color: white;
             }
           }
@@ -358,7 +337,7 @@
     }
   
     .why_co2ok {
-      height: 650px !important;
+      height: 550px !important;
       .why_co2ok_content {
         text-align: center;
   
@@ -421,7 +400,6 @@
   }
   
   @media only screen and (max-width: 600px) {
-    .zakelijk {
       .top_intro {
         .content {
           text-align: center;
@@ -433,14 +411,16 @@
       }
   
       .why_co2ok_content {
+        top: 25px !important;
+        .sliders {
+          width: 100% !important;
+          margin: 0 auto;
+        }
         .content_block {
           p {
             margin: 0 auto;
             max-width: 250px;
           }
-        }
-        h2 {
-          padding-bottom: 0px !important;
         }
       }
       .partners {
@@ -458,7 +438,7 @@
         display: block;
       }
     }
-  }
+
 }
 
 
