@@ -83,6 +83,7 @@ export default {
   },
   mounted: function() {
     this.checkCookies();
+    document.body.style.overflow = "initial";
   },
   methods: {
     checkCookies() {

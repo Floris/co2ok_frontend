@@ -22,7 +22,7 @@
       <div class="block">
         <h2>{{s3_title}}</h2>
 
-        <div class="carousel showCarousel hidden">
+        <!-- <div class="carousel showCarousel hidden">
           <carousel :centerMode="true" :per-page="1" autoplay :mouse-drag="true" :perPage="1">
             <slide>
               <div class="img_block">
@@ -46,9 +46,9 @@
               </div>
             </slide>
           </carousel>
-        </div>
+        </div>-->
 
-        <div class="img_collection hideCarousel">
+        <div class="img_collection">
           <div class="img_block">
             <img src="../../../assets/hoeWerktHet1.svg">
             <h3>{{s3_img_title1}}</h3>
@@ -240,6 +240,7 @@ export default {
         Math.random() * Math.round(Math.random() * 10000)
       );
     }, 1000);
+    document.body.style.overflow = "initial";
   }, // end mounted
   //remove the event
   destroyed() {

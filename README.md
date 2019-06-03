@@ -27,4 +27,11 @@ npm run build --report
 npm run build_local
 ```
 
+## language compiler 
+docs https://github.com/Floris/language_translation_kit
+``` bash
+# language compiler
+npm run compile_lang
+```
+
 For a detailed explanation on how things work, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).

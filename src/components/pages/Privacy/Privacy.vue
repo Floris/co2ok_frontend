@@ -74,6 +74,7 @@ export default {
   },
   mounted: () => {
     console.log("privacyTekst", this.privacyTekst);
+    document.body.style.overflow = "initial";
   },
   methods: {
     checkCookies() {
