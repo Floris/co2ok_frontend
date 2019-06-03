@@ -190,6 +190,14 @@
     display: inline-block;
   }
 
+  .co2ok-logo {
+    a {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+  }
+
   #logo1 {
     display: initial;
   }
