@@ -22,7 +22,7 @@
           <carousel :centerMode="true" :per-page="1" :mouse-drag="true" :perPage="1">
             <slide>
               <div class="img_block">
-                <img src="../../../assets/blauw_hart.svg">
+                <i class="fas fa-heart fa-8x blue"></i>
                 <div class="text">
                   <h3>{{s2_p1}}</h3>
                   <!-- <h3>{{s2_title1}}</h3>
@@ -32,17 +32,7 @@
             </slide>
             <slide>
               <div class="img_block">
-                <img src="../../../assets/blauw_hart.svg">
-                <div class="text">
-                  <h3>{{s2_p2}}</h3>
-                  <!-- <h3>{{s2_title2}}</h3>
-                  <p>{{s2_p2}}</p>-->
-                </div>
-              </div>
-            </slide>
-            <slide>
-              <div class="img_block">
-                <img src="../../../assets/blauw_hart.svg">
+                <i class="fas fa-hand-point-down fa-8x blue"></i>
                 <div class="text">
                   <h3>{{s2_p3}}</h3>
                   <!-- <h3>{{s2_title3}}</h3>
@@ -52,7 +42,8 @@
             </slide>
             <slide>
               <div class="img_block">
-                <img src="../../../assets/blauw_hart.svg">
+                <!-- <img src="../../../assets/blauw_hart.svg"> -->
+                <i class="fas fa-chart-bar fa-8x blue"></i>
                 <div class="text">
                   <h3>{{s2_p4}}</h3>
                   <!-- <h3>{{s2_title4}}</h3>
@@ -62,11 +53,22 @@
             </slide>
             <slide>
               <div class="img_block">
-                <img src="../../../assets/blauw_hart.svg">
+                <!-- <img src="../../../assets/blauw_hart.svg"> -->
+                <i class="fab fa-creative-commons-nc-eu fa-8x blue"></i>
                 <div class="text">
                   <h3>{{s2_p5}}</h3>
                   <!-- <h3>{{s2_title4}}</h3>
                   <p>{{s2_p4}}</p>-->
+                </div>
+              </div>
+            </slide>
+            <slide>
+              <div class="img_block">
+                <i class="fas fa-heart fa-8x blue"></i>
+                <div class="text">
+                  <h3>{{s2_p2}}</h3>
+                  <!-- <h3>{{s2_title2}}</h3>
+                  <p>{{s2_p2}}</p>-->
                 </div>
               </div>
             </slide>
@@ -75,7 +77,8 @@
         <div class="hideCarousel">
           <div class="img_gallery">
             <div class="img_block">
-              <img src="../../../assets/blauw_hart.svg">
+              <!-- <img src="../../../assets/blauw_hart.svg"> -->
+              <i class="fas fa-heart fa-8x blue"></i>
               <div class="text">
                 <h3>{{s2_p1}}</h3>
                 <!-- <h3>{{s2_title1}}</h3>
@@ -83,15 +86,7 @@
               </div>
             </div>
             <div class="img_block">
-              <img src="../../../assets/blauw_hart.svg">
-              <div class="text">
-                <h3>{{s2_p2}}</h3>
-                <!-- <h3>{{s2_title2}}</h3>
-                <p>{{s2_p2}}</p>-->
-              </div>
-            </div>
-            <div class="img_block">
-              <img src="../../../assets/blauw_hart.svg">
+              <i class="fas fa-hand-point-down fa-8x blue"></i>
               <div class="text">
                 <h3>{{s2_p3}}</h3>
                 <!-- <h3>{{s2_title3}}</h3>
@@ -99,7 +94,7 @@
               </div>
             </div>
             <div class="img_block">
-              <img src="../../../assets/blauw_hart.svg">
+              <i class="fas fa-chart-bar fa-8x blue"></i>
               <div class="text">
                 <h3>{{s2_p4}}</h3>
                 <!-- <h3>{{s2_title4}}</h3>
@@ -107,11 +102,21 @@
               </div>
             </div>
             <div class="img_block">
-              <img src="../../../assets/blauw_hart.svg">
+              <!-- <img src="../../../assets/blauw_hart.svg"> -->
+              <i class="fab fa-creative-commons-nc-eu fa-8x blue"></i>
               <div class="text">
                 <h3>{{s2_p5}}</h3>
                 <!-- <h3>{{s2_title4}}</h3>
                 <p>{{s2_p4}}</p>-->
+              </div>
+            </div>
+            <div class="img_block">
+              <!-- <img src="../../../assets/blauw_hart.svg"> -->
+              <i class="fas fa-heart fa-8x blue"></i>
+              <div class="text">
+                <h3>{{s2_p2}}</h3>
+                <!-- <h3>{{s2_title2}}</h3>
+                <p>{{s2_p2}}</p>-->
               </div>
             </div>
           </div>
@@ -121,79 +126,76 @@
     <div class="why_co2ok">
       <div class="why_co2ok_content content">
         <h2>{{s3_title}}</h2>
-        <div class="carousel showCarousel hidden">
-          <carousel :centerMode="true" :per-page="1" :mouse-drag="true" :perPage="1">
-            <!-- ADD languages ALL slides-->
-            <slide>
-              <div class="content_block">
-                <!-- <img src="../../../assets/icons_zakelijk/zakelijk_globe.svg"> -->
-                <i class="fas fa-heart fa-8x blue"></i>
+        <div class="sliders">
+          <div class="carousel showCarousel hidden">
+            <carousel :centerMode="true" :per-page="1" :mouse-drag="true" :perPage="1">
+              <!-- ADD languages ALL slides-->
+              <slide>
+                <div class="content_block">
+                  <!-- <img src="../../../assets/icons_zakelijk/zakelijk_globe.svg"> -->
+                  <i class="fas fa-heart fa-8x blue"></i>
+                  <h3>{{s3_title2}}</h3>
+                  <p>{{s3_p1}}</p>
+                </div>
+              </slide>
+              <slide>
+                <div class="content_block">
+                  <!-- <img src="../../../assets/icons_zakelijk/zakelijk_pijl.svg"> -->
+                  <i class="fas fa-chart-bar fa-8x blue"></i>
+                  <h3>{{s3_title3}}</h3>
+                  <p>{{s3_p2}}</p>
+                </div>
+              </slide>
+              <slide>
+                <div class="content_block">
+                  <!-- <img src="../../../assets/icons_zakelijk/zakelijk_euro.svg"> -->
+                  <i class="fab fa-creative-commons-nc-eu fa-8x blue"></i>
+                  <h3>{{s3_title4}}</h3>
+                  <p>{{s3_p3}}</p>
+                </div>
+              </slide>
+              <slide>
+                <div class="content_block">
+                  <!-- <img src="../../../assets/icons_zakelijk/zakelijk_vink.svg"> -->
+                  <i class="fas fa-hand-point-down fa-8x blue"></i>
+                  <h3>{{s3_title5}}</h3>
+                  <p>{{s3_p4}}</p>
+                </div>
+              </slide>
+            </carousel>
+          </div>
+          <div class="content_block hideCarousel">
+            <div class="content_in_block">
+              <!-- <img src="../../../assets/icons_zakelijk/zakelijk_globe.svg"> -->
+              <i class="fas fa-heart fa-8x blue"></i>
+              <div class="content_text">
                 <h3>{{s3_title2}}</h3>
                 <p>{{s3_p1}}</p>
               </div>
-            </slide>
-            <slide>
-              <div class="content_block">
-                <!-- <img src="../../../assets/icons_zakelijk/zakelijk_pijl.svg"> -->
-                <i class="fas fa-cogs fa-8x blue"></i>
+            </div>
+            <div class="content_in_block">
+              <div class="content_text">
                 <h3>{{s3_title3}}</h3>
                 <p>{{s3_p2}}</p>
               </div>
-            </slide>
-            <slide>
-              <div class="content_block">
-                <!-- <img src="../../../assets/icons_zakelijk/zakelijk_euro.svg"> -->
-                <i class="fas fa-bolt fa-8x blue"></i>
+              <!-- <img src="../../../assets/icons_zakelijk/zakelijk_pijl.svg"/> -->
+              <i class="fas fa-chart-bar fa-8x blue"></i>
+            </div>
+            <div class="content_in_block">
+              <i class="fab fa-creative-commons-nc-eu fa-8x blue"></i>
+              <div class="content_text">
                 <h3>{{s3_title4}}</h3>
                 <p>{{s3_p3}}</p>
               </div>
-            </slide>
-            <slide>
-              <div class="content_block">
-                <!-- <img src="../../../assets/icons_zakelijk/zakelijk_vink.svg"> -->
-                <i class="fas fa-hand-point-down fa-8x blue"></i>
+            </div>
+            <div class="content_in_block">
+              <div class="content_text">
                 <h3>{{s3_title5}}</h3>
                 <p>{{s3_p4}}</p>
               </div>
-            </slide>
-          </carousel>
-        </div>
-        <div class="content_block hideCarousel">
-          <div class="content_in_block">
-            <!-- <img src="../../../assets/icons_zakelijk/zakelijk_globe.svg"> -->
-            <i class="fas fa-heart fa-10x blue"></i>
-            <!-- <span class="fa-stack fa-2x">
-              <i class="fas fa-heart fa-stack-2x blue"></i>
-              <i class="fas fa-leaf fa-stack-1x fa-inverse"></i>
-            </span>-->
-            <div class="content_text">
-              <h3>{{s3_title2}}</h3>
-              <p>{{s3_p1}}</p>
+              <i class="fas fa-hand-point-down fa-8x blue"></i>
+              <!-- <img src="../../../assets/icons_zakelijk/zakelijk_vink.svg"> -->
             </div>
-          </div>
-          <div class="content_in_block">
-            <div class="content_text">
-              <h3>{{s3_title3}}</h3>
-              <p>{{s3_p2}}</p>
-            </div>
-            <!-- <img src="../../../assets/icons_zakelijk/zakelijk_pijl.svg"/> -->
-            <i class="fas fa-cogs fa-10x blue"></i>
-          </div>
-          <div class="content_in_block">
-            <!-- <img src="../../../assets/icons_zakelijk/zakelijk_euro.svg"> -->
-            <i class="fas fa-bolt fa-10x blue"></i>
-            <div class="content_text">
-              <h3>{{s3_title4}}</h3>
-              <p>{{s3_p3}}</p>
-            </div>
-          </div>
-          <div class="content_in_block">
-            <div class="content_text">
-              <h3>{{s3_title5}}</h3>
-              <p>{{s3_p4}}</p>
-            </div>
-            <i class="fas fa-hand-point-down fa-10x blue"></i>
-            <!-- <img src="../../../assets/icons_zakelijk/zakelijk_vink.svg"> -->
           </div>
         </div>
       </div>
@@ -276,8 +278,12 @@
           <div class="plugin_install">
             <h3>{{s5_title2}}</h3>
             <!-- <button class="button green">Magento</button> -->
-            <router-link to="/installatie" tag="button" class="button">Magento</router-link>
-            <router-link to="/installatie" tag="button" class="button">Wordpress / WooCommerce</router-link>
+            <router-link to="/installatie" tag="button" class="button light_blue">Magento</router-link>
+            <router-link
+              to="/installatie"
+              tag="button"
+              class="button light_blue"
+            >Wordpress / WooCommerce</router-link>
           </div>
           <div class="ecom_input">
             <h3>{{s5_title3}}</h3>
@@ -306,7 +312,7 @@
                 <input v-model="phonenum" type="text" name="MERGE6" id="MERGE6" size="25">
                 <p>{{s5_input4}}</p>
                 <input v-model="ecommerce" type="text" name="MERGE2" id="MERGE2" size="25">
-                <button class="button">{{s5_button}}</button>
+                <button class="button light_blue">{{s5_button}}</button>
               </div>
             </form>
           </div>

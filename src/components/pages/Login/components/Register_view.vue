@@ -4,6 +4,20 @@
     <input class="input" placeholder="email" type="text" v-model="email">
     <input class="input" placeholder="password" type="password" v-model="password">
     <button class="button green" v-on:click="sendRegisterForm">Join CO2ok</button>
+    <ul class="harts">
+      <li>
+        <i class="fas fa-heart"></i>
+        {{lang_kit.li1}}
+      </li>
+      <li>
+        <i class="fas fa-heart"></i>
+        {{lang_kit.li2}}
+      </li>
+      <li>
+        <i class="fas fa-heart"></i>
+        {{lang_kit.li3}}
+      </li>
+    </ul>
     <p class="privacy" v-html="lang_kit.register_p"></p>
     <a v-on:click="goToLogin">{{lang_kit.register_button}}</a>
   </div>

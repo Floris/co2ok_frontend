@@ -122,6 +122,12 @@
       z-index: 99;
       top: -45px;
     }
+
+    .far,
+    .fas,
+    .fab {
+      color: $light_blue;
+    }
   }
 
   .why_co2ok {
@@ -171,6 +177,7 @@
           .content_text {
             width: 880px;
             max-width: 100%;
+            padding: 0 0.9rem;
           }
 
           // img {
@@ -282,7 +289,7 @@
           .button {
             margin-top: 20px;
             width: 75%;
-            background: $light_blue;
+            // background: $light_blue;
             color: white;
           }
         }
@@ -310,7 +317,7 @@
             text-align: left;
 
             button {
-              background: $light_blue;
+              // background: $light_blue;
               color: white;
             }
           }

@@ -3,7 +3,7 @@
     <Navigation :lang="lang" @changeLangNav="changeLang"/>
     <div class="background_left"></div>
     <!-- <div class="content"> -->
-    <div class="content container">
+    <div class="main content container">
       <div class="group-item">
         <!-- <img src="../../../assets/wereldbol.png"> -->
         <img src="../../../assets/boom2.svg">
@@ -41,6 +41,7 @@
       </div>
     </div>
     <!-- </div> -->
+    <Footer/>
   </div>
 </template>
 
@@ -78,7 +79,10 @@ export default {
         register_button: lang.nl.register_button,
         login_h1: lang.nl.login_h1,
         login_button1: lang.nl.login_button1,
-        login_button2: lang.nl.login_button2
+        login_button2: lang.nl.login_button2,
+        l1: lang.nl.l1,
+        l2: lang.nl.l2,
+        l3: lang.nl.l3
       },
 
       error_message: null,
@@ -206,7 +210,10 @@ export default {
         register_button: lang[language].register_button,
         login_h1: lang[language].login_h1,
         login_button1: lang[language].login_button1,
-        login_button2: lang[language].login_button2
+        login_button2: lang[language].login_button2,
+        li1: lang[language].li1,
+        li2: lang[language].li2,
+        li3: lang[language].li3
       };
 
       setCookie("userLang", language, 200);
