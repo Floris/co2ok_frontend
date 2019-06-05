@@ -136,11 +136,12 @@
             <transition name="fade">
               <div v-if="bol1" class="bol" id="bol1">
                 <!-- <img class="globe" src="../../../assets/globe1.svg" alt="planeet"> -->
-                <i class="fas fa-globe-europe"></i>
+                <!-- <i class="fas fa-globe-europe"></i> -->
+                <img src="../../../assets/Bolletje-1.svg" alt="planeet">
               </div>
             </transition>
             <transition name="fade">
-              <div v-if="bol1" class="bol2" id="bol1_"></div>
+              <!-- <div v-if="bol1" class="bol2" id="bol1_"></div> -->
             </transition>
           </div>
 
@@ -251,8 +252,8 @@
         </div>
         <div class="calculation_right group-item_col">
           <img src="../../../assets/ninja_sit.png" alt="Sitting co2ok ninja">
-          <h3>{{s5_title_sm}}</h3>
           <p class="kgs">313241 KGS</p>
+          <h3>{{s5_title_sm}}</h3>
           <!-- <p>{{s5_p_2}}</p> -->
         </div>
       </div>

@@ -148,7 +148,19 @@
     }
 
     h2 {
-      margin: 0 2rem 2rem 2rem;
+      margin: 2rem;
+    }
+
+    h3 {
+      margin-top: 3rem;
+      min-height: 60px;
+    }
+
+    p {
+      display: block;
+      margin: 20px auto 0;
+      max-width: 300px;
+      min-height: 124px;
     }
 
     .group-item_col {
@@ -156,7 +168,6 @@
 
       .text_box {
         display: flex;
-        margin-top: 3rem;
         flex-direction: column;
         min-height: 150px;
 
@@ -195,12 +206,6 @@
       justify-content: space-evenly;
     }
 
-    p {
-      display: block;
-      margin: 20px auto 0;
-      max-width: 300px;
-    }
-
     .fas,
     .far {
       font-size: 65px;
@@ -226,7 +231,7 @@
   .tree {
     position: relative;
     min-height: 960px;
-    margin: 60px auto 60px;
+    margin: 0 auto 60px;
 
     h3 {
       color: $green;
@@ -413,7 +418,7 @@
     }
 
     .kgs {
-      margin-top: 0.2rem;
+      margin: 0.2rem 0;
       font-size: 30px;
     }
 
@@ -518,13 +523,23 @@
   }
 
   @media only screen and (max-width: 1060px) {
-    .showCarousel {
-      display: block;
-      margin: 0 auto;
-    }
 
-    .hideCarousel {
-      display: none !important;
+
+    .howItWorks {
+      .block {
+        .group {
+          flex-wrap: wrap;
+
+          .group-item_col {
+            flex: 0 50%;
+          }
+
+          .group-item_col:nth-child(3),
+          .group-item_col:nth-child(4) {
+            margin-top: 3rem;
+          }
+        }
+      }
     }
 
     .tree {
@@ -541,6 +556,14 @@
   }
 
   @media only screen and (max-width: 900px) {
+    .showCarousel {
+      display: block;
+      margin: 0 auto;
+    }
+
+    .hideCarousel {
+      display: none !important;
+    }
 
     .jumbotron {
       text-align: center;
