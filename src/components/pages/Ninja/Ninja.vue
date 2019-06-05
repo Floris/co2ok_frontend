@@ -150,28 +150,6 @@
             <div v-html="s7_p"></div>
             <router-link to="/privacy">{{s7_button}}</router-link>
           </div>
-          <div class="contact">
-            <div class="group">
-              <div class="group-item_col">
-                <h2>Contact</h2>
-                <div class="group-item">
-                  <div class="group-item_col">
-                    <i class="fas fa-envelope big_icon"></i>
-                    <i class="fas fa-phone big_icon"></i>
-                  </div>
-                  <div class="group-item_col">
-                    <p class="email_number">+31639765259</p>
-                    <p class="email_number">info@co2ok.eco</p>
-                  </div>
-                </div>
-              </div>
-              <div class="group-item_col">
-                <i class="fab fa-instagram"></i>
-                <i class="fab fa-facebook"></i>
-                <i class="fab fa-linkedin"></i>
-              </div>
-            </div>
-          </div>
         </div>
       </div>
     </div>

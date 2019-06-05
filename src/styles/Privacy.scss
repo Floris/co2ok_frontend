@@ -29,7 +29,7 @@
   .privacypolicy {
     max-width: 50%;
     float: left;
-    margin-left: 5%;
+    // margin-left: 5%;
   }
 
   .lockimage {
@@ -147,6 +147,16 @@
       .content {
         width: 100% !important;
       }
+    }
+  }
+
+  @media only screen and (max-width: 600px) {
+    .privacypolicy {
+      max-width: unset;
+    }
+
+    .lockimage {
+      display: none;
     }
   }
 }

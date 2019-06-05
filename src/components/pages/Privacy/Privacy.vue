@@ -9,7 +9,7 @@
         <div class="line"></div>
       </div>
       <div class="container pp__container">
-        <div class="privacypolicy">
+        <div class="content privacypolicy">
           <h1>Privacy Policy</h1>
           <div v-html="p"></div>
         </div>

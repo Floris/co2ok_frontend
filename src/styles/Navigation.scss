@@ -63,7 +63,7 @@
     text-align: center;
 
     .far {
-      font-size: 36px;
+      font-size: 30px;
     }
   }
 
@@ -71,7 +71,7 @@
   .overlay a {
     padding: 8px;
     text-decoration: none;
-    font-size: 36px;
+    font-size: 30px;
     // color: #fff;
     color: #000;
     display: block;
@@ -292,8 +292,41 @@
 
     .overlay a,
     .overlay .far {
-      font-size: 29px;
+      font-size: 26px;
     }
   }
+
+  @media only screen and (max-height: 600px) {
+
+    .overlay a,
+    .overlay .far {
+      font-size: 19px;
+    }
+  }
+
+  @media only screen and (max-height: 470px) {
+
+    .overlay a,
+    .overlay .far {
+      font-size: 17px;
+    }
+  }
+
+  @media only screen and (max-height: 445px) {
+
+    .overlay a,
+    .overlay .far {
+      font-size: 15px;
+    }
+  }
+
+  // @media only screen and (max-height: 470px),
+  // screen and (max-width: 600px) {
+
+  //   .overlay a,
+  //   .overlay .far {
+  //     font-size: 17px;
+  //   }
+  // }
 
 }

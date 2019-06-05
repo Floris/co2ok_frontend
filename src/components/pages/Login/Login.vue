@@ -108,33 +108,44 @@ export default {
 
       // TODO: login validation
 
-      axios
-        .post(this.urlServer + "/login/", {
-          body: {
-            email: data.email,
-            password: data.password,
-            sort: "webshop"
-          }
-          // header: { "X-CSRFToken": "gZvnzSFeGp7h68WjCzmFky6wMkiJZXDU" } // <-- generated csrf token here
-        })
-        .then(response => {
-          console.log(response);
+      setCookie("loggedIn", true, 5); // set cookie logged in
+      setCookie("userToken", "XXXX-333223-XXXX-TESTATOKESARNA", 5); // set 'Token' from Server
 
-          if (response.data.authenticate) {
-            setCookie("loggedIn", true, 5); // set cookie logged in
-            setCookie("userToken", response.data.token, 5); // set 'Token' from Server
+      // store username in vuex
+      this.error_message = null;
 
-            // store username in vuex
-            this.error_message = null;
-            this.$router.push("/dashboard"); // redirect to dashboard
-          } else {
-            this.error_message = response.data.error; // show message - response.data.error
-          }
-        })
-        .catch(error => {
-          console.log(error);
-          this.error_message = error;
-        });
+      var self = this;
+      setTimeout(() => {
+        self.$router.push("/dashboard"); // redirect to dashboard
+      }, 200);
+
+      // axios
+      //   .post(this.urlServer + "/login/", {
+      //     body: {
+      //       email: data.email,
+      //       password: data.password,
+      //       sort: "webshop"
+      //     }
+      //     // header: { "X-CSRFToken": "gZvnzSFeGp7h68WjCzmFky6wMkiJZXDU" } // <-- generated csrf token here
+      //   })
+      //   .then(response => {
+      //     console.log(response);
+
+      //     if (response.data.authenticate) {
+      //       setCookie("loggedIn", true, 5); // set cookie logged in
+      //       setCookie("userToken", response.data.token, 5); // set 'Token' from Server
+
+      //       // store username in vuex
+      //       this.error_message = null;
+      //       this.$router.push("/dashboard"); // redirect to dashboard
+      //     } else {
+      //       this.error_message = response.data.error; // show message - response.data.error
+      //     }
+      //   })
+      //   .catch(error => {
+      //     console.log(error);
+      //     this.error_message = error;
+      //   });
     },
 
     handleRegisterForm(data) {
