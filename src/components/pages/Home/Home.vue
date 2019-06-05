@@ -25,8 +25,6 @@
       </div>
 
       <div class="block">
-        <h2>{{s2_title}}</h2>
-
         <div class="carousel showCarousel hidden">
           <carousel :centerMode="true" autoplay :per-page="1" :mouse-drag="true">
             <slide>
@@ -254,7 +252,7 @@
         <div class="calculation_right group-item_col">
           <img src="../../../assets/ninja_sit.png" alt="Sitting co2ok ninja">
           <h3>{{s5_title_sm}}</h3>
-          <p class="kgs">{{number}} KGS</p>
+          <p class="kgs">313241 KGS</p>
           <!-- <p>{{s5_p_2}}</p> -->
         </div>
       </div>
@@ -535,11 +533,11 @@ export default {
   mounted: function() {
     this.checkCookies();
 
-    this.timer = setInterval(() => {
-      this.number = Math.round(
-        Math.random() * Math.round(Math.random() * 10000)
-      );
-    }, 1000);
+    // this.timer = setInterval(() => {
+    //   this.number = Math.round(
+    //     Math.random() * Math.round(Math.random() * 10000)
+    //   );
+    // }, 1000);
 
     document.body.style.overflow = "initial";
   }, // end mounted
@@ -550,7 +548,7 @@ export default {
   //remove the event
   destroyed() {
     window.removeEventListener("scroll", this.handleScroll);
-    clearInterval(this.timer);
+    // clearInterval(this.timer);
     console.log("destroyed");
   }
 };

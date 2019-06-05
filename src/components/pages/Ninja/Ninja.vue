@@ -4,7 +4,7 @@
 
     <div class="jumbotron">
       <div class="jumbo_content">
-        <img src="../../../assets/boom2.svg">
+        <img src="../../../assets/boom.svg">
         <div class="text_block">
           <h1>{{title}}</h1>
           <p>{{title2}}</p>
@@ -136,7 +136,7 @@
       <div class="content">
         <p>
           Wij hebben al
-          <span id="kgs">{{number}} KGS</span> CO2 bespaard.
+          <span id="kgs">313241 KGS</span> CO2 bespaard.
         </p>
         <p>Wordt ninja en bespaar 9.000 auto-km's per jaar!</p>
       </div>
@@ -213,17 +213,17 @@ export default {
   },
   mounted: function() {
     this.checkCookies();
-    this.timer = setInterval(() => {
-      this.number = Math.round(
-        Math.random() * Math.round(Math.random() * 10000)
-      );
-    }, 1000);
+    // this.timer = setInterval(() => {
+    //   this.number = Math.round(
+    //     Math.random() * Math.round(Math.random() * 10000)
+    //   );
+    // }, 1000);
     document.body.style.overflow = "initial";
   }, // end mounted
   //remove the event
   destroyed() {
-    clearInterval(this.timer);
-    console.log("destroyed");
+    // clearInterval(this.timer);
+    // console.log("destroyed");
   },
   methods: {
     checkCookies() {

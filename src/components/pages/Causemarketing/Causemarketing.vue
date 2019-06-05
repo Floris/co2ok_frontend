@@ -17,7 +17,6 @@
         <div class="line"></div>
       </div>
       <div class="content">
-        <h2>Our services</h2>
         <div class="carousel showCarousel hidden">
           <carousel :centerMode="true" :per-page="1" :mouse-drag="true" :perPage="1">
             <slide>
