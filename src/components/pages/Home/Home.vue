@@ -140,45 +140,48 @@
                 <img src="../../../assets/Bolletje-1.svg" alt="planeet">
               </div>
             </transition>
-            <transition name="fade">
-              <!-- <div v-if="bol1" class="bol2" id="bol1_"></div> -->
-            </transition>
+            <!-- <transition name="fade">
+              <div v-if="bol1" class="bol2" id="bol1_"></div>
+            </transition>-->
           </div>
 
           <div class="bol_wrapper">
             <transition name="fade">
               <div v-if="bol2" class="bol" id="bol2">
                 <!-- <img class="globe" src="../../../assets/globe2.svg" alt="planeet"> -->
-                <i class="fas fa-globe-americas"></i>
+                <!-- <i class="fas fa-globe-americas"></i> -->
+                <img src="../../../assets/Bolletje-2.svg" alt="planee2">
               </div>
             </transition>
-            <transition name="fade">
+            <!-- <transition name="fade">
               <div v-if="bol2" class="bol2" id="bol2_"></div>
-            </transition>
+            </transition>-->
           </div>
 
           <div class="bol_wrapper">
             <transition name="fade">
               <div v-if="bol3" class="bol" id="bol3">
                 <!-- <img class="globe" src="../../../assets/globe3.svg" alt="planeet"> -->
-                <i class="fas fa-globe-asia"></i>
+                <!-- <i class="fas fa-globe-asia"></i> -->
+                <img src="../../../assets/Bolletje-3.svg" alt="planeet3">
               </div>
             </transition>
-            <transition name="fade">
+            <!-- <transition name="fade">
               <div v-if="bol3" class="bol2" id="bol3_"></div>
-            </transition>
+            </transition>-->
           </div>
 
           <div class="bol_wrapper">
             <transition name="fade">
               <div v-if="bol4" class="bol" id="bol4">
                 <!-- <img class="globe" src="../../../assets/globe4.svg" alt="planeet"> -->
-                <i class="fas fa-globe-africa"></i>
+                <!-- <i class="fas fa-globe-africa"></i> -->
+                <img src="../../../assets/Bolletje-4.svg" alt="planeet4">
               </div>
             </transition>
-            <transition name="fade">
+            <!-- <transition name="fade">
               <div v-if="bol4" class="bol2" id="bol4_"></div>
-            </transition>
+            </transition>-->
           </div>
         </div>
       </div>

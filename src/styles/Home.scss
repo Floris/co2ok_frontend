@@ -231,7 +231,7 @@
   .tree {
     position: relative;
     min-height: 960px;
-    margin: 0 auto 60px;
+    margin: 60px auto 60px;
 
     h3 {
       color: $green;
@@ -287,8 +287,8 @@
       top: 8.5px;
       // top: 0/.47rem;
       position: absolute;
-      height: 55px;
-      width: 55px;
+      height: 70px;
+      width: 70px;
       z-index: 3;
       padding: 0;
 
