@@ -1,7 +1,7 @@
 /* eslint-disable quotes */
 module.exports = {
-  s1_title: "Make your company compensate CO₂",
-  s1_title2: "Stay CO₂ neutral and become a ninja!",
+  s1_title: "Make online purchases CO₂ neutral",
+  s1_title2: "Climate change is a serious problem. Whether you are poor or rich, it affects us all. Now we can wait for the government to take steps. Or ... we fight climate change together!",
 
   s2_title: "Our services",
 
@@ -64,5 +64,7 @@ module.exports = {
           >further explanation</a>.`,
 
   partners_title: "Partners",
-  partners_text: "We heartily introduce our partners in our fight against climate change!"
+  partners_text: "We heartily introduce our partners in our fight against climate change!",
+
+  webshops_title: "You can already shop climate neutral at these shops"
 }

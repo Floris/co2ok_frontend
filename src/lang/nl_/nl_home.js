@@ -1,7 +1,7 @@
 /* eslint-disable quotes */
 module.exports = {
-  s1_title: "Maak je bedrijf CO₂ neutraal",
-  s1_title2: "Wees CO₂ neutraal en word een ninja!",
+  s1_title: "Maak online aankopen CO₂ neutraal",
+  s1_title2: "Klimaatverandering is een serieus probleem. Of je nu arm of rijk bent, het raakt ons allemaal. Nu kunnen we wachten tot de overheid stappen zet. Of... we vechten samen tegen klimaatverandering!",
 
   s2_title: "Onze diensten",
 
@@ -60,5 +60,7 @@ module.exports = {
           >verdere toelichting</a> op.`,
 
   partners_title: "Partners",
-  partners_text: "Met liefde introduceren wij onze partners in de strijd tegen klimaatverandering!"
+  partners_text: "Met liefde introduceren wij onze partners in de strijd tegen klimaatverandering!",
+
+  webshops_title: "Bij deze shops kan je nu al klimaatneutraal shoppen"
 }

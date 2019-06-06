@@ -3,17 +3,13 @@
     <Navigation :lang="lang" @changeLangNav="changeLang"/>
 
     <div class="jumbotron">
-      <div class="background_left"></div>
-      <div class="background_right"></div>
-      <img src="../../../assets/wereldbol.svg">
+      <div class="background"></div>
       <div class="content">
-        <h1 class="quote_head">CO₂ compensation, because there is no planet B.</h1>
+        <img src="../../../assets/wereldbol.svg">
         <div class="head_group group">
           <div class="text_block">
             <h2>{{s1_title}}</h2>
-          </div>
-          <div class="text_block">
-            <h2>{{s1_title2}}</h2>
+            <p>{{s1_title2}}</p>
           </div>
         </div>
       </div>
@@ -247,6 +243,145 @@
       </div>
     </div>
 
+    <div class="webshops">
+      <div class="content">
+        <h2>{{webshops_title}}</h2>
+      </div>
+      <div class="content group">
+        <div class="imgContainer">
+          <div class="imgWrapper">
+            <a href="https://www.aquaponicsshop.eu/" target="_blank">
+              <img src="../../../assets/webshops/aquaponics_eu.jpg" alt>
+            </a>
+          </div>
+        </div>
+        <div class="imgContainer">
+          <div class="imgWrapper">
+            <a href="https://www.billenboetiek.nl/" target="_blank">
+              <img src="../../../assets/webshops/billenboetiek.jpg" alt>
+            </a>
+          </div>
+        </div>
+        <div class="imgContainer">
+          <div class="imgWrapper">
+            <a href="https://www.dimlight.nl/" target="_blank">
+              <img src="../../../assets/webshops/Dimlight_repositioned.jpg" alt>
+            </a>
+          </div>
+        </div>
+        <div class="imgContainer">
+          <div class="imgWrapper">
+            <a href="https://www.fairtradeupgrade.shop/" target="_blank">
+              <img src="../../../assets/webshops/fairtrade_upgrade_shop.jpg" alt>
+            </a>
+          </div>
+        </div>
+        <div class="imgContainer">
+          <div class="imgWrapper">
+            <a href="https://happytowels.nl/" target="_blank">
+              <img src="../../../assets/webshops/happytowels.jpg" alt>
+            </a>
+          </div>
+        </div>
+        <div class="imgContainer">
+          <div class="imgWrapper">
+            <a href="https://helpenderobot.nl/" target="_blank">
+              <img src="../../../assets/webshops/helpende_robot.jpg" alt>
+            </a>
+          </div>
+        </div>
+        <div class="imgContainer">
+          <div class="imgWrapper">
+            <a href="https://landsbyfadder.org/" target="_blank">
+              <img src="../../../assets/webshops/Landsbyfadder_repositioned.jpg" alt>
+            </a>
+          </div>
+        </div>
+        <div class="imgContainer">
+          <div class="imgWrapper">
+            <a href="https://millersoils.nl/" target="_blank">
+              <img src="../../../assets/webshops/millers_oils.jpg" alt>
+            </a>
+          </div>
+        </div>
+        <div class="imgContainer">
+          <div class="imgWrapper">
+            <a href="https://bamboedesign.nl/" target="_blank">
+              <img
+                src="../../../assets/webshops/xcropped-Logo-Bamboe-design.png.pagespeed.ic_.EHRQtUAC9J.png"
+                alt
+              >
+            </a>
+          </div>
+        </div>
+
+        <div class="imgContainer">
+          <div class="imgWrapper">
+            <a href="https://www.metpapier.nl/" target="_blank">
+              <img
+                src="../../../assets/webshops/xcropped-Logo-Boel-metpapier.nl_.png.pagespeed.ic_.MEeeU_LBfo.png"
+                alt
+              >
+            </a>
+          </div>
+        </div>
+
+        <div class="imgContainer">
+          <div class="imgWrapper">
+            <a href="https://www.natuurlijk-kleurrijk.nl/" target="_blank">
+              <img
+                src="../../../assets/webshops/xcropped-Logo-Natuurverf.png.pagespeed.ic_.nzpJYX8DFC.png"
+                alt
+              >
+            </a>
+          </div>
+        </div>
+
+        <div class="imgContainer">
+          <div class="imgWrapper">
+            <a href="https://www.natuurvol.nl/wonen/" target="_blank">
+              <img
+                src="../../../assets/webshops/xcropped-Logo-Natuurvol-wonen.png.pagespeed.ic_.yqWzhvADTR.png"
+                alt
+              >
+            </a>
+          </div>
+        </div>
+
+        <div class="imgContainer">
+          <div class="imgWrapper">
+            <a href="https://www.soap7.com/" target="_blank">
+              <img
+                src="../../../assets/webshops/xcropped-Logo-SOAP7.png.pagespeed.ic_.dxLLSCPx4K.png"
+                alt
+              >
+            </a>
+          </div>
+        </div>
+
+        <div class="imgContainer">
+          <div class="imgWrapper">
+            <a href="https://michielvandijk.nl/" target="_blank">
+              <img
+                src="../../../assets/webshops/xcropped-Michiel-van-Dijk-designer-in-wood.png.pagespeed.ic_.vhf7Fr5XFv.png"
+                alt
+              >
+            </a>
+          </div>
+        </div>
+
+        <div class="imgContainer">
+          <div class="imgWrapper">
+            <a href="https://www.zaailingen.com/" target="_blank">
+              <img src="../../../assets/webshops/zaailingen.jpg" alt>
+            </a>
+          </div>
+        </div>
+
+        <!--  -->
+      </div>
+    </div>
+
     <div class="calculation">
       <div class="content group">
         <div class="calculation_left">
@@ -400,7 +535,9 @@ export default {
       s6_p: lang.nl.s6_p,
 
       partners_title: lang.nl.partners_title,
-      partners_text: lang.nl.partners_text
+      partners_text: lang.nl.partners_text,
+
+      webshops_title: lang.nl.webshops_title
     };
   },
   methods: {
@@ -475,6 +612,8 @@ export default {
 
       this.partners_title = lang[language].partners_title;
       this.partners_text = lang[language].partners_text;
+
+      this.webshops_title = lang[language].webshops_title;
 
       setCookie("userLang", language, 200);
       this.lang = language;
