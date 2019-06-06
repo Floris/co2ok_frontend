@@ -71,12 +71,18 @@
     <div class="wnf">
       <div class="content group">
         <div class="text_block">
-          <h3>{{wnf_quote}}</h3>
-          <h2>-WNF</h2>
-          <router-link to="/login">
-            <button class="button white">{{button_header1}}</button>
-          </router-link>
+          <!-- <p class="big_quote">"</p> -->
+          <p>{{wnf_quote}}</p>
+          <div class="group">
+            <p>
+              <strong>-WNF</strong>
+            </p>
+            <router-link to="/login">
+              <button class="button white">{{button_header1}}</button>
+            </router-link>
+          </div>
         </div>
+        <img src="../../../assets/pandagoed.svg" alt="panda wnf logo">
       </div>
     </div>
 

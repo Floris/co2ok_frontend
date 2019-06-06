@@ -4,7 +4,7 @@
       <div class="content">
         <div class="co2ok-logo">
           <router-link to="/" class="logo_router_link">
-            <img id="logo1" src="../../../assets/co2ok_logo.png">
+            <img id="logo1" src="../../../assets/logo2.png">
             <img id="logo2" src="../../../assets/co2ok_white.svg">
           </router-link>
         </div>
