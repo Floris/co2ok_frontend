@@ -626,7 +626,7 @@ export default {
       // console.log("navbar true");
       var pageY = window.pageYOffset;
 
-      if (pageY > 851) {
+      if (pageY > 750) {
         this.bol1 = true;
         // document.getElementById("bol1").style.display = "block";
         // document.getElementById("bol1_").style.display = "block";
@@ -634,7 +634,7 @@ export default {
         this.bol1 = false;
       }
 
-      if (pageY > 1109) {
+      if (pageY > 1050) {
         this.bol2 = true;
         // document.getElementById("bol2").style.display = "block";
         // document.getElementById("bol2_").style.display = "block";
@@ -642,7 +642,7 @@ export default {
         this.bol2 = false;
       }
 
-      if (pageY > 1314) {
+      if (pageY > 1220) {
         this.bol3 = true;
         // document.getElementById("bol3").style.display = "block";
         // document.getElementById("bol3_").style.display = "block";
@@ -650,7 +650,7 @@ export default {
         this.bol3 = false;
       }
 
-      if (pageY > 1575) {
+      if (pageY > 1450) {
         this.bol4 = true;
         // document.getElementById("bol4").style.display = "block";
         // document.getElementById("bol4_").style.display = "block";
