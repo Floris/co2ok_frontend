@@ -46,7 +46,7 @@
 
       img {
         position: relative;
-        bottom: -65px;
+        bottom: -155px;
         max-width: 64%;
         left: 0;
         width: 600px;
@@ -168,6 +168,10 @@
       border-style: solid rgba(0, 0, 0, 0.0);
       border-width: 1px;
       z-index: 50;
+
+      .carousel_img {
+        width: 150px;
+      }
 
       .content_block {
         .content_in_block {

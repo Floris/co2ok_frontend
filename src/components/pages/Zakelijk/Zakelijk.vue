@@ -181,7 +181,7 @@
             <div class="content_in_block">
               <!-- <img src="../../../assets/icons_zakelijk/zakelijk_globe.svg"> -->
               <!-- <i class="fas fa-heart fa-8x blue"></i> -->
-              <img src="../../../assets/hearthleaf.svg" alt="hart met blaadje">
+              <img src="../../../assets/hearthleaf.svg" class="carousel_img" alt="hart met blaadje">
               <div class="content_text">
                 <h3>{{s3_title2}}</h3>
                 <p>{{s3_p1}}</p>
