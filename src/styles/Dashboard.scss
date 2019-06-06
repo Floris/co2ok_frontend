@@ -11,6 +11,20 @@
     }
   }
 
+  .first {
+    flex-wrap: wrap;
+
+    div {
+      margin: 0 auto;
+    }
+
+    img {
+      // order: 2;
+      width: 200px;
+      height: 200px;
+    }
+  }
+
   .footer {
     .content {
       padding-top: 0;
@@ -222,6 +236,14 @@
     filter: grayscale(0) !important;
     transform: scale(1);
     transition: all 0.2s ease;
+  }
+
+  @media only screen and (max-width: 830px) {
+    .first {
+      img {
+        display: none;
+      }
+    }
   }
 
   @media only screen and (max-width: 650px) {

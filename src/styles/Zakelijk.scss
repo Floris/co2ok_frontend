@@ -141,7 +141,11 @@
     // height: 1050px;
     padding: 60px 0;
     width: 100%;
-    background: $grey;
+    background: url('../assets/rivier.svg');
+    background-repeat: no-repeat;
+    background-size: 110%;
+    background-position: 50% 50%;
+    // background: $grey;
 
     // .img_background {
     //   background: url('./../assets/wolk.png');
@@ -150,14 +154,6 @@
     //   width: 100%;
     //   z-index: 15;
     //   top: -120px;
-    // }
-
-    // .img-background-color {
-    //   position: absolute;
-    //   height: 75%;
-    //   width: 100%;
-    //   z-index: 5;
-    //   background: rgba(182, 225, 249, 0.8);
     // }
 
     .why_co2ok_content {
@@ -227,6 +223,7 @@
 
   .partners {
     position: relative;
+    background: #fff;
     // height: 600px;
 
     .content {
@@ -395,6 +392,7 @@
 
     .why_co2ok {
       // height: 650px !important;
+      background: none;
 
       .why_co2ok_content {
         text-align: center;
@@ -420,6 +418,11 @@
             margin: 0 auto;
           }
         }
+      }
+
+      .carousel_img {
+        // width: 100px !important;
+        // height: auto !important;
       }
     }
 

@@ -139,7 +139,12 @@
               <slide>
                 <div class="content_block">
                   <!-- <img src="../../../assets/icons_zakelijk/zakelijk_globe.svg"> -->
-                  <i class="fas fa-heart fa-8x blue"></i>
+                  <!-- <i class="fas fa-heart fa-8x blue"></i> -->
+                  <img
+                    class="carousel_img"
+                    src="../../../assets/hearthleaf.svg"
+                    alt="hart met blaadje"
+                  >
                   <h3>{{s3_title2}}</h3>
                   <p>{{s3_p1}}</p>
                 </div>

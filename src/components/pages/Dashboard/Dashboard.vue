@@ -3,12 +3,18 @@
     <Navigation :lang="lang" @changeLangNav="changeLang"/>
 
     <div class="content">
-      <h1>Profile</h1>
-      <h2>The power of ninja is together!</h2>
-      <h3>
-        Tell your friends and family about the Ninja App
-        <br>and share the link to fight climate change.
-      </h3>
+      <div class="group first">
+        <img src="../../../assets/ninjaDesignSuperman_greenfeet_uitsnede.png">
+        <div>
+          <h1>Profile</h1>
+          <h2>The power of ninja is together!</h2>
+          <h3>
+            Tell your friends and family about the Ninja App
+            <br>and share the link to fight climate change.
+          </h3>
+        </div>
+        <img src="../../../assets/Icon-Ninja-more.png">
+      </div>
       <div class="box">
         <p class="link">
           https://co2ok.ninja/152
