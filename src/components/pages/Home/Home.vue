@@ -243,6 +243,28 @@
       </div>
     </div>
 
+    <div class="calculation">
+      <div class="content group">
+        <div class="calculation_left">
+          <h2>{{s5_title_1}}</h2>
+          <div v-html="s5_p_1"></div>
+        </div>
+        <div class="calculation_right group-item_col">
+          <img src="../../../assets/ninja_sit.png" alt="Sitting co2ok ninja">
+          <p class="kgs">313241 KGS</p>
+          <h3>{{s5_title_sm}}</h3>
+          <!-- <p>{{s5_p_2}}</p> -->
+        </div>
+      </div>
+    </div>
+
+    <div class="bomenPlanten">
+      <div class="content">
+        <h2>{{s6_title}}</h2>
+        <p v-html="s6_p"></p>
+      </div>
+    </div>
+
     <div class="webshops">
       <div class="content">
         <h2>{{webshops_title}}</h2>
@@ -379,28 +401,6 @@
         </div>
 
         <!--  -->
-      </div>
-    </div>
-
-    <div class="calculation">
-      <div class="content group">
-        <div class="calculation_left">
-          <h2>{{s5_title_1}}</h2>
-          <div v-html="s5_p_1"></div>
-        </div>
-        <div class="calculation_right group-item_col">
-          <img src="../../../assets/ninja_sit.png" alt="Sitting co2ok ninja">
-          <p class="kgs">313241 KGS</p>
-          <h3>{{s5_title_sm}}</h3>
-          <!-- <p>{{s5_p_2}}</p> -->
-        </div>
-      </div>
-    </div>
-
-    <div class="bomenPlanten">
-      <div class="content">
-        <h2>{{s6_title}}</h2>
-        <p v-html="s6_p"></p>
       </div>
     </div>
 

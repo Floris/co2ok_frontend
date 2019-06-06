@@ -371,7 +371,7 @@
   .calculation {
     padding: 60px 0;
     text-align: left;
-    background: $grey;
+    background: #fff;
 
     h2,
     h3,
@@ -424,8 +424,13 @@
     }
   }
 
+  .partners_bg {
+    background: $grey;
+  }
+
   .partners {
     height: 100% !important;
+
 
     padding: 60px 0;
     margin: 0 auto;

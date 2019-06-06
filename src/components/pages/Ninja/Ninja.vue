@@ -71,7 +71,10 @@
     <div class="wnf">
       <div class="content group">
         <div class="text_block">
-          <!-- <p class="big_quote">"</p> -->
+          <span class="big_quote">
+            <!-- <img src="../../../assets/Ayuthaya.svg"> -->
+            <img class="logo_wnf" src="../../../assets/pandagoed.svg" alt="panda wnf logo">
+          </span>
           <p>{{wnf_quote}}</p>
           <div class="group">
             <p>
@@ -82,7 +85,7 @@
             </router-link>
           </div>
         </div>
-        <img src="../../../assets/pandagoed.svg" alt="panda wnf logo">
+        <!-- <img class="logo_wnf" src="../../../assets/pandagoed.svg" alt="panda wnf logo"> -->
       </div>
     </div>
 

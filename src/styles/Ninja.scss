@@ -2,6 +2,8 @@
 
 @import "_vars.scss";
 
+@import url('https://fonts.googleapis.com/css?family=Catamaran&display=swap');
+
 .ninja {
   background: white;
   align-self: center;
@@ -178,36 +180,42 @@
 
   .wnf {
     background: $green;
-    padding: 60px 0;
     position: relative;
 
     .text_block {
       position: relative;
-    }
-
-    .big_quote {
-      margin: 0;
-      z-index: 1;
-      font-weight: bold;
-      font-style: cursive;
-      font-size: 400px;
-      position: absolute;
-      color: #fff;
-    }
-
-    .group {
-      justify-content: center;
-    }
-
-    .text_block {
-      text-align: left;
+      padding: 60px 0;
       max-width: 500px;
-    }
+      text-align: left;
 
-    .text_block {
       .group {
         justify-content: flex-start;
       }
+    }
+
+    .big_quote {
+      height: 150px;
+      width: 150px;
+      top: 30px;
+      left: -90px;
+      margin: 0;
+      z-index: 1;
+      position: absolute;
+      font-weight: bold;
+      font-style: cursive;
+      // transform: rotate(180deg);
+    }
+
+    .logo_wnf {
+      position: absolute;
+      bottom: -60px;
+      // right: 0;
+      // width: 20000px;
+      // height: 100%;
+    }
+
+    .group {
+      justify-content: space-around;
     }
 
     .button {
@@ -496,6 +504,14 @@
       img {
         width: 250px;
         height: auto;
+      }
+    }
+
+    .wnf {
+      .text_block {
+        .group {
+          justify-content: center;
+        }
       }
     }
 
