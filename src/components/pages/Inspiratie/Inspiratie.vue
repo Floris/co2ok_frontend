@@ -174,48 +174,7 @@ export default {
 
       setCookie("userLang", language, 200);
       this.lang = language;
-    }, // end changeLang
-    instaFeedsNext(){
-      let instaContainer = document.querySelector('#instafeed')
-      let feedBySlide = 2 //number of image sliding out
-      let slideCount = (this.instaOptions.limit/feedBySlide)-1
-      let paginationNumber = 460 // number of pixel moving while sliding
-      this.slide += paginationNumber
-          if(this.slide <= paginationNumber*slideCount){
-              this.instaPrev = true
-              instaContainer.style.transition = 'margin-left 0.5s linear 0s'
-              instaContainer.style.marginLeft = `-${this.slide}px`
-          }else {
-              this.slide = paginationNumber*slideCount
-              this.instaNext = false
-              this.instaPrev = true
-          }
-        },
-    instaFeedsPrev(){
-      let instaContainer = document.querySelector('#instafeed')
-      let feedBySlide = 2 //number of image sliding out
-      let slideCount = (this.instaOptions.limit/feedBySlide)-1
-      let paginationNumber = 460 // number of pixel moving while sliding
-      this.slide -= paginationNumber
-      if(this.slide >= paginationNumber) {
-        this.instaNext = true
-        this.instaPrev = true
-        instaContainer.style.transition = 'margin-left 0.5s linear 0s'
-        instaContainer.style.marginLeft = `-${this.slide}px`
-      } 
-      else if(this.slide == paginationNumber) {
-          this.slide = paginationNumber
-          this.instaNext = true
-          this.instaPrev = false
-        } 
-        else {
-          this.instaNext = true
-          this.instaPrev = false
-          instaContainer.style.transition = 'margin-left 0.5s linear 0s'
-          instaContainer.style.marginLeft = `-${this.slide}px`
-          this.slide = 0
-        }
-      }
+    } // end changeLang
   },
   data() {
     return {
@@ -228,16 +187,12 @@ export default {
           // height: '500px',
           accessToken: '6780198652.1677ed0.80d6f1f003594055b2112c307d8807c3',
           // accessToken: process.env.INSTA_ACCESS_TOKEN,
-          template: '<div class="insta-container animated zoomIn" style="position:relative; z-index: 0;width:250px;height:250px;margin:10px;"><a href="{{link}}" target="_blank" style="width: 250px;height:250px;border-radius: 9px;"><div class="img-background-color"><div class="top green"><p>Instagram</p></div><div class="bottom"><div><p class="text">{{caption}}</p></div></div></div><img src="{{image}}" style="width: 100%;height:100%;border-radius: 9px;"/></a></div>',
+          template: '<div class="insta-container animated zoomIn" style="position:relative; z-index: 0;width:250px;height:250px;margin:10px;"><a href="{{link}}" target="_blank" style="width: 250px;height:250px;border-radius: 9px;"><div class="img-background-color"><div class="top green"><p>Instagram</p></div><div class="bottom"><div><p class="text">Likes: {{likes}}</p><p class="text">{{caption}}</p></div></div></div><img src="{{image}}" style="width: 100%;height:100%;border-radius: 9px;"/></a></div>',
           sortBy: 'most-recent'
           // filter: function(image) {
           //     return image.tags.indexOf('TAG_NAME') >= 0;
           // }
-            },
-            instaNext: true,
-            instaPrev: false,
-            slide: 0,
-            slideAnimation: 'slideInRight'
+            }
         }
   }
 };
