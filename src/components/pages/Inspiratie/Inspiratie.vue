@@ -8,144 +8,119 @@
     <div class="line_container">
       <div class="line"></div>
     </div>
-    <div class="blog_content content group">
-      <div class="medium_posts">
-        <div class="post">
-          <div>
-            <img class="img_background" src="../../../assets/blog_image1.jpg" alt>
-          </div>
-          <div class="img-background-color"></div>
-          <div class="top green">
-            <p>Bedrijf</p>
-          </div>
-          <div class="bottom">
-            <div class="title">
-              <p>Veel nieuwe dingen!</p>
+    <div class="blog_content content">
+      <div class="feeds">
+        <div id="instafeed"></div>
+        <div class="medium_posts">
+          <div class="post">
+            <div>
+              <img class="img_background" src="../../../assets/blog_image1.jpg" alt>
             </div>
-            <div class="author">
-              <img src="../../../assets/about_fotos/milo.png">
-              <p>Milo de vries | 22 mei 2019</p>
+            <div class="img-background-color"></div>
+            <div class="top orange">
+              <p>Blog</p>
+            </div>
+            <div class="bottom">
+              <div class="title">
+                <p>Veel nieuwe dingen!</p>
+              </div>
+              <div class="author">
+                <img src="../../../assets/about_fotos/milo.png">
+                <p>Milo de vries | 22 mei 2019</p>
+              </div>
+            </div>
+          </div>
+          <div class="post">
+            <div>
+              <img class="img_background" src="../../../assets/blog_image2.jpeg" alt>
+            </div>
+            <div class="img-background-color"></div>
+            <div class="top orange">
+              <p>Blog</p>
+            </div>
+            <div class="bottom">
+              <div class="title">
+                <p>Help onze planeet!</p>
+              </div>
+              <div class="author">
+                <img src="../../../assets/about_fotos/milo.png">
+                <p>Milo de vries | 22 mei 2019</p>
+              </div>
+            </div>
+          </div>
+          <div class="post">
+            <div>
+              <img class="img_background" src="../../../assets/blog_image3.jpg" alt>
+            </div>
+            <div class="img-background-color"></div>
+            <div class="top orange">
+              <p>Blog</p>
+            </div>
+            <div class="bottom">
+              <div class="title">
+                <p>Waarom "boxed" water beter is</p>
+              </div>
+              <div class="author">
+                <img src="../../../assets/about_fotos/milo.png">
+                <p>Milo de vries | 22 mei 2019</p>
+              </div>
+            </div>
+          </div>
+          <div class="post">
+            <div>
+              <img class="img_background" src="../../../assets/blog_image4.jpg" alt>
+            </div>
+            <div class="img-background-color"></div>
+            <div class="top orange">
+              <p>Blog</p>
+            </div>
+            <div class="bottom">
+              <div class="title">
+                <p>Zonnenpaneel itempje</p>
+              </div>
+              <div class="author">
+                <img src="../../../assets/about_fotos/milo.png">
+                <p>Milo de vries | 22 mei 2019</p>
+              </div>
+            </div>
+          </div>
+          <div class="post">
+            <div>
+              <img class="img_background" src="../../../assets/blog_image5.jpg" alt>
+            </div>
+            <div class="img-background-color"></div>
+            <div class="top orange">
+              <p>Blog</p>
+            </div>
+            <div class="bottom">
+              <div class="title">
+                <p>Help onze planeet!</p>
+              </div>
+              <div class="author">
+                <img src="../../../assets/about_fotos/milo.png">
+                <p>Milo de vries | 22 mei 2019</p>
+              </div>
+            </div>
+          </div>
+          <div class="post">
+            <div>
+              <img class="img_background" src="../../../assets/blog_image6.jpg" alt>
+            </div>
+            <div class="img-background-color"></div>
+            <div class="top orange">
+              <p>Blog</p>
+            </div>
+            <div class="bottom">
+              <div class="title">
+                <p>Help onze planeet!</p>
+              </div>
+              <div class="author">
+                <img src="../../../assets/about_fotos/milo.png">
+                <p>Milo de vries | 22 mei 2019</p>
+              </div>
             </div>
           </div>
         </div>
-        <div class="post">
-          <div>
-            <img class="img_background" src="../../../assets/blog_image2.jpeg" alt>
-          </div>
-          <div class="img-background-color"></div>
-          <div class="top orange">
-            <p>Compensatie</p>
-          </div>
-          <div class="bottom">
-            <div class="title">
-              <p>Help onze planeet!</p>
-            </div>
-            <div class="author">
-              <img src="../../../assets/about_fotos/milo.png">
-              <p>Milo de vries | 22 mei 2019</p>
-            </div>
-          </div>
-        </div>
-        <div class="post">
-          <div>
-            <img class="img_background" src="../../../assets/blog_image3.jpg" alt>
-          </div>
-          <div class="img-background-color"></div>
-          <div class="top orange">
-            <p>Compensatie</p>
-          </div>
-          <div class="bottom">
-            <div class="title">
-              <p>Waarom "boxed" water beter is</p>
-            </div>
-            <div class="author">
-              <img src="../../../assets/about_fotos/milo.png">
-              <p>Milo de vries | 22 mei 2019</p>
-            </div>
-          </div>
-        </div>
-        <div class="post">
-          <div>
-            <img class="img_background" src="../../../assets/blog_image4.jpg" alt>
-          </div>
-          <div class="img-background-color"></div>
-          <div class="top red">
-            <p>Co2 Gebruik</p>
-          </div>
-          <div class="bottom">
-            <div class="title">
-              <p>Zonnenpaneel itempje</p>
-            </div>
-            <div class="author">
-              <img src="../../../assets/about_fotos/milo.png">
-              <p>Milo de vries | 22 mei 2019</p>
-            </div>
-          </div>
-        </div>
-        <div class="post">
-          <div>
-            <img class="img_background" src="../../../assets/blog_image5.jpg" alt>
-          </div>
-          <div class="img-background-color"></div>
-          <div class="top red">
-            <p>Co2 Gebruik</p>
-          </div>
-          <div class="bottom">
-            <div class="title">
-              <p>Help onze planeet!</p>
-            </div>
-            <div class="author">
-              <img src="../../../assets/about_fotos/milo.png">
-              <p>Milo de vries | 22 mei 2019</p>
-            </div>
-          </div>
-        </div>
-        <div class="post">
-          <div>
-            <img class="img_background" src="../../../assets/blog_image6.jpg" alt>
-          </div>
-          <div class="img-background-color"></div>
-          <div class="top red">
-            <p>Co2 Gebruik</p>
-          </div>
-          <div class="bottom">
-            <div class="title">
-              <p>Help onze planeet!</p>
-            </div>
-            <div class="author">
-              <img src="../../../assets/about_fotos/milo.png">
-              <p>Milo de vries | 22 mei 2019</p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="instagram_feed">
-        <iframe
-          id="instagram-embed-0"
-          class="instagram-media instagram-media-rendered"
-          style="background: white; max-width: 600px; width: calc(100% - 2px); border-radius: 3px; border: 1px solid #dbdbdb; box-shadow: none; display: block; margin: 0px 0px 12px; min-width: 280px; padding: 0px;"
-          src="https://www.instagram.com/p/BxIcchDFuHE/embed?utm_source=ig_embedembed/captioned/"
-          scrolling="no"
-          data-instgrm-payload-id="instagram-media-payload-0"
-          height="750"
-          frameborder="0"
-        >
-          <span
-            data-mce-type="bookmark"
-            style="display: inline-block; width: 0px; overflow: hidden; line-height: 0;"
-            class="mce_SELRES_start"
-          ></span>
-          <span
-            data-mce-type="bookmark"
-            style="display: inline-block; width: 0px; overflow: hidden; line-height: 0;"
-            class="mce_SELRES_start"
-          ></span>
-          <span
-            data-mce-type="bookmark"
-            style="display: inline-block; width: 0px; overflow: hidden; line-height: 0;"
-            class="mce_SELRES_start"
-          ></span>
-        </iframe>
       </div>
     </div>
     <Footer></Footer>
@@ -167,6 +142,13 @@ export default {
   mounted: function() {
     this.checkCookies();
     document.body.style.overflow = "initial";
+
+    //instafeed
+    let Instafeed = require("instafeed.js");
+    Instafeed = new Instafeed(
+      this.instaOptions
+    );
+    Instafeed.run();
   },
   methods: {
     checkCookies() {
@@ -192,7 +174,71 @@ export default {
 
       setCookie("userLang", language, 200);
       this.lang = language;
-    } // end changeLang
+    }, // end changeLang
+    instaFeedsNext(){
+      let instaContainer = document.querySelector('#instafeed')
+      let feedBySlide = 2 //number of image sliding out
+      let slideCount = (this.instaOptions.limit/feedBySlide)-1
+      let paginationNumber = 460 // number of pixel moving while sliding
+      this.slide += paginationNumber
+          if(this.slide <= paginationNumber*slideCount){
+              this.instaPrev = true
+              instaContainer.style.transition = 'margin-left 0.5s linear 0s'
+              instaContainer.style.marginLeft = `-${this.slide}px`
+          }else {
+              this.slide = paginationNumber*slideCount
+              this.instaNext = false
+              this.instaPrev = true
+          }
+        },
+    instaFeedsPrev(){
+      let instaContainer = document.querySelector('#instafeed')
+      let feedBySlide = 2 //number of image sliding out
+      let slideCount = (this.instaOptions.limit/feedBySlide)-1
+      let paginationNumber = 460 // number of pixel moving while sliding
+      this.slide -= paginationNumber
+      if(this.slide >= paginationNumber) {
+        this.instaNext = true
+        this.instaPrev = true
+        instaContainer.style.transition = 'margin-left 0.5s linear 0s'
+        instaContainer.style.marginLeft = `-${this.slide}px`
+      } 
+      else if(this.slide == paginationNumber) {
+          this.slide = paginationNumber
+          this.instaNext = true
+          this.instaPrev = false
+        } 
+        else {
+          this.instaNext = true
+          this.instaPrev = false
+          instaContainer.style.transition = 'margin-left 0.5s linear 0s'
+          instaContainer.style.marginLeft = `-${this.slide}px`
+          this.slide = 0
+        }
+      }
+  },
+  data() {
+    return {
+        instaOptions: {
+          get: 'user',
+          // userId: process.env.INSTA_USER_ID,
+          userId: '6780198652',
+          limit: 12,
+          resolution: 'standard_resolution',
+          // height: '500px',
+          accessToken: '6780198652.1677ed0.80d6f1f003594055b2112c307d8807c3',
+          // accessToken: process.env.INSTA_ACCESS_TOKEN,
+          template: '<div class="insta-container animated zoomIn" style="position:relative; z-index: 0;width:250px;height:250px;margin:10px;"><a href="{{link}}" target="_blank" style="width: 250px;height:250px;border-radius: 9px;"><div class="img-background-color"><div class="top green"><p>Instagram</p></div><div class="bottom"><div><p class="text">{{caption}}</p></div></div></div><img src="{{image}}" style="width: 100%;height:100%;border-radius: 9px;"/></a></div>',
+          sortBy: 'most-recent'
+          // filter: function(image) {
+          //     return image.tags.indexOf('TAG_NAME') >= 0;
+          // }
+            },
+            instaNext: true,
+            instaPrev: false,
+            slide: 0,
+            slideAnimation: 'slideInRight'
+        }
   }
 };
 </script>
