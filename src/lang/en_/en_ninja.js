@@ -33,5 +33,6 @@ module.exports = {
           Look further into our Privacy Policy
           </p>
           `,
-  s7_button: "Check our Privacy Statement here"
+  s7_button: "Check our Privacy Statement here",
+  wnf_quote: `"Ninja is great, you have to have this if you are a true climate warrior!"`
 };

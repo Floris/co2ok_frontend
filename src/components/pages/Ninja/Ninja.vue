@@ -68,6 +68,18 @@
       </div>
     </div>
 
+    <div class="wnf">
+      <div class="content group">
+        <div class="text_block">
+          <h3>{{wnf_quote}}</h3>
+          <h2>-WNF</h2>
+          <router-link to="/login">
+            <button class="button white">{{button_header1}}</button>
+          </router-link>
+        </div>
+      </div>
+    </div>
+
     <div class="companies">
       <div class="content">
         <h2>
@@ -208,7 +220,9 @@ export default {
       // privacy
       s7_title: lang.nl.s7_title,
       s7_p: lang.nl.s7_p,
-      s7_button: lang.nl.s7_button
+      s7_button: lang.nl.s7_button,
+
+      wnf_quote: lang.nl.wnf_quote
     };
   },
   mounted: function() {
@@ -281,6 +295,8 @@ export default {
       this.s7_title = lang[language].s7_title;
       this.s7_p = lang[language].s7_p;
       this.s7_button = lang[language].s7_button;
+
+      this.wnf_quote = lang[language].wnf_quote;
 
       setCookie("userLang", language, 200);
       this.lang = language;

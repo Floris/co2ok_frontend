@@ -31,5 +31,6 @@ module.exports = {
           Om de CO₂ok Ninja te laten werken heeft de extensie alleen bepaalde rechten nodig om lokaal te zien welke webshop je momenteel gebruikt om de commissie te activeren bij de webshop.
           </p>
           `,
-  s7_button: "Zie verder onze Privacy Statement"
+  s7_button: "Zie verder onze Privacy Statement",
+  wnf_quote: `"Ninja is geweldig, dit moet je hebben als je een echte klimaat strijder bent!"`
 };

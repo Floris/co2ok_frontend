@@ -6,8 +6,9 @@
   .jumbotron {
     position: relative;
     background-image: url('./../assets/zonnepanelen.png');
+    background-repeat: no-repeat;
     // background-repeat: no-repeat;
-    // background-size: cover;
+    background-size: cover;
     height: 700px;
     width: 100%;
     z-index: 1;
