@@ -34,5 +34,5 @@ module.exports = {
           </p>
           `,
   s7_button: "Check our Privacy Statement here",
-  wnf_quote: `"Ninja is great, you have to have this if you are a true climate warrior!"`
+  wnf_quote: `"Ninja is great, you need to have this if you are a true climate warrior!"`
 };

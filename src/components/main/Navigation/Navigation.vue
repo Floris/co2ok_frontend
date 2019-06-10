@@ -100,12 +100,12 @@ export default {
         },
         {
           id: 5,
-          text: lang.nl.links[4].text,
+          text: lang.nl.links[5].text,
           page: "/about"
         },
         {
           id: 6,
-          text: lang.nl.links[5].text,
+          text: lang.nl.links[6].text,
           page: "/faq"
         }
       ],

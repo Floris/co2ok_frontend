@@ -5,7 +5,7 @@
     <div class="jumbotron">
       <div class="background"></div>
       <div class="content">
-        <img src="../../../assets/wereldbol.svg">
+        <img class="rotating" src="../../../assets/wereldbol.svg">
         <div class="head_group group">
           <div class="text_block">
             <h2>{{s1_title}}</h2>
@@ -626,7 +626,7 @@ export default {
       // console.log("navbar true");
       var pageY = window.pageYOffset;
 
-      if (pageY > 750) {
+      if (pageY > 580) {
         this.bol1 = true;
         // document.getElementById("bol1").style.display = "block";
         // document.getElementById("bol1_").style.display = "block";
@@ -634,7 +634,7 @@ export default {
         this.bol1 = false;
       }
 
-      if (pageY > 1050) {
+      if (pageY > 750) {
         this.bol2 = true;
         // document.getElementById("bol2").style.display = "block";
         // document.getElementById("bol2_").style.display = "block";
@@ -642,7 +642,7 @@ export default {
         this.bol2 = false;
       }
 
-      if (pageY > 1220) {
+      if (pageY > 920) {
         this.bol3 = true;
         // document.getElementById("bol3").style.display = "block";
         // document.getElementById("bol3_").style.display = "block";
@@ -650,7 +650,7 @@ export default {
         this.bol3 = false;
       }
 
-      if (pageY > 1450) {
+      if (pageY > 1150) {
         this.bol4 = true;
         // document.getElementById("bol4").style.display = "block";
         // document.getElementById("bol4_").style.display = "block";
