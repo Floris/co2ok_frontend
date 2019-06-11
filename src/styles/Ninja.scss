@@ -355,6 +355,10 @@
     .about_privacy {
       width: 100%;
 
+      h2 {
+        margin: 0;
+      }
+
       div {
         max-width: 800px;
         margin: 0 auto;
