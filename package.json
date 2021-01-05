@@ -13,7 +13,7 @@
     "compile_lang": "node src/lang/compile.js"
   },
   "dependencies": {
-    "axios": "^0.18.0",
+    "axios": "^0.21.1",
     "browser-sync": "^2.26.3",
     "instafeed.js": "^1.4.1",
     "vue": "^2.5.2",
